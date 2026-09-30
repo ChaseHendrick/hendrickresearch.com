@@ -35,5 +35,8 @@ dialog{border:1px solid var(--line);padding:0;width:min(670px,calc(100% - 36px))
 .empty-state{padding:55px 20px;text-align:center;border-bottom:1px solid #d4d8c8}
 .empty-state p{font:29px var(--serif);margin-bottom:18px}
 .card-foot{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:16px}.card-foot .tags{margin-top:0}.card-source{font-size:9px;flex:none}
+.private-workspace-note{font-size:9px;color:#616c55;line-height:1.7}
+.site-footer{grid-template-columns:140px 1fr}.footer-links{justify-self:end}
+@media(max-width:650px){.site-footer{grid-template-columns:110px 1fr}.footer-links{justify-self:stretch}}
 @media(max-width:850px){.research-toolbar{align-items:stretch;flex-direction:column;gap:14px}.search-field{width:100%;max-width:350px}.paper-filter{padding:8px 12px}}
 @media(max-width:650px){:root{scroll-padding-top:112px}.research-toolbar{margin-top:18px}.paper-filters{margin-inline:-2px}.paper-filter{font-size:9px;padding:8px 11px}.search-field{max-width:none;padding:11px 12px}.search-field input{font-size:12px}.search-field kbd{display:none}.paper-results{font-size:8px;margin-top:14px}.empty-state{padding:36px 12px}.empty-state p{font-size:25px}}

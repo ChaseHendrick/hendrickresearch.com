@@ -1,0 +1,3141 @@
+{
+  "snapshotDate": "2026-09-30",
+  "registryCommit": "80c005449c0c5244220e8f9f378ed58293d97971",
+  "workspaceAreas": [
+    {
+      "id": "studio",
+      "title": "Art and print studio",
+      "description": "Select a technique, adjust its controls and create a plate from a seeded simulation."
+    },
+    {
+      "id": "validate",
+      "title": "Check simulations",
+      "description": "Run the workspace’s recorded checks locally."
+    },
+    {
+      "id": "contribute",
+      "title": "Run experiments",
+      "description": "Run bounded research experiments locally."
+    }
+  ],
+  "workspaceTools": [
+    {
+      "id": "catalog",
+      "title": "Browse all modules",
+      "description": "Search registered techniques by name, equation, reference, topic and recorded evidence."
+    },
+    {
+      "id": "formula",
+      "title": "Type a formula",
+      "description": "Choose a supported technique and edit a formula."
+    },
+    {
+      "id": "recipes",
+      "title": "Seeds and recipes",
+      "description": "Preserve the seed and selected parameters; exact results depend on version, precision, platform and resolution."
+    },
+    {
+      "id": "gallery",
+      "title": "Gallery",
+      "description": "Save selected recipes in local browser storage."
+    },
+    {
+      "id": "timeline",
+      "title": "Timeline",
+      "description": "Review session history and undo prior changes."
+    },
+    {
+      "id": "print",
+      "title": "Print and export",
+      "description": "Choose print dimensions, pixel density and optional caption parts; additional export formats depend on the technique."
+    },
+    {
+      "id": "record",
+      "title": "Record",
+      "description": "Capture clips of supported living plates."
+    },
+    {
+      "id": "science",
+      "title": "Science report",
+      "description": "Read the technique’s registered evidence and its limitations."
+    },
+    {
+      "id": "ambient",
+      "title": "Ambient",
+      "description": "Walk through techniques on a 30 second timer with fresh seeds."
+    },
+    {
+      "id": "focus",
+      "title": "Focus",
+      "description": "Hide workspace controls to view the plate."
+    }
+  ],
+  "entries": [
+    {
+      "id": "life",
+      "title": "Artificial Life",
+      "kind": "technique",
+      "category": "Neuroscience and collective systems",
+      "description": "Lenia, Flow Lenia and cellular automata",
+      "family": "life",
+      "tabName": "Artificial Life",
+      "presetCount": 9,
+      "presets": [
+        "orbium",
+        "flowlenia",
+        "tworings",
+        "amoeba",
+        "coral",
+        "conway",
+        "daynight",
+        "ltl",
+        "seeds"
+      ],
+      "status": "Exploratory",
+      "evidenceStatus": "unvalidated",
+      "tags": [
+        "Living simulation"
+      ]
+    },
+    {
+      "id": "physarum3d",
+      "title": "Physarum 3D",
+      "kind": "technique",
+      "category": "Growth and patterns",
+      "description": "slime mold agents building a filament network in a volume",
+      "family": "physarum3d",
+      "tabName": "Physarum 3D",
+      "presetCount": 6,
+      "presets": [
+        "cosmic",
+        "mycelium",
+        "neurons",
+        "nebula",
+        "roots",
+        "capillaries"
+      ],
+      "status": "Exploratory",
+      "evidenceStatus": "unvalidated",
+      "tags": []
+    },
+    {
+      "id": "cortex",
+      "title": "Cortical Planforms",
+      "kind": "technique",
+      "category": "Neuroscience and collective systems",
+      "description": "a neural field patterning, seen through the retinocortical map",
+      "family": "cortex",
+      "tabName": "Cortex",
+      "presetCount": 7,
+      "presets": [
+        "spiral",
+        "funnel",
+        "tunnel",
+        "cobweb",
+        "sheet",
+        "lattice",
+        "contour"
+      ],
+      "status": "Exploratory",
+      "evidenceStatus": "unvalidated",
+      "tags": [
+        "Living simulation"
+      ]
+    },
+    {
+      "id": "nonreciprocal",
+      "title": "Nonlinear Active Mixture",
+      "kind": "technique",
+      "category": "Waves and fields",
+      "description": "nonlinear nonreciprocal fields",
+      "family": "nonreciprocal",
+      "tabName": "Active mixture",
+      "presetCount": 6,
+      "presets": [
+        "waves",
+        "active",
+        "noise",
+        "oblique",
+        "passive",
+        "coupling"
+      ],
+      "status": "Checks within stated limits",
+      "evidenceStatus": "validated within stated limits",
+      "tags": [
+        "Living simulation"
+      ]
+    },
+    {
+      "id": "bec",
+      "title": "Vortex Lattice",
+      "kind": "technique",
+      "category": "Neuroscience and collective systems",
+      "description": "Gross-Pitaevskii, rotating",
+      "family": "bec",
+      "tabName": "Condensate",
+      "presetCount": 7,
+      "presets": [
+        "lattice",
+        "few",
+        "dense",
+        "marks",
+        "phase",
+        "quiet",
+        "tangle"
+      ],
+      "status": "Partial checks",
+      "evidenceStatus": "partially validated",
+      "tags": [
+        "Living simulation",
+        "Vector export"
+      ]
+    },
+    {
+      "id": "physarum",
+      "title": "Physarum",
+      "kind": "technique",
+      "category": "Growth and patterns",
+      "description": "slime mold agents building a transport network",
+      "family": "physarum",
+      "tabName": "Physarum",
+      "presetCount": 8,
+      "presets": [
+        "veins",
+        "coral",
+        "web",
+        "nebula",
+        "roots",
+        "mycelium",
+        "storm",
+        "filigree"
+      ],
+      "status": "Exploratory",
+      "evidenceStatus": "unvalidated",
+      "tags": []
+    },
+    {
+      "id": "phyllotaxis",
+      "title": "Phyllotaxis",
+      "kind": "technique",
+      "category": "Growth and patterns",
+      "description": "discrete inhibitory growth inspired by Douady-Couder",
+      "family": "cgl-hofstadter-scars-caustics-smectic-hl-phyllotaxis",
+      "tabName": "Phyllotaxis",
+      "presetCount": 4,
+      "presets": [
+        "golden",
+        "voronoi",
+        "para",
+        "tight"
+      ],
+      "status": "Checks within stated limits",
+      "evidenceStatus": "validated within stated limits",
+      "tags": [
+        "Living simulation",
+        "Vector export"
+      ]
+    },
+    {
+      "id": "hl",
+      "title": "Hastings-Levitov",
+      "kind": "technique",
+      "category": "Growth and patterns",
+      "description": "conformal Laplacian growth",
+      "family": "cgl-hofstadter-scars-caustics-smectic-hl-phyllotaxis",
+      "tabName": "HL growth",
+      "presetCount": 4,
+      "presets": [
+        "lightning",
+        "fingers",
+        "disk",
+        "fine"
+      ],
+      "status": "Exploratory",
+      "evidenceStatus": "unvalidated",
+      "tags": [
+        "Vector export"
+      ]
+    },
+    {
+      "id": "lichtenberg",
+      "title": "Lichtenberg",
+      "kind": "technique",
+      "category": "Growth and patterns",
+      "description": "dielectric breakdown",
+      "family": "cgl-hofstadter-scars-caustics-smectic-hl-phyllotaxis",
+      "tabName": "Lichtenberg",
+      "presetCount": 4,
+      "presets": [
+        "lightning",
+        "dla",
+        "needle",
+        "fern"
+      ],
+      "status": "Exploratory",
+      "evidenceStatus": "unvalidated",
+      "tags": [
+        "Vector export"
+      ]
+    },
+    {
+      "id": "snowflake",
+      "title": "Gravner-Griffeath",
+      "kind": "technique",
+      "category": "Growth and patterns",
+      "description": "mesoscopic snow crystal",
+      "family": "cgl-hofstadter-scars-caustics-smectic-hl-phyllotaxis",
+      "tabName": "Snowflake",
+      "presetCount": 5,
+      "presets": [
+        "dendrite",
+        "fern",
+        "plate",
+        "sectored",
+        "stellar"
+      ],
+      "status": "Exploratory",
+      "evidenceStatus": "unvalidated",
+      "tags": [
+        "Living simulation",
+        "Vector export"
+      ]
+    },
+    {
+      "id": "growth",
+      "title": "Differential Growth",
+      "kind": "technique",
+      "category": "Growth and patterns",
+      "description": "buckling curves, coral and cortex folding",
+      "family": "growth",
+      "tabName": "Differential Growth",
+      "presetCount": 8,
+      "presets": [
+        "coral",
+        "cortex",
+        "lettuce",
+        "cracks",
+        "rings",
+        "bloom",
+        "filament",
+        "ink"
+      ],
+      "status": "Exploratory",
+      "evidenceStatus": "unvalidated",
+      "tags": [
+        "Vector export"
+      ]
+    },
+    {
+      "id": "cyclic",
+      "title": "Cyclic Competition",
+      "kind": "technique",
+      "category": "Waves and fields",
+      "description": "rock, paper, scissors in space",
+      "family": "rdx",
+      "tabName": "Cyclic Competition",
+      "presetCount": 6,
+      "presets": [
+        "pinwheels",
+        "many",
+        "patches",
+        "noise",
+        "single",
+        "relief"
+      ],
+      "status": "Checks within stated limits",
+      "evidenceStatus": "validated within stated limits",
+      "tags": [
+        "Living simulation"
+      ]
+    },
+    {
+      "id": "landscape",
+      "title": "Drainage Networks",
+      "kind": "technique",
+      "category": "Neuroscience and collective systems",
+      "description": "stream-power incision against uplift",
+      "family": "landscape",
+      "tabName": "Drainage",
+      "presetCount": 7,
+      "presets": [
+        "island",
+        "range",
+        "belt",
+        "network",
+        "basins",
+        "area",
+        "smooth"
+      ],
+      "status": "Exploratory",
+      "evidenceStatus": "unvalidated",
+      "tags": [
+        "Vector export"
+      ]
+    },
+    {
+      "id": "kpz",
+      "title": "Rough Growth",
+      "kind": "technique",
+      "category": "Neuroscience and collective systems",
+      "description": "ballistic deposition and the KPZ exponent",
+      "family": "kpz",
+      "tabName": "Roughness",
+      "presetCount": 7,
+      "presets": [
+        "kpz",
+        "ew",
+        "rd",
+        "rsos",
+        "eden",
+        "rings",
+        "wide"
+      ],
+      "status": "Partial checks",
+      "evidenceStatus": "partially validated",
+      "tags": [
+        "Vector export"
+      ]
+    },
+    {
+      "id": "potts",
+      "title": "Foam & Grains",
+      "kind": "technique",
+      "category": "Neuroscience and collective systems",
+      "description": "the cellular Potts model, coarsening",
+      "family": "potts",
+      "tabName": "Froth",
+      "presetCount": 7,
+      "presets": [
+        "coarse",
+        "sides",
+        "foam",
+        "walls",
+        "young",
+        "hot",
+        "area"
+      ],
+      "status": "Exploratory",
+      "evidenceStatus": "unvalidated",
+      "tags": []
+    },
+    {
+      "id": "liesegang",
+      "title": "Liesegang Rings",
+      "kind": "technique",
+      "category": "Growth and patterns",
+      "description": "periodic precipitation in a gel",
+      "family": "liesegang",
+      "tabName": "Liesegang",
+      "presetCount": 7,
+      "presets": [
+        "rings",
+        "plate",
+        "bands",
+        "twin",
+        "intermediate",
+        "front",
+        "crystallites"
+      ],
+      "status": "Exploratory",
+      "evidenceStatus": "unvalidated",
+      "tags": [
+        "Living simulation"
+      ]
+    },
+    {
+      "id": "grains",
+      "title": "Force Chains",
+      "kind": "technique",
+      "category": "Growth and patterns",
+      "description": "a granular packing and the network that carries it",
+      "family": "grains",
+      "tabName": "Chains",
+      "presetCount": 7,
+      "presets": [
+        "pour",
+        "photo",
+        "strong",
+        "arch",
+        "slip",
+        "disks",
+        "column"
+      ],
+      "status": "Partial checks",
+      "evidenceStatus": "partially validated",
+      "tags": [
+        "Vector export"
+      ]
+    },
+    {
+      "id": "skyrmion",
+      "title": "Magnetic Skyrmions",
+      "kind": "technique",
+      "category": "Neuroscience and collective systems",
+      "description": "chiral magnets",
+      "family": "skyrmion",
+      "tabName": "Skyrmions",
+      "presetCount": 6,
+      "presets": [
+        "neel",
+        "bloch",
+        "crystal",
+        "bimeron",
+        "helix",
+        "quench"
+      ],
+      "status": "Exploratory",
+      "evidenceStatus": "unvalidated",
+      "tags": [
+        "Living simulation"
+      ]
+    },
+    {
+      "id": "neural-mass",
+      "title": "Neural Populations",
+      "kind": "technique",
+      "category": "Neuroscience and collective systems",
+      "description": "exact QIF mean-field model",
+      "family": "neural-mass",
+      "tabName": "Neural Populations",
+      "presetCount": 6,
+      "presets": [
+        "driven",
+        "relaxation",
+        "pulse",
+        "inhibitory",
+        "slow",
+        "broad"
+      ],
+      "status": "Checks within stated limits",
+      "evidenceStatus": "validated within stated limits",
+      "tags": [
+        "Vector export"
+      ]
+    },
+    {
+      "id": "tonertu",
+      "title": "Flocking",
+      "kind": "technique",
+      "category": "Neuroscience and collective systems",
+      "description": "Toner-Tu, a polar active fluid",
+      "family": "tonertu",
+      "tabName": "Flock",
+      "presetCount": 7,
+      "presets": [
+        "bands",
+        "ordered",
+        "disordered",
+        "turbulent",
+        "sparse",
+        "wide",
+        "heading"
+      ],
+      "status": "Exploratory",
+      "evidenceStatus": "unvalidated",
+      "tags": [
+        "Living simulation"
+      ]
+    },
+    {
+      "id": "hyperbolic",
+      "title": "Hyperbolic Turing",
+      "kind": "technique",
+      "category": "Geometry and tilings",
+      "description": "reaction-diffusion on a {p,q} tiling",
+      "family": "hyperbolic",
+      "tabName": "Curved",
+      "presetCount": 7,
+      "presets": [
+        "spots",
+        "worms",
+        "mitosis",
+        "coral",
+        "triangles",
+        "rings",
+        "tiling"
+      ],
+      "status": "Exploratory",
+      "evidenceStatus": "unvalidated",
+      "tags": [
+        "Living simulation",
+        "Vector export"
+      ]
+    },
+    {
+      "id": "sle",
+      "title": "Schramm-Loewner Evolution",
+      "kind": "technique",
+      "category": "Geometry and tilings",
+      "description": "the random curve of critical two-dimensional systems",
+      "family": "sle",
+      "tabName": "SLE",
+      "presetCount": 7,
+      "presets": [
+        "perc",
+        "saw",
+        "lerw",
+        "gff",
+        "peano",
+        "sweep",
+        "bundle"
+      ],
+      "status": "Partial checks",
+      "evidenceStatus": "partially validated",
+      "tags": [
+        "Vector export"
+      ]
+    },
+    {
+      "id": "fractal",
+      "title": "Fractal Geometry",
+      "kind": "technique",
+      "category": "Quantum and optical structures",
+      "description": "signed-distance raymarching of 3D fractals",
+      "family": "fractal",
+      "tabName": "Fractal Geometry",
+      "presetCount": 8,
+      "presets": [
+        "bulb",
+        "menger",
+        "box",
+        "kifs",
+        "apollo",
+        "sierp",
+        "julia",
+        "section"
+      ],
+      "status": "Exploratory",
+      "evidenceStatus": "unvalidated",
+      "tags": []
+    },
+    {
+      "id": "phase",
+      "title": "Phase portraits",
+      "kind": "technique",
+      "category": "Other",
+      "description": "domain coloring and enhanced phase portraits of complex functions",
+      "family": "dynamics",
+      "tabName": "Phase",
+      "presetCount": 6,
+      "presets": [
+        "rational",
+        "wheel",
+        "blaschke",
+        "tan",
+        "essential",
+        "quintic"
+      ],
+      "status": "Exploratory",
+      "evidenceStatus": "unvalidated",
+      "tags": []
+    },
+    {
+      "id": "lens",
+      "title": "Gravitational Lens",
+      "kind": "technique",
+      "category": "Waves and fields",
+      "description": "thin-lens mapping",
+      "family": "lens",
+      "tabName": "Lens",
+      "presetCount": 7,
+      "presets": [
+        "einstein",
+        "quad",
+        "cluster",
+        "mass",
+        "stars",
+        "grid",
+        "mag"
+      ],
+      "status": "Exploratory",
+      "evidenceStatus": "unvalidated",
+      "tags": []
+    },
+    {
+      "id": "rotor",
+      "title": "Rotor Routers",
+      "kind": "technique",
+      "category": "Geometry and tilings",
+      "description": "rotor-router aggregation and internal DLA",
+      "family": "sandpile",
+      "tabName": "Rotor",
+      "presetCount": 7,
+      "presets": [
+        "quilt",
+        "odometer",
+        "shells",
+        "idla",
+        "versus",
+        "rims",
+        "stripes"
+      ],
+      "status": "Exploratory",
+      "evidenceStatus": "unvalidated",
+      "tags": []
+    },
+    {
+      "id": "web",
+      "title": "Cosmic Web",
+      "kind": "technique",
+      "category": "Growth and patterns",
+      "description": "Zel'dovich adhesion",
+      "family": "web",
+      "tabName": "Web",
+      "presetCount": 7,
+      "presets": [
+        "local",
+        "young",
+        "knife",
+        "nodes",
+        "collapse",
+        "voidy",
+        "potential"
+      ],
+      "status": "Exploratory",
+      "evidenceStatus": "unvalidated",
+      "tags": []
+    },
+    {
+      "id": "faraday",
+      "title": "Faraday Waves",
+      "kind": "technique",
+      "category": "Waves and fields",
+      "description": "parametrically driven layer",
+      "family": "faraday",
+      "tabName": "Faraday",
+      "presetCount": 7,
+      "presets": [
+        "oscillon",
+        "square",
+        "stripe",
+        "pair",
+        "quiet",
+        "wild",
+        "fine"
+      ],
+      "status": "Exploratory",
+      "evidenceStatus": "unvalidated",
+      "tags": [
+        "Living simulation"
+      ]
+    },
+    {
+      "id": "film",
+      "title": "Thin Film",
+      "kind": "technique",
+      "category": "Growth and patterns",
+      "description": "draining soap and oil",
+      "family": "film",
+      "tabName": "Film",
+      "presetCount": 7,
+      "presets": [
+        "drain",
+        "black",
+        "oil",
+        "bands",
+        "puddles",
+        "map",
+        "order"
+      ],
+      "status": "Exploratory",
+      "evidenceStatus": "unvalidated",
+      "tags": [
+        "Living simulation"
+      ]
+    },
+    {
+      "id": "timecrystal",
+      "title": "Time Crystal",
+      "kind": "technique",
+      "category": "Waves and fields",
+      "description": "Floquet Ising chain, period doubled",
+      "family": "timecrystal",
+      "tabName": "Time crystal",
+      "presetCount": 7,
+      "presets": [
+        "rigid",
+        "melt",
+        "neel",
+        "domain",
+        "prethermal",
+        "order",
+        "clean"
+      ],
+      "status": "Exploratory",
+      "evidenceStatus": "unvalidated",
+      "tags": []
+    },
+    {
+      "id": "growdomain",
+      "title": "Growing Domain",
+      "kind": "technique",
+      "category": "Growth and patterns",
+      "description": "Turing patterns on a domain that grows",
+      "family": "growdomain",
+      "tabName": "Growing Domain",
+      "presetCount": 7,
+      "presets": [
+        "cascade",
+        "angelfish",
+        "linear",
+        "saturating",
+        "lagging",
+        "meinhardt",
+        "plane"
+      ],
+      "status": "Exploratory",
+      "evidenceStatus": "unvalidated",
+      "tags": []
+    },
+    {
+      "id": "neural-field",
+      "title": "Neural-Field Pulse",
+      "kind": "technique",
+      "category": "Other",
+      "description": "a traveling pulse of cortical activity",
+      "family": "neural-field",
+      "tabName": "Neural Field",
+      "presetCount": 7,
+      "presets": [
+        "proved",
+        "gain12",
+        "collisions",
+        "pacemaker",
+        "threshold",
+        "wide",
+        "refractory"
+      ],
+      "status": "Partial checks",
+      "evidenceStatus": "partially validated",
+      "tags": []
+    },
+    {
+      "id": "spinice",
+      "title": "Spin Ice",
+      "kind": "technique",
+      "category": "Neuroscience and collective systems",
+      "description": "square ice, emergent monopoles",
+      "family": "spinice",
+      "tabName": "Spin ice",
+      "presetCount": 7,
+      "presets": [
+        "cold",
+        "plasma",
+        "pair",
+        "ice",
+        "flow",
+        "quench",
+        "stripes"
+      ],
+      "status": "Partial checks",
+      "evidenceStatus": "partially validated",
+      "tags": [
+        "Living simulation"
+      ]
+    },
+    {
+      "id": "vegetation",
+      "title": "Vegetation Bands",
+      "kind": "technique",
+      "category": "Waves and fields",
+      "description": "tiger bush on a dry hillside",
+      "family": "rdx",
+      "tabName": "Vegetation Bands",
+      "presetCount": 7,
+      "presets": [
+        "tiger",
+        "sparse",
+        "steep",
+        "gentle",
+        "flat",
+        "water",
+        "relief"
+      ],
+      "status": "Checks within stated limits",
+      "evidenceStatus": "validated within stated limits",
+      "tags": [
+        "Living simulation"
+      ]
+    },
+    {
+      "id": "aztec",
+      "title": "Arctic Circle",
+      "kind": "technique",
+      "category": "Geometry and tilings",
+      "description": "random domino tilings of the Aztec diamond",
+      "family": "aztec",
+      "tabName": "Arctic Circle",
+      "presetCount": 6,
+      "presets": [
+        "classic",
+        "fine",
+        "readable",
+        "orient",
+        "proof",
+        "brick"
+      ],
+      "status": "Checks within stated limits",
+      "evidenceStatus": "validated within stated limits",
+      "tags": [
+        "Vector export"
+      ]
+    },
+    {
+      "id": "skin",
+      "title": "Skin Effect",
+      "kind": "technique",
+      "category": "Neuroscience and collective systems",
+      "description": "non-Hermitian skin, Hatano-Nelson",
+      "family": "skin",
+      "tabName": "Skin",
+      "presetCount": 7,
+      "presets": [
+        "skin",
+        "hermite",
+        "dirty",
+        "ring",
+        "wall",
+        "weak",
+        "anderson"
+      ],
+      "status": "Checks within stated limits",
+      "evidenceStatus": "validated within stated limits",
+      "tags": []
+    },
+    {
+      "id": "rmt",
+      "title": "Random Matrices",
+      "kind": "technique",
+      "category": "Neuroscience and collective systems",
+      "description": "beta-ensemble spectra and Dyson Brownian motion",
+      "family": "rmt",
+      "tabName": "Matrices",
+      "presetCount": 7,
+      "presets": [
+        "sweep",
+        "gue",
+        "poisson",
+        "crystal",
+        "dyson",
+        "braid",
+        "semicircle"
+      ],
+      "status": "Checks within stated limits",
+      "evidenceStatus": "validated within stated limits",
+      "tags": [
+        "Vector export"
+      ]
+    },
+    {
+      "id": "stealth",
+      "title": "Stealthy Points",
+      "kind": "technique",
+      "category": "Growth and patterns",
+      "description": "hyperuniform collective coordinates",
+      "family": "stealth",
+      "tabName": "Stealth",
+      "presetCount": 7,
+      "presets": [
+        "stealth",
+        "gas",
+        "crystalish",
+        "fourier",
+        "density",
+        "sparse",
+        "tight"
+      ],
+      "status": "Exploratory",
+      "evidenceStatus": "unvalidated",
+      "tags": []
+    },
+    {
+      "id": "lozenge",
+      "title": "Lozenge Tilings",
+      "kind": "technique",
+      "category": "Geometry and tilings",
+      "description": "random lozenge tilings of a hexagon, exact by coupling from the past",
+      "family": "lozenge",
+      "tabName": "Lozenge",
+      "presetCount": 7,
+      "presets": [
+        "circle",
+        "ellipse",
+        "cubes",
+        "flat",
+        "fine",
+        "tower",
+        "proof"
+      ],
+      "status": "Checks within stated limits",
+      "evidenceStatus": "validated within stated limits",
+      "tags": [
+        "Vector export"
+      ]
+    },
+    {
+      "id": "arago",
+      "title": "Arago Spot",
+      "kind": "technique",
+      "category": "Waves and fields",
+      "description": "Poisson bright spot behind a disk",
+      "family": "arago",
+      "tabName": "Arago",
+      "presetCount": 6,
+      "presets": [
+        "spot",
+        "tight",
+        "far",
+        "bright",
+        "wide",
+        "hard"
+      ],
+      "status": "Partial checks",
+      "evidenceStatus": "partially validated",
+      "tags": []
+    },
+    {
+      "id": "ust",
+      "title": "Spanning Trees",
+      "kind": "technique",
+      "category": "Geometry and tilings",
+      "description": "uniform spanning trees by loop-erased random walk",
+      "family": "ust",
+      "tabName": "Trees",
+      "presetCount": 7,
+      "presets": [
+        "tree",
+        "depth",
+        "lerw",
+        "maze",
+        "torus",
+        "fine",
+        "corner"
+      ],
+      "status": "Checks within stated limits",
+      "evidenceStatus": "validated within stated limits",
+      "tags": [
+        "Vector export"
+      ]
+    },
+    {
+      "id": "cppn",
+      "title": "Neural Patterns",
+      "kind": "technique",
+      "category": "Neuroscience and collective systems",
+      "description": "compositional pattern-producing networks evaluated per pixel",
+      "family": "cppn",
+      "tabName": "Neural Patterns",
+      "presetCount": 8,
+      "presets": [
+        "silk",
+        "topography",
+        "glass",
+        "plasma",
+        "mandala",
+        "inkwash",
+        "circuit",
+        "aurora"
+      ],
+      "status": "Exploratory",
+      "evidenceStatus": "unvalidated",
+      "tags": []
+    },
+    {
+      "id": "rogue",
+      "title": "Rogue Wave",
+      "kind": "technique",
+      "category": "Waves and fields",
+      "description": "Peregrine soliton, waves from nowhere",
+      "family": "rogue",
+      "tabName": "Rogue",
+      "presetCount": 6,
+      "presets": [
+        "peregrine",
+        "nowhere",
+        "akh",
+        "km",
+        "wide",
+        "peak"
+      ],
+      "status": "Checks within stated limits",
+      "evidenceStatus": "validated within stated limits",
+      "tags": []
+    },
+    {
+      "id": "hodgkin-huxley",
+      "title": "Hodgkin-Huxley Membranes",
+      "kind": "technique",
+      "category": "Neuroscience and collective systems",
+      "description": "sodium and potassium gates",
+      "family": "hodgkin-huxley",
+      "tabName": "Membranes",
+      "presetCount": 6,
+      "presets": [
+        "repeated",
+        "brief",
+        "recruitment",
+        "sodium",
+        "potassium",
+        "rebound"
+      ],
+      "status": "Checks within stated limits",
+      "evidenceStatus": "validated within stated limits",
+      "tags": []
+    },
+    {
+      "id": "aharonov",
+      "title": "Aharonov-Bohm",
+      "kind": "technique",
+      "category": "Waves and fields",
+      "description": "phase from a field the particle never enters",
+      "family": "aharonov",
+      "tabName": "Aharonov",
+      "presetCount": 6,
+      "presets": [
+        "shift",
+        "zero",
+        "quantum",
+        "tight",
+        "wide",
+        "half"
+      ],
+      "status": "Exploratory",
+      "evidenceStatus": "unvalidated",
+      "tags": []
+    },
+    {
+      "id": "pendulum",
+      "title": "Double pendulum flip time",
+      "kind": "technique",
+      "category": "Particles and dynamics",
+      "description": "first flip of a chaotic double pendulum",
+      "family": "dynamics",
+      "tabName": "Pendulum",
+      "presetCount": 6,
+      "presets": [
+        "classic",
+        "lens",
+        "arms",
+        "edge",
+        "long",
+        "wide"
+      ],
+      "status": "Exploratory",
+      "evidenceStatus": "unvalidated",
+      "tags": []
+    },
+    {
+      "id": "dptangle",
+      "title": "Double pendulum tangle",
+      "kind": "technique",
+      "category": "Other",
+      "description": "homoclinic tangle on the energy section",
+      "family": "dptangle",
+      "tabName": "Tangle",
+      "presetCount": 6,
+      "presets": [
+        "zero",
+        "halfDown",
+        "halfUp",
+        "low",
+        "high",
+        "sea"
+      ],
+      "status": "Exploratory",
+      "evidenceStatus": "unvalidated",
+      "tags": [
+        "Vector export"
+      ]
+    },
+    {
+      "id": "anderson",
+      "title": "Anderson",
+      "kind": "technique",
+      "category": "Waves and fields",
+      "description": "waves that refuse to diffuse",
+      "family": "anderson",
+      "tabName": "Anderson",
+      "presetCount": 6,
+      "presets": [
+        "loc",
+        "ext",
+        "crit",
+        "clean",
+        "mid",
+        "tight"
+      ],
+      "status": "Exploratory",
+      "evidenceStatus": "unvalidated",
+      "tags": []
+    },
+    {
+      "id": "fput",
+      "title": "FPUT Chain",
+      "kind": "technique",
+      "category": "Particles and dynamics",
+      "description": "nonlinear chain and mode energy",
+      "family": "fput",
+      "tabName": "FPUT",
+      "presetCount": 6,
+      "presets": [
+        "recur",
+        "linear",
+        "strong",
+        "long",
+        "fine",
+        "thermal"
+      ],
+      "status": "Checks within stated limits",
+      "evidenceStatus": "validated within stated limits",
+      "tags": []
+    },
+    {
+      "id": "schrodinger",
+      "title": "Schrödinger",
+      "kind": "technique",
+      "category": "Waves and fields",
+      "description": "wave packet on a detector",
+      "family": "wavesflow",
+      "tabName": "Schrödinger",
+      "presetCount": 9,
+      "presets": [
+        "double",
+        "mirror",
+        "single",
+        "tunnel",
+        "orbit",
+        "stadium",
+        "lattice",
+        "anderson",
+        "lens"
+      ],
+      "status": "Checks within stated limits",
+      "evidenceStatus": "validated within stated limits",
+      "tags": [
+        "Living simulation"
+      ]
+    },
+    {
+      "id": "maxwell",
+      "title": "Maxwell FDTD",
+      "kind": "technique",
+      "category": "Waves and fields",
+      "description": "electric and magnetic waves",
+      "family": "maxwell",
+      "tabName": "Maxwell",
+      "presetCount": 6,
+      "presets": [
+        "disk",
+        "rings",
+        "slab",
+        "rods",
+        "strip",
+        "plane"
+      ],
+      "status": "Checks within stated limits",
+      "evidenceStatus": "validated within stated limits",
+      "tags": [
+        "Living simulation"
+      ]
+    },
+    {
+      "id": "plasma",
+      "title": "Kinetic Plasma",
+      "kind": "technique",
+      "category": "Waves and fields",
+      "description": "electrons in phase space",
+      "family": "plasma",
+      "tabName": "Plasma",
+      "presetCount": 6,
+      "presets": [
+        "streams",
+        "oscillation",
+        "warm",
+        "twins",
+        "broad",
+        "dense"
+      ],
+      "status": "Checks within stated limits",
+      "evidenceStatus": "validated within stated limits",
+      "tags": [
+        "Living simulation"
+      ]
+    },
+    {
+      "id": "excitable",
+      "title": "Excitable Media",
+      "kind": "technique",
+      "category": "Waves and fields",
+      "description": "spirals, targets and wave turbulence",
+      "family": "rdx",
+      "tabName": "Excitable Media",
+      "presetCount": 7,
+      "presets": [
+        "spirals",
+        "meander",
+        "breakup",
+        "targets",
+        "fhn",
+        "labyrinth",
+        "relief"
+      ],
+      "status": "Checks within stated limits",
+      "evidenceStatus": "validated within stated limits",
+      "tags": [
+        "Living simulation"
+      ]
+    },
+    {
+      "id": "soliton",
+      "title": "KdV Soliton",
+      "kind": "technique",
+      "category": "Waves and fields",
+      "description": "a wave that will not disperse",
+      "family": "soliton",
+      "tabName": "Soliton",
+      "presetCount": 6,
+      "presets": [
+        "collide",
+        "equal",
+        "fast",
+        "soft",
+        "train",
+        "crisp"
+      ],
+      "status": "Checks within stated limits",
+      "evidenceStatus": "validated within stated limits",
+      "tags": []
+    },
+    {
+      "id": "cyclicca",
+      "title": "Cyclic Automaton",
+      "kind": "technique",
+      "category": "Neuroscience and collective systems",
+      "description": "cyclic and Greenberg-Hastings excitable automata",
+      "family": "lattice",
+      "tabName": "Cyclic CA",
+      "presetCount": 7,
+      "presets": [
+        "griffeath",
+        "eight",
+        "turbulent",
+        "fixation",
+        "gh",
+        "ghwide",
+        "ghdense"
+      ],
+      "status": "Exploratory",
+      "evidenceStatus": "unvalidated",
+      "tags": [
+        "Living simulation"
+      ]
+    },
+    {
+      "id": "chimera",
+      "title": "Chimera States",
+      "kind": "technique",
+      "category": "Neuroscience and collective systems",
+      "description": "identical oscillators that split into synchrony and chaos",
+      "family": "chimera",
+      "tabName": "Chimera States",
+      "presetCount": 8,
+      "presets": [
+        "classic",
+        "order",
+        "breathing",
+        "multi",
+        "spiral",
+        "cosine",
+        "polar",
+        "coherent"
+      ],
+      "status": "Exploratory",
+      "evidenceStatus": "unvalidated",
+      "tags": []
+    },
+    {
+      "id": "ssh",
+      "title": "SSH Edges",
+      "kind": "technique",
+      "category": "Waves and fields",
+      "description": "states in a gap that the bulk forbade",
+      "family": "ssh",
+      "tabName": "SSH",
+      "presetCount": 6,
+      "presets": [
+        "topo",
+        "triv",
+        "ring",
+        "edge",
+        "crit",
+        "log"
+      ],
+      "status": "Checks within stated limits",
+      "evidenceStatus": "validated within stated limits",
+      "tags": []
+    },
+    {
+      "id": "swarm",
+      "title": "Swarmalators",
+      "kind": "technique",
+      "category": "Particles and dynamics",
+      "description": "oscillators that sync and swarm",
+      "family": "swarm",
+      "tabName": "Swarmalators",
+      "presetCount": 5,
+      "presets": [
+        "rainbow",
+        "sync",
+        "async",
+        "splinter",
+        "active"
+      ],
+      "status": "Exploratory",
+      "evidenceStatus": "unvalidated",
+      "tags": [
+        "Living simulation"
+      ]
+    },
+    {
+      "id": "amb",
+      "title": "Active Model B+",
+      "kind": "technique",
+      "category": "Waves and fields",
+      "description": "active conserved phase field",
+      "family": "pde",
+      "tabName": "Active B+",
+      "presetCount": 6,
+      "presets": [
+        "bubbly",
+        "foam",
+        "passive",
+        "labyrinth",
+        "drops",
+        "relief"
+      ],
+      "status": "Checks within stated limits",
+      "evidenceStatus": "validated within stated limits",
+      "tags": [
+        "Living simulation"
+      ]
+    },
+    {
+      "id": "aubry",
+      "title": "Aubry-André",
+      "kind": "technique",
+      "category": "Quantum and optical structures",
+      "description": "localization without disorder",
+      "family": "aubry",
+      "tabName": "Aubry",
+      "presetCount": 6,
+      "presets": [
+        "loc",
+        "ext",
+        "crit",
+        "deep",
+        "sweep",
+        "clean"
+      ],
+      "status": "Exploratory",
+      "evidenceStatus": "unvalidated",
+      "tags": []
+    },
+    {
+      "id": "cahn",
+      "title": "Cahn-Hilliard",
+      "kind": "technique",
+      "category": "Waves and fields",
+      "description": "spinodal decomposition",
+      "family": "pde",
+      "tabName": "Cahn-Hilliard",
+      "presetCount": 5,
+      "presets": [
+        "labyrinth",
+        "droplets",
+        "sharp",
+        "relief",
+        "bands"
+      ],
+      "status": "Checks within stated limits",
+      "evidenceStatus": "validated within stated limits",
+      "tags": [
+        "Living simulation"
+      ]
+    },
+    {
+      "id": "ohta",
+      "title": "Ohta-Kawasaki",
+      "kind": "technique",
+      "category": "Waves and fields",
+      "description": "diblock copolymer",
+      "family": "pde",
+      "tabName": "Ohta-Kawasaki",
+      "presetCount": 5,
+      "presets": [
+        "lamellae",
+        "spots",
+        "fingerprint",
+        "relief",
+        "coarse"
+      ],
+      "status": "Checks within stated limits",
+      "evidenceStatus": "validated within stated limits",
+      "tags": [
+        "Living simulation"
+      ]
+    },
+    {
+      "id": "hopf",
+      "title": "Hopf Fibration",
+      "kind": "technique",
+      "category": "Quantum and optical structures",
+      "description": "every circle linked with every other",
+      "family": "hopf",
+      "tabName": "Hopf",
+      "presetCount": 6,
+      "presets": [
+        "linked",
+        "tori",
+        "poles",
+        "dense",
+        "base",
+        "sparse"
+      ],
+      "status": "Checks within stated limits",
+      "evidenceStatus": "validated within stated limits",
+      "tags": []
+    },
+    {
+      "id": "swift",
+      "title": "Swift-Hohenberg",
+      "kind": "technique",
+      "category": "Waves and fields",
+      "description": "rolls, hexagons, localized states",
+      "family": "pde",
+      "tabName": "Swift-Hohenberg",
+      "presetCount": 5,
+      "presets": [
+        "rolls",
+        "hex",
+        "localized",
+        "target",
+        "relief"
+      ],
+      "status": "Checks within stated limits",
+      "evidenceStatus": "validated within stated limits",
+      "tags": [
+        "Living simulation"
+      ]
+    },
+    {
+      "id": "pfc",
+      "title": "Phase-field crystal",
+      "kind": "technique",
+      "category": "Waves and fields",
+      "description": "Elder density-wave crystal",
+      "family": "pde",
+      "tabName": "PFC",
+      "presetCount": 6,
+      "presets": [
+        "nucleus",
+        "poly",
+        "grain",
+        "stripes",
+        "melt",
+        "relief"
+      ],
+      "status": "Checks within stated limits",
+      "evidenceStatus": "validated within stated limits",
+      "tags": [
+        "Living simulation"
+      ]
+    },
+    {
+      "id": "lp",
+      "title": "Lifshitz-Petrich",
+      "kind": "technique",
+      "category": "Quantum and optical structures",
+      "description": "two-scale quasicrystal",
+      "family": "cgl-hofstadter-scars-caustics-smectic-hl-phyllotaxis",
+      "tabName": "12-fold",
+      "presetCount": 5,
+      "presets": [
+        "dodec",
+        "noisy",
+        "dec",
+        "hex",
+        "stripes"
+      ],
+      "status": "Exploratory",
+      "evidenceStatus": "unvalidated",
+      "tags": [
+        "Living simulation"
+      ]
+    },
+    {
+      "id": "cloak",
+      "title": "Pendry Cloak",
+      "kind": "technique",
+      "category": "Waves and fields",
+      "description": "a disk that light goes around",
+      "family": "cloak",
+      "tabName": "Cloak",
+      "presetCount": 6,
+      "presets": [
+        "cloaked",
+        "bare",
+        "tight",
+        "fat",
+        "many",
+        "core"
+      ],
+      "status": "Exploratory",
+      "evidenceStatus": "unvalidated",
+      "tags": []
+    },
+    {
+      "id": "xy",
+      "title": "XY / Kosterlitz-Thouless",
+      "kind": "technique",
+      "category": "Neuroscience and collective systems",
+      "description": "planar spins, bound vortices and the 1973 unbinding transition",
+      "family": "xy",
+      "tabName": "XY / KT",
+      "presetCount": 8,
+      "presets": [
+        "bound",
+        "unbind",
+        "plasma",
+        "pair",
+        "ice",
+        "qlr",
+        "twist",
+        "gas"
+      ],
+      "status": "Exploratory",
+      "evidenceStatus": "unvalidated",
+      "tags": [
+        "Living simulation",
+        "Vector export"
+      ]
+    },
+    {
+      "id": "cgl",
+      "title": "Complex Ginzburg-Landau",
+      "kind": "technique",
+      "category": "Waves and fields",
+      "description": "spirals, defect chaos, frozen vortex glass",
+      "family": "cgl-hofstadter-scars-caustics-smectic-hl-phyllotaxis",
+      "tabName": "CGL",
+      "presetCount": 5,
+      "presets": [
+        "chaos",
+        "frozen",
+        "spirals",
+        "amp",
+        "defects"
+      ],
+      "status": "Checks within stated limits",
+      "evidenceStatus": "validated within stated limits",
+      "tags": [
+        "Living simulation"
+      ]
+    },
+    {
+      "id": "vortex",
+      "title": "Abrikosov",
+      "kind": "technique",
+      "category": "Particles and dynamics",
+      "description": "fixed-field order-parameter relaxation",
+      "family": "vortex",
+      "tabName": "Vortex",
+      "presetCount": 6,
+      "presets": [
+        "hex",
+        "few",
+        "dense",
+        "type1",
+        "log",
+        "quiet"
+      ],
+      "status": "Checks within stated limits",
+      "evidenceStatus": "validated within stated limits",
+      "tags": []
+    },
+    {
+      "id": "nematic",
+      "title": "Active Nematics",
+      "kind": "technique",
+      "category": "Waves and fields",
+      "description": "self-driven rods, ±½ defects and active turbulence",
+      "family": "nematic",
+      "tabName": "Nematics",
+      "presetCount": 8,
+      "presets": [
+        "extensile",
+        "contractile",
+        "pair",
+        "fluorescence",
+        "schlieren",
+        "mix",
+        "quiescent",
+        "turbulentLIC"
+      ],
+      "status": "Exploratory",
+      "evidenceStatus": "unvalidated",
+      "tags": [
+        "Living simulation"
+      ]
+    },
+    {
+      "id": "darkroom",
+      "title": "Dark Room",
+      "kind": "technique",
+      "category": "Quantum and optical structures",
+      "description": "a polygonal room that a candle cannot fill",
+      "family": "darkroom",
+      "tabName": "Dark room",
+      "presetCount": 6,
+      "presets": [
+        "dark",
+        "L",
+        "rect",
+        "many",
+        "short",
+        "log"
+      ],
+      "status": "Exploratory",
+      "evidenceStatus": "unvalidated",
+      "tags": []
+    },
+    {
+      "id": "fluid",
+      "title": "Fluid",
+      "kind": "technique",
+      "category": "Waves and fields",
+      "description": "Navier-Stokes dye advected by a stable-fluids solver",
+      "family": "fluid",
+      "tabName": "Fluid",
+      "presetCount": 8,
+      "presets": [
+        "inkdrop",
+        "smoke",
+        "nebula",
+        "vortex",
+        "marbling",
+        "plasma",
+        "tidal",
+        "stir"
+      ],
+      "status": "Exploratory",
+      "evidenceStatus": "unvalidated",
+      "tags": [
+        "Living simulation"
+      ]
+    },
+    {
+      "id": "sandpile",
+      "title": "Abelian Sandpile",
+      "kind": "technique",
+      "category": "Neuroscience and collective systems",
+      "description": "self-organized criticality",
+      "family": "lattice",
+      "tabName": "Sandpile",
+      "presetCount": 7,
+      "presets": [
+        "medallion",
+        "big",
+        "identity",
+        "identity96",
+        "soc",
+        "patches",
+        "small"
+      ],
+      "status": "Checks within stated limits",
+      "evidenceStatus": "validated within stated limits",
+      "tags": []
+    },
+    {
+      "id": "kakeya",
+      "title": "Kakeya",
+      "kind": "technique",
+      "category": "Geometry and tilings",
+      "description": "a needle rotated in arbitrarily small area",
+      "family": "kakeya",
+      "tabName": "Kakeya",
+      "presetCount": 6,
+      "presets": [
+        "tree",
+        "sparse",
+        "packed",
+        "fat",
+        "log",
+        "fine"
+      ],
+      "status": "Exploratory",
+      "evidenceStatus": "unvalidated",
+      "tags": []
+    },
+    {
+      "id": "ks",
+      "title": "Kuramoto-Sivashinsky",
+      "kind": "technique",
+      "category": "Waves and fields",
+      "description": "cellular flame chaos",
+      "family": "pde",
+      "tabName": "KS chaos",
+      "presetCount": 5,
+      "presets": [
+        "flame",
+        "cellular",
+        "quiet",
+        "storm",
+        "ink"
+      ],
+      "status": "Checks within stated limits",
+      "evidenceStatus": "validated within stated limits",
+      "tags": [
+        "Living simulation"
+      ]
+    },
+    {
+      "id": "breather",
+      "title": "SG Breather",
+      "kind": "technique",
+      "category": "Waves and fields",
+      "description": "a lump that oscillates and never radiates",
+      "family": "breather",
+      "tabName": "Breather",
+      "presetCount": 6,
+      "presets": [
+        "live",
+        "tight",
+        "wide",
+        "late",
+        "log",
+        "peak"
+      ],
+      "status": "Checks within stated limits",
+      "evidenceStatus": "validated within stated limits",
+      "tags": []
+    },
+    {
+      "id": "turing",
+      "title": "Turing Patterns",
+      "kind": "technique",
+      "category": "Waves and fields",
+      "description": "spots, stripes and hexagons from two chemicals",
+      "family": "rdx",
+      "tabName": "Turing Patterns",
+      "presetCount": 7,
+      "presets": [
+        "spots",
+        "stripes",
+        "bruss",
+        "gmspots",
+        "gmstripes",
+        "cima",
+        "relief"
+      ],
+      "status": "Checks within stated limits",
+      "evidenceStatus": "validated within stated limits",
+      "tags": [
+        "Living simulation"
+      ]
+    },
+    {
+      "id": "holomorphic",
+      "title": "Holomorphic dynamics",
+      "kind": "technique",
+      "category": "Geometry and tilings",
+      "description": "escape-time and Newton basins in the complex plane",
+      "family": "dynamics",
+      "tabName": "Holomorphic",
+      "presetCount": 9,
+      "presets": [
+        "seahorse",
+        "boundary",
+        "rabbit",
+        "dendrite",
+        "siegel",
+        "newton",
+        "ship",
+        "cubic",
+        "sine"
+      ],
+      "status": "Exploratory",
+      "evidenceStatus": "unvalidated",
+      "tags": []
+    },
+    {
+      "id": "klein",
+      "title": "Klein Tunnel",
+      "kind": "technique",
+      "category": "Geometry and tilings",
+      "description": "a barrier a Dirac electron does not notice",
+      "family": "klein",
+      "tabName": "Klein",
+      "presetCount": 6,
+      "presets": [
+        "normal",
+        "angle",
+        "thick",
+        "grazing",
+        "weak",
+        "log"
+      ],
+      "status": "Exploratory",
+      "evidenceStatus": "unvalidated",
+      "tags": []
+    },
+    {
+      "id": "gyroid",
+      "title": "Gyroid",
+      "kind": "technique",
+      "category": "Geometry and tilings",
+      "description": "a periodic nodal approximation",
+      "family": "gyroid",
+      "tabName": "Gyroid",
+      "presetCount": 6,
+      "presets": [
+        "slice",
+        "field",
+        "dense",
+        "abs",
+        "shift",
+        "iso"
+      ],
+      "status": "Checks within stated limits",
+      "evidenceStatus": "validated within stated limits",
+      "tags": []
+    },
+    {
+      "id": "dendrite",
+      "title": "Dendritic Growth",
+      "kind": "technique",
+      "category": "Growth and patterns",
+      "description": "phase-field solidification: snowflakes and metal dendrites",
+      "family": "dendrite",
+      "tabName": "Dendritic Growth",
+      "presetCount": 8,
+      "presets": [
+        "snowflake",
+        "frost",
+        "metal",
+        "seaweed",
+        "twelve",
+        "halo",
+        "slow",
+        "forest"
+      ],
+      "status": "Exploratory",
+      "evidenceStatus": "unvalidated",
+      "tags": [
+        "Living simulation"
+      ]
+    },
+    {
+      "id": "purcell",
+      "title": "Purcell Swimmer",
+      "kind": "technique",
+      "category": "Particles and dynamics",
+      "description": "a scallop cannot swim in molasses",
+      "family": "purcell",
+      "tabName": "Purcell",
+      "presetCount": 6,
+      "presets": [
+        "swim",
+        "scallop",
+        "big",
+        "many",
+        "tiny",
+        "log"
+      ],
+      "status": "Exploratory",
+      "evidenceStatus": "unvalidated",
+      "tags": []
+    },
+    {
+      "id": "exceptional",
+      "title": "Exceptional Point",
+      "kind": "technique",
+      "category": "Quantum and optical structures",
+      "description": "two eigenvectors become one",
+      "family": "exceptional",
+      "tabName": "Exceptional",
+      "presetCount": 6,
+      "presets": [
+        "ep",
+        "broken",
+        "exact",
+        "gap",
+        "near",
+        "far"
+      ],
+      "status": "Checks within stated limits",
+      "evidenceStatus": "validated within stated limits",
+      "tags": []
+    },
+    {
+      "id": "direct-gravity",
+      "title": "Direct Gravity",
+      "kind": "technique",
+      "category": "Particles and dynamics",
+      "description": "every pair attracts",
+      "family": "direct-gravity",
+      "tabName": "Direct Gravity",
+      "presetCount": 6,
+      "presets": [
+        "disk",
+        "ring",
+        "collision",
+        "collapse",
+        "hot",
+        "extreme"
+      ],
+      "status": "Checks within stated limits",
+      "evidenceStatus": "validated within stated limits",
+      "tags": [
+        "Living simulation",
+        "Vector export"
+      ]
+    },
+    {
+      "id": "meissner",
+      "title": "Meissner",
+      "kind": "technique",
+      "category": "Geometry and tilings",
+      "description": "a field a perfect conductor would have frozen, expelled",
+      "family": "meissner",
+      "tabName": "Meissner",
+      "presetCount": 6,
+      "presets": [
+        "expel",
+        "thin",
+        "deep",
+        "log",
+        "small",
+        "tight"
+      ],
+      "status": "Checks within stated limits",
+      "evidenceStatus": "validated within stated limits",
+      "tags": []
+    },
+    {
+      "id": "tennis",
+      "title": "Tennis Racket",
+      "kind": "technique",
+      "category": "Particles and dynamics",
+      "description": "the intermediate axis that will not spin",
+      "family": "tennis",
+      "tabName": "Tennis",
+      "presetCount": 6,
+      "presets": [
+        "flip",
+        "stable1",
+        "wild",
+        "slow",
+        "log",
+        "racket"
+      ],
+      "status": "Checks within stated limits",
+      "evidenceStatus": "validated within stated limits",
+      "tags": []
+    },
+    {
+      "id": "flow",
+      "title": "Flow Field",
+      "kind": "technique",
+      "category": "Growth and patterns",
+      "description": "collision-avoiding strokes in a noise field",
+      "family": "flow",
+      "tabName": "Flow Field",
+      "presetCount": 9,
+      "presets": [
+        "studio",
+        "threads",
+        "boulders",
+        "storm",
+        "eddy",
+        "tide",
+        "spirals",
+        "overprint",
+        "relief"
+      ],
+      "status": "Exploratory",
+      "evidenceStatus": "unvalidated",
+      "tags": [
+        "Vector export"
+      ]
+    },
+    {
+      "id": "chemotaxis",
+      "title": "Chemotaxis",
+      "kind": "technique",
+      "category": "Waves and fields",
+      "description": "Keller-Segel aggregation",
+      "family": "rdx",
+      "tabName": "Chemotaxis",
+      "presetCount": 6,
+      "presets": [
+        "spots",
+        "worms",
+        "honeycomb",
+        "colony",
+        "scatter",
+        "relief"
+      ],
+      "status": "Checks within stated limits",
+      "evidenceStatus": "validated within stated limits",
+      "tags": [
+        "Living simulation"
+      ]
+    },
+    {
+      "id": "smectic",
+      "title": "Smectic focal conics",
+      "kind": "technique",
+      "category": "Growth and patterns",
+      "description": "Dupin cyclides",
+      "family": "cgl-hofstadter-scars-caustics-smectic-hl-phyllotaxis",
+      "tabName": "Focal conics",
+      "presetCount": 4,
+      "presets": [
+        "foam",
+        "coarse",
+        "fine",
+        "defects"
+      ],
+      "status": "Exploratory",
+      "evidenceStatus": "unvalidated",
+      "tags": [
+        "Vector export"
+      ]
+    },
+    {
+      "id": "reaction",
+      "title": "Reaction-Diffusion",
+      "kind": "technique",
+      "category": "Waves and fields",
+      "description": "Gray-Scott activator/inhibitor chemistry",
+      "family": "reaction",
+      "tabName": "Reaction-Diffusion",
+      "presetCount": 9,
+      "presets": [
+        "coral",
+        "mitosis",
+        "fingerprint",
+        "spots",
+        "worms",
+        "maze",
+        "bubbles",
+        "solitons",
+        "map"
+      ],
+      "status": "Exploratory",
+      "evidenceStatus": "unvalidated",
+      "tags": [
+        "Living simulation"
+      ]
+    },
+    {
+      "id": "molecular",
+      "title": "Molecular Dynamics",
+      "kind": "technique",
+      "category": "Particles and dynamics",
+      "description": "Lennard-Jones particles",
+      "family": "molecular",
+      "tabName": "Molecular Dynamics",
+      "presetCount": 6,
+      "presets": [
+        "warm",
+        "cool",
+        "dilute",
+        "clusters",
+        "dense",
+        "large"
+      ],
+      "status": "Checks within stated limits",
+      "evidenceStatus": "validated within stated limits",
+      "tags": [
+        "Living simulation",
+        "Vector export"
+      ]
+    },
+    {
+      "id": "tilings",
+      "title": "Aperiodic Tilings",
+      "kind": "technique",
+      "category": "Geometry and tilings",
+      "description": "tiles that cover the plane but never repeat",
+      "family": "tilings",
+      "tabName": "Aperiodic Tilings",
+      "presetCount": 11,
+      "presets": [
+        "rhombs",
+        "arcs",
+        "kitedart",
+        "ammann",
+        "inflation",
+        "linedrawing",
+        "dodeca",
+        "hat",
+        "spectre",
+        "hatline",
+        "kilnfloor"
+      ],
+      "status": "Partial checks",
+      "evidenceStatus": "partially validated",
+      "tags": [
+        "Vector export"
+      ]
+    },
+    {
+      "id": "percolation",
+      "title": "Percolation",
+      "kind": "technique",
+      "category": "Neuroscience and collective systems",
+      "description": "site and bond percolation on the square lattice",
+      "family": "lattice",
+      "tabName": "Percolation",
+      "presetCount": 7,
+      "presets": [
+        "critical",
+        "sub",
+        "sup",
+        "bondc",
+        "bondsub",
+        "ink",
+        "fine"
+      ],
+      "status": "Checks within stated limits",
+      "evidenceStatus": "validated within stated limits",
+      "tags": []
+    },
+    {
+      "id": "cattaneo",
+      "title": "Maxwell-Cattaneo heat",
+      "kind": "technique",
+      "category": "Other",
+      "description": "heat that travels as a damped wave",
+      "family": "cattaneo",
+      "tabName": "Heat waves",
+      "presetCount": 7,
+      "presets": [
+        "sparks",
+        "burst",
+        "single",
+        "crossover",
+        "fourier",
+        "torch",
+        "flux"
+      ],
+      "status": "Exploratory",
+      "evidenceStatus": "unvalidated",
+      "tags": []
+    },
+    {
+      "id": "shallow",
+      "title": "Shallow Water",
+      "kind": "technique",
+      "category": "Waves and fields",
+      "description": "depth, flow and shock waves",
+      "family": "shallow",
+      "tabName": "Shallow Water",
+      "presetCount": 6,
+      "presets": [
+        "drops",
+        "pool",
+        "ring",
+        "dam",
+        "wave",
+        "drop"
+      ],
+      "status": "Checks within stated limits",
+      "evidenceStatus": "validated within stated limits",
+      "tags": [
+        "Living simulation"
+      ]
+    },
+    {
+      "id": "attractors",
+      "title": "Attractors",
+      "kind": "technique",
+      "category": "Particles and dynamics",
+      "description": "strange attractors and harmonographs as density maps",
+      "family": "attractors",
+      "tabName": "Attractors",
+      "presetCount": 10,
+      "presets": [
+        "clifford",
+        "dejong",
+        "svensson",
+        "lorenz",
+        "rossler",
+        "aizawa",
+        "thomas",
+        "harmonograph",
+        "gumowski",
+        "ikeda"
+      ],
+      "status": "Exploratory",
+      "evidenceStatus": "unvalidated",
+      "tags": []
+    },
+    {
+      "id": "airy",
+      "title": "Airy Beam",
+      "kind": "technique",
+      "category": "Waves and fields",
+      "description": "a wave packet that accelerates with no force",
+      "family": "airy",
+      "tabName": "Airy",
+      "presetCount": 6,
+      "presets": [
+        "fly",
+        "caustic",
+        "tight",
+        "wide",
+        "phase",
+        "log"
+      ],
+      "status": "Partial checks",
+      "evidenceStatus": "partially validated",
+      "tags": []
+    },
+    {
+      "id": "chirikov",
+      "title": "Chirikov map",
+      "kind": "technique",
+      "category": "Particles and dynamics",
+      "description": "standard map",
+      "family": "swarm",
+      "tabName": "Chirikov map",
+      "presetCount": 5,
+      "presets": [
+        "kam",
+        "critical",
+        "mixed",
+        "lyap",
+        "chaos"
+      ],
+      "status": "Exploratory",
+      "evidenceStatus": "unvalidated",
+      "tags": [
+        "Living simulation"
+      ]
+    },
+    {
+      "id": "hofstadter",
+      "title": "Hofstadter butterfly",
+      "kind": "technique",
+      "category": "Quantum and optical structures",
+      "description": "almost-Mathieu spectrum",
+      "family": "cgl-hofstadter-scars-caustics-smectic-hl-phyllotaxis",
+      "tabName": "Hofstadter",
+      "presetCount": 4,
+      "presets": [
+        "classic",
+        "chern",
+        "fine",
+        "ink"
+      ],
+      "status": "Checks within stated limits",
+      "evidenceStatus": "validated within stated limits",
+      "tags": []
+    },
+    {
+      "id": "weierstrass",
+      "title": "Weierstrass",
+      "kind": "technique",
+      "category": "Geometry and tilings",
+      "description": "finite lacunary Fourier sums",
+      "family": "weierstrass",
+      "tabName": "Weierstrass",
+      "presetCount": 6,
+      "presets": [
+        "classic",
+        "graph",
+        "rough",
+        "mild",
+        "wild",
+        "log"
+      ],
+      "status": "Checks within stated limits",
+      "evidenceStatus": "validated within stated limits",
+      "tags": []
+    },
+    {
+      "id": "scars",
+      "title": "Helmholtz scars",
+      "kind": "technique",
+      "category": "Quantum and optical structures",
+      "description": "stadium and cardioid eigenmodes",
+      "family": "cgl-hofstadter-scars-caustics-smectic-hl-phyllotaxis",
+      "tabName": "Scars",
+      "presetCount": 5,
+      "presets": [
+        "stadium",
+        "high",
+        "cardioid",
+        "sinai",
+        "bounce"
+      ],
+      "status": "Exploratory",
+      "evidenceStatus": "unvalidated",
+      "tags": [
+        "Living simulation"
+      ]
+    },
+    {
+      "id": "kitaev",
+      "title": "Kitaev Chain",
+      "kind": "technique",
+      "category": "Quantum and optical structures",
+      "description": "a fermion that is its own antiparticle, stuck to the ends",
+      "family": "kitaev",
+      "tabName": "Kitaev",
+      "presetCount": 6,
+      "presets": [
+        "majorana",
+        "triv",
+        "deep",
+        "crit",
+        "log",
+        "weak"
+      ],
+      "status": "Checks within stated limits",
+      "evidenceStatus": "validated within stated limits",
+      "tags": []
+    },
+    {
+      "id": "caustics",
+      "title": "Optical caustics",
+      "kind": "technique",
+      "category": "Quantum and optical structures",
+      "description": "folds and cusps of a light field",
+      "family": "cgl-hofstadter-scars-caustics-smectic-hl-phyllotaxis",
+      "tabName": "Caustics",
+      "presetCount": 4,
+      "presets": [
+        "pool",
+        "silk",
+        "cusp",
+        "fine"
+      ],
+      "status": "Exploratory",
+      "evidenceStatus": "unvalidated",
+      "tags": []
+    },
+    {
+      "id": "veselago",
+      "title": "Veselago Lens",
+      "kind": "technique",
+      "category": "Waves and fields",
+      "description": "a slab that focuses because n is negative",
+      "family": "veselago",
+      "tabName": "Veselago",
+      "presetCount": 6,
+      "presets": [
+        "perfect",
+        "shallow",
+        "deep",
+        "n12",
+        "many",
+        "log"
+      ],
+      "status": "Partial checks",
+      "evidenceStatus": "partially validated",
+      "tags": []
+    },
+    {
+      "id": "devil",
+      "title": "Devil's Staircase",
+      "kind": "technique",
+      "category": "Geometry and tilings",
+      "description": "finite-time circle-map rotation estimates",
+      "family": "devil",
+      "tabName": "Devil",
+      "presetCount": 6,
+      "presets": [
+        "tongues",
+        "stair",
+        "sub",
+        "super",
+        "orbit",
+        "golden"
+      ],
+      "status": "Checks within stated limits",
+      "evidenceStatus": "validated within stated limits",
+      "tags": []
+    },
+    {
+      "id": "talbot",
+      "title": "Talbot carpet",
+      "kind": "technique",
+      "category": "Quantum and optical structures",
+      "description": "near-field self-imaging",
+      "family": "cgl-hofstadter-scars-caustics-smectic-hl-phyllotaxis",
+      "tabName": "Talbot",
+      "presetCount": 4,
+      "presets": [
+        "classic",
+        "dense",
+        "binary",
+        "deep"
+      ],
+      "status": "Checks within stated limits",
+      "evidenceStatus": "validated within stated limits",
+      "tags": []
+    },
+    {
+      "id": "orbitals",
+      "title": "Hydrogen orbitals",
+      "kind": "technique",
+      "category": "Particles and dynamics",
+      "description": "hydrogen atom probability density |ψₙₗₘ|²",
+      "family": "dynamics",
+      "tabName": "Orbitals",
+      "presetCount": 7,
+      "presets": [
+        "dz2",
+        "pz",
+        "fz3",
+        "dxy",
+        "g",
+        "s6",
+        "dxz"
+      ],
+      "status": "Partial checks",
+      "evidenceStatus": "partially validated",
+      "tags": []
+    },
+    {
+      "id": "loschmidt",
+      "title": "Loschmidt Echo",
+      "kind": "technique",
+      "category": "Particles and dynamics",
+      "description": "a gas that unmixes when you flip every arrow",
+      "family": "loschmidt",
+      "tabName": "Loschmidt",
+      "presetCount": 6,
+      "presets": [
+        "echo",
+        "late",
+        "early",
+        "many",
+        "mix",
+        "log"
+      ],
+      "status": "Exploratory",
+      "evidenceStatus": "unvalidated",
+      "tags": []
+    },
+    {
+      "id": "fisher-kpp",
+      "title": "Fisher-KPP",
+      "kind": "technique",
+      "category": "Other",
+      "description": "invasion fronts and arrival times",
+      "family": "fisher-kpp",
+      "tabName": "Fisher-KPP",
+      "presetCount": 7,
+      "presets": [
+        "rings",
+        "territories",
+        "single",
+        "edge",
+        "patchy",
+        "islands",
+        "spread"
+      ],
+      "status": "Exploratory",
+      "evidenceStatus": "unvalidated",
+      "tags": []
+    },
+    {
+      "id": "volume-wave",
+      "title": "Wave volume",
+      "kind": "technique",
+      "category": "Waves and fields",
+      "description": "three-dimensional wave equation",
+      "family": "volume-wave",
+      "tabName": "Wave volume",
+      "presetCount": 5,
+      "presets": [
+        "crossed",
+        "pulse",
+        "standing",
+        "transverse",
+        "side"
+      ],
+      "status": "Checks within stated limits",
+      "evidenceStatus": "validated within stated limits",
+      "tags": [
+        "Living simulation"
+      ]
+    },
+    {
+      "id": "boy",
+      "title": "Boy's Surface",
+      "kind": "technique",
+      "category": "Geometry and tilings",
+      "description": "a projective plane sewn into R³",
+      "family": "boy",
+      "tabName": "Boy",
+      "presetCount": 6,
+      "presets": [
+        "boy",
+        "height",
+        "dense",
+        "param",
+        "side",
+        "log"
+      ],
+      "status": "Exploratory",
+      "evidenceStatus": "unvalidated",
+      "tags": []
+    },
+    {
+      "id": "pearls",
+      "title": "Indra's Pearls",
+      "kind": "technique",
+      "category": "Growth and patterns",
+      "description": "Schottky limit set",
+      "family": "cgl-hofstadter-scars-caustics-smectic-hl-phyllotaxis",
+      "tabName": "Pearls",
+      "presetCount": 4,
+      "presets": [
+        "necklace",
+        "kissing",
+        "dust",
+        "six"
+      ],
+      "status": "Exploratory",
+      "evidenceStatus": "unvalidated",
+      "tags": [
+        "Vector export"
+      ]
+    },
+    {
+      "id": "ising",
+      "title": "Ising Model",
+      "kind": "technique",
+      "category": "Neuroscience and collective systems",
+      "description": "Metropolis Monte Carlo on the square lattice",
+      "family": "lattice",
+      "tabName": "Ising",
+      "presetCount": 7,
+      "presets": [
+        "critical",
+        "quench",
+        "below",
+        "stripes",
+        "walls",
+        "gradient",
+        "energy"
+      ],
+      "status": "Checks within stated limits",
+      "evidenceStatus": "validated within stated limits",
+      "tags": [
+        "Living simulation"
+      ]
+    },
+    {
+      "id": "thouless",
+      "title": "Thouless Pump",
+      "kind": "technique",
+      "category": "Quantum and optical structures",
+      "description": "a clock that pumps a whole electron per turn",
+      "family": "thouless",
+      "tabName": "Thouless",
+      "presetCount": 6,
+      "presets": [
+        "pump",
+        "triv",
+        "fat",
+        "thin",
+        "log",
+        "mid"
+      ],
+      "status": "Exploratory",
+      "evidenceStatus": "unvalidated",
+      "tags": []
+    },
+    {
+      "id": "convection",
+      "title": "Rayleigh-Bénard",
+      "kind": "technique",
+      "category": "Waves and fields",
+      "description": "heated from below",
+      "family": "wavesflow",
+      "tabName": "Convection",
+      "presetCount": 7,
+      "presets": [
+        "plumes",
+        "rolls",
+        "mushroom",
+        "turbulent",
+        "schlieren",
+        "vorticity",
+        "oneplume"
+      ],
+      "status": "Checks within stated limits",
+      "evidenceStatus": "validated within stated limits",
+      "tags": [
+        "Living simulation"
+      ]
+    },
+    {
+      "id": "reuleaux",
+      "title": "Reuleaux",
+      "kind": "technique",
+      "category": "Geometry and tilings",
+      "description": "a non-circle of constant width",
+      "family": "reuleaux",
+      "tabName": "Reuleaux",
+      "presetCount": 6,
+      "presets": [
+        "roll",
+        "shape",
+        "rose",
+        "fat",
+        "many",
+        "log"
+      ],
+      "status": "Checks within stated limits",
+      "evidenceStatus": "validated within stated limits",
+      "tags": []
+    },
+    {
+      "id": "surfaces",
+      "title": "Parametric Surfaces",
+      "kind": "technique",
+      "category": "Geometry and tilings",
+      "description": "Enneper, Dini and the catenoid-helicoid family",
+      "family": "surfaces",
+      "tabName": "Surfaces",
+      "presetCount": 6,
+      "presets": [
+        "enneper",
+        "folded",
+        "dini",
+        "catenoid",
+        "helicoid",
+        "associate"
+      ],
+      "status": "Checks within stated limits",
+      "evidenceStatus": "validated within stated limits",
+      "tags": [
+        "Vector export"
+      ]
+    },
+    {
+      "id": "apollonian",
+      "title": "Apollonian",
+      "kind": "technique",
+      "category": "Geometry and tilings",
+      "description": "finite tangent-circle packing",
+      "family": "apollonian",
+      "tabName": "Apollonian",
+      "presetCount": 6,
+      "presets": [
+        "gasket",
+        "k",
+        "deep",
+        "coarse",
+        "fill",
+        "log"
+      ],
+      "status": "Checks within stated limits",
+      "evidenceStatus": "validated within stated limits",
+      "tags": []
+    },
+    {
+      "id": "chladni",
+      "title": "Chladni & Waves",
+      "kind": "technique",
+      "category": "Quantum and optical structures",
+      "description": "standing waves, nodal lines and interference",
+      "family": "chladni",
+      "tabName": "Chladni & Waves",
+      "presetCount": 8,
+      "presets": [
+        "classic",
+        "sand",
+        "drum",
+        "ripple",
+        "sevenfold",
+        "moire",
+        "topo",
+        "ink"
+      ],
+      "status": "Checks within stated limits",
+      "evidenceStatus": "validated within stated limits",
+      "tags": [
+        "Vector export"
+      ]
+    },
+    {
+      "id": "track",
+      "title": "Track",
+      "kind": "technique",
+      "category": "Growth and patterns",
+      "description": "a breather that paves the index it runs on, drawn as its worldline",
+      "family": "track",
+      "tabName": "Track",
+      "presetCount": 7,
+      "presets": [
+        "pave",
+        "braid",
+        "open",
+        "road",
+        "strip",
+        "rest",
+        "torn"
+      ],
+      "status": "Exploratory",
+      "evidenceStatus": "unvalidated",
+      "tags": []
+    },
+    {
+      "id": "knotlight",
+      "title": "Knotted Light",
+      "kind": "technique",
+      "category": "Geometry and tilings",
+      "description": "a trefoil of darkness, an open book, a bark with no tangent",
+      "family": "knotlight",
+      "tabName": "Knot",
+      "presetCount": 6,
+      "presets": [
+        "weave",
+        "filament",
+        "pages",
+        "phase",
+        "tight",
+        "smooth"
+      ],
+      "status": "Exploratory",
+      "evidenceStatus": "unvalidated",
+      "tags": []
+    },
+    {
+      "id": "causticsea",
+      "title": "Caustic Sea",
+      "kind": "technique",
+      "category": "Waves and fields",
+      "description": "a sea that focuses its own light, and the light that writes the sea",
+      "family": "causticsea",
+      "tabName": "Sea",
+      "presetCount": 6,
+      "presets": [
+        "lock",
+        "open",
+        "silk",
+        "rolls",
+        "tight",
+        "over"
+      ],
+      "status": "Exploratory",
+      "evidenceStatus": "unvalidated",
+      "tags": [
+        "Living simulation"
+      ]
+    },
+    {
+      "id": "kp",
+      "title": "Soliton Web",
+      "kind": "technique",
+      "category": "Waves and fields",
+      "description": "resonant line-soliton webs of the Kadomtsev-Petviashvili equation",
+      "family": "kp",
+      "tabName": "KP",
+      "presetCount": 7,
+      "presets": [
+        "y",
+        "o",
+        "spider",
+        "web",
+        "late",
+        "line",
+        "relief"
+      ],
+      "status": "Exploratory",
+      "evidenceStatus": "unvalidated",
+      "tags": [
+        "Living simulation"
+      ]
+    },
+    {
+      "id": "gerstner",
+      "title": "Gerstner",
+      "kind": "technique",
+      "category": "Waves and fields",
+      "description": "trochoidal waves, the exact Euler deep-water solution",
+      "family": "gerstner",
+      "tabName": "Gerstner",
+      "presetCount": 7,
+      "presets": [
+        "swell",
+        "steep",
+        "cross",
+        "deep",
+        "trails",
+        "cycloid",
+        "woodcut"
+      ],
+      "status": "Checks within stated limits",
+      "evidenceStatus": "validated within stated limits",
+      "tags": [
+        "Living simulation",
+        "Vector export"
+      ]
+    },
+    {
+      "id": "eight",
+      "title": "Figure Eight",
+      "kind": "technique",
+      "category": "Particles and dynamics",
+      "description": "three equal masses chasing on a planar figure-eight",
+      "family": "eight",
+      "tabName": "Eight",
+      "presetCount": 7,
+      "presets": [
+        "eight",
+        "long",
+        "braid",
+        "shape",
+        "broken",
+        "three",
+        "tight"
+      ],
+      "status": "Checks within stated limits",
+      "evidenceStatus": "validated within stated limits",
+      "tags": [
+        "Living simulation",
+        "Vector export"
+      ]
+    },
+    {
+      "id": "peakon",
+      "title": "Peakon",
+      "kind": "technique",
+      "category": "Waves and fields",
+      "description": "Camassa-Holm peaked traveling waves",
+      "family": "peakon",
+      "tabName": "Peakon",
+      "presetCount": 7,
+      "presets": [
+        "one",
+        "collide",
+        "three",
+        "spacetime",
+        "rest",
+        "overtake",
+        "train"
+      ],
+      "status": "Checks within stated limits",
+      "evidenceStatus": "validated within stated limits",
+      "tags": [
+        "Living simulation"
+      ]
+    },
+    {
+      "id": "photon",
+      "title": "Photon Sphere",
+      "kind": "technique",
+      "category": "Waves and fields",
+      "description": "Schwarzschild photon sphere",
+      "family": "photon",
+      "tabName": "Photon",
+      "presetCount": 7,
+      "presets": [
+        "ring",
+        "spray",
+        "einstein",
+        "weak",
+        "capture",
+        "polar",
+        "impact"
+      ],
+      "status": "Checks within stated limits",
+      "evidenceStatus": "validated within stated limits",
+      "tags": []
+    },
+    {
+      "id": "crapper",
+      "title": "Crapper",
+      "kind": "technique",
+      "category": "Waves and fields",
+      "description": "exact finite-amplitude pure-capillary waves",
+      "family": "crapper",
+      "tabName": "Crapper",
+      "presetCount": 7,
+      "presets": [
+        "ripple",
+        "moderate",
+        "steep",
+        "bubble",
+        "dual",
+        "deep",
+        "woodcut"
+      ],
+      "status": "Exploratory",
+      "evidenceStatus": "unvalidated",
+      "tags": [
+        "Living simulation",
+        "Vector export"
+      ]
+    },
+    {
+      "id": "hasimoto",
+      "title": "Hasimoto",
+      "kind": "technique",
+      "category": "Waves and fields",
+      "description": "a soliton on a vortex filament",
+      "family": "hasimoto",
+      "tabName": "Hasimoto",
+      "presetCount": 7,
+      "presets": [
+        "loop",
+        "tight",
+        "helix",
+        "planar",
+        "space",
+        "overlay",
+        "head"
+      ],
+      "status": "Checks within stated limits",
+      "evidenceStatus": "validated within stated limits",
+      "tags": [
+        "Living simulation",
+        "Vector export"
+      ]
+    },
+    {
+      "id": "lump",
+      "title": "Lump",
+      "kind": "technique",
+      "category": "Waves and fields",
+      "description": "KP-I lumps",
+      "family": "lump",
+      "tabName": "Lump",
+      "presetCount": 7,
+      "presets": [
+        "one",
+        "two",
+        "three",
+        "collide",
+        "spacetime",
+        "oblique",
+        "tight"
+      ],
+      "status": "Checks within stated limits",
+      "evidenceStatus": "validated within stated limits",
+      "tags": [
+        "Living simulation"
+      ]
+    },
+    {
+      "id": "three-vortex-bound",
+      "title": "Equal-pair three-vortex collapse",
+      "kind": "technique",
+      "category": "Particles and dynamics",
+      "description": "ω₀ t_c ≥ √2 on Gröbli's collapsing triangle, circulations (1, 1, −1/2)",
+      "family": "three-vortex-bound",
+      "tabName": "Equal-pair collapse",
+      "presetCount": 8,
+      "presets": [
+        "octant",
+        "threehalves",
+        "equal",
+        "tight",
+        "overlay",
+        "polar",
+        "custom",
+        "broken"
+      ],
+      "status": "Checks within stated limits",
+      "evidenceStatus": "validated within stated limits",
+      "tags": [
+        "Living simulation",
+        "Vector export"
+      ]
+    },
+    {
+      "id": "parallelogram-lock",
+      "title": "Parallelogram lock",
+      "kind": "technique",
+      "category": "Particles and dynamics",
+      "description": "|ω₀| t_c ≥ 3√5/4 on Novikov-Sedov's parallelogram",
+      "family": "parallelogram-lock",
+      "tabName": "Parallelogram",
+      "presetCount": 7,
+      "presets": [
+        "lock",
+        "squareish",
+        "thirty",
+        "tight",
+        "overlay",
+        "polar",
+        "broken"
+      ],
+      "status": "Checks within stated limits",
+      "evidenceStatus": "validated within stated limits",
+      "tags": [
+        "Living simulation",
+        "Vector export"
+      ]
+    },
+    {
+      "id": "quincunx-lock",
+      "title": "Quincunx lock",
+      "kind": "technique",
+      "category": "Particles and dynamics",
+      "description": "|ω₀| t_c ≥ 3√33/16 on Novikov-Sedov's five-vortex quincunx",
+      "family": "quincunx-lock",
+      "tabName": "Quincunx",
+      "presetCount": 7,
+      "presets": [
+        "lock",
+        "squareish",
+        "thirty",
+        "tight",
+        "overlay",
+        "polar",
+        "broken"
+      ],
+      "status": "Checks within stated limits",
+      "evidenceStatus": "validated within stated limits",
+      "tags": [
+        "Living simulation",
+        "Vector export"
+      ]
+    },
+    {
+      "id": "double-triangle-bound",
+      "title": "Polygon collapse bounds",
+      "kind": "technique",
+      "category": "Particles and dynamics",
+      "description": "Two regular polygons",
+      "family": "double-triangle-bound",
+      "tabName": "Polygon bounds",
+      "presetCount": 7,
+      "presets": [
+        "minimum",
+        "thirty",
+        "winding",
+        "triangles",
+        "bound",
+        "square",
+        "broken"
+      ],
+      "status": "Checks within stated limits",
+      "evidenceStatus": "validated within stated limits",
+      "tags": [
+        "Living simulation",
+        "Vector export"
+      ]
+    }
+  ]
+}

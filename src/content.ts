@@ -2,7 +2,7 @@
 export type Project = {
   id: string; name: string; category: 'Research' | 'Tools' | 'Play';
   eyebrow: string; description: string; detail: string;
-  tags: string[]; source: string; launch?: string; launchLabel?: string;
+  tags: string[]; source: string; launch?: string; launchLabel?: string; privateWorkspace?: boolean;
 };
 
 export const profile = {
@@ -14,11 +14,11 @@ export const profile = {
 export const projects: Project[] = [
   {
     id: 'genchase', name: 'GENChase', category: 'Research', eyebrow: 'A studio for scientific exploration',
-    description: 'Where scientific simulations become experiments, and experiments become art.',
-    detail: 'A research and development environment with a studio for turning seeded scientific simulations into printable art. Explore the numerical models, inspect the source, or download the offline studio from the latest release.',
+    description: 'A private research workspace. A public guide to its methods and experiments.',
+    detail: 'GENChase is my private research and development workspace. Its public catalog maps the techniques, studio tabs, and implementation families without publishing the research code. Explore the collection by topic and see how the different studies connect.',
     tags: ['Scientific computing', 'Generative art'],
-    source: 'https://github.com/ChaseHendrick/GENChase',
-    launch: 'https://github.com/ChaseHendrick/GENChase/releases/latest', launchLabel: 'Get the studio',
+    source: '',
+    launch: '/genchase/', launchLabel: 'Explore the techniques', privateWorkspace: true,
   },
   {
     id: 'pagearm', name: 'PageArm', category: 'Tools', eyebrow: 'The browser, reimagined',

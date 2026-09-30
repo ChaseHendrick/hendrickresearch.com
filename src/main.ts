@@ -61,7 +61,7 @@ searchInput.addEventListener('input', () => {paperQuery = searchInput.value; ren
 document.querySelector('#paper-list')!.addEventListener('click', event => {if (!(event.target as HTMLElement).closest('[data-clear-research]')) return; selectedTopic = 'All topics'; paperQuery = ''; allPapers = false; searchInput.value = ''; renderPapers(); searchInput.focus({preventScroll:true});});
 document.addEventListener('keydown', event => {
   const target = event.target as HTMLElement;
-  if (event.key === '/' && !event.metaKey && !event.ctrlKey && !event.altKey && !target.closest('input,textarea,select,[contenteditable="true"]') && !document.querySelector('dialog[open]')) {event.preventDefault(); searchInput.focus();}
+  if (event.code === 'Slash' && event.altKey && !event.metaKey && !event.ctrlKey && !target.closest('input,textarea,select,[contenteditable="true"]') && !document.querySelector('dialog[open]')) {event.preventDefault(); searchInput.focus();}
   if (event.key === 'Escape' && target === searchInput && searchInput.value) {searchInput.value = ''; paperQuery = ''; renderPapers();}
 });
 
@@ -72,7 +72,7 @@ document.addEventListener('click', event => {
   if (!button) return;
   const project = projects.find(p => p.id === button.dataset.project)!;
   opener = button;
-  document.querySelector('#dialog-content')!.innerHTML = `<div class="dialog-art">${artwork(project.id)}</div><div class="dialog-copy"><p class="eyebrow">${project.category} / ${project.eyebrow}</p><h2 id="dialog-title">${project.name}</h2><p>${project.detail}</p><div class="tags">${tags(project)}</div><div class="dialog-links">${project.launch ? external(project.launch,project.launchLabel ?? 'Visit project','button button-dark') : ''}${external(project.source,'View source code')}</div></div>`;
+  document.querySelector('#dialog-content')!.innerHTML = `<div class="dialog-art">${artwork(project.id)}</div><div class="dialog-copy"><p class="eyebrow">${project.category} / ${project.eyebrow}</p><h2 id="dialog-title">${project.name}</h2><p>${project.detail}</p><div class="tags">${tags(project)}</div><div class="dialog-links">${project.launch ? external(project.launch,project.launchLabel ?? 'Visit project','button button-dark') : ''}${project.privateWorkspace ? '<span class="private-workspace-note">Private research workspace</span>' : external(project.source,'View source code')}</div></div>`;
   dialog.showModal();
   document.body.classList.add('dialog-open');
 });
