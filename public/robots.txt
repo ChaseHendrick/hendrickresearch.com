@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://hendrickresearch.com/sitemap.xml
+Sitemap: https://www.hendrickresearch.com/sitemap.xml

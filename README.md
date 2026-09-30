@@ -1,6 +1,6 @@
 # Hendrick Research
 
-A personal home for Chase Hendrick’s research and AI-assisted software, built for [hendrickresearch.com](https://hendrickresearch.com).
+A personal home for Chase Hendrick’s research and AI-assisted software, built for [www.hendrickresearch.com](https://www.hendrickresearch.com).
 
 Warm ivory, copper, editorial typography, the original HR logo, and a numerically integrated Lorenz attractor. The portfolio includes nine public projects and eight publicly archived research preprints, with links to source code, live experiences, PDFs, and DOI records.
 
@@ -38,7 +38,7 @@ The full original logo is in `public/logo.png`. Fonts are served from the site i
 
 Import `ChaseHendrick/hendrickresearch.com` in Vercel. It detects **Vite**. The included `vercel.json` specifies `npm run build` and `dist` as the output directory.
 
-Add both `hendrickresearch.com` and `www.hendrickresearch.com` in the project’s **Settings → Domains**. Use the apex domain as the production address and redirect `www` to the apex. In Porkbun’s DNS editor, use the exact A/CNAME/TXT records Vercel shows for this project. Keep unrelated mail and verification records.
+Add both `hendrickresearch.com` and `www.hendrickresearch.com` in the project’s **Settings → Domains**. Use `www` as the production address and redirect the apex to `www`. In Porkbun’s DNS editor, use the exact A/CNAME/TXT records Vercel shows for this project. Keep unrelated mail and verification records.
 
 Official setup references: [Vite on Vercel](https://vercel.com/docs/frameworks/frontend/vite), [custom domains](https://vercel.com/docs/domains/working-with-domains/add-a-domain), and [Vercel Hobby](https://vercel.com/docs/plans/hobby).
 
