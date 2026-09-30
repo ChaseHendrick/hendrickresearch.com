@@ -4263,6 +4263,8 @@ button:focus-visible,input:focus-visible,select:focus-visible { outline: 2px sol
     else if (event.code === 'KeyB') { S.Engine.build(state, 'barricade'); ui.update(state, frameInfo); }
   });
   addEventListener('keyup', function (event) { keys.delete(event.code); });
+  addEventListener('pagehide', function () { clearInput(); save(true); });
+  addEventListener('beforeunload', function () { save(true); });
   addEventListener('blur', function () { clearInput(); if (active && screen === 'playing') pause(); });
   document.addEventListener('visibilitychange', function () { if (document.hidden) { clearInput(); pause(); } });
   canvas.addEventListener('contextmenu', function (event) { event.preventDefault(); });
@@ -4322,7 +4324,7 @@ button:focus-visible,input:focus-visible,select:focus-visible { outline: 2px sol
         if (state.ended) break;
       }
       autoSaveTime += elapsed;
-      if (autoSaveTime >= 30) { save(true); autoSaveTime = 0; }
+      if (autoSaveTime >= 5) { save(true); autoSaveTime = 0; }
       if (state.ended) { clearInput(); setScreen(state.player.health > 0 && state.won ? 'won' : 'dead'); save(true); }
     } else accumulator = 0;
     S.Effects.audio.update(state, active && screen === 'playing' && !ui.isBlocking() && !state.ended && !document.hidden);
