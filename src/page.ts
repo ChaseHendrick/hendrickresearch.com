@@ -35,7 +35,7 @@ export function renderPage(): string {
       <div class="hero-copy">
         <p class="eyebrow"><span class="tiny-line"></span> INDEPENDENT RESEARCH & SOFTWARE</p>
         <h1 id="hero-title">Curiosity,<br /><em>made tangible.</em></h1>
-        <p class="hero-description">Human ideas. New possibilities.<br />A collection of research, useful tools, and unexpected experiments by Chase Hendrick.</p>
+        <p class="hero-description">Human ideas. New possibilities.<br />A collection of research, useful tools, and unexpected experiments.</p>
         <div class="hero-actions"><a class="button button-dark" href="#projects">Explore the work ${next}</a><a class="text-link" href="#research">Read the research ${arrow}</a></div>
         <p class="hero-note"><span class="status-dot"></span> Built with AI. Led by curiosity.</p>
       </div>
@@ -65,7 +65,7 @@ export function renderPage(): string {
       <div class="research-footer"><button id="more-papers" class="text-link">All ${papers.length} research papers <span>+</span></button>${external(profile.orcid, 'Researcher profile', 'subtle-link')}</div>
     </div></section>
     <section id="about" class="about-section wrap" aria-labelledby="about-title">
-      <div class="about-card"><div class="about-heading"><p class="eyebrow">03 / THE IDEA BEHIND IT</p><h2 id="about-title">One curious mind.<br /><em>A new set of tools.</em></h2><div class="about-signature"><span class="signature-line"></span> Chase Hendrick <span>Independent researcher & builder</span></div></div><div class="about-copy"><p>Hendrick Research is my personal collection of software and independent research. A place to ask questions, make things, and share what comes of it.</p><p>AI makes it possible to move from an idea to a working tool, an interactive world, or a new line of inquiry. This collection is a living demonstration of that possibility.</p><p class="about-manifesto">Human curiosity sets the direction.<br />The work speaks for itself.</p>${external(profile.github, 'See what I’m building', 'text-link light-link')}</div></div>
+      <div class="about-card"><div class="about-heading"><p class="eyebrow">03 / THE IDEA BEHIND IT</p><h2 id="about-title">One curious mind.<br /><em>A new set of tools.</em></h2></div><div class="about-copy"><p>Hendrick Research is my personal collection of software and independent research. A place to ask questions, make things, and share what comes of it.</p><p>AI makes it possible to move from an idea to a working tool, an interactive world, or a new line of inquiry. This collection is a living demonstration of that possibility.</p><p class="about-manifesto">Human curiosity sets the direction.<br />The work speaks for itself.</p>${external(profile.github, 'See what I’m building', 'text-link light-link')}</div></div>
     </section>
   </main>
   <footer class="site-footer wrap"><a class="footer-brand" href="#" aria-label="Back to top"><picture><source srcset="/logo.webp" type="image/webp"/><img src="/logo.png" alt="Hendrick Research" width="1536" height="1024" decoding="async" loading="lazy" /></picture></a><div class="footer-links">${external(profile.github, 'GitHub', 'subtle-link')}${external(profile.orcid, 'ORCID', 'subtle-link')}<a class="subtle-link" href="#">Back to top ↑</a></div><div class="footer-bottom"><span>© ${new Date().getFullYear()} Chase Hendrick</span><span>Research. Software. Possibility.</span></div></footer>
