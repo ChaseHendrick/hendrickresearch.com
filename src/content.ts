@@ -65,7 +65,7 @@ export const projects: Project[] = [
     description: 'An offline survival world with driving, buildings, survivors, and crafting.',
     detail: 'An offline open world survival game with driving, buildings, survivors, and crafting. Explore the live browser game or inspect how the world is built in the public source.',
     tags: ['Survival', 'Open world'], source: 'https://github.com/ChaseHendrick/After-the-Sirens',
-    launch: '/play/sirens/', launchLabel: 'Play the game',
+    launch: '/games/after-the-sirens/', launchLabel: 'Play the game',
   },
   {
     id: 'haywire', name: 'Haywire', category: 'Play', eyebrow: 'Find the unexpected',

@@ -84,7 +84,7 @@ export function renderCatalog(entries: CatalogEntry[], workspace?: {areas:{title
   return `<a class="skip-link" href="#catalog-main">Skip to catalog</a>
     <header class="catalog-header wrap">
       <a class="catalog-brand" href="/" aria-label="Hendrick Research home">${logo}</a>
-      <nav class="catalog-nav" aria-label="Main navigation"><a href="/">Home</a><a href="/genchase/" aria-current="page">GENChase</a><a href="/#research">Research</a></nav>
+      <nav class="catalog-nav" aria-label="Main navigation"><a href="/">Home</a><a href="/games/">Games</a><a href="/genchase/" aria-current="page">GENChase</a><a href="/#research">Research</a></nav>
     </header>
     <main id="catalog-main">
       <section class="catalog-hero wrap" aria-labelledby="catalog-title">

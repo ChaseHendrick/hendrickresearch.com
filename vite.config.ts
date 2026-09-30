@@ -1,3 +1,4 @@
+import { renderGames } from './src/games';
 import { defineConfig } from 'vite';
 import { readFileSync, existsSync, readdirSync, writeFileSync } from 'node:fs';
 import { resolve, join } from 'node:path';
@@ -13,7 +14,7 @@ import { appearanceBootstrap } from './src/appearance-shared';
 const entries = catalogData.entries as CatalogEntry[];
 const editorialPages = contentPages();
 const xml = (value: string) => value.replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&apos;'}[c]!));
-const input = {home:fileURLToPath(new URL('./index.html',import.meta.url)),genchase:fileURLToPath(new URL('./genchase/index.html',import.meta.url)),editorial:fileURLToPath(new URL('./editorial/index.html',import.meta.url)),appearance:fileURLToPath(new URL('./appearance/index.html',import.meta.url)),...Object.fromEntries(gamePages.map(g=>[g.id,fileURLToPath(new URL(`./${g.htmlFile}`,import.meta.url))]))};
+const input = {games:fileURLToPath(new URL('./games/index.html',import.meta.url)),home:fileURLToPath(new URL('./index.html',import.meta.url)),genchase:fileURLToPath(new URL('./genchase/index.html',import.meta.url)),editorial:fileURLToPath(new URL('./editorial/index.html',import.meta.url)),appearance:fileURLToPath(new URL('./appearance/index.html',import.meta.url)),...Object.fromEntries(gamePages.map(g=>[g.id,fileURLToPath(new URL(`./${g.htmlFile}`,import.meta.url))]))};
 let atlasAppearanceHead = '';
 
 export default defineConfig({
@@ -38,6 +39,7 @@ export default defineConfig({
       order: 'pre',
       handler(html) {
         html = html.replace('<head>', '<head>' + appearanceBootstrap);
+        if (html.includes('<!--games-html-->')) return html.replace('<!--games-html-->',renderGames());
         if(html.includes('<!--editorial-head-->'))return html;
         const game=gamePages.find(g=>html.includes(`data-game="${g.id}"`));
         if(game){
@@ -66,7 +68,7 @@ export default defineConfig({
       const source=String(template.source);
       for(const page of editorialPages){this.emitFile({type:'asset',fileName:page.route.slice(1)+'index.html',source:source.replace('<!--editorial-head-->',pageHead(page)).replace('<!--editorial-body-->',renderContentPage(page))});}
       delete bundle['editorial/index.html'];
-      const routes=['/','/genchase/',...gamePages.map(g=>g.route),...editorialPages.map(p=>p.route)];
+      const routes=['/','/games/','/genchase/',...gamePages.map(g=>g.route),...editorialPages.map(p=>p.route)];
       const sitemap=`<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">${routes.map(route=>{const entry=entries.find(e=>route===`/genchase/${e.id}/`);return `<url><loc>${origin}${route}</loc>${entry?.previews?.map(p=>`<image:image><image:loc>${xml(origin+p.image)}</image:loc></image:image>`).join('')??''}</url>`;}).join('')}</urlset>`;
       this.emitFile({type:'asset',fileName:'sitemap-site.xml',source:sitemap});
       const fibersSitemap=existsSync(fileURLToPath(new URL('./public/fibers/sitemap.xml',import.meta.url))) ? `<sitemap><loc>${origin}/fibers/sitemap.xml</loc></sitemap>`:'';

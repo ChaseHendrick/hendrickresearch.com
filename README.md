@@ -76,12 +76,18 @@ Project destinations, manuscript titles, DOI records, PDFs, and the researcher�
 
 The verified project records and original logo remain the authority for portfolio content and identity. This repository does not contain a browser-based upload administrator; publish updates through the content files and GitHub.
 
+## Games
+
+The Games navigation opens `/games/`, with After the Sirens hosted directly at `/games/after-the-sirens/`. Other game cards link to their existing playable projects or source. The game uses its own Singleplayer and Multiplayer menu. Shared worlds run locally on a host computer through Node.js, with up to 20 connected players, public server browsing and private invite codes. The static website does not simulate worlds. Its initial public catalogue is empty until real hosts are submitted; dynamic directories are separate services. See the [multiplayer hosting guide](https://github.com/ChaseHendrick/After-the-Sirens/blob/main/docs/MULTIPLAYER.md).
+
+To update the locally hosted game, copy the verified standalone `index.html` from an After the Sirens release into `public/games/after-the-sirens/index.html` and its original gameplay screenshot into `gameplay.png`. Keep the upstream MIT license alongside it. The game HTML contains its code, artwork, styles and procedural sound, so it needs no external assets at runtime.
+
 ## Appearance and play
 
 The Appearance control offers Light, Dark, and System settings. A saved preference applies across the portfolio, GENChase, every technique page, and the full Fibers of Earth atlas. The early theme bootstrap avoids a flash of the other theme.
 
 All four play pages offer Dim surroundings and Full screen. Dim mode keeps the existing game frame alive, supports background-click, Escape, and explicit button exits, and restores keyboard focus on exit. Entering or leaving either view preserves the running game.
 
-Game saves stay on this origin in the same browser. Fin’s offers Continue and multiple save slots; Haywire restores its expedition automatically. TinyLaps saves its current circuit, race, car damage, terrain edits, scenery, barriers, camera, and controls every 2.5 seconds and on page exit. After the Sirens offers Continue saved run; its frozen hosted build saves every five seconds and on page exit. Those two hosting save hooks do not change the separate survival-game development checkout.
+Game saves stay on this origin in the same browser. Fin’s offers Continue and multiple save slots; Haywire restores its expedition automatically. TinyLaps saves its current circuit, race, car damage, terrain edits, scenery, barriers, camera, and controls every 2.5 seconds and on page exit. After the Sirens offers Continue saved run; the current game saves every five seconds and on page exit. Its multiplayer world and survivor packs are saved separately on the host computer.
 
 Verified in isolated Chrome: theme persistence and device-theme changes, cross-tab settings, mobile layouts at 320 and 390 pixels, all dim/fullscreen exit paths, zero game-frame reloads during view changes, and close/reopen save restoration in all four games. TinyLaps also checks snapshot round trips, malformed saves, and unavailable storage alongside its physics, models, terrain, and scenery tests.
