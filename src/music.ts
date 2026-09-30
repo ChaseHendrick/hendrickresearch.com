@@ -39,12 +39,11 @@ export const promptIdeas = [
 ];
 
 export function renderMusic(): string {
-  const nav = '<a href="/#projects">Projects</a><a href="/games/">Games</a><a href="/music/" aria-current="page">Music</a><a href="/simulations/">Play</a><a href="/play/siegeworks/">Sieges</a><a href="/generative-art/">Art</a><a href="/research/">Research</a><a href="/fibers/">Fibers of Earth</a>';
+  const nav = '<a href="/#projects">Projects</a><a href="/games/">Games</a><a href="/music/" aria-current="page">Music</a><a href="/play/siegeworks/">Sieges</a><a href="/generative-art/">Art</a><a href="/research/">Research</a><a href="/fibers/">Fibers of Earth</a>';
   return `<a class="skip-link" href="#main">Skip to music</a>
     <header class="site-header wrap">
       <a class="brand" href="/" aria-label="Hendrick Research home"><picture><source srcset="/logo.webp" type="image/webp"/><img src="/logo.png" width="1536" height="1024" alt="Hendrick Research" decoding="async" /></picture></a>
       <nav class="desktop-nav" aria-label="Main navigation">${nav}</nav>
-      ${external(profile.github, 'GitHub', 'header-github')}
       <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span></button>
       <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation" hidden>${nav}</nav>
     </header>

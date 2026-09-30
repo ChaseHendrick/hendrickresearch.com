@@ -1,7 +1,9 @@
 const shell = (body: string, bg: string) => `<svg viewBox="0 0 640 390" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><rect width="640" height="390" fill="${bg}"/>${body}</svg>`;
 let artworkSequence = 0;
 
+const gameCaptures: Record<string,string> = {siegeworks:'Workers and a siege tower approach the walled fortress at Masada',tinylaps:'Dense streets, traffic and miniature buildings in TinyLaps',fins:'A living aquarium with coral, plants and fish in Fins',haywire:'A detailed miniature hay field with a windmill and farm scenery'};
 export function artwork(kind: string): string {
+  if (gameCaptures[kind]) return `<img class="game-capture" src="/game-previews/${kind}-1600.webp" srcset="/game-previews/${kind}-800.webp 800w, /game-previews/${kind}-1600.webp 1600w" sizes="(max-width:650px) 92vw, (max-width:950px) 45vw, 520px" width="1600" height="1000" loading="lazy" decoding="async" alt="${gameCaptures[kind]}"/>`;
   if (kind === 'siegeworks') {
     const houses = Array.from({length:20},(_,i)=>`<g transform="translate(${330+i%5*29} ${100+Math.floor(i/5)*23})"><path d="M0 9 16 0l15 7v14l-16 10L0 24Z" fill="#e4d8ba" stroke="#b6a482" stroke-width=".7"/><path d="M16 0v14l15-7M0 9l16 5" fill="none" stroke="#c0ad88" stroke-width=".7"/></g>`).join('');
     const crew=Array.from({length:13},(_,i)=>`<circle cx="${156+i*12}" cy="${293-i*6}" r="2.5" fill="${i%3?'#826e50':'#aa674c'}"/><path d="M${155+i*12} ${296-i*6}v6" stroke="#826e50" stroke-width="2"/>`).join('');

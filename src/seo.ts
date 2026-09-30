@@ -9,6 +9,8 @@ function meta(html: string, key: string): string {
 
 /** Add metadata to a verified atlas export without changing its content or evidence. */
 export function atlasSEO(html: string, relativePath: string, duplicateTitle: boolean): string {
+  html = html.replace(/,"author":\{"@type":"Person","name":"Chaos"\}/g, '');
+  if (!html.includes('rel="icon"')) html = html.replace('</head>', '<link rel="icon" type="image/svg+xml" href="/favicon-hr.svg"/></head>');
   if (relativePath === 'offline.html') {
     return html.replace('</head>', `<meta name="robots" content="noindex,follow"/><link rel="canonical" href="${origin}/fibers/"/></head>`);
   }
