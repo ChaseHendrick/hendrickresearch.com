@@ -60,7 +60,7 @@ The build produces focused `/simulations/`, `/generative-art/`, and `/research/`
 
 Titles, descriptions, canonical URLs, social previews, and structured data are generated with each page. Actual motion clips include `VideoObject` metadata. The root `/sitemap.xml` is a sitemap index pointing to `/sitemap-site.xml` and `/fibers/sitemap.xml`. The main sitemap lists all main-site pages and all 876 preset images; the atlas supplies its full reading-page inventory. `robots.txt` advertises the root sitemap. Raw embedded game builds use `X-Robots-Tag: noindex` so their presentation pages are the search destinations.
 
-Google Search Console domain ownership was verified through an additional Porkbun TXT record, and the stable root sitemap URL was submitted on September 30, 2026. Submission does not establish indexing or a search ranking. Its initial fetch report was pending with a `Couldn't fetch` result even though the public sitemap returned HTTP 200. Check the console's processing status after publication and allow Google time to crawl the expanded inventory.
+Google Search Console domain ownership was verified through an additional Porkbun TXT record. The published root sitemap index was submitted on September 30, 2026, and Google reports **Success**. Sitemap processing does not establish that every page is indexed or determine a search ranking. Allow Google time to crawl the expanded inventory and assess coverage in Search Console.
 
 ## Vercel and the domain
 
