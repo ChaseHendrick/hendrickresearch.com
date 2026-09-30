@@ -50,7 +50,7 @@ Put public media in `public/genchase/previews/`, using content-hashed filenames,
 
 Four games run directly from `/play/fins/`, `/play/tinylaps/`, `/play/haywire/`, and `/play/sirens/`. Their completed browser builds live in `public/games/`, with each project's original license and dependency notices. No desktop installer is required. The wrappers provide controls, full screen, and a separate-tab option. After the Sirens requires a keyboard and mouse. Saved game progress stays in the visitor's browser.
 
-TinyLaps includes 15 distinct circuits, corrected terrain depth rendering, a circuit chooser, compact mobile controls, and complete world restoration on restart. Haywire's island is enlarged to contain the barn and its roof.
+TinyLaps includes 15 distinct circuits, corrected terrain depth rendering, a circuit chooser, compact mobile controls, complete world restoration on restart, 36 residents with family routines and reactions to god powers, and a visible grab control for cars, adult pedestrians, buildings, trees, and landmarks. Throws cause collision and landing damage; adult ragdolls recover. Children remain uninjured town life. Moved scenery and residents are included in persistent browser saves. Haywire's island is enlarged to contain the barn and its roof.
 
 `/fibers/` hosts the full Fibers of Earth atlas and its 2,585 static pages. Original sources, evidence limitations, MIT attribution, third-party notices, and safe provenance accompany the atlas. Refresh its complete static build for the `https://www.hendrickresearch.com/fibers/` base URL; keep the atlas's citations and reading pages intact.
 
