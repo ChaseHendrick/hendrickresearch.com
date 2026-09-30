@@ -31,8 +31,8 @@ export const gamePages: GamePage[] = [
   },
   {
     id: 'sirens', title: 'After the Sirens', eyebrow: 'LEAVE MORROW. FOLLOW THE ROAD.',
-    description: 'Explore a seeded survival world. Scavenge buildings, travel between settlements, drive cars, and make a place to stay.',
-    controls: ['Choose Enter the town to begin. Select singleplayer or a hosted multiplayer world in the menu.', 'WASD or arrow keys move. The mouse aims. E interacts.', 'I opens your pack and crafting. V enters a nearby car. Escape pauses.', 'T opens chat and commands. Type /help for controls. Enable proximity voice in multiplayer, then hold N to talk.'],
+    description: 'Explore a seeded survival world with 3,455 items. Scavenge buildings, craft equipment, drive cars, and make a place to stay.',
+    controls: ['Choose Enter the town to begin. Select singleplayer or a hosted multiplayer world in the menu.', 'WASD or arrow keys move. The mouse aims. E interacts.', 'I opens your pack, crafting and searchable item catalogue. V enters a nearby car. Escape pauses and opens music, sound effects and ambience settings.', 'T opens chat and commands. Type /help for controls. Enable proximity voice in multiplayer, then hold N to talk.'],
     input: 'Keyboard and mouse', keyboardRequired: true, route: '/play/sirens/', htmlFile: 'play/sirens/index.html', assetPath: '/games/after-the-sirens/index.html',
     source: 'https://github.com/ChaseHendrick/After-the-Sirens', notices: '/games/after-the-sirens/LICENSE.txt',
   },
