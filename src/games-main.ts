@@ -3,6 +3,7 @@ import '@fontsource/dm-sans/latin-500.css';
 import '@fontsource/instrument-serif/latin-400.css';
 import './style.css';
 import './games.css';
+import './appearance';
 import { renderGames } from './games';
 
 const app = document.querySelector<HTMLDivElement>('#app')!;
