@@ -18,7 +18,7 @@ npm run build
 npm run preview
 ```
 
-The production site is generated in `dist/`. It is static: no database, API keys, or paid services are needed.
+The production site is generated in `dist/`. It is static: no database, API keys, or paid services are needed. The build renders the full portfolio and paper metadata into HTML so the content is available before JavaScript and to search engines. With JavaScript disabled, all project and paper links are visible.
 
 ## Add your work
 
@@ -32,7 +32,7 @@ To host a new paper directly on this site:
 
 To replace or add project art, edit [`src/artwork.ts`](src/artwork.ts). Current thumbnails are custom editorial illustrations rather than screenshots. The hero implements the classical Lorenz system with fourth-order Runge-Kutta integration. It illustrates the mathematics and does not present a new research result.
 
-The full original logo is in `public/logo.png`. Fonts are served from the site itself. The site has category filters, project dialogs, mobile navigation, keyboard controls, and reduced-motion support. The hero stops animating while off-screen or while the tab is hidden.
+The full original logo is in `public/logo.png`. Browsers use a lossless WebP copy, 77% smaller, with identical visible pixels and alpha values; the original PNG remains the fallback. Fonts are served from the site itself, and hashed assets use long-lived browser caching. The site has project and paper topic filters, paper search, project dialogs, sticky navigation, keyboard controls, and reduced-motion support. Press `/` to search papers. The hero stops animating while off-screen or while the tab is hidden.
 
 ## Vercel and the domain
 
