@@ -38,7 +38,7 @@ export const projects: Project[] = [
     description: 'An aquarium shop simulation with a neighborhood that keeps changing.',
     detail: 'An aquarium shop simulation whose fish, customers, and neighborhood keep changing while you are away. A playful experiment in building a persistent little world with AI-assisted coding.',
     tags: ['Simulation game', 'Living worlds'], source: 'https://github.com/ChaseHendrick/Fins',
-    launch: 'https://chasehendrick.github.io/Fins/', launchLabel: 'Play the game',
+    launch: '/play/fins/', launchLabel: 'Play the game',
   },
   {
     id: 'thermalpilot', name: 'ThermalPilot', category: 'Tools', eyebrow: 'Understand your machine',
@@ -51,26 +51,28 @@ export const projects: Project[] = [
     description: 'An independent atlas of textile materials, their histories, and their science.',
     detail: 'An independent atlas exploring textile materials through their histories and science. A collection built around the connections between natural materials, human craft, and technical knowledge.',
     tags: ['Materials', 'Digital atlas'], source: 'https://github.com/ChaseHendrick/FibersOfEarth',
+    launch: '/fibers/', launchLabel: 'Explore the atlas',
   },
   {
     id: 'tinylaps', name: 'TinyLaps', category: 'Play', eyebrow: 'A miniature racing world',
     description: 'Autonomous drivers, crash damage, destructible terrain, and god powers.',
     detail: 'A miniature racing world with autonomous drivers, crash damage, destructible terrain, and god powers. Open the live game to explore the system in motion.',
     tags: ['Racing', 'Simulation'], source: 'https://github.com/ChaseHendrick/TinyLaps',
-    launch: 'https://chasehendrick.github.io/TinyLaps/', launchLabel: 'Play the game',
+    launch: '/play/tinylaps/', launchLabel: 'Play the game',
   },
   {
     id: 'sirens', name: 'After the Sirens', category: 'Play', eyebrow: 'An open world to explore',
     description: 'An offline survival world with driving, buildings, survivors, and crafting.',
     detail: 'An offline open world survival game with driving, buildings, survivors, and crafting. Explore the live browser game or inspect how the world is built in the public source.',
     tags: ['Survival', 'Open world'], source: 'https://github.com/ChaseHendrick/After-the-Sirens',
-    launch: 'https://chasehendrick.github.io/After-the-Sirens/', launchLabel: 'Play the game',
+    launch: '/play/sirens/', launchLabel: 'Play the game',
   },
   {
     id: 'haywire', name: 'Haywire', category: 'Play', eyebrow: 'Find the unexpected',
     description: 'A 3D needle-hunting game with physical hay, interactive farms, and a changing sky.',
     detail: 'A 3D needle-hunting game built around physical hay, interactive farms, and a changing sky. The public repository contains the source and current run instructions.',
     tags: ['3D', 'Exploration'], source: 'https://github.com/ChaseHendrick/Haywire',
+    launch: '/play/haywire/', launchLabel: 'Play the game',
   },
 ];
 

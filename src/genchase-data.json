@@ -102,10 +102,59 @@
           "label": "Gliders",
           "image": "/genchase/previews/life/orbium-cd8d8c544361.jpg",
           "video": "/genchase/previews/life/orbium-d2d09f4f9bb7.webm"
+        },
+        {
+          "preset": "flowlenia",
+          "label": "Flow Lenia",
+          "image": "/genchase/previews/life/flowlenia-7c911623724c.jpg"
+        },
+        {
+          "preset": "tworings",
+          "label": "Two rings",
+          "image": "/genchase/previews/life/tworings-c8ffedd0eaf1.jpg"
+        },
+        {
+          "preset": "amoeba",
+          "label": "Amoeba",
+          "image": "/genchase/previews/life/amoeba-7a4415b41d6b.jpg"
+        },
+        {
+          "preset": "coral",
+          "label": "Coral reef",
+          "image": "/genchase/previews/life/coral-dfb99c3733b8.jpg",
+          "note": "This registered preset produced a nearly uniform sample for the stated seed."
+        },
+        {
+          "preset": "conway",
+          "label": "Conway",
+          "image": "/genchase/previews/life/conway-af89cc6a47f4.jpg"
+        },
+        {
+          "preset": "daynight",
+          "label": "Day & Night",
+          "image": "/genchase/previews/life/daynight-901c4ea5bb97.jpg"
+        },
+        {
+          "preset": "ltl",
+          "label": "Larger than Life",
+          "image": "/genchase/previews/life/ltl-dfd66dcfb7ad.jpg"
+        },
+        {
+          "preset": "seeds",
+          "label": "Seeds",
+          "image": "/genchase/previews/life/seeds-168e68937e47.jpg"
         }
       ],
       "presetLabels": {
-        "orbium": "Gliders"
+        "orbium": "Gliders",
+        "tworings": "Two rings",
+        "flowlenia": "Flow Lenia",
+        "amoeba": "Amoeba",
+        "conway": "Conway",
+        "daynight": "Day & Night",
+        "ltl": "Larger than Life",
+        "seeds": "Seeds",
+        "coral": "Coral reef"
       }
     },
     {
@@ -133,10 +182,40 @@
           "preset": "cosmic",
           "label": "Cosmic web",
           "image": "/genchase/previews/physarum3d/cosmic-23c640b227b4.jpg"
+        },
+        {
+          "preset": "mycelium",
+          "label": "Mycelium",
+          "image": "/genchase/previews/physarum3d/mycelium-ed57a7950903.jpg"
+        },
+        {
+          "preset": "neurons",
+          "label": "Neurons",
+          "image": "/genchase/previews/physarum3d/neurons-30a7e7a158d1.jpg"
+        },
+        {
+          "preset": "nebula",
+          "label": "Nebula",
+          "image": "/genchase/previews/physarum3d/nebula-a186d738543c.jpg"
+        },
+        {
+          "preset": "roots",
+          "label": "Roots",
+          "image": "/genchase/previews/physarum3d/roots-b2c33a5f5576.jpg"
+        },
+        {
+          "preset": "capillaries",
+          "label": "Capillaries",
+          "image": "/genchase/previews/physarum3d/capillaries-5d49177e9992.jpg"
         }
       ],
       "presetLabels": {
-        "cosmic": "Cosmic web"
+        "cosmic": "Cosmic web",
+        "mycelium": "Mycelium",
+        "neurons": "Neurons",
+        "nebula": "Nebula",
+        "roots": "Roots",
+        "capillaries": "Capillaries"
       }
     },
     {
@@ -168,10 +247,46 @@
           "label": "Spiral",
           "image": "/genchase/previews/cortex/spiral-9867d40580e7.jpg",
           "video": "/genchase/previews/cortex/spiral-d30b3481300b.webm"
+        },
+        {
+          "preset": "funnel",
+          "label": "Funnel",
+          "image": "/genchase/previews/cortex/funnel-8369e862bda3.jpg"
+        },
+        {
+          "preset": "tunnel",
+          "label": "Tunnel",
+          "image": "/genchase/previews/cortex/tunnel-9f972b66981b.jpg"
+        },
+        {
+          "preset": "cobweb",
+          "label": "Cobweb",
+          "image": "/genchase/previews/cortex/cobweb-c0f3f343169c.jpg"
+        },
+        {
+          "preset": "sheet",
+          "label": "The cortical sheet",
+          "image": "/genchase/previews/cortex/sheet-a92c2558e8bf.jpg"
+        },
+        {
+          "preset": "lattice",
+          "label": "Honeycomb, on the cortex",
+          "image": "/genchase/previews/cortex/lattice-664b45908e34.jpg"
+        },
+        {
+          "preset": "contour",
+          "label": "Contoured rhombs",
+          "image": "/genchase/previews/cortex/contour-521e48f27523.jpg"
         }
       ],
       "presetLabels": {
-        "spiral": "Spiral"
+        "spiral": "Spiral",
+        "funnel": "Funnel",
+        "tunnel": "Tunnel",
+        "cobweb": "Cobweb",
+        "sheet": "The cortical sheet",
+        "lattice": "Honeycomb, on the cortex",
+        "contour": "Contoured rhombs"
       }
     },
     {
@@ -202,10 +317,40 @@
           "label": "Constant coupling",
           "image": "/genchase/previews/nonreciprocal/waves-2e711d22cb17.jpg",
           "video": "/genchase/previews/nonreciprocal/waves-39de9e348bb5.webm"
+        },
+        {
+          "preset": "active",
+          "label": "Nonlinear mixture",
+          "image": "/genchase/previews/nonreciprocal/active-ac7590027a8c.jpg"
+        },
+        {
+          "preset": "noise",
+          "label": "Random preparation",
+          "image": "/genchase/previews/nonreciprocal/noise-0d4df7f5bfa6.jpg"
+        },
+        {
+          "preset": "oblique",
+          "label": "Oblique wave",
+          "image": "/genchase/previews/nonreciprocal/oblique-694f24040f99.jpg"
+        },
+        {
+          "preset": "passive",
+          "label": "Reciprocal limit",
+          "image": "/genchase/previews/nonreciprocal/passive-38be3b54a053.jpg"
+        },
+        {
+          "preset": "coupling",
+          "label": "Coupling reversals",
+          "image": "/genchase/previews/nonreciprocal/coupling-24a7325b9d91.jpg"
         }
       ],
       "presetLabels": {
-        "waves": "Constant coupling"
+        "waves": "Constant coupling",
+        "active": "Nonlinear mixture",
+        "noise": "Random preparation",
+        "oblique": "Oblique wave",
+        "passive": "Reciprocal limit",
+        "coupling": "Coupling reversals"
       }
     },
     {
@@ -237,10 +382,46 @@
           "preset": "lattice",
           "label": "Abrikosov lattice",
           "image": "/genchase/previews/bec/lattice-7bc7f6ab5c79.jpg"
+        },
+        {
+          "preset": "few",
+          "label": "A handful of vortices",
+          "image": "/genchase/previews/bec/few-0b881e8b9869.jpg"
+        },
+        {
+          "preset": "dense",
+          "label": "Fast, and crowded",
+          "image": "/genchase/previews/bec/dense-758e5fdffa2a.jpg"
+        },
+        {
+          "preset": "marks",
+          "label": "The lattice as points",
+          "image": "/genchase/previews/bec/marks-13ba6162650a.jpg"
+        },
+        {
+          "preset": "phase",
+          "label": "Phase",
+          "image": "/genchase/previews/bec/phase-83bd590cedf2.jpg"
+        },
+        {
+          "preset": "quiet",
+          "label": "No rotation, no vortices",
+          "image": "/genchase/previews/bec/quiet-e8e26da810e8.jpg"
+        },
+        {
+          "preset": "tangle",
+          "label": "Real time",
+          "image": "/genchase/previews/bec/tangle-7541634a95e9.jpg"
         }
       ],
       "presetLabels": {
-        "lattice": "Abrikosov lattice"
+        "lattice": "Abrikosov lattice",
+        "few": "A handful of vortices",
+        "dense": "Fast, and crowded",
+        "marks": "The lattice as points",
+        "phase": "Phase",
+        "tangle": "Real time",
+        "quiet": "No rotation, no vortices"
       }
     },
     {
@@ -270,10 +451,52 @@
           "preset": "veins",
           "label": "Veins",
           "image": "/genchase/previews/physarum/veins-2c692b877368.jpg"
+        },
+        {
+          "preset": "coral",
+          "label": "Coral",
+          "image": "/genchase/previews/physarum/coral-711eda9b9ddf.jpg"
+        },
+        {
+          "preset": "web",
+          "label": "Web",
+          "image": "/genchase/previews/physarum/web-11061bee7c71.jpg"
+        },
+        {
+          "preset": "nebula",
+          "label": "Nebula",
+          "image": "/genchase/previews/physarum/nebula-bd3edb32ae11.jpg"
+        },
+        {
+          "preset": "roots",
+          "label": "Roots",
+          "image": "/genchase/previews/physarum/roots-1b7e3bbcdf16.jpg"
+        },
+        {
+          "preset": "mycelium",
+          "label": "Mycelium",
+          "image": "/genchase/previews/physarum/mycelium-dbada9393c39.jpg"
+        },
+        {
+          "preset": "storm",
+          "label": "Storm",
+          "image": "/genchase/previews/physarum/storm-b276406041fc.jpg"
+        },
+        {
+          "preset": "filigree",
+          "label": "Filigree",
+          "image": "/genchase/previews/physarum/filigree-a491a3296faa.jpg"
         }
       ],
       "presetLabels": {
-        "veins": "Veins"
+        "veins": "Veins",
+        "coral": "Coral",
+        "web": "Web",
+        "nebula": "Nebula",
+        "roots": "Roots",
+        "mycelium": "Mycelium",
+        "storm": "Storm",
+        "filigree": "Filigree"
       }
     },
     {
@@ -302,10 +525,28 @@
           "preset": "golden",
           "label": "Golden",
           "image": "/genchase/previews/phyllotaxis/golden-8961f5c5a270.jpg"
+        },
+        {
+          "preset": "voronoi",
+          "label": "Voronoi",
+          "image": "/genchase/previews/phyllotaxis/voronoi-4cd6e05de9fd.jpg"
+        },
+        {
+          "preset": "para",
+          "label": "Parastichies",
+          "image": "/genchase/previews/phyllotaxis/para-0d76c8f9a645.jpg"
+        },
+        {
+          "preset": "tight",
+          "label": "Tight λ",
+          "image": "/genchase/previews/phyllotaxis/tight-f0666eaf378b.jpg"
         }
       ],
       "presetLabels": {
-        "golden": "Golden"
+        "golden": "Golden",
+        "voronoi": "Voronoi",
+        "para": "Parastichies",
+        "tight": "Tight λ"
       }
     },
     {
@@ -333,10 +574,28 @@
           "preset": "lightning",
           "label": "Lightning α=2",
           "image": "/genchase/previews/hl/lightning-5e2c4570d0b3.jpg"
+        },
+        {
+          "preset": "fingers",
+          "label": "Fingers α=1.4",
+          "image": "/genchase/previews/hl/fingers-db8c31287c8f.jpg"
+        },
+        {
+          "preset": "disk",
+          "label": "Disk α=0",
+          "image": "/genchase/previews/hl/disk-60c598f6f9be.jpg"
+        },
+        {
+          "preset": "fine",
+          "label": "Fine DLA",
+          "image": "/genchase/previews/hl/fine-e41d6fa236d0.jpg"
         }
       ],
       "presetLabels": {
-        "lightning": "Lightning α=2"
+        "lightning": "Lightning α=2",
+        "fingers": "Fingers α=1.4",
+        "disk": "Disk α=0",
+        "fine": "Fine DLA"
       }
     },
     {
@@ -364,10 +623,28 @@
           "preset": "lightning",
           "label": "Lightning η=4",
           "image": "/genchase/previews/lichtenberg/lightning-16d77fd0bb6e.jpg"
+        },
+        {
+          "preset": "dla",
+          "label": "DLA η=1",
+          "image": "/genchase/previews/lichtenberg/dla-cfc354eb6b9e.jpg"
+        },
+        {
+          "preset": "needle",
+          "label": "Needle η=7",
+          "image": "/genchase/previews/lichtenberg/needle-9d6a57a570ac.jpg"
+        },
+        {
+          "preset": "fern",
+          "label": "Fern",
+          "image": "/genchase/previews/lichtenberg/fern-d8bf7595b251.jpg"
         }
       ],
       "presetLabels": {
-        "lightning": "Lightning η=4"
+        "lightning": "Lightning η=4",
+        "needle": "Needle η=7",
+        "dla": "DLA η=1",
+        "fern": "Fern"
       }
     },
     {
@@ -397,10 +674,34 @@
           "preset": "dendrite",
           "label": "Stellar dendrite",
           "image": "/genchase/previews/snowflake/dendrite-dcba5ab776d2.jpg"
+        },
+        {
+          "preset": "fern",
+          "label": "Fern",
+          "image": "/genchase/previews/snowflake/fern-8b252f30e70b.jpg"
+        },
+        {
+          "preset": "plate",
+          "label": "Plate",
+          "image": "/genchase/previews/snowflake/plate-8a3741c8d88a.jpg"
+        },
+        {
+          "preset": "sectored",
+          "label": "Sectored plate",
+          "image": "/genchase/previews/snowflake/sectored-e65e57bb04b5.jpg"
+        },
+        {
+          "preset": "stellar",
+          "label": "Stellar",
+          "image": "/genchase/previews/snowflake/stellar-8108218588ce.jpg"
         }
       ],
       "presetLabels": {
-        "dendrite": "Stellar dendrite"
+        "dendrite": "Stellar dendrite",
+        "fern": "Fern",
+        "plate": "Plate",
+        "sectored": "Sectored plate",
+        "stellar": "Stellar"
       }
     },
     {
@@ -432,10 +733,52 @@
           "preset": "coral",
           "label": "Coral",
           "image": "/genchase/previews/growth/coral-b4e4aef498a6.jpg"
+        },
+        {
+          "preset": "cortex",
+          "label": "Cortex",
+          "image": "/genchase/previews/growth/cortex-cb8c51136d92.jpg"
+        },
+        {
+          "preset": "lettuce",
+          "label": "Lettuce",
+          "image": "/genchase/previews/growth/lettuce-328f2805d0a6.jpg"
+        },
+        {
+          "preset": "cracks",
+          "label": "Cracks",
+          "image": "/genchase/previews/growth/cracks-0170bb0eb77c.jpg"
+        },
+        {
+          "preset": "rings",
+          "label": "Rings",
+          "image": "/genchase/previews/growth/rings-3262668f0b90.jpg"
+        },
+        {
+          "preset": "bloom",
+          "label": "Bloom",
+          "image": "/genchase/previews/growth/bloom-5575e0892999.jpg"
+        },
+        {
+          "preset": "filament",
+          "label": "Filament",
+          "image": "/genchase/previews/growth/filament-c9a89d445c83.jpg"
+        },
+        {
+          "preset": "ink",
+          "label": "Ink",
+          "image": "/genchase/previews/growth/ink-7476a7d534bf.jpg"
         }
       ],
       "presetLabels": {
-        "coral": "Coral"
+        "coral": "Coral",
+        "lettuce": "Lettuce",
+        "cracks": "Cracks",
+        "cortex": "Cortex",
+        "rings": "Rings",
+        "bloom": "Bloom",
+        "filament": "Filament",
+        "ink": "Ink"
       }
     },
     {
@@ -466,10 +809,40 @@
           "label": "Pinwheels",
           "image": "/genchase/previews/cyclic/pinwheels-e6b7432c9773.jpg",
           "video": "/genchase/previews/cyclic/pinwheels-e3f444f3d470.webm"
+        },
+        {
+          "preset": "many",
+          "label": "Many cores",
+          "image": "/genchase/previews/cyclic/many-607d2a35505e.jpg"
+        },
+        {
+          "preset": "patches",
+          "label": "Patch war",
+          "image": "/genchase/previews/cyclic/patches-a5d52af9008b.jpg"
+        },
+        {
+          "preset": "noise",
+          "label": "From noise",
+          "image": "/genchase/previews/cyclic/noise-a458451f6208.jpg"
+        },
+        {
+          "preset": "single",
+          "label": "One species",
+          "image": "/genchase/previews/cyclic/single-01cc24c9de26.jpg"
+        },
+        {
+          "preset": "relief",
+          "label": "Front relief",
+          "image": "/genchase/previews/cyclic/relief-9852e19e183d.jpg"
         }
       ],
       "presetLabels": {
-        "pinwheels": "Pinwheels"
+        "pinwheels": "Pinwheels",
+        "many": "Many cores",
+        "patches": "Patch war",
+        "noise": "From noise",
+        "single": "One species",
+        "relief": "Front relief"
       }
     },
     {
@@ -500,10 +873,46 @@
           "preset": "island",
           "label": "An island",
           "image": "/genchase/previews/landscape/island-5046852d4d01.jpg"
+        },
+        {
+          "preset": "range",
+          "label": "A range draining one way",
+          "image": "/genchase/previews/landscape/range-7cd4c430b8be.jpg"
+        },
+        {
+          "preset": "belt",
+          "label": "Mountain belt",
+          "image": "/genchase/previews/landscape/belt-a259f9cf7bef.jpg"
+        },
+        {
+          "preset": "network",
+          "label": "The channel network",
+          "image": "/genchase/previews/landscape/network-c050cf97cfe0.jpg"
+        },
+        {
+          "preset": "basins",
+          "label": "Watersheds",
+          "image": "/genchase/previews/landscape/basins-2f9754b51e5b.jpg"
+        },
+        {
+          "preset": "area",
+          "label": "Discharge",
+          "image": "/genchase/previews/landscape/area-ade52ca45cf5.jpg"
+        },
+        {
+          "preset": "smooth",
+          "label": "Creep wins",
+          "image": "/genchase/previews/landscape/smooth-22d6d9cac29c.jpg"
         }
       ],
       "presetLabels": {
-        "island": "An island"
+        "island": "An island",
+        "range": "A range draining one way",
+        "belt": "Mountain belt",
+        "network": "The channel network",
+        "basins": "Watersheds",
+        "area": "Discharge",
+        "smooth": "Creep wins"
       }
     },
     {
@@ -534,10 +943,46 @@
           "preset": "kpz",
           "label": "Ballistic, KPZ",
           "image": "/genchase/previews/kpz/kpz-bd03588443ac.jpg"
+        },
+        {
+          "preset": "ew",
+          "label": "Relaxation, Edwards–Wilkinson",
+          "image": "/genchase/previews/kpz/ew-ca9ce3fd2d26.jpg"
+        },
+        {
+          "preset": "rd",
+          "label": "Random deposition",
+          "image": "/genchase/previews/kpz/rd-74e885966bec.jpg"
+        },
+        {
+          "preset": "rsos",
+          "label": "Restricted solid-on-solid",
+          "image": "/genchase/previews/kpz/rsos-8295c85b1c18.jpg"
+        },
+        {
+          "preset": "eden",
+          "label": "Eden cluster",
+          "image": "/genchase/previews/kpz/eden-feb393d3ec7e.jpg"
+        },
+        {
+          "preset": "rings",
+          "label": "The interface, every doubling",
+          "image": "/genchase/previews/kpz/rings-936d8886ff51.jpg"
+        },
+        {
+          "preset": "wide",
+          "label": "A long line",
+          "image": "/genchase/previews/kpz/wide-a842b3c976bb.jpg"
         }
       ],
       "presetLabels": {
-        "kpz": "Ballistic, KPZ"
+        "kpz": "Ballistic, KPZ",
+        "ew": "Relaxation, Edwards–Wilkinson",
+        "rd": "Random deposition",
+        "rsos": "Restricted solid-on-solid",
+        "eden": "Eden cluster",
+        "rings": "The interface, every doubling",
+        "wide": "A long line"
       }
     },
     {
@@ -566,10 +1011,46 @@
           "preset": "coarse",
           "label": "Coarsened grains",
           "image": "/genchase/previews/potts/coarse-3c76c97918ad.jpg"
+        },
+        {
+          "preset": "sides",
+          "label": "Colored by side count",
+          "image": "/genchase/previews/potts/sides-26531a86fd48.jpg"
+        },
+        {
+          "preset": "foam",
+          "label": "A foam that holds",
+          "image": "/genchase/previews/potts/foam-9f751eed6c86.jpg"
+        },
+        {
+          "preset": "walls",
+          "label": "Walls only",
+          "image": "/genchase/previews/potts/walls-105cc8ab0172.jpg"
+        },
+        {
+          "preset": "young",
+          "label": "Early, still fine",
+          "image": "/genchase/previews/potts/young-d80f351d99db.jpg"
+        },
+        {
+          "preset": "hot",
+          "label": "Rough boundaries",
+          "image": "/genchase/previews/potts/hot-bfec19961cf9.jpg"
+        },
+        {
+          "preset": "area",
+          "label": "Colored by area",
+          "image": "/genchase/previews/potts/area-802385af2751.jpg"
         }
       ],
       "presetLabels": {
-        "coarse": "Coarsened grains"
+        "coarse": "Coarsened grains",
+        "sides": "Colored by side count",
+        "foam": "A foam that holds",
+        "young": "Early, still fine",
+        "walls": "Walls only",
+        "hot": "Rough boundaries",
+        "area": "Colored by area"
       }
     },
     {
@@ -600,10 +1081,46 @@
           "preset": "rings",
           "label": "Concentric rings",
           "image": "/genchase/previews/liesegang/rings-0d704e199975.jpg"
+        },
+        {
+          "preset": "plate",
+          "label": "The gel plate",
+          "image": "/genchase/previews/liesegang/plate-85ca30dfaa7b.jpg"
+        },
+        {
+          "preset": "bands",
+          "label": "Parallel bands",
+          "image": "/genchase/previews/liesegang/bands-f8b3a37df66f.jpg"
+        },
+        {
+          "preset": "twin",
+          "label": "Two fronts",
+          "image": "/genchase/previews/liesegang/twin-cbbc5c4143fa.jpg"
+        },
+        {
+          "preset": "intermediate",
+          "label": "The intermediate",
+          "image": "/genchase/previews/liesegang/intermediate-61106f35dd17.jpg"
+        },
+        {
+          "preset": "front",
+          "label": "The reaction front",
+          "image": "/genchase/previews/liesegang/front-210f1daa91eb.jpg"
+        },
+        {
+          "preset": "crystallites",
+          "label": "Crystallites",
+          "image": "/genchase/previews/liesegang/crystallites-0a10ea17690a.jpg"
         }
       ],
       "presetLabels": {
-        "rings": "Concentric rings"
+        "rings": "Concentric rings",
+        "plate": "The gel plate",
+        "bands": "Parallel bands",
+        "twin": "Two fronts",
+        "intermediate": "The intermediate",
+        "front": "The reaction front",
+        "crystallites": "Crystallites"
       }
     },
     {
@@ -634,10 +1151,46 @@
           "preset": "pour",
           "label": "Poured under gravity",
           "image": "/genchase/previews/grains/pour-628ec4fbf3d8.jpg"
+        },
+        {
+          "preset": "photo",
+          "label": "Photoelastic",
+          "image": "/genchase/previews/grains/photo-8fab84a8e404.jpg"
+        },
+        {
+          "preset": "strong",
+          "label": "Strong network only",
+          "image": "/genchase/previews/grains/strong-5ad393db9539.jpg"
+        },
+        {
+          "preset": "arch",
+          "label": "Arching on high friction",
+          "image": "/genchase/previews/grains/arch-81c6ac062e8d.jpg"
+        },
+        {
+          "preset": "slip",
+          "label": "Frictionless, Z near 4",
+          "image": "/genchase/previews/grains/slip-03413808ddee.jpg"
+        },
+        {
+          "preset": "disks",
+          "label": "The grains themselves",
+          "image": "/genchase/previews/grains/disks-00a4a340fd4a.jpg"
+        },
+        {
+          "preset": "column",
+          "label": "Tall column, Janssen",
+          "image": "/genchase/previews/grains/column-49e20582bc31.jpg"
         }
       ],
       "presetLabels": {
-        "pour": "Poured under gravity"
+        "pour": "Poured under gravity",
+        "photo": "Photoelastic",
+        "strong": "Strong network only",
+        "arch": "Arching on high friction",
+        "slip": "Frictionless, Z near 4",
+        "disks": "The grains themselves",
+        "column": "Tall column, Janssen"
       }
     },
     {
@@ -667,10 +1220,40 @@
           "preset": "neel",
           "label": "Neel skyrmion",
           "image": "/genchase/previews/skyrmion/neel-661e6be6050c.jpg"
+        },
+        {
+          "preset": "bloch",
+          "label": "Bloch skyrmion",
+          "image": "/genchase/previews/skyrmion/bloch-e531b3ec4c6a.jpg"
+        },
+        {
+          "preset": "crystal",
+          "label": "Skyrmion crystal",
+          "image": "/genchase/previews/skyrmion/crystal-ed84ce57752e.jpg"
+        },
+        {
+          "preset": "bimeron",
+          "label": "Bimeron",
+          "image": "/genchase/previews/skyrmion/bimeron-6d31d62acee4.jpg"
+        },
+        {
+          "preset": "helix",
+          "label": "Helical spiral",
+          "image": "/genchase/previews/skyrmion/helix-12ba6a864f55.jpg"
+        },
+        {
+          "preset": "quench",
+          "label": "Quench",
+          "image": "/genchase/previews/skyrmion/quench-1af89acf1bf1.jpg"
         }
       ],
       "presetLabels": {
-        "neel": "Neel skyrmion"
+        "neel": "Neel skyrmion",
+        "bloch": "Bloch skyrmion",
+        "crystal": "Skyrmion crystal",
+        "bimeron": "Bimeron",
+        "helix": "Helical spiral",
+        "quench": "Quench"
       }
     },
     {
@@ -700,10 +1283,40 @@
           "preset": "driven",
           "label": "Driven population",
           "image": "/genchase/previews/neural-mass/driven-7f0193f0ad15.jpg"
+        },
+        {
+          "preset": "relaxation",
+          "label": "Damped relaxation",
+          "image": "/genchase/previews/neural-mass/relaxation-f328cf530913.jpg"
+        },
+        {
+          "preset": "pulse",
+          "label": "Pulse response",
+          "image": "/genchase/previews/neural-mass/pulse-08f5f4d45478.jpg"
+        },
+        {
+          "preset": "inhibitory",
+          "label": "Inhibitory coupling",
+          "image": "/genchase/previews/neural-mass/inhibitory-76e216c11e99.jpg"
+        },
+        {
+          "preset": "slow",
+          "label": "Slow common drive",
+          "image": "/genchase/previews/neural-mass/slow-a91ef74298f6.jpg"
+        },
+        {
+          "preset": "broad",
+          "label": "Broad fixed inputs",
+          "image": "/genchase/previews/neural-mass/broad-6228d2f85e56.jpg"
         }
       ],
       "presetLabels": {
-        "driven": "Driven population"
+        "driven": "Driven population",
+        "relaxation": "Damped relaxation",
+        "pulse": "Pulse response",
+        "inhibitory": "Inhibitory coupling",
+        "slow": "Slow common drive",
+        "broad": "Broad fixed inputs"
       }
     },
     {
@@ -735,10 +1348,46 @@
           "label": "Dense clusters",
           "image": "/genchase/previews/tonertu/bands-3c2e38c7b6f5.jpg",
           "video": "/genchase/previews/tonertu/bands-d4d2a4b71ba1.webm"
+        },
+        {
+          "preset": "ordered",
+          "label": "Ordered, and even",
+          "image": "/genchase/previews/tonertu/ordered-ea38ca7c67d5.jpg"
+        },
+        {
+          "preset": "disordered",
+          "label": "Below the transition",
+          "image": "/genchase/previews/tonertu/disordered-cb011dca34a2.jpg"
+        },
+        {
+          "preset": "turbulent",
+          "label": "Active turbulence",
+          "image": "/genchase/previews/tonertu/turbulent-d2ac2f9a0a3e.jpg"
+        },
+        {
+          "preset": "sparse",
+          "label": "Sparse and clumped",
+          "image": "/genchase/previews/tonertu/sparse-7dd4595603c1.jpg"
+        },
+        {
+          "preset": "wide",
+          "label": "A wide sky, where bands can run",
+          "image": "/genchase/previews/tonertu/wide-ecacc7bd810c.jpg"
+        },
+        {
+          "preset": "heading",
+          "label": "Heading alone",
+          "image": "/genchase/previews/tonertu/heading-f24e1ee6f092.jpg"
         }
       ],
       "presetLabels": {
-        "bands": "Dense clusters"
+        "bands": "Dense clusters",
+        "ordered": "Ordered, and even",
+        "disordered": "Below the transition",
+        "turbulent": "Active turbulence",
+        "sparse": "Sparse and clumped",
+        "wide": "A wide sky, where bands can run",
+        "heading": "Heading alone"
       }
     },
     {
@@ -770,10 +1419,46 @@
           "preset": "spots",
           "label": "Spots on {7,3}",
           "image": "/genchase/previews/hyperbolic/spots-82c40d74f8c8.jpg"
+        },
+        {
+          "preset": "worms",
+          "label": "Worms on {5,4}",
+          "image": "/genchase/previews/hyperbolic/worms-976d376bb93a.jpg"
+        },
+        {
+          "preset": "mitosis",
+          "label": "Mitosis on {4,5}",
+          "image": "/genchase/previews/hyperbolic/mitosis-9f1c4bf4af4a.jpg"
+        },
+        {
+          "preset": "coral",
+          "label": "Coral on {8,3}",
+          "image": "/genchase/previews/hyperbolic/coral-c7e3bee23781.jpg"
+        },
+        {
+          "preset": "triangles",
+          "label": "{3,7}, and very many cells",
+          "image": "/genchase/previews/hyperbolic/triangles-a8349364a567.jpg"
+        },
+        {
+          "preset": "rings",
+          "label": "Distance from the center",
+          "image": "/genchase/previews/hyperbolic/rings-119ea20be02e.jpg"
+        },
+        {
+          "preset": "tiling",
+          "label": "The tiling alone",
+          "image": "/genchase/previews/hyperbolic/tiling-b6c0a0a69373.jpg"
         }
       ],
       "presetLabels": {
-        "spots": "Spots on {7,3}"
+        "spots": "Spots on {7,3}",
+        "worms": "Worms on {5,4}",
+        "mitosis": "Mitosis on {4,5}",
+        "coral": "Coral on {8,3}",
+        "triangles": "{3,7}, and very many cells",
+        "rings": "Distance from the center",
+        "tiling": "The tiling alone"
       }
     },
     {
@@ -804,10 +1489,46 @@
           "preset": "perc",
           "label": "Percolation, κ = 6",
           "image": "/genchase/previews/sle/perc-d9115b708258.jpg"
+        },
+        {
+          "preset": "saw",
+          "label": "Self-avoiding walk, κ = 8/3",
+          "image": "/genchase/previews/sle/saw-558f76cc50cc.jpg"
+        },
+        {
+          "preset": "lerw",
+          "label": "Loop-erased walk, κ = 2",
+          "image": "/genchase/previews/sle/lerw-dbc4c1aa6384.jpg"
+        },
+        {
+          "preset": "gff",
+          "label": "Level line, κ = 4",
+          "image": "/genchase/previews/sle/gff-e4765a4c9355.jpg"
+        },
+        {
+          "preset": "peano",
+          "label": "Space filling, κ = 8",
+          "image": "/genchase/previews/sle/peano-397167f4e11c.jpg"
+        },
+        {
+          "preset": "sweep",
+          "label": "One noise, six κ",
+          "image": "/genchase/previews/sle/sweep-e248ed7c29ec.jpg"
+        },
+        {
+          "preset": "bundle",
+          "label": "Twelve seeds, κ = 6",
+          "image": "/genchase/previews/sle/bundle-acf99d636b1f.jpg"
         }
       ],
       "presetLabels": {
-        "perc": "Percolation, κ = 6"
+        "perc": "Percolation, κ = 6",
+        "saw": "Self-avoiding walk, κ = 8/3",
+        "lerw": "Loop-erased walk, κ = 2",
+        "gff": "Level line, κ = 4",
+        "peano": "Space filling, κ = 8",
+        "sweep": "One noise, six κ",
+        "bundle": "Twelve seeds, κ = 6"
       }
     },
     {
@@ -837,10 +1558,52 @@
           "preset": "bulb",
           "label": "Mandelbulb",
           "image": "/genchase/previews/fractal/bulb-3bbfa7ec7087.jpg"
+        },
+        {
+          "preset": "menger",
+          "label": "Menger sponge",
+          "image": "/genchase/previews/fractal/menger-575a9eb936af.jpg"
+        },
+        {
+          "preset": "box",
+          "label": "Mandelbox",
+          "image": "/genchase/previews/fractal/box-9db6e2f5e097.jpg"
+        },
+        {
+          "preset": "kifs",
+          "label": "Kaleidoscopic",
+          "image": "/genchase/previews/fractal/kifs-75ed6d64be7f.jpg"
+        },
+        {
+          "preset": "apollo",
+          "label": "Apollonian",
+          "image": "/genchase/previews/fractal/apollo-c1a8513ffb4a.jpg"
+        },
+        {
+          "preset": "sierp",
+          "label": "Sierpinski",
+          "image": "/genchase/previews/fractal/sierp-0cb46441e8af.jpg"
+        },
+        {
+          "preset": "julia",
+          "label": "Quaternion Julia",
+          "image": "/genchase/previews/fractal/julia-ef66b34a7744.jpg"
+        },
+        {
+          "preset": "section",
+          "label": "Contour section",
+          "image": "/genchase/previews/fractal/section-825666d61164.jpg"
         }
       ],
       "presetLabels": {
-        "bulb": "Mandelbulb"
+        "bulb": "Mandelbulb",
+        "menger": "Menger sponge",
+        "box": "Mandelbox",
+        "kifs": "Kaleidoscopic",
+        "apollo": "Apollonian",
+        "sierp": "Sierpinski",
+        "julia": "Quaternion Julia",
+        "section": "Contour section"
       }
     },
     {
@@ -868,10 +1631,40 @@
           "preset": "rational",
           "label": "Rational function",
           "image": "/genchase/previews/phase/rational-4dcbbfe1b9ea.jpg"
+        },
+        {
+          "preset": "wheel",
+          "label": "Hue wheel",
+          "image": "/genchase/previews/phase/wheel-a16f7bb8fce0.jpg"
+        },
+        {
+          "preset": "blaschke",
+          "label": "Blaschke product",
+          "image": "/genchase/previews/phase/blaschke-be1abf589bac.jpg"
+        },
+        {
+          "preset": "tan",
+          "label": "Zeros and poles of tan z",
+          "image": "/genchase/previews/phase/tan-5fdef7a82f1e.jpg"
+        },
+        {
+          "preset": "essential",
+          "label": "Essential singularity exp(1/z)",
+          "image": "/genchase/previews/phase/essential-8a64d62d750e.jpg"
+        },
+        {
+          "preset": "quintic",
+          "label": "Quintic z⁵ + a z + b",
+          "image": "/genchase/previews/phase/quintic-780f0e56b13b.jpg"
         }
       ],
       "presetLabels": {
-        "rational": "Rational function"
+        "rational": "Rational function",
+        "wheel": "Hue wheel",
+        "blaschke": "Blaschke product",
+        "tan": "Zeros and poles of tan z",
+        "essential": "Essential singularity exp(1/z)",
+        "quintic": "Quintic z⁵ + a z + b"
       }
     },
     {
@@ -900,10 +1693,46 @@
           "preset": "einstein",
           "label": "Einstein ring",
           "image": "/genchase/previews/lens/einstein-b02bc974669b.jpg"
+        },
+        {
+          "preset": "quad",
+          "label": "Quad image",
+          "image": "/genchase/previews/lens/quad-6bbf742e0d78.jpg"
+        },
+        {
+          "preset": "cluster",
+          "label": "Cluster arcs",
+          "image": "/genchase/previews/lens/cluster-856f957cf903.jpg"
+        },
+        {
+          "preset": "mass",
+          "label": "Convergence",
+          "image": "/genchase/previews/lens/mass-e63ac0c53f4a.jpg"
+        },
+        {
+          "preset": "stars",
+          "label": "Lensed field",
+          "image": "/genchase/previews/lens/stars-5153086f3f25.jpg"
+        },
+        {
+          "preset": "grid",
+          "label": "Warped mesh",
+          "image": "/genchase/previews/lens/grid-3b7c406d9ec8.jpg"
+        },
+        {
+          "preset": "mag",
+          "label": "Magnification",
+          "image": "/genchase/previews/lens/mag-c53120727000.jpg"
         }
       ],
       "presetLabels": {
-        "einstein": "Einstein ring"
+        "einstein": "Einstein ring",
+        "quad": "Quad image",
+        "cluster": "Cluster arcs",
+        "mass": "Convergence",
+        "stars": "Lensed field",
+        "grid": "Warped mesh",
+        "mag": "Magnification"
       }
     },
     {
@@ -932,10 +1761,46 @@
           "preset": "quilt",
           "label": "The rotor quilt",
           "image": "/genchase/previews/rotor/quilt-cf299519450e.jpg"
+        },
+        {
+          "preset": "odometer",
+          "label": "Rotor odometer",
+          "image": "/genchase/previews/rotor/odometer-a45d0a31e162.jpg"
+        },
+        {
+          "preset": "shells",
+          "label": "Growth rings",
+          "image": "/genchase/previews/rotor/shells-e27d82563388.jpg"
+        },
+        {
+          "preset": "idla",
+          "label": "Internal DLA, the random twin",
+          "image": "/genchase/previews/rotor/idla-5a2b6ed19fa2.jpg"
+        },
+        {
+          "preset": "versus",
+          "label": "The odometer, side by side",
+          "image": "/genchase/previews/rotor/versus-d5c13825b6c0.jpg"
+        },
+        {
+          "preset": "rims",
+          "label": "Two rims at one scale",
+          "image": "/genchase/previews/rotor/rims-eec8ecea8318.jpg"
+        },
+        {
+          "preset": "stripes",
+          "label": "Started on the diagonal",
+          "image": "/genchase/previews/rotor/stripes-106b2b116dde.jpg"
         }
       ],
       "presetLabels": {
-        "quilt": "The rotor quilt"
+        "quilt": "The rotor quilt",
+        "odometer": "Rotor odometer",
+        "shells": "Growth rings",
+        "idla": "Internal DLA, the random twin",
+        "versus": "The odometer, side by side",
+        "rims": "Two rims at one scale",
+        "stripes": "Started on the diagonal"
       }
     },
     {
@@ -964,10 +1829,47 @@
           "preset": "local",
           "label": "Local universe",
           "image": "/genchase/previews/web/local-3c032fb171c6.jpg"
+        },
+        {
+          "preset": "young",
+          "label": "Young sheet",
+          "image": "/genchase/previews/web/young-27ae9ccc39ba.jpg"
+        },
+        {
+          "preset": "knife",
+          "label": "Knife filaments",
+          "image": "/genchase/previews/web/knife-4e2bb07c48a9.jpg",
+          "note": "This registered preset produced a nearly uniform sample for the stated seed."
+        },
+        {
+          "preset": "nodes",
+          "label": "Rich nodes",
+          "image": "/genchase/previews/web/nodes-75608af73bf8.jpg"
+        },
+        {
+          "preset": "collapse",
+          "label": "Caustic class",
+          "image": "/genchase/previews/web/collapse-338bbf2ea491.jpg"
+        },
+        {
+          "preset": "voidy",
+          "label": "Void-dominated",
+          "image": "/genchase/previews/web/voidy-266046d4ba4d.jpg"
+        },
+        {
+          "preset": "potential",
+          "label": "Primordial Φ",
+          "image": "/genchase/previews/web/potential-d643d5a3fe1d.jpg"
         }
       ],
       "presetLabels": {
-        "local": "Local universe"
+        "local": "Local universe",
+        "young": "Young sheet",
+        "nodes": "Rich nodes",
+        "collapse": "Caustic class",
+        "voidy": "Void-dominated",
+        "potential": "Primordial Φ",
+        "knife": "Knife filaments"
       }
     },
     {
@@ -998,10 +1900,46 @@
           "preset": "oscillon",
           "label": "Oscillon",
           "image": "/genchase/previews/faraday/oscillon-ac34ef63a40a.jpg"
+        },
+        {
+          "preset": "square",
+          "label": "Square lattice",
+          "image": "/genchase/previews/faraday/square-1625ac1ca7c1.jpg"
+        },
+        {
+          "preset": "stripe",
+          "label": "Stripes",
+          "image": "/genchase/previews/faraday/stripe-fff58bbb501c.jpg"
+        },
+        {
+          "preset": "pair",
+          "label": "Oscillon pair",
+          "image": "/genchase/previews/faraday/pair-8e7087dca087.jpg"
+        },
+        {
+          "preset": "quiet",
+          "label": "Below threshold",
+          "image": "/genchase/previews/faraday/quiet-8c80f2cdcc14.jpg"
+        },
+        {
+          "preset": "wild",
+          "label": "High drive",
+          "image": "/genchase/previews/faraday/wild-1bea178d7aeb.jpg"
+        },
+        {
+          "preset": "fine",
+          "label": "Fine cells",
+          "image": "/genchase/previews/faraday/fine-0ff43d09dd59.jpg"
         }
       ],
       "presetLabels": {
-        "oscillon": "Oscillon"
+        "oscillon": "Oscillon",
+        "square": "Square lattice",
+        "stripe": "Stripes",
+        "pair": "Oscillon pair",
+        "quiet": "Below threshold",
+        "wild": "High drive",
+        "fine": "Fine cells"
       }
     },
     {
@@ -1032,10 +1970,46 @@
           "preset": "drain",
           "label": "Draining pane",
           "image": "/genchase/previews/film/drain-dc4f78b10420.jpg"
+        },
+        {
+          "preset": "black",
+          "label": "Black film",
+          "image": "/genchase/previews/film/black-16cab73b0ae3.jpg"
+        },
+        {
+          "preset": "oil",
+          "label": "Oil on water",
+          "image": "/genchase/previews/film/oil-67f2b13ecaf1.jpg"
+        },
+        {
+          "preset": "bands",
+          "label": "Newton bands",
+          "image": "/genchase/previews/film/bands-6f0bb15162b0.jpg"
+        },
+        {
+          "preset": "puddles",
+          "label": "Pinned puddles",
+          "image": "/genchase/previews/film/puddles-12dfb8db7a9c.jpg"
+        },
+        {
+          "preset": "map",
+          "label": "Thickness map",
+          "image": "/genchase/previews/film/map-d0ebdefee580.jpg"
+        },
+        {
+          "preset": "order",
+          "label": "Interference order",
+          "image": "/genchase/previews/film/order-f23bad950974.jpg"
         }
       ],
       "presetLabels": {
-        "drain": "Draining pane"
+        "drain": "Draining pane",
+        "black": "Black film",
+        "oil": "Oil on water",
+        "bands": "Newton bands",
+        "puddles": "Pinned puddles",
+        "map": "Thickness map",
+        "order": "Interference order"
       }
     },
     {
@@ -1064,10 +2038,46 @@
           "preset": "rigid",
           "label": "Rigid DTC",
           "image": "/genchase/previews/timecrystal/rigid-7667e84ffd4c.jpg"
+        },
+        {
+          "preset": "melt",
+          "label": "Thermalised",
+          "image": "/genchase/previews/timecrystal/melt-d6e444b05d67.jpg"
+        },
+        {
+          "preset": "neel",
+          "label": "Néel seed",
+          "image": "/genchase/previews/timecrystal/neel-c53b0ff8dfbb.jpg"
+        },
+        {
+          "preset": "domain",
+          "label": "Domain wall",
+          "image": "/genchase/previews/timecrystal/domain-e37a7bcd42d9.jpg"
+        },
+        {
+          "preset": "prethermal",
+          "label": "Prethermal",
+          "image": "/genchase/previews/timecrystal/prethermal-fe8432d7de41.jpg"
+        },
+        {
+          "preset": "order",
+          "label": "m₂ map",
+          "image": "/genchase/previews/timecrystal/order-28db6f2df10d.jpg"
+        },
+        {
+          "preset": "clean",
+          "label": "No disorder",
+          "image": "/genchase/previews/timecrystal/clean-3884d675917b.jpg"
         }
       ],
       "presetLabels": {
-        "rigid": "Rigid DTC"
+        "rigid": "Rigid DTC",
+        "melt": "Thermalised",
+        "neel": "Néel seed",
+        "domain": "Domain wall",
+        "prethermal": "Prethermal",
+        "order": "m₂ map",
+        "clean": "No disorder"
       }
     },
     {
@@ -1096,10 +2106,46 @@
           "preset": "cascade",
           "label": "Doubling cascade",
           "image": "/genchase/previews/growdomain/cascade-52100abeae91.jpg"
+        },
+        {
+          "preset": "angelfish",
+          "label": "Angelfish",
+          "image": "/genchase/previews/growdomain/angelfish-a06e7b72a851.jpg"
+        },
+        {
+          "preset": "linear",
+          "label": "Linear growth",
+          "image": "/genchase/previews/growdomain/linear-938e0d6731d9.jpg"
+        },
+        {
+          "preset": "saturating",
+          "label": "Growth that stops",
+          "image": "/genchase/previews/growdomain/saturating-071d868bdb6a.jpg"
+        },
+        {
+          "preset": "lagging",
+          "label": "Growth outruns it",
+          "image": "/genchase/previews/growdomain/lagging-070cde9ea6f9.jpg"
+        },
+        {
+          "preset": "meinhardt",
+          "label": "Gierer-Meinhardt",
+          "image": "/genchase/previews/growdomain/meinhardt-b2d5f42803ac.jpg"
+        },
+        {
+          "preset": "plane",
+          "label": "Growing plane",
+          "image": "/genchase/previews/growdomain/plane-402e2b59eb91.jpg"
         }
       ],
       "presetLabels": {
-        "cascade": "Doubling cascade"
+        "cascade": "Doubling cascade",
+        "angelfish": "Angelfish",
+        "linear": "Linear growth",
+        "saturating": "Growth that stops",
+        "lagging": "Growth outruns it",
+        "meinhardt": "Gierer-Meinhardt",
+        "plane": "Growing plane"
       }
     },
     {
@@ -1128,10 +2174,46 @@
           "preset": "proved",
           "label": "The proved pulse",
           "image": "/genchase/previews/neural-field/proved-9005279a22ec.jpg"
+        },
+        {
+          "preset": "gain12",
+          "label": "Pinto and Ermentrout’s rate",
+          "image": "/genchase/previews/neural-field/gain12-6aa700783b76.jpg"
+        },
+        {
+          "preset": "collisions",
+          "label": "Collisions",
+          "image": "/genchase/previews/neural-field/collisions-88783921762a.jpg"
+        },
+        {
+          "preset": "pacemaker",
+          "label": "Pacemaker train",
+          "image": "/genchase/previews/neural-field/pacemaker-23910cfbbf4b.jpg"
+        },
+        {
+          "preset": "threshold",
+          "label": "Threshold ladder",
+          "image": "/genchase/previews/neural-field/threshold-9b8473eedd21.jpg"
+        },
+        {
+          "preset": "wide",
+          "label": "Slow recovery",
+          "image": "/genchase/previews/neural-field/wide-2af4c6ad561c.jpg"
+        },
+        {
+          "preset": "refractory",
+          "label": "Refractory block",
+          "image": "/genchase/previews/neural-field/refractory-87240fd433fb.jpg"
         }
       ],
       "presetLabels": {
-        "proved": "The proved pulse"
+        "proved": "The proved pulse",
+        "gain12": "Pinto and Ermentrout’s rate",
+        "collisions": "Collisions",
+        "pacemaker": "Pacemaker train",
+        "threshold": "Threshold ladder",
+        "wide": "Slow recovery",
+        "refractory": "Refractory block"
       }
     },
     {
@@ -1162,10 +2244,46 @@
           "preset": "cold",
           "label": "Almost ice",
           "image": "/genchase/previews/spinice/cold-d11f818a888d.jpg"
+        },
+        {
+          "preset": "plasma",
+          "label": "Monopole plasma",
+          "image": "/genchase/previews/spinice/plasma-61bbc3868e11.jpg"
+        },
+        {
+          "preset": "pair",
+          "label": "A pair",
+          "image": "/genchase/previews/spinice/pair-d8305569da8f.jpg"
+        },
+        {
+          "preset": "ice",
+          "label": "Ice map",
+          "image": "/genchase/previews/spinice/ice-473c0f45880a.jpg"
+        },
+        {
+          "preset": "flow",
+          "label": "Polarised",
+          "image": "/genchase/previews/spinice/flow-a9a9631a1dec.jpg"
+        },
+        {
+          "preset": "quench",
+          "label": "Quench",
+          "image": "/genchase/previews/spinice/quench-8d100742e604.jpg"
+        },
+        {
+          "preset": "stripes",
+          "label": "m_y",
+          "image": "/genchase/previews/spinice/stripes-50c8a9038994.jpg"
         }
       ],
       "presetLabels": {
-        "cold": "Almost ice"
+        "cold": "Almost ice",
+        "plasma": "Monopole plasma",
+        "pair": "A pair",
+        "ice": "Ice map",
+        "flow": "Polarised",
+        "quench": "Quench",
+        "stripes": "m_y"
       }
     },
     {
@@ -1196,10 +2314,46 @@
           "preset": "tiger",
           "label": "Tiger bush",
           "image": "/genchase/previews/vegetation/tiger-cd542a82e1a1.jpg"
+        },
+        {
+          "preset": "sparse",
+          "label": "Sparse bands: a = 0.75",
+          "image": "/genchase/previews/vegetation/sparse-10f42f59cb61.jpg"
+        },
+        {
+          "preset": "steep",
+          "label": "Steep slope",
+          "image": "/genchase/previews/vegetation/steep-76831a345d0a.jpg"
+        },
+        {
+          "preset": "gentle",
+          "label": "Gentle slope",
+          "image": "/genchase/previews/vegetation/gentle-d12782d1ffe0.jpg"
+        },
+        {
+          "preset": "flat",
+          "label": "Flat ground",
+          "image": "/genchase/previews/vegetation/flat-785200a10145.jpg"
+        },
+        {
+          "preset": "water",
+          "label": "Runoff",
+          "image": "/genchase/previews/vegetation/water-2f0940b02b77.jpg"
+        },
+        {
+          "preset": "relief",
+          "label": "Relief",
+          "image": "/genchase/previews/vegetation/relief-bc98da09f481.jpg"
         }
       ],
       "presetLabels": {
-        "tiger": "Tiger bush"
+        "tiger": "Tiger bush",
+        "sparse": "Sparse bands: a = 0.75",
+        "steep": "Steep slope",
+        "gentle": "Gentle slope",
+        "flat": "Flat ground",
+        "water": "Runoff",
+        "relief": "Relief"
       }
     },
     {
@@ -1229,10 +2383,40 @@
           "preset": "classic",
           "label": "Four frozen corners",
           "image": "/genchase/previews/aztec/classic-8514a8d9638e.jpg"
+        },
+        {
+          "preset": "fine",
+          "label": "Fine, n = 260",
+          "image": "/genchase/previews/aztec/fine-14f1a70d8511.jpg"
+        },
+        {
+          "preset": "readable",
+          "label": "Readable, n = 28",
+          "image": "/genchase/previews/aztec/readable-734d9bffa83b.jpg"
+        },
+        {
+          "preset": "orient",
+          "label": "Two orientations",
+          "image": "/genchase/previews/aztec/orient-fcad287df983.jpg"
+        },
+        {
+          "preset": "proof",
+          "label": "Frozen versus free",
+          "image": "/genchase/previews/aztec/proof-b8e524941514.jpg"
+        },
+        {
+          "preset": "brick",
+          "label": "Brickwork",
+          "image": "/genchase/previews/aztec/brick-6bd670ef3535.jpg"
         }
       ],
       "presetLabels": {
-        "classic": "Four frozen corners"
+        "classic": "Four frozen corners",
+        "fine": "Fine, n = 260",
+        "readable": "Readable, n = 28",
+        "orient": "Two orientations",
+        "proof": "Frozen versus free",
+        "brick": "Brickwork"
       }
     },
     {
@@ -1261,10 +2445,47 @@
           "preset": "skin",
           "label": "Skinned",
           "image": "/genchase/previews/skin/skin-dd4baa4824f6.jpg"
+        },
+        {
+          "preset": "hermite",
+          "label": "Hermitian",
+          "image": "/genchase/previews/skin/hermite-c0fb9e30da2b.jpg"
+        },
+        {
+          "preset": "dirty",
+          "label": "Disordered skin",
+          "image": "/genchase/previews/skin/dirty-02efc380a96b.jpg"
+        },
+        {
+          "preset": "ring",
+          "label": "Periodic (no skin)",
+          "image": "/genchase/previews/skin/ring-24ad6dfba708.jpg",
+          "note": "This registered preset produced a nearly uniform sample for the stated seed."
+        },
+        {
+          "preset": "wall",
+          "label": "Hard skin",
+          "image": "/genchase/previews/skin/wall-5d16f6a41f03.jpg"
+        },
+        {
+          "preset": "weak",
+          "label": "Gentle g",
+          "image": "/genchase/previews/skin/weak-d4e88778c841.jpg"
+        },
+        {
+          "preset": "anderson",
+          "label": "Anderson",
+          "image": "/genchase/previews/skin/anderson-6953175e8eb1.jpg"
         }
       ],
       "presetLabels": {
-        "skin": "Skinned"
+        "skin": "Skinned",
+        "hermite": "Hermitian",
+        "dirty": "Disordered skin",
+        "wall": "Hard skin",
+        "weak": "Gentle g",
+        "anderson": "Anderson",
+        "ring": "Periodic (no skin)"
       }
     },
     {
@@ -1295,10 +2516,46 @@
           "preset": "sweep",
           "label": "Independence to rigidity",
           "image": "/genchase/previews/rmt/sweep-c20e73c656c8.jpg"
+        },
+        {
+          "preset": "gue",
+          "label": "GUE, level repulsion",
+          "image": "/genchase/previews/rmt/gue-6b389b22d5ac.jpg"
+        },
+        {
+          "preset": "poisson",
+          "label": "β = 0.05, almost independent",
+          "image": "/genchase/previews/rmt/poisson-391e25415ec7.jpg"
+        },
+        {
+          "preset": "crystal",
+          "label": "β = 18, nearly a lattice",
+          "image": "/genchase/previews/rmt/crystal-b675b79aee3f.jpg"
+        },
+        {
+          "preset": "dyson",
+          "label": "Dyson paths",
+          "image": "/genchase/previews/rmt/dyson-b26798369cca.jpg"
+        },
+        {
+          "preset": "braid",
+          "label": "A long braid",
+          "image": "/genchase/previews/rmt/braid-2be097bdbd94.jpg"
+        },
+        {
+          "preset": "semicircle",
+          "label": "GOE, read as a comb",
+          "image": "/genchase/previews/rmt/semicircle-1310f56d897a.jpg"
         }
       ],
       "presetLabels": {
-        "sweep": "Independence to rigidity"
+        "sweep": "Independence to rigidity",
+        "gue": "GUE, level repulsion",
+        "poisson": "β = 0.05, almost independent",
+        "crystal": "β = 18, nearly a lattice",
+        "dyson": "Dyson paths",
+        "braid": "A long braid",
+        "semicircle": "GOE, read as a comb"
       }
     },
     {
@@ -1327,10 +2584,46 @@
           "preset": "stealth",
           "label": "Stealthy",
           "image": "/genchase/previews/stealth/stealth-c48747e06104.jpg"
+        },
+        {
+          "preset": "gas",
+          "label": "Poisson",
+          "image": "/genchase/previews/stealth/gas-64202ffa7ca5.jpg"
+        },
+        {
+          "preset": "crystalish",
+          "label": "High χ",
+          "image": "/genchase/previews/stealth/crystalish-9d573124a8aa.jpg"
+        },
+        {
+          "preset": "fourier",
+          "label": "Forbidden disk",
+          "image": "/genchase/previews/stealth/fourier-058aa5ee48f0.jpg"
+        },
+        {
+          "preset": "density",
+          "label": "Density",
+          "image": "/genchase/previews/stealth/density-2e61d4f3e8a1.jpg"
+        },
+        {
+          "preset": "sparse",
+          "label": "Sparse",
+          "image": "/genchase/previews/stealth/sparse-829ae08adc06.jpg"
+        },
+        {
+          "preset": "tight",
+          "label": "Tight pack",
+          "image": "/genchase/previews/stealth/tight-4a9228edc871.jpg"
         }
       ],
       "presetLabels": {
-        "stealth": "Stealthy"
+        "stealth": "Stealthy",
+        "gas": "Poisson",
+        "crystalish": "High χ",
+        "fourier": "Forbidden disk",
+        "density": "Density",
+        "sparse": "Sparse",
+        "tight": "Tight pack"
       }
     },
     {
@@ -1361,10 +2654,46 @@
           "preset": "circle",
           "label": "Arctic circle, a = b = c = 40",
           "image": "/genchase/previews/lozenge/circle-65fd4e01ed39.jpg"
+        },
+        {
+          "preset": "ellipse",
+          "label": "Skewed hexagon, the ellipse",
+          "image": "/genchase/previews/lozenge/ellipse-c55df76cd45c.jpg"
+        },
+        {
+          "preset": "cubes",
+          "label": "Stack of cubes, a = b = c = 11",
+          "image": "/genchase/previews/lozenge/cubes-8df422f87005.jpg"
+        },
+        {
+          "preset": "flat",
+          "label": "Flattened box, wide frozen wedges",
+          "image": "/genchase/previews/lozenge/flat-8dc1f0aa8cba.jpg"
+        },
+        {
+          "preset": "fine",
+          "label": "Fine, a = b = c = 48",
+          "image": "/genchase/previews/lozenge/fine-3ec84ae3ca1f.jpg"
+        },
+        {
+          "preset": "tower",
+          "label": "Tall box, a = b = 20, c = 40",
+          "image": "/genchase/previews/lozenge/tower-3d555fd18152.jpg"
+        },
+        {
+          "preset": "proof",
+          "label": "Frozen versus free",
+          "image": "/genchase/previews/lozenge/proof-6dbe6342ab0f.jpg"
         }
       ],
       "presetLabels": {
-        "circle": "Arctic circle, a = b = c = 40"
+        "circle": "Arctic circle, a = b = c = 40",
+        "ellipse": "Skewed hexagon, the ellipse",
+        "cubes": "Stack of cubes, a = b = c = 11",
+        "flat": "Flattened box, wide frozen wedges",
+        "fine": "Fine, a = b = c = 48",
+        "tower": "Tall box, a = b = 20, c = 40",
+        "proof": "Frozen versus free"
       }
     },
     {
@@ -1392,10 +2721,40 @@
           "preset": "spot",
           "label": "Arago spot",
           "image": "/genchase/previews/arago/spot-ef3b4532237b.jpg"
+        },
+        {
+          "preset": "tight",
+          "label": "Tight disk",
+          "image": "/genchase/previews/arago/tight-4703c1d3cd70.jpg"
+        },
+        {
+          "preset": "far",
+          "label": "Far field",
+          "image": "/genchase/previews/arago/far-525a802ddd64.jpg"
+        },
+        {
+          "preset": "bright",
+          "label": "On axis",
+          "image": "/genchase/previews/arago/bright-da79a3b12509.jpg"
+        },
+        {
+          "preset": "wide",
+          "label": "Wide",
+          "image": "/genchase/previews/arago/wide-f6c70eb97761.jpg"
+        },
+        {
+          "preset": "hard",
+          "label": "Hard shadow",
+          "image": "/genchase/previews/arago/hard-082c5f620058.jpg"
         }
       ],
       "presetLabels": {
-        "spot": "Arago spot"
+        "spot": "Arago spot",
+        "tight": "Tight disk",
+        "far": "Far field",
+        "bright": "On axis",
+        "wide": "Wide",
+        "hard": "Hard shadow"
       }
     },
     {
@@ -1426,10 +2785,46 @@
           "preset": "tree",
           "label": "One uniform spanning tree",
           "image": "/genchase/previews/ust/tree-4a46ff97592a.jpg"
+        },
+        {
+          "preset": "depth",
+          "label": "Distance from the root",
+          "image": "/genchase/previews/ust/depth-b075f9d337b1.jpg"
+        },
+        {
+          "preset": "lerw",
+          "label": "The loop-erased walk",
+          "image": "/genchase/previews/ust/lerw-ad1140c7b4ef.jpg"
+        },
+        {
+          "preset": "maze",
+          "label": "Perfect maze",
+          "image": "/genchase/previews/ust/maze-242a2103aefc.jpg"
+        },
+        {
+          "preset": "torus",
+          "label": "Wrapped on a torus",
+          "image": "/genchase/previews/ust/torus-2f2a9129871f.jpg"
+        },
+        {
+          "preset": "fine",
+          "label": "Fine, 200 across",
+          "image": "/genchase/previews/ust/fine-9d499025b09b.jpg"
+        },
+        {
+          "preset": "corner",
+          "label": "Rooted in a corner",
+          "image": "/genchase/previews/ust/corner-9d764da4ac6f.jpg"
         }
       ],
       "presetLabels": {
-        "tree": "One uniform spanning tree"
+        "tree": "One uniform spanning tree",
+        "depth": "Distance from the root",
+        "lerw": "The loop-erased walk",
+        "maze": "Perfect maze",
+        "torus": "Wrapped on a torus",
+        "fine": "Fine, 200 across",
+        "corner": "Rooted in a corner"
       }
     },
     {
@@ -1459,10 +2854,52 @@
           "preset": "silk",
           "label": "Silk",
           "image": "/genchase/previews/cppn/silk-8253712789d5.jpg"
+        },
+        {
+          "preset": "topography",
+          "label": "Topography",
+          "image": "/genchase/previews/cppn/topography-92cec9273bd2.jpg"
+        },
+        {
+          "preset": "glass",
+          "label": "Stained glass",
+          "image": "/genchase/previews/cppn/glass-4d6f3a99402b.jpg"
+        },
+        {
+          "preset": "plasma",
+          "label": "Plasma",
+          "image": "/genchase/previews/cppn/plasma-1c7c3daf9d72.jpg"
+        },
+        {
+          "preset": "mandala",
+          "label": "Mandala",
+          "image": "/genchase/previews/cppn/mandala-930a56e79530.jpg"
+        },
+        {
+          "preset": "inkwash",
+          "label": "Ink wash",
+          "image": "/genchase/previews/cppn/inkwash-a16afa838796.jpg"
+        },
+        {
+          "preset": "circuit",
+          "label": "Circuit",
+          "image": "/genchase/previews/cppn/circuit-7dc4e07cb651.jpg"
+        },
+        {
+          "preset": "aurora",
+          "label": "Aurora",
+          "image": "/genchase/previews/cppn/aurora-1e60163f5a15.jpg"
         }
       ],
       "presetLabels": {
-        "silk": "Silk"
+        "silk": "Silk",
+        "topography": "Topography",
+        "glass": "Stained glass",
+        "plasma": "Plasma",
+        "mandala": "Mandala",
+        "inkwash": "Ink wash",
+        "circuit": "Circuit",
+        "aurora": "Aurora"
       }
     },
     {
@@ -1490,10 +2927,40 @@
           "preset": "peregrine",
           "label": "Peregrine",
           "image": "/genchase/previews/rogue/peregrine-b4af5a3aa6e5.jpg"
+        },
+        {
+          "preset": "nowhere",
+          "label": "From nowhere",
+          "image": "/genchase/previews/rogue/nowhere-9abbf5b89c66.jpg"
+        },
+        {
+          "preset": "akh",
+          "label": "Akhmediev",
+          "image": "/genchase/previews/rogue/akh-bf9cef69ae08.jpg"
+        },
+        {
+          "preset": "km",
+          "label": "Kuznetsov–Ma",
+          "image": "/genchase/previews/rogue/km-e830dfbb1c04.jpg"
+        },
+        {
+          "preset": "wide",
+          "label": "Wide",
+          "image": "/genchase/previews/rogue/wide-b3e50472a76a.jpg"
+        },
+        {
+          "preset": "peak",
+          "label": "Peak",
+          "image": "/genchase/previews/rogue/peak-7804add37372.jpg"
         }
       ],
       "presetLabels": {
-        "peregrine": "Peregrine"
+        "peregrine": "Peregrine",
+        "nowhere": "From nowhere",
+        "akh": "Akhmediev",
+        "km": "Kuznetsov–Ma",
+        "wide": "Wide",
+        "peak": "Peak"
       }
     },
     {
@@ -1521,10 +2988,40 @@
           "preset": "repeated",
           "label": "Repeated responses",
           "image": "/genchase/previews/hodgkin-huxley/repeated-d0c618f4e478.jpg"
+        },
+        {
+          "preset": "brief",
+          "label": "Brief pulse",
+          "image": "/genchase/previews/hodgkin-huxley/brief-ab845382be74.jpg"
+        },
+        {
+          "preset": "recruitment",
+          "label": "A range of inputs",
+          "image": "/genchase/previews/hodgkin-huxley/recruitment-a39d6656f12a.jpg"
+        },
+        {
+          "preset": "sodium",
+          "label": "Sodium gate opens",
+          "image": "/genchase/previews/hodgkin-huxley/sodium-12ca6a91741c.jpg"
+        },
+        {
+          "preset": "potassium",
+          "label": "Potassium recovery",
+          "image": "/genchase/previews/hodgkin-huxley/potassium-4a8b721924c7.jpg"
+        },
+        {
+          "preset": "rebound",
+          "label": "Release from inhibition",
+          "image": "/genchase/previews/hodgkin-huxley/rebound-9328359758f0.jpg"
         }
       ],
       "presetLabels": {
-        "repeated": "Repeated responses"
+        "repeated": "Repeated responses",
+        "brief": "Brief pulse",
+        "recruitment": "A range of inputs",
+        "sodium": "Sodium gate opens",
+        "potassium": "Potassium recovery",
+        "rebound": "Release from inhibition"
       }
     },
     {
@@ -1552,10 +3049,40 @@
           "preset": "shift",
           "label": "Shifted",
           "image": "/genchase/previews/aharonov/shift-cb08e8da17bc.jpg"
+        },
+        {
+          "preset": "zero",
+          "label": "No flux",
+          "image": "/genchase/previews/aharonov/zero-439ff6f92ae8.jpg"
+        },
+        {
+          "preset": "quantum",
+          "label": "One fluxon",
+          "image": "/genchase/previews/aharonov/quantum-4f943983cdca.jpg"
+        },
+        {
+          "preset": "tight",
+          "label": "Tight slits",
+          "image": "/genchase/previews/aharonov/tight-29767d6ae805.jpg"
+        },
+        {
+          "preset": "wide",
+          "label": "Wide",
+          "image": "/genchase/previews/aharonov/wide-59f7a8d9b5e6.jpg"
+        },
+        {
+          "preset": "half",
+          "label": "Half fluxon",
+          "image": "/genchase/previews/aharonov/half-71b17cfc5294.jpg"
         }
       ],
       "presetLabels": {
-        "shift": "Shifted"
+        "shift": "Shifted",
+        "zero": "No flux",
+        "quantum": "One fluxon",
+        "tight": "Tight slits",
+        "wide": "Wide",
+        "half": "Half fluxon"
       }
     },
     {
@@ -1583,10 +3110,40 @@
           "preset": "classic",
           "label": "Full square",
           "image": "/genchase/previews/pendulum/classic-eebf78a035ab.jpg"
+        },
+        {
+          "preset": "lens",
+          "label": "The lens",
+          "image": "/genchase/previews/pendulum/lens-a1eae495d5b4.jpg"
+        },
+        {
+          "preset": "arms",
+          "label": "Which arm",
+          "image": "/genchase/previews/pendulum/arms-63318ab3a958.jpg"
+        },
+        {
+          "preset": "edge",
+          "label": "Edge of chaos",
+          "image": "/genchase/previews/pendulum/edge-0069bd7d623c.jpg"
+        },
+        {
+          "preset": "long",
+          "label": "Long horizon",
+          "image": "/genchase/previews/pendulum/long-488dfd6ad21f.jpg"
+        },
+        {
+          "preset": "wide",
+          "label": "Wide band",
+          "image": "/genchase/previews/pendulum/wide-736ab7066693.jpg"
         }
       ],
       "presetLabels": {
-        "classic": "Full square"
+        "classic": "Full square",
+        "lens": "The lens",
+        "arms": "Which arm",
+        "edge": "Edge of chaos",
+        "long": "Long horizon",
+        "wide": "Wide band"
       }
     },
     {
@@ -1616,10 +3173,40 @@
           "preset": "zero",
           "label": "E = 0, in the proof",
           "image": "/genchase/previews/dptangle/zero-35a55ad1c8f6.jpg"
+        },
+        {
+          "preset": "halfDown",
+          "label": "E = -1/2, in the proof",
+          "image": "/genchase/previews/dptangle/halfdown-14d6755563ed.jpg"
+        },
+        {
+          "preset": "halfUp",
+          "label": "E = 1/2, in the proof",
+          "image": "/genchase/previews/dptangle/halfup-8c078401a40f.jpg"
+        },
+        {
+          "preset": "low",
+          "label": "E = -3/5, not covered",
+          "image": "/genchase/previews/dptangle/low-8716a2bd52dc.jpg"
+        },
+        {
+          "preset": "high",
+          "label": "E = 3/4, not covered",
+          "image": "/genchase/previews/dptangle/high-821609c3ab56.jpg"
+        },
+        {
+          "preset": "sea",
+          "label": "E = 0, denser sea",
+          "image": "/genchase/previews/dptangle/sea-3c856922c93b.jpg"
         }
       ],
       "presetLabels": {
-        "zero": "E = 0, in the proof"
+        "zero": "E = 0, in the proof",
+        "halfDown": "E = -1/2, in the proof",
+        "halfUp": "E = 1/2, in the proof",
+        "low": "E = -3/5, not covered",
+        "high": "E = 3/4, not covered",
+        "sea": "E = 0, denser sea"
       }
     },
     {
@@ -1647,10 +3234,40 @@
           "preset": "loc",
           "label": "Localised",
           "image": "/genchase/previews/anderson/loc-b641423834a2.jpg"
+        },
+        {
+          "preset": "ext",
+          "label": "Almost extended",
+          "image": "/genchase/previews/anderson/ext-9d71d73b947a.jpg"
+        },
+        {
+          "preset": "crit",
+          "label": "Strong disorder",
+          "image": "/genchase/previews/anderson/crit-f3ce9b839912.jpg"
+        },
+        {
+          "preset": "clean",
+          "label": "No disorder",
+          "image": "/genchase/previews/anderson/clean-c3d4b337ff47.jpg"
+        },
+        {
+          "preset": "mid",
+          "label": "Moderate",
+          "image": "/genchase/previews/anderson/mid-447d34e93da8.jpg"
+        },
+        {
+          "preset": "tight",
+          "label": "Pinned",
+          "image": "/genchase/previews/anderson/tight-0dc7e04e9e91.jpg"
         }
       ],
       "presetLabels": {
-        "loc": "Localised"
+        "loc": "Localised",
+        "ext": "Almost extended",
+        "crit": "Strong disorder",
+        "clean": "No disorder",
+        "mid": "Moderate",
+        "tight": "Pinned"
       }
     },
     {
@@ -1678,10 +3295,40 @@
           "preset": "recur",
           "label": "Nonlinear chain",
           "image": "/genchase/previews/fput/recur-a6617cb75ea4.jpg"
+        },
+        {
+          "preset": "linear",
+          "label": "Linear",
+          "image": "/genchase/previews/fput/linear-a9795c2f8ff8.jpg"
+        },
+        {
+          "preset": "strong",
+          "label": "Strong α",
+          "image": "/genchase/previews/fput/strong-d2d05ddb16f6.jpg"
+        },
+        {
+          "preset": "long",
+          "label": "Long run",
+          "image": "/genchase/previews/fput/long-dd9aa8b285e5.jpg"
+        },
+        {
+          "preset": "fine",
+          "label": "Fine step",
+          "image": "/genchase/previews/fput/fine-3f19837855c7.jpg"
+        },
+        {
+          "preset": "thermal",
+          "label": "Higher nonlinearity",
+          "image": "/genchase/previews/fput/thermal-4c2e25843040.jpg"
         }
       ],
       "presetLabels": {
-        "recur": "Nonlinear chain"
+        "recur": "Nonlinear chain",
+        "linear": "Linear",
+        "strong": "Strong α",
+        "long": "Long run",
+        "fine": "Fine step",
+        "thermal": "Higher nonlinearity"
       }
     },
     {
@@ -1714,10 +3361,58 @@
           "preset": "double",
           "label": "Double slit",
           "image": "/genchase/previews/schrodinger/double-0f30309e9331.jpg"
+        },
+        {
+          "preset": "mirror",
+          "label": "Reflecting wall",
+          "image": "/genchase/previews/schrodinger/mirror-3686ceb12756.jpg"
+        },
+        {
+          "preset": "single",
+          "label": "Single slit",
+          "image": "/genchase/previews/schrodinger/single-3f89497da2a1.jpg"
+        },
+        {
+          "preset": "tunnel",
+          "label": "Tunneling",
+          "image": "/genchase/previews/schrodinger/tunnel-5444faa3764b.jpg"
+        },
+        {
+          "preset": "orbit",
+          "label": "Coherent orbit",
+          "image": "/genchase/previews/schrodinger/orbit-39c9eb80e335.jpg"
+        },
+        {
+          "preset": "stadium",
+          "label": "Stadium",
+          "image": "/genchase/previews/schrodinger/stadium-f6726f5aa8a2.jpg"
+        },
+        {
+          "preset": "lattice",
+          "label": "Lattice",
+          "image": "/genchase/previews/schrodinger/lattice-75905dc7e5f9.jpg"
+        },
+        {
+          "preset": "anderson",
+          "label": "Anderson",
+          "image": "/genchase/previews/schrodinger/anderson-2896f55fae11.jpg"
+        },
+        {
+          "preset": "lens",
+          "label": "Gaussian lens",
+          "image": "/genchase/previews/schrodinger/lens-1692d356aebd.jpg"
         }
       ],
       "presetLabels": {
-        "double": "Double slit"
+        "double": "Double slit",
+        "mirror": "Reflecting wall",
+        "single": "Single slit",
+        "tunnel": "Tunneling",
+        "orbit": "Coherent orbit",
+        "stadium": "Stadium",
+        "lattice": "Lattice",
+        "anderson": "Anderson",
+        "lens": "Gaussian lens"
       }
     },
     {
@@ -1747,10 +3442,40 @@
           "preset": "disk",
           "label": "Dielectric disk",
           "image": "/genchase/previews/maxwell/disk-10cf44836ff7.jpg"
+        },
+        {
+          "preset": "rings",
+          "label": "Vacuum ring",
+          "image": "/genchase/previews/maxwell/rings-c7239416d0dc.jpg"
+        },
+        {
+          "preset": "slab",
+          "label": "Glass slab",
+          "image": "/genchase/previews/maxwell/slab-d9c383a172e0.jpg"
+        },
+        {
+          "preset": "rods",
+          "label": "Dielectric rods",
+          "image": "/genchase/previews/maxwell/rods-df5376b81dd9.jpg"
+        },
+        {
+          "preset": "strip",
+          "label": "Winding strip",
+          "image": "/genchase/previews/maxwell/strip-f20323c8f8b6.jpg"
+        },
+        {
+          "preset": "plane",
+          "label": "Homogeneous plane wave",
+          "image": "/genchase/previews/maxwell/plane-dbd081578fae.jpg"
         }
       ],
       "presetLabels": {
-        "disk": "Dielectric disk"
+        "disk": "Dielectric disk",
+        "rings": "Vacuum ring",
+        "slab": "Glass slab",
+        "rods": "Dielectric rods",
+        "strip": "Winding strip",
+        "plane": "Homogeneous plane wave"
       }
     },
     {
@@ -1780,10 +3505,40 @@
           "preset": "streams",
           "label": "Two moving populations",
           "image": "/genchase/previews/plasma/streams-5f0f0d168aff.jpg"
+        },
+        {
+          "preset": "oscillation",
+          "label": "Cold plasma oscillation",
+          "image": "/genchase/previews/plasma/oscillation-b94aa906166f.jpg"
+        },
+        {
+          "preset": "warm",
+          "label": "Warm velocity mixing",
+          "image": "/genchase/previews/plasma/warm-8724c8c08910.jpg"
+        },
+        {
+          "preset": "twins",
+          "label": "Two spatial islands",
+          "image": "/genchase/previews/plasma/twins-36882a99c92e.jpg"
+        },
+        {
+          "preset": "broad",
+          "label": "Broad overlapping beams",
+          "image": "/genchase/previews/plasma/broad-5010c927a03d.jpg"
+        },
+        {
+          "preset": "dense",
+          "label": "More particles, less sampling noise",
+          "image": "/genchase/previews/plasma/dense-535c35543b07.jpg"
         }
       ],
       "presetLabels": {
-        "streams": "Two moving populations"
+        "streams": "Two moving populations",
+        "oscillation": "Cold plasma oscillation",
+        "warm": "Warm velocity mixing",
+        "twins": "Two spatial islands",
+        "broad": "Broad overlapping beams",
+        "dense": "More particles, less sampling noise"
       }
     },
     {
@@ -1814,10 +3569,46 @@
           "preset": "spirals",
           "label": "Spiral pair",
           "image": "/genchase/previews/excitable/spirals-dd1eaab80164.jpg"
+        },
+        {
+          "preset": "meander",
+          "label": "Meander",
+          "image": "/genchase/previews/excitable/meander-84838855f799.jpg"
+        },
+        {
+          "preset": "breakup",
+          "label": "Breakup turbulence",
+          "image": "/genchase/previews/excitable/breakup-f245b80cfa48.jpg"
+        },
+        {
+          "preset": "targets",
+          "label": "Target waves",
+          "image": "/genchase/previews/excitable/targets-29002dbb0183.jpg"
+        },
+        {
+          "preset": "fhn",
+          "label": "FHN spiral",
+          "image": "/genchase/previews/excitable/fhn-35f66cec82ff.jpg"
+        },
+        {
+          "preset": "labyrinth",
+          "label": "Labyrinth",
+          "image": "/genchase/previews/excitable/labyrinth-22e904aba9c0.jpg"
+        },
+        {
+          "preset": "relief",
+          "label": "Relief",
+          "image": "/genchase/previews/excitable/relief-815656ebb9c0.jpg"
         }
       ],
       "presetLabels": {
-        "spirals": "Spiral pair"
+        "spirals": "Spiral pair",
+        "meander": "Meander",
+        "breakup": "Breakup turbulence",
+        "targets": "Target waves",
+        "fhn": "FHN spiral",
+        "labyrinth": "Labyrinth",
+        "relief": "Relief"
       }
     },
     {
@@ -1845,10 +3636,40 @@
           "preset": "collide",
           "label": "Collision",
           "image": "/genchase/previews/soliton/collide-3e1d3cee141f.jpg"
+        },
+        {
+          "preset": "equal",
+          "label": "Equal",
+          "image": "/genchase/previews/soliton/equal-6b39fa71b438.jpg"
+        },
+        {
+          "preset": "fast",
+          "label": "Fast overtake",
+          "image": "/genchase/previews/soliton/fast-c0b94b068276.jpg"
+        },
+        {
+          "preset": "soft",
+          "label": "Soft",
+          "image": "/genchase/previews/soliton/soft-df4b6214a55c.jpg"
+        },
+        {
+          "preset": "train",
+          "label": "Train",
+          "image": "/genchase/previews/soliton/train-025ed6ba5e59.jpg"
+        },
+        {
+          "preset": "crisp",
+          "label": "Crisp",
+          "image": "/genchase/previews/soliton/crisp-a2281aa788d0.jpg"
         }
       ],
       "presetLabels": {
-        "collide": "Collision"
+        "collide": "Collision",
+        "equal": "Equal",
+        "fast": "Fast overtake",
+        "soft": "Soft",
+        "train": "Train",
+        "crisp": "Crisp"
       }
     },
     {
@@ -1879,10 +3700,46 @@
           "preset": "griffeath",
           "label": "Griffeath 14",
           "image": "/genchase/previews/cyclicca/griffeath-addc11c3a47b.jpg"
+        },
+        {
+          "preset": "eight",
+          "label": "Eight colors",
+          "image": "/genchase/previews/cyclicca/eight-f7d604d2e118.jpg"
+        },
+        {
+          "preset": "turbulent",
+          "label": "Turbulent r=2",
+          "image": "/genchase/previews/cyclicca/turbulent-2e26eaadd2e4.jpg"
+        },
+        {
+          "preset": "fixation",
+          "label": "Fixation",
+          "image": "/genchase/previews/cyclicca/fixation-ec94a31f452e.jpg"
+        },
+        {
+          "preset": "gh",
+          "label": "Greenberg-Hastings",
+          "image": "/genchase/previews/cyclicca/gh-8af5b182793d.jpg"
+        },
+        {
+          "preset": "ghwide",
+          "label": "Wide excitable waves",
+          "image": "/genchase/previews/cyclicca/ghwide-07a08f3f93e8.jpg"
+        },
+        {
+          "preset": "ghdense",
+          "label": "Dense excitable",
+          "image": "/genchase/previews/cyclicca/ghdense-a7a5aad32758.jpg"
         }
       ],
       "presetLabels": {
-        "griffeath": "Griffeath 14"
+        "griffeath": "Griffeath 14",
+        "eight": "Eight colors",
+        "turbulent": "Turbulent r=2",
+        "fixation": "Fixation",
+        "gh": "Greenberg-Hastings",
+        "ghwide": "Wide excitable waves",
+        "ghdense": "Dense excitable"
       }
     },
     {
@@ -1912,10 +3769,52 @@
           "preset": "classic",
           "label": "Classic chimera",
           "image": "/genchase/previews/chimera/classic-03d40002c5b4.jpg"
+        },
+        {
+          "preset": "order",
+          "label": "Order parameter",
+          "image": "/genchase/previews/chimera/order-d4bd8d5b25de.jpg"
+        },
+        {
+          "preset": "breathing",
+          "label": "Breathing chimera",
+          "image": "/genchase/previews/chimera/breathing-efd59ca69a40.jpg"
+        },
+        {
+          "preset": "multi",
+          "label": "Multi-headed",
+          "image": "/genchase/previews/chimera/multi-da75b8b27c0f.jpg"
+        },
+        {
+          "preset": "spiral",
+          "label": "Spiral chimera",
+          "image": "/genchase/previews/chimera/spiral-72969785e757.jpg"
+        },
+        {
+          "preset": "cosine",
+          "label": "Cosine kernel",
+          "image": "/genchase/previews/chimera/cosine-e02806af568f.jpg"
+        },
+        {
+          "preset": "polar",
+          "label": "Polar ring",
+          "image": "/genchase/previews/chimera/polar-861d2a75d15c.jpg"
+        },
+        {
+          "preset": "coherent",
+          "label": "Coherent",
+          "image": "/genchase/previews/chimera/coherent-fc3669b7d4e5.jpg"
         }
       ],
       "presetLabels": {
-        "classic": "Classic chimera"
+        "classic": "Classic chimera",
+        "order": "Order parameter",
+        "breathing": "Breathing chimera",
+        "multi": "Multi-headed",
+        "cosine": "Cosine kernel",
+        "spiral": "Spiral chimera",
+        "polar": "Polar ring",
+        "coherent": "Coherent"
       }
     },
     {
@@ -1943,10 +3842,40 @@
           "preset": "topo",
           "label": "Topological",
           "image": "/genchase/previews/ssh/topo-e5c953afa074.jpg"
+        },
+        {
+          "preset": "triv",
+          "label": "Trivial",
+          "image": "/genchase/previews/ssh/triv-b0aaebe1ca65.jpg"
+        },
+        {
+          "preset": "ring",
+          "label": "Periodic",
+          "image": "/genchase/previews/ssh/ring-2bf9f2d8589e.jpg"
+        },
+        {
+          "preset": "edge",
+          "label": "Deep edge",
+          "image": "/genchase/previews/ssh/edge-aea089071ee5.jpg"
+        },
+        {
+          "preset": "crit",
+          "label": "Critical",
+          "image": "/genchase/previews/ssh/crit-ff90458504b0.jpg"
+        },
+        {
+          "preset": "log",
+          "label": "Log |ψ|",
+          "image": "/genchase/previews/ssh/log-a08fed7a6c01.jpg"
         }
       ],
       "presetLabels": {
-        "topo": "Topological"
+        "topo": "Topological",
+        "triv": "Trivial",
+        "ring": "Periodic",
+        "edge": "Deep edge",
+        "crit": "Critical",
+        "log": "Log |ψ|"
       }
     },
     {
@@ -1976,10 +3905,34 @@
           "label": "Rainbow ring",
           "image": "/genchase/previews/swarm/rainbow-2fa8210a9b54.jpg",
           "video": "/genchase/previews/swarm/rainbow-66e74b61a6a0.webm"
+        },
+        {
+          "preset": "sync",
+          "label": "Static sync",
+          "image": "/genchase/previews/swarm/sync-eab002545149.jpg"
+        },
+        {
+          "preset": "async",
+          "label": "Static async",
+          "image": "/genchase/previews/swarm/async-445005a75684.jpg"
+        },
+        {
+          "preset": "splinter",
+          "label": "Splintered wave",
+          "image": "/genchase/previews/swarm/splinter-a3e289ef92ca.jpg"
+        },
+        {
+          "preset": "active",
+          "label": "Active phase wave",
+          "image": "/genchase/previews/swarm/active-01b233a04720.jpg"
         }
       ],
       "presetLabels": {
-        "rainbow": "Rainbow ring"
+        "rainbow": "Rainbow ring",
+        "sync": "Static sync",
+        "async": "Static async",
+        "splinter": "Splintered wave",
+        "active": "Active phase wave"
       }
     },
     {
@@ -2009,10 +3962,40 @@
           "preset": "bubbly",
           "label": "Bubbly phase separation",
           "image": "/genchase/previews/amb/bubbly-96423aebd302.jpg"
+        },
+        {
+          "preset": "foam",
+          "label": "Foam",
+          "image": "/genchase/previews/amb/foam-5431577802ae.jpg"
+        },
+        {
+          "preset": "passive",
+          "label": "Passive (Cahn-Hilliard)",
+          "image": "/genchase/previews/amb/passive-768dbd895a54.jpg"
+        },
+        {
+          "preset": "labyrinth",
+          "label": "Active labyrinth",
+          "image": "/genchase/previews/amb/labyrinth-c1d661a94be0.jpg"
+        },
+        {
+          "preset": "drops",
+          "label": "Seeded drops",
+          "image": "/genchase/previews/amb/drops-c7bb4ba06932.jpg"
+        },
+        {
+          "preset": "relief",
+          "label": "Relief",
+          "image": "/genchase/previews/amb/relief-825f526de62b.jpg"
         }
       ],
       "presetLabels": {
-        "bubbly": "Bubbly phase separation"
+        "bubbly": "Bubbly phase separation",
+        "foam": "Foam",
+        "passive": "Passive (Cahn-Hilliard)",
+        "labyrinth": "Active labyrinth",
+        "drops": "Seeded drops",
+        "relief": "Relief"
       }
     },
     {
@@ -2040,10 +4023,40 @@
           "preset": "loc",
           "label": "Localized",
           "image": "/genchase/previews/aubry/loc-796375021c12.jpg"
+        },
+        {
+          "preset": "ext",
+          "label": "Extended",
+          "image": "/genchase/previews/aubry/ext-064fd318868f.jpg"
+        },
+        {
+          "preset": "crit",
+          "label": "Critical λ=1",
+          "image": "/genchase/previews/aubry/crit-8042d8847cf7.jpg"
+        },
+        {
+          "preset": "deep",
+          "label": "Deep",
+          "image": "/genchase/previews/aubry/deep-d71dd1b1c408.jpg"
+        },
+        {
+          "preset": "sweep",
+          "label": "Above dual",
+          "image": "/genchase/previews/aubry/sweep-897caaeef0eb.jpg"
+        },
+        {
+          "preset": "clean",
+          "label": "Almost free",
+          "image": "/genchase/previews/aubry/clean-f243498fba2f.jpg"
         }
       ],
       "presetLabels": {
-        "loc": "Localized"
+        "loc": "Localized",
+        "ext": "Extended",
+        "crit": "Critical λ=1",
+        "deep": "Deep",
+        "sweep": "Above dual",
+        "clean": "Almost free"
       }
     },
     {
@@ -2072,10 +4085,34 @@
           "preset": "labyrinth",
           "label": "Labyrinth",
           "image": "/genchase/previews/cahn/labyrinth-60f4a6223096.jpg"
+        },
+        {
+          "preset": "droplets",
+          "label": "Droplets",
+          "image": "/genchase/previews/cahn/droplets-5ce5dae1bf18.jpg"
+        },
+        {
+          "preset": "sharp",
+          "label": "Sharp interfaces",
+          "image": "/genchase/previews/cahn/sharp-35fe02cac190.jpg"
+        },
+        {
+          "preset": "relief",
+          "label": "Relief",
+          "image": "/genchase/previews/cahn/relief-4e9003abe4ea.jpg"
+        },
+        {
+          "preset": "bands",
+          "label": "Bands",
+          "image": "/genchase/previews/cahn/bands-8b02aa24de40.jpg"
         }
       ],
       "presetLabels": {
-        "labyrinth": "Labyrinth"
+        "labyrinth": "Labyrinth",
+        "droplets": "Droplets",
+        "sharp": "Sharp interfaces",
+        "relief": "Relief",
+        "bands": "Bands"
       }
     },
     {
@@ -2104,10 +4141,34 @@
           "preset": "lamellae",
           "label": "Lamellae",
           "image": "/genchase/previews/ohta/lamellae-5e5575fd0ddf.jpg"
+        },
+        {
+          "preset": "spots",
+          "label": "Spots",
+          "image": "/genchase/previews/ohta/spots-c22a4167439d.jpg"
+        },
+        {
+          "preset": "fingerprint",
+          "label": "Fingerprint",
+          "image": "/genchase/previews/ohta/fingerprint-49f251f953b8.jpg"
+        },
+        {
+          "preset": "relief",
+          "label": "Relief",
+          "image": "/genchase/previews/ohta/relief-c1b2b49a81a9.jpg"
+        },
+        {
+          "preset": "coarse",
+          "label": "Soft σ",
+          "image": "/genchase/previews/ohta/coarse-30155b8d992f.jpg"
         }
       ],
       "presetLabels": {
-        "lamellae": "Lamellae"
+        "lamellae": "Lamellae",
+        "spots": "Spots",
+        "fingerprint": "Fingerprint",
+        "relief": "Relief",
+        "coarse": "Soft σ"
       }
     },
     {
@@ -2135,10 +4196,40 @@
           "preset": "linked",
           "label": "Linked circles",
           "image": "/genchase/previews/hopf/linked-0d1413876cbc.jpg"
+        },
+        {
+          "preset": "tori",
+          "label": "Nested tori",
+          "image": "/genchase/previews/hopf/tori-7558c2dbe929.jpg"
+        },
+        {
+          "preset": "poles",
+          "label": "Near poles",
+          "image": "/genchase/previews/hopf/poles-329af38fe6b2.jpg"
+        },
+        {
+          "preset": "dense",
+          "label": "Dense",
+          "image": "/genchase/previews/hopf/dense-0751b932d294.jpg"
+        },
+        {
+          "preset": "base",
+          "label": "Base S²",
+          "image": "/genchase/previews/hopf/base-bba413edf03c.jpg"
+        },
+        {
+          "preset": "sparse",
+          "label": "Sparse",
+          "image": "/genchase/previews/hopf/sparse-66266c83c0a7.jpg"
         }
       ],
       "presetLabels": {
-        "linked": "Linked circles"
+        "linked": "Linked circles",
+        "tori": "Nested tori",
+        "poles": "Near poles",
+        "dense": "Dense",
+        "base": "Base S²",
+        "sparse": "Sparse"
       }
     },
     {
@@ -2167,10 +4258,34 @@
           "preset": "rolls",
           "label": "Rolls",
           "image": "/genchase/previews/swift/rolls-c478fc040b34.jpg"
+        },
+        {
+          "preset": "hex",
+          "label": "Hexagons",
+          "image": "/genchase/previews/swift/hex-aa5e52137940.jpg"
+        },
+        {
+          "preset": "localized",
+          "label": "Localized",
+          "image": "/genchase/previews/swift/localized-3db5eb3c9df0.jpg"
+        },
+        {
+          "preset": "target",
+          "label": "Target",
+          "image": "/genchase/previews/swift/target-ab0207253a32.jpg"
+        },
+        {
+          "preset": "relief",
+          "label": "Convection relief",
+          "image": "/genchase/previews/swift/relief-33bd1d54fc5a.jpg"
         }
       ],
       "presetLabels": {
-        "rolls": "Rolls"
+        "rolls": "Rolls",
+        "hex": "Hexagons",
+        "localized": "Localized",
+        "relief": "Convection relief",
+        "target": "Target"
       }
     },
     {
@@ -2200,10 +4315,40 @@
           "preset": "nucleus",
           "label": "Nucleus",
           "image": "/genchase/previews/pfc/nucleus-459092bc388a.jpg"
+        },
+        {
+          "preset": "poly",
+          "label": "Polycrystal",
+          "image": "/genchase/previews/pfc/poly-c92d745d4454.jpg"
+        },
+        {
+          "preset": "grain",
+          "label": "Grain boundary",
+          "image": "/genchase/previews/pfc/grain-93122fd9f0e9.jpg"
+        },
+        {
+          "preset": "stripes",
+          "label": "Stripes",
+          "image": "/genchase/previews/pfc/stripes-5dc088678d08.jpg"
+        },
+        {
+          "preset": "melt",
+          "label": "Melting",
+          "image": "/genchase/previews/pfc/melt-e8fd92fd5a5c.jpg"
+        },
+        {
+          "preset": "relief",
+          "label": "Atomic relief",
+          "image": "/genchase/previews/pfc/relief-7797b72207ed.jpg"
         }
       ],
       "presetLabels": {
-        "nucleus": "Nucleus"
+        "nucleus": "Nucleus",
+        "poly": "Polycrystal",
+        "grain": "Grain boundary",
+        "stripes": "Stripes",
+        "melt": "Melting",
+        "relief": "Atomic relief"
       }
     },
     {
@@ -2232,10 +4377,34 @@
           "preset": "dodec",
           "label": "Dodecagonal",
           "image": "/genchase/previews/lp/dodec-ce6cc31d3ec6.jpg"
+        },
+        {
+          "preset": "noisy",
+          "label": "From noise",
+          "image": "/genchase/previews/lp/noisy-092b1e4dbb5b.jpg"
+        },
+        {
+          "preset": "dec",
+          "label": "Decagonal q",
+          "image": "/genchase/previews/lp/dec-7ef13b5f46cc.jpg"
+        },
+        {
+          "preset": "hex",
+          "label": "Two-scale hex",
+          "image": "/genchase/previews/lp/hex-fa89e5896077.jpg"
+        },
+        {
+          "preset": "stripes",
+          "label": "Stripes α=0",
+          "image": "/genchase/previews/lp/stripes-f0152d5fd40c.jpg"
         }
       ],
       "presetLabels": {
-        "dodec": "Dodecagonal"
+        "dodec": "Dodecagonal",
+        "noisy": "From noise",
+        "dec": "Decagonal q",
+        "hex": "Two-scale hex",
+        "stripes": "Stripes α=0"
       }
     },
     {
@@ -2263,10 +4432,40 @@
           "preset": "cloaked",
           "label": "Cloaked",
           "image": "/genchase/previews/cloak/cloaked-9c6cdef8ca5b.jpg"
+        },
+        {
+          "preset": "bare",
+          "label": "Bare disk",
+          "image": "/genchase/previews/cloak/bare-dc8cca5ff728.jpg"
+        },
+        {
+          "preset": "tight",
+          "label": "Thin shell",
+          "image": "/genchase/previews/cloak/tight-52dcca22efc0.jpg"
+        },
+        {
+          "preset": "fat",
+          "label": "Fat shell",
+          "image": "/genchase/previews/cloak/fat-73ebb9feac45.jpg"
+        },
+        {
+          "preset": "many",
+          "label": "Many rays",
+          "image": "/genchase/previews/cloak/many-bd0bce80d2c8.jpg"
+        },
+        {
+          "preset": "core",
+          "label": "Large core",
+          "image": "/genchase/previews/cloak/core-7ae8a6e4472b.jpg"
         }
       ],
       "presetLabels": {
-        "cloaked": "Cloaked"
+        "cloaked": "Cloaked",
+        "bare": "Bare disk",
+        "tight": "Thin shell",
+        "fat": "Fat shell",
+        "many": "Many rays",
+        "core": "Large core"
       }
     },
     {
@@ -2299,10 +4498,52 @@
           "preset": "bound",
           "label": "Bound pairs",
           "image": "/genchase/previews/xy/bound-a625e83b18a3.jpg"
+        },
+        {
+          "preset": "unbind",
+          "label": "Unbinding",
+          "image": "/genchase/previews/xy/unbind-72825c1e7564.jpg"
+        },
+        {
+          "preset": "plasma",
+          "label": "Vortex plasma",
+          "image": "/genchase/previews/xy/plasma-55c194c748ef.jpg"
+        },
+        {
+          "preset": "pair",
+          "label": "Vortex pair",
+          "image": "/genchase/previews/xy/pair-6d37480123b6.jpg"
+        },
+        {
+          "preset": "ice",
+          "label": "Quenched ice",
+          "image": "/genchase/previews/xy/ice-cce664021903.jpg"
+        },
+        {
+          "preset": "qlr",
+          "label": "Quasi-long-range",
+          "image": "/genchase/previews/xy/qlr-d621368c262d.jpg"
+        },
+        {
+          "preset": "twist",
+          "label": "Twisted",
+          "image": "/genchase/previews/xy/twist-6caee1ee33b6.jpg"
+        },
+        {
+          "preset": "gas",
+          "label": "Gas of pairs",
+          "image": "/genchase/previews/xy/gas-c214912c315e.jpg"
         }
       ],
       "presetLabels": {
-        "bound": "Bound pairs"
+        "bound": "Bound pairs",
+        "unbind": "Unbinding",
+        "plasma": "Vortex plasma",
+        "pair": "Vortex pair",
+        "ice": "Quenched ice",
+        "qlr": "Quasi-long-range",
+        "twist": "Twisted",
+        "gas": "Gas of pairs"
       }
     },
     {
@@ -2331,10 +4572,34 @@
           "preset": "chaos",
           "label": "Spiral chaos",
           "image": "/genchase/previews/cgl/chaos-3292901f78d0.jpg"
+        },
+        {
+          "preset": "frozen",
+          "label": "Frozen glass",
+          "image": "/genchase/previews/cgl/frozen-7223e8927851.jpg"
+        },
+        {
+          "preset": "spirals",
+          "label": "Spirals",
+          "image": "/genchase/previews/cgl/spirals-642080534daf.jpg"
+        },
+        {
+          "preset": "amp",
+          "label": "Amplitude holes",
+          "image": "/genchase/previews/cgl/amp-5eb0469c0574.jpg"
+        },
+        {
+          "preset": "defects",
+          "label": "Defects",
+          "image": "/genchase/previews/cgl/defects-0bb6545ab1af.jpg"
         }
       ],
       "presetLabels": {
-        "chaos": "Spiral chaos"
+        "chaos": "Spiral chaos",
+        "frozen": "Frozen glass",
+        "spirals": "Spirals",
+        "amp": "Amplitude holes",
+        "defects": "Defects"
       }
     },
     {
@@ -2362,10 +4627,40 @@
           "preset": "hex",
           "label": "Relaxed field",
           "image": "/genchase/previews/vortex/hex-7a68df5da649.jpg"
+        },
+        {
+          "preset": "few",
+          "label": "Lower field",
+          "image": "/genchase/previews/vortex/few-c4b090ff9a97.jpg"
+        },
+        {
+          "preset": "dense",
+          "label": "Dense",
+          "image": "/genchase/previews/vortex/dense-cfed5e83faee.jpg"
+        },
+        {
+          "preset": "type1",
+          "label": "Low κ",
+          "image": "/genchase/previews/vortex/type1-6fd629c9764b.jpg"
+        },
+        {
+          "preset": "log",
+          "label": "Log |ψ|",
+          "image": "/genchase/previews/vortex/log-acc889463847.jpg"
+        },
+        {
+          "preset": "quiet",
+          "label": "Low field",
+          "image": "/genchase/previews/vortex/quiet-6e875c806a1d.jpg"
         }
       ],
       "presetLabels": {
-        "hex": "Relaxed field"
+        "hex": "Relaxed field",
+        "few": "Lower field",
+        "dense": "Dense",
+        "type1": "Low κ",
+        "log": "Log |ψ|",
+        "quiet": "Low field"
       }
     },
     {
@@ -2397,10 +4692,52 @@
           "preset": "extensile",
           "label": "Extensile turbulence",
           "image": "/genchase/previews/nematic/extensile-733cfbfb01f3.jpg"
+        },
+        {
+          "preset": "contractile",
+          "label": "Contractile",
+          "image": "/genchase/previews/nematic/contractile-61c99bb3657d.jpg"
+        },
+        {
+          "preset": "pair",
+          "label": "+½ −½ pair",
+          "image": "/genchase/previews/nematic/pair-1693de4fefdb.jpg"
+        },
+        {
+          "preset": "fluorescence",
+          "label": "Fluorescence",
+          "image": "/genchase/previews/nematic/fluorescence-5a24ede1084c.jpg"
+        },
+        {
+          "preset": "schlieren",
+          "label": "Polarized light",
+          "image": "/genchase/previews/nematic/schlieren-bb735fc971a4.jpg"
+        },
+        {
+          "preset": "mix",
+          "label": "Schlieren + flow",
+          "image": "/genchase/previews/nematic/mix-577f84705d07.jpg"
+        },
+        {
+          "preset": "quiescent",
+          "label": "Quiescent",
+          "image": "/genchase/previews/nematic/quiescent-0d1568be817e.jpg"
+        },
+        {
+          "preset": "turbulentLIC",
+          "label": "Director hair",
+          "image": "/genchase/previews/nematic/turbulentlic-680d19586516.jpg"
         }
       ],
       "presetLabels": {
-        "extensile": "Extensile turbulence"
+        "extensile": "Extensile turbulence",
+        "contractile": "Contractile",
+        "pair": "+½ −½ pair",
+        "fluorescence": "Fluorescence",
+        "schlieren": "Polarized light",
+        "mix": "Schlieren + flow",
+        "quiescent": "Quiescent",
+        "turbulentLIC": "Director hair"
       }
     },
     {
@@ -2428,10 +4765,40 @@
           "preset": "dark",
           "label": "Dark vertex",
           "image": "/genchase/previews/darkroom/dark-50480355f27c.jpg"
+        },
+        {
+          "preset": "L",
+          "label": "L-shape",
+          "image": "/genchase/previews/darkroom/l-d057745872e9.jpg"
+        },
+        {
+          "preset": "rect",
+          "label": "Rectangle",
+          "image": "/genchase/previews/darkroom/rect-4b9c7f5c17f2.jpg"
+        },
+        {
+          "preset": "many",
+          "label": "Many rays",
+          "image": "/genchase/previews/darkroom/many-0b897279af1e.jpg"
+        },
+        {
+          "preset": "short",
+          "label": "Few bounces",
+          "image": "/genchase/previews/darkroom/short-9c84abdeb2b3.jpg"
+        },
+        {
+          "preset": "log",
+          "label": "Log density",
+          "image": "/genchase/previews/darkroom/log-5077d1cb4ad0.jpg"
         }
       ],
       "presetLabels": {
-        "dark": "Dark vertex"
+        "dark": "Dark vertex",
+        "L": "L-shape",
+        "rect": "Rectangle",
+        "many": "Many rays",
+        "short": "Few bounces",
+        "log": "Log density"
       }
     },
     {
@@ -2464,10 +4831,52 @@
           "label": "Ink drop",
           "image": "/genchase/previews/fluid/inkdrop-f8c31141c4e0.jpg",
           "video": "/genchase/previews/fluid/inkdrop-95aff1f759ff.webm"
+        },
+        {
+          "preset": "smoke",
+          "label": "Smoke",
+          "image": "/genchase/previews/fluid/smoke-86fc2bece4ba.jpg"
+        },
+        {
+          "preset": "nebula",
+          "label": "Nebula",
+          "image": "/genchase/previews/fluid/nebula-3770578b681a.jpg"
+        },
+        {
+          "preset": "vortex",
+          "label": "Vortex",
+          "image": "/genchase/previews/fluid/vortex-11dc22c9fc1f.jpg"
+        },
+        {
+          "preset": "marbling",
+          "label": "Marbling",
+          "image": "/genchase/previews/fluid/marbling-310ccc68e759.jpg"
+        },
+        {
+          "preset": "plasma",
+          "label": "Plasma",
+          "image": "/genchase/previews/fluid/plasma-fc67bba8af60.jpg"
+        },
+        {
+          "preset": "tidal",
+          "label": "Tidal",
+          "image": "/genchase/previews/fluid/tidal-7be942624d89.jpg"
+        },
+        {
+          "preset": "stir",
+          "label": "Stirred cream",
+          "image": "/genchase/previews/fluid/stir-966b452af16b.jpg"
         }
       ],
       "presetLabels": {
-        "inkdrop": "Ink drop"
+        "inkdrop": "Ink drop",
+        "smoke": "Smoke",
+        "nebula": "Nebula",
+        "vortex": "Vortex",
+        "marbling": "Marbling",
+        "plasma": "Plasma",
+        "tidal": "Tidal",
+        "stir": "Stirred cream"
       }
     },
     {
@@ -2496,10 +4905,46 @@
           "preset": "medallion",
           "label": "Medallion 2¹⁶",
           "image": "/genchase/previews/sandpile/medallion-c7b64a0be81d.jpg"
+        },
+        {
+          "preset": "big",
+          "label": "Medallion 2¹⁷",
+          "image": "/genchase/previews/sandpile/big-f66d7e4b7f90.jpg"
+        },
+        {
+          "preset": "identity",
+          "label": "Identity 128",
+          "image": "/genchase/previews/sandpile/identity-9713ef173f3b.jpg"
+        },
+        {
+          "preset": "identity96",
+          "label": "Identity 96",
+          "image": "/genchase/previews/sandpile/identity96-62994fb0517d.jpg"
+        },
+        {
+          "preset": "soc",
+          "label": "Random drops",
+          "image": "/genchase/previews/sandpile/soc-11079d26a1ba.jpg"
+        },
+        {
+          "preset": "patches",
+          "label": "Avalanche patches",
+          "image": "/genchase/previews/sandpile/patches-acbf50bbf54b.jpg"
+        },
+        {
+          "preset": "small",
+          "label": "Small pile 2¹⁴",
+          "image": "/genchase/previews/sandpile/small-4f7ebb3c41ff.jpg"
         }
       ],
       "presetLabels": {
-        "medallion": "Medallion 2¹⁶"
+        "medallion": "Medallion 2¹⁶",
+        "big": "Medallion 2¹⁷",
+        "identity": "Identity 128",
+        "identity96": "Identity 96",
+        "soc": "Random drops",
+        "patches": "Avalanche patches",
+        "small": "Small pile 2¹⁴"
       }
     },
     {
@@ -2527,10 +4972,40 @@
           "preset": "tree",
           "label": "Perron tree",
           "image": "/genchase/previews/kakeya/tree-52854c925533.jpg"
+        },
+        {
+          "preset": "sparse",
+          "label": "Sparse",
+          "image": "/genchase/previews/kakeya/sparse-6208dd66c15b.jpg"
+        },
+        {
+          "preset": "packed",
+          "label": "Packed",
+          "image": "/genchase/previews/kakeya/packed-f5608b9da346.jpg"
+        },
+        {
+          "preset": "fat",
+          "label": "Fat needles",
+          "image": "/genchase/previews/kakeya/fat-41a64ae85f8e.jpg"
+        },
+        {
+          "preset": "log",
+          "label": "Log",
+          "image": "/genchase/previews/kakeya/log-36f28a2dc00b.jpg"
+        },
+        {
+          "preset": "fine",
+          "label": "Fine",
+          "image": "/genchase/previews/kakeya/fine-f3cc0cd483c2.jpg"
         }
       ],
       "presetLabels": {
-        "tree": "Perron tree"
+        "tree": "Perron tree",
+        "sparse": "Sparse",
+        "packed": "Packed",
+        "fat": "Fat needles",
+        "log": "Log",
+        "fine": "Fine"
       }
     },
     {
@@ -2559,10 +5034,34 @@
           "preset": "flame",
           "label": "Flame cells",
           "image": "/genchase/previews/ks/flame-5543ddef7cb8.jpg"
+        },
+        {
+          "preset": "cellular",
+          "label": "Cellular",
+          "image": "/genchase/previews/ks/cellular-75364c329393.jpg"
+        },
+        {
+          "preset": "quiet",
+          "label": "Large cells",
+          "image": "/genchase/previews/ks/quiet-45d465577c19.jpg"
+        },
+        {
+          "preset": "storm",
+          "label": "Storm",
+          "image": "/genchase/previews/ks/storm-8baf6aaf046b.jpg"
+        },
+        {
+          "preset": "ink",
+          "label": "Ink height",
+          "image": "/genchase/previews/ks/ink-35d454a56801.jpg"
         }
       ],
       "presetLabels": {
-        "flame": "Flame cells"
+        "flame": "Flame cells",
+        "cellular": "Cellular",
+        "quiet": "Large cells",
+        "storm": "Storm",
+        "ink": "Ink height"
       }
     },
     {
@@ -2590,10 +5089,40 @@
           "preset": "live",
           "label": "Breather",
           "image": "/genchase/previews/breather/live-fcad33d7e7d3.jpg"
+        },
+        {
+          "preset": "tight",
+          "label": "Tight",
+          "image": "/genchase/previews/breather/tight-daddf4e3ab08.jpg"
+        },
+        {
+          "preset": "wide",
+          "label": "Wide",
+          "image": "/genchase/previews/breather/wide-e278c803b6b2.jpg"
+        },
+        {
+          "preset": "late",
+          "label": "Late",
+          "image": "/genchase/previews/breather/late-5d2f9ca9aeff.jpg"
+        },
+        {
+          "preset": "log",
+          "label": "Log",
+          "image": "/genchase/previews/breather/log-d8a5c2938c15.jpg"
+        },
+        {
+          "preset": "peak",
+          "label": "Peak",
+          "image": "/genchase/previews/breather/peak-e68c80aedaec.jpg"
         }
       ],
       "presetLabels": {
-        "live": "Breather"
+        "live": "Breather",
+        "tight": "Tight",
+        "wide": "Wide",
+        "late": "Late",
+        "log": "Log",
+        "peak": "Peak"
       }
     },
     {
@@ -2624,10 +5153,46 @@
           "preset": "spots",
           "label": "Spots",
           "image": "/genchase/previews/turing/spots-3afa74ac2880.jpg"
+        },
+        {
+          "preset": "stripes",
+          "label": "Stripes",
+          "image": "/genchase/previews/turing/stripes-c9ed1b16d183.jpg"
+        },
+        {
+          "preset": "bruss",
+          "label": "Brusselator honeycomb",
+          "image": "/genchase/previews/turing/bruss-1235011fa732.jpg"
+        },
+        {
+          "preset": "gmspots",
+          "label": "Gierer-Meinhardt spots",
+          "image": "/genchase/previews/turing/gmspots-007136aac409.jpg"
+        },
+        {
+          "preset": "gmstripes",
+          "label": "Saturated stripes",
+          "image": "/genchase/previews/turing/gmstripes-4319acc612b1.jpg"
+        },
+        {
+          "preset": "cima",
+          "label": "CIMA",
+          "image": "/genchase/previews/turing/cima-bc6a759dfc34.jpg"
+        },
+        {
+          "preset": "relief",
+          "label": "Hexagonal relief",
+          "image": "/genchase/previews/turing/relief-6d970c0e92bf.jpg"
         }
       ],
       "presetLabels": {
-        "spots": "Spots"
+        "spots": "Spots",
+        "stripes": "Stripes",
+        "bruss": "Brusselator honeycomb",
+        "gmspots": "Gierer-Meinhardt spots",
+        "gmstripes": "Saturated stripes",
+        "cima": "CIMA",
+        "relief": "Hexagonal relief"
       }
     },
     {
@@ -2658,10 +5223,58 @@
           "preset": "seahorse",
           "label": "Seahorse valley",
           "image": "/genchase/previews/holomorphic/seahorse-c8ad52e46f00.jpg"
+        },
+        {
+          "preset": "boundary",
+          "label": "Distance estimate",
+          "image": "/genchase/previews/holomorphic/boundary-680f772124d4.jpg"
+        },
+        {
+          "preset": "rabbit",
+          "label": "Douady rabbit",
+          "image": "/genchase/previews/holomorphic/rabbit-ba8972348bfe.jpg"
+        },
+        {
+          "preset": "dendrite",
+          "label": "Dendrite",
+          "image": "/genchase/previews/holomorphic/dendrite-91fe01fed406.jpg"
+        },
+        {
+          "preset": "siegel",
+          "label": "Siegel disk",
+          "image": "/genchase/previews/holomorphic/siegel-5426ce22dfb0.jpg"
+        },
+        {
+          "preset": "newton",
+          "label": "Newton z⁵ − 1",
+          "image": "/genchase/previews/holomorphic/newton-37a2edcbccb6.jpg"
+        },
+        {
+          "preset": "ship",
+          "label": "Burning Ship",
+          "image": "/genchase/previews/holomorphic/ship-b7909a2b05bd.jpg"
+        },
+        {
+          "preset": "cubic",
+          "label": "Cubic z³ + c",
+          "image": "/genchase/previews/holomorphic/cubic-0815ddfbec2c.jpg"
+        },
+        {
+          "preset": "sine",
+          "label": "Sine family c·sin z",
+          "image": "/genchase/previews/holomorphic/sine-10883def504e.jpg"
         }
       ],
       "presetLabels": {
-        "seahorse": "Seahorse valley"
+        "seahorse": "Seahorse valley",
+        "boundary": "Distance estimate",
+        "rabbit": "Douady rabbit",
+        "dendrite": "Dendrite",
+        "siegel": "Siegel disk",
+        "newton": "Newton z⁵ − 1",
+        "ship": "Burning Ship",
+        "cubic": "Cubic z³ + c",
+        "sine": "Sine family c·sin z"
       }
     },
     {
@@ -2689,10 +5302,40 @@
           "preset": "normal",
           "label": "Normal incidence",
           "image": "/genchase/previews/klein/normal-a012a7111e31.jpg"
+        },
+        {
+          "preset": "angle",
+          "label": "Oblique",
+          "image": "/genchase/previews/klein/angle-080a115d603d.jpg"
+        },
+        {
+          "preset": "thick",
+          "label": "Thick",
+          "image": "/genchase/previews/klein/thick-9792675c005e.jpg"
+        },
+        {
+          "preset": "grazing",
+          "label": "Grazing",
+          "image": "/genchase/previews/klein/grazing-e9c84cd9005a.jpg"
+        },
+        {
+          "preset": "weak",
+          "label": "Weak V",
+          "image": "/genchase/previews/klein/weak-ca1145863c79.jpg"
+        },
+        {
+          "preset": "log",
+          "label": "Log",
+          "image": "/genchase/previews/klein/log-10ab3ece9015.jpg"
         }
       ],
       "presetLabels": {
-        "normal": "Normal incidence"
+        "normal": "Normal incidence",
+        "angle": "Oblique",
+        "thick": "Thick",
+        "grazing": "Grazing",
+        "weak": "Weak V",
+        "log": "Log"
       }
     },
     {
@@ -2720,10 +5363,40 @@
           "preset": "slice",
           "label": "Slice",
           "image": "/genchase/previews/gyroid/slice-b0b0206bc8b4.jpg"
+        },
+        {
+          "preset": "field",
+          "label": "Field",
+          "image": "/genchase/previews/gyroid/field-ff498f893ad2.jpg"
+        },
+        {
+          "preset": "dense",
+          "label": "Dense",
+          "image": "/genchase/previews/gyroid/dense-a078b463d8a5.jpg"
+        },
+        {
+          "preset": "abs",
+          "label": "|F|",
+          "image": "/genchase/previews/gyroid/abs-ef4d86981782.jpg"
+        },
+        {
+          "preset": "shift",
+          "label": "Offset z",
+          "image": "/genchase/previews/gyroid/shift-4d6a2fb60bbc.jpg"
+        },
+        {
+          "preset": "iso",
+          "label": "Iso 0.3",
+          "image": "/genchase/previews/gyroid/iso-5b381b5949cb.jpg"
         }
       ],
       "presetLabels": {
-        "slice": "Slice"
+        "slice": "Slice",
+        "field": "Field",
+        "dense": "Dense",
+        "abs": "|F|",
+        "shift": "Offset z",
+        "iso": "Iso 0.3"
       }
     },
     {
@@ -2755,10 +5428,52 @@
           "preset": "snowflake",
           "label": "Snowflake",
           "image": "/genchase/previews/dendrite/snowflake-1e37d3ae1fb1.jpg"
+        },
+        {
+          "preset": "frost",
+          "label": "Frost",
+          "image": "/genchase/previews/dendrite/frost-4425fc611b43.jpg"
+        },
+        {
+          "preset": "metal",
+          "label": "Metal dendrite",
+          "image": "/genchase/previews/dendrite/metal-3bba8f134514.jpg"
+        },
+        {
+          "preset": "seaweed",
+          "label": "Seaweed",
+          "image": "/genchase/previews/dendrite/seaweed-b672cedbfb2e.jpg"
+        },
+        {
+          "preset": "twelve",
+          "label": "Twelve-fold",
+          "image": "/genchase/previews/dendrite/twelve-7f8355dc27e0.jpg"
+        },
+        {
+          "preset": "halo",
+          "label": "Thermal halo",
+          "image": "/genchase/previews/dendrite/halo-154ccdcc98ed.jpg"
+        },
+        {
+          "preset": "slow",
+          "label": "Slow growth",
+          "image": "/genchase/previews/dendrite/slow-cdb1aea0a5bf.jpg"
+        },
+        {
+          "preset": "forest",
+          "label": "Frozen forest",
+          "image": "/genchase/previews/dendrite/forest-d1471cbe91fb.jpg"
         }
       ],
       "presetLabels": {
-        "snowflake": "Snowflake"
+        "snowflake": "Snowflake",
+        "frost": "Frost",
+        "metal": "Metal dendrite",
+        "seaweed": "Seaweed",
+        "twelve": "Twelve-fold",
+        "halo": "Thermal halo",
+        "slow": "Slow growth",
+        "forest": "Frozen forest"
       }
     },
     {
@@ -2786,10 +5501,40 @@
           "preset": "swim",
           "label": "Purcell gait",
           "image": "/genchase/previews/purcell/swim-d7339236a1e9.jpg"
+        },
+        {
+          "preset": "scallop",
+          "label": "Scallop (stuck)",
+          "image": "/genchase/previews/purcell/scallop-e26d9b8981c2.jpg"
+        },
+        {
+          "preset": "big",
+          "label": "Large amp",
+          "image": "/genchase/previews/purcell/big-1e308e8faa81.jpg"
+        },
+        {
+          "preset": "many",
+          "label": "Many cycles",
+          "image": "/genchase/previews/purcell/many-9fe18aec9a48.jpg"
+        },
+        {
+          "preset": "tiny",
+          "label": "Small amp",
+          "image": "/genchase/previews/purcell/tiny-5b6e34c66171.jpg"
+        },
+        {
+          "preset": "log",
+          "label": "Log trail",
+          "image": "/genchase/previews/purcell/log-c9282f526c6a.jpg"
         }
       ],
       "presetLabels": {
-        "swim": "Purcell gait"
+        "swim": "Purcell gait",
+        "scallop": "Scallop (stuck)",
+        "big": "Large amp",
+        "many": "Many cycles",
+        "tiny": "Small amp",
+        "log": "Log trail"
       }
     },
     {
@@ -2817,10 +5562,40 @@
           "preset": "ep",
           "label": "Exceptional point",
           "image": "/genchase/previews/exceptional/ep-d87914da8b17.jpg"
+        },
+        {
+          "preset": "broken",
+          "label": "Broken PT",
+          "image": "/genchase/previews/exceptional/broken-37c6deec92cd.jpg"
+        },
+        {
+          "preset": "exact",
+          "label": "Exact PT",
+          "image": "/genchase/previews/exceptional/exact-065093a36f11.jpg"
+        },
+        {
+          "preset": "gap",
+          "label": "Gap vs γ",
+          "image": "/genchase/previews/exceptional/gap-3acc62e1a0b9.jpg"
+        },
+        {
+          "preset": "near",
+          "label": "Near EP",
+          "image": "/genchase/previews/exceptional/near-b45b5224ccd8.jpg"
+        },
+        {
+          "preset": "far",
+          "label": "Far",
+          "image": "/genchase/previews/exceptional/far-bf4cb8971398.jpg"
         }
       ],
       "presetLabels": {
-        "ep": "Exceptional point"
+        "ep": "Exceptional point",
+        "broken": "Broken PT",
+        "exact": "Exact PT",
+        "gap": "Gap vs γ",
+        "near": "Near EP",
+        "far": "Far"
       }
     },
     {
@@ -2851,10 +5626,40 @@
           "preset": "disk",
           "label": "Rotating disk",
           "image": "/genchase/previews/direct-gravity/disk-1f346f8808b6.jpg"
+        },
+        {
+          "preset": "ring",
+          "label": "Thin ring",
+          "image": "/genchase/previews/direct-gravity/ring-1eff1e677173.jpg"
+        },
+        {
+          "preset": "collision",
+          "label": "Cluster encounter",
+          "image": "/genchase/previews/direct-gravity/collision-55c0f857d210.jpg"
+        },
+        {
+          "preset": "collapse",
+          "label": "Cold collapse",
+          "image": "/genchase/previews/direct-gravity/collapse-0b08de7e4d96.jpg"
+        },
+        {
+          "preset": "hot",
+          "label": "Dispersing cloud",
+          "image": "/genchase/previews/direct-gravity/hot-7e661ddc81f1.jpg"
+        },
+        {
+          "preset": "extreme",
+          "label": "Extreme CPU: 16,384",
+          "image": "/genchase/previews/direct-gravity/extreme-68211a256834.jpg"
         }
       ],
       "presetLabels": {
-        "disk": "Rotating disk"
+        "disk": "Rotating disk",
+        "ring": "Thin ring",
+        "collision": "Cluster encounter",
+        "collapse": "Cold collapse",
+        "hot": "Dispersing cloud",
+        "extreme": "Extreme CPU: 16,384"
       }
     },
     {
@@ -2882,10 +5687,40 @@
           "preset": "expel",
           "label": "Expelled",
           "image": "/genchase/previews/meissner/expel-ae2fe6355990.jpg"
+        },
+        {
+          "preset": "thin",
+          "label": "Thin λ",
+          "image": "/genchase/previews/meissner/thin-5367e14d2442.jpg"
+        },
+        {
+          "preset": "deep",
+          "label": "Deep λ",
+          "image": "/genchase/previews/meissner/deep-e014c8556d1b.jpg"
+        },
+        {
+          "preset": "log",
+          "label": "Log B",
+          "image": "/genchase/previews/meissner/log-9d866b607612.jpg"
+        },
+        {
+          "preset": "small",
+          "label": "Small disk",
+          "image": "/genchase/previews/meissner/small-67bee49b673b.jpg"
+        },
+        {
+          "preset": "tight",
+          "label": "Tight",
+          "image": "/genchase/previews/meissner/tight-26252164f678.jpg"
         }
       ],
       "presetLabels": {
-        "expel": "Expelled"
+        "expel": "Expelled",
+        "thin": "Thin λ",
+        "deep": "Deep λ",
+        "log": "Log B",
+        "small": "Small disk",
+        "tight": "Tight"
       }
     },
     {
@@ -2913,10 +5748,40 @@
           "preset": "flip",
           "label": "Flip",
           "image": "/genchase/previews/tennis/flip-09fd3f8bbda9.jpg"
+        },
+        {
+          "preset": "stable1",
+          "label": "Nearly equal I1 and I2",
+          "image": "/genchase/previews/tennis/stable1-e6bd0020b836.jpg"
+        },
+        {
+          "preset": "wild",
+          "label": "Wild",
+          "image": "/genchase/previews/tennis/wild-b211039c1c59.jpg"
+        },
+        {
+          "preset": "slow",
+          "label": "Slow seed",
+          "image": "/genchase/previews/tennis/slow-edea98867646.jpg"
+        },
+        {
+          "preset": "log",
+          "label": "Log |ω2|",
+          "image": "/genchase/previews/tennis/log-b27232ec5f86.jpg"
+        },
+        {
+          "preset": "racket",
+          "label": "Racket",
+          "image": "/genchase/previews/tennis/racket-4c2a78df801f.jpg"
         }
       ],
       "presetLabels": {
-        "flip": "Flip"
+        "flip": "Flip",
+        "stable1": "Nearly equal I1 and I2",
+        "wild": "Wild",
+        "slow": "Slow seed",
+        "log": "Log |ω2|",
+        "racket": "Racket"
       }
     },
     {
@@ -2949,10 +5814,58 @@
           "preset": "studio",
           "label": "Studio default",
           "image": "/genchase/previews/flow/studio-8a109f1959bf.jpg"
+        },
+        {
+          "preset": "threads",
+          "label": "Threads",
+          "image": "/genchase/previews/flow/threads-9f370a70a5b6.jpg"
+        },
+        {
+          "preset": "boulders",
+          "label": "Boulders",
+          "image": "/genchase/previews/flow/boulders-58a3db74c6ea.jpg"
+        },
+        {
+          "preset": "storm",
+          "label": "Storm",
+          "image": "/genchase/previews/flow/storm-2cf8419f28f2.jpg"
+        },
+        {
+          "preset": "eddy",
+          "label": "Eddy",
+          "image": "/genchase/previews/flow/eddy-ed8a34dde5e8.jpg"
+        },
+        {
+          "preset": "tide",
+          "label": "Tide",
+          "image": "/genchase/previews/flow/tide-da610b9c6aee.jpg"
+        },
+        {
+          "preset": "spirals",
+          "label": "Spirals",
+          "image": "/genchase/previews/flow/spirals-1f0b6a59cd14.jpg"
+        },
+        {
+          "preset": "overprint",
+          "label": "Overprint",
+          "image": "/genchase/previews/flow/overprint-ff305f525613.jpg"
+        },
+        {
+          "preset": "relief",
+          "label": "Relief",
+          "image": "/genchase/previews/flow/relief-3229adc2d90b.jpg"
         }
       ],
       "presetLabels": {
-        "studio": "Studio default"
+        "studio": "Studio default",
+        "boulders": "Boulders",
+        "threads": "Threads",
+        "storm": "Storm",
+        "eddy": "Eddy",
+        "tide": "Tide",
+        "spirals": "Spirals",
+        "overprint": "Overprint",
+        "relief": "Relief"
       }
     },
     {
@@ -2982,10 +5895,40 @@
           "preset": "spots",
           "label": "Spots",
           "image": "/genchase/previews/chemotaxis/spots-c8e4aeeafeef.jpg"
+        },
+        {
+          "preset": "worms",
+          "label": "Worms",
+          "image": "/genchase/previews/chemotaxis/worms-f4ae240ada72.jpg"
+        },
+        {
+          "preset": "honeycomb",
+          "label": "Honeycomb",
+          "image": "/genchase/previews/chemotaxis/honeycomb-9b80547a19e0.jpg"
+        },
+        {
+          "preset": "colony",
+          "label": "Colony",
+          "image": "/genchase/previews/chemotaxis/colony-16a730b343dc.jpg"
+        },
+        {
+          "preset": "scatter",
+          "label": "Scattered founders",
+          "image": "/genchase/previews/chemotaxis/scatter-c6d61481e853.jpg"
+        },
+        {
+          "preset": "relief",
+          "label": "Relief",
+          "image": "/genchase/previews/chemotaxis/relief-a16d370135d8.jpg"
         }
       ],
       "presetLabels": {
-        "spots": "Spots"
+        "spots": "Spots",
+        "worms": "Worms",
+        "honeycomb": "Honeycomb",
+        "colony": "Colony",
+        "scatter": "Scattered founders",
+        "relief": "Relief"
       }
     },
     {
@@ -3013,10 +5956,28 @@
           "preset": "foam",
           "label": "TFCD foam",
           "image": "/genchase/previews/smectic/foam-9f2102903481.jpg"
+        },
+        {
+          "preset": "coarse",
+          "label": "Coarse",
+          "image": "/genchase/previews/smectic/coarse-3a9eb5acf531.jpg"
+        },
+        {
+          "preset": "fine",
+          "label": "Fine layers",
+          "image": "/genchase/previews/smectic/fine-6a91965059cb.jpg"
+        },
+        {
+          "preset": "defects",
+          "label": "Ellipse defects",
+          "image": "/genchase/previews/smectic/defects-8520281ba88b.jpg"
         }
       ],
       "presetLabels": {
-        "foam": "TFCD foam"
+        "foam": "TFCD foam",
+        "coarse": "Coarse",
+        "fine": "Fine layers",
+        "defects": "Ellipse defects"
       }
     },
     {
@@ -3049,10 +6010,58 @@
           "preset": "coral",
           "label": "Coral",
           "image": "/genchase/previews/reaction/coral-b6dcb71fa328.jpg"
+        },
+        {
+          "preset": "mitosis",
+          "label": "Mitosis",
+          "image": "/genchase/previews/reaction/mitosis-ca68addd83bf.jpg"
+        },
+        {
+          "preset": "fingerprint",
+          "label": "Fingerprint",
+          "image": "/genchase/previews/reaction/fingerprint-8f64f6f52fb1.jpg"
+        },
+        {
+          "preset": "spots",
+          "label": "Spots",
+          "image": "/genchase/previews/reaction/spots-84eb0b10de55.jpg"
+        },
+        {
+          "preset": "worms",
+          "label": "Worms",
+          "image": "/genchase/previews/reaction/worms-35246df65652.jpg"
+        },
+        {
+          "preset": "maze",
+          "label": "Maze",
+          "image": "/genchase/previews/reaction/maze-0e9242856c47.jpg"
+        },
+        {
+          "preset": "bubbles",
+          "label": "Bubbles",
+          "image": "/genchase/previews/reaction/bubbles-cad5fade3b57.jpg"
+        },
+        {
+          "preset": "solitons",
+          "label": "Solitons",
+          "image": "/genchase/previews/reaction/solitons-3289e2e7ef96.jpg"
+        },
+        {
+          "preset": "map",
+          "label": "Parameter map",
+          "image": "/genchase/previews/reaction/map-c6baee7557d8.jpg"
         }
       ],
       "presetLabels": {
-        "coral": "Coral"
+        "coral": "Coral",
+        "mitosis": "Mitosis",
+        "fingerprint": "Fingerprint",
+        "spots": "Spots",
+        "worms": "Worms",
+        "maze": "Maze",
+        "bubbles": "Bubbles",
+        "solitons": "Solitons",
+        "map": "Parameter map"
       }
     },
     {
@@ -3083,10 +6092,40 @@
           "preset": "warm",
           "label": "Warm material",
           "image": "/genchase/previews/molecular/warm-6638e84b187d.jpg"
+        },
+        {
+          "preset": "cool",
+          "label": "Cool dense layer",
+          "image": "/genchase/previews/molecular/cool-cda4a389d3d4.jpg"
+        },
+        {
+          "preset": "dilute",
+          "label": "Dilute gas",
+          "image": "/genchase/previews/molecular/dilute-20d89e88e214.jpg"
+        },
+        {
+          "preset": "clusters",
+          "label": "Condensing clusters",
+          "image": "/genchase/previews/molecular/clusters-9825030600ac.jpg"
+        },
+        {
+          "preset": "dense",
+          "label": "Dense collisions",
+          "image": "/genchase/previews/molecular/dense-1ac5f38cd9b6.jpg"
+        },
+        {
+          "preset": "large",
+          "label": "Large particle field",
+          "image": "/genchase/previews/molecular/large-1429d3737827.jpg"
         }
       ],
       "presetLabels": {
-        "warm": "Warm material"
+        "warm": "Warm material",
+        "dilute": "Dilute gas",
+        "cool": "Cool dense layer",
+        "clusters": "Condensing clusters",
+        "dense": "Dense collisions",
+        "large": "Large particle field"
       }
     },
     {
@@ -3121,10 +6160,70 @@
           "preset": "rhombs",
           "label": "Penrose rhombs",
           "image": "/genchase/previews/tilings/rhombs-35fc201a09a7.jpg"
+        },
+        {
+          "preset": "arcs",
+          "label": "Penrose arcs",
+          "image": "/genchase/previews/tilings/arcs-a2100bbe981d.jpg"
+        },
+        {
+          "preset": "kitedart",
+          "label": "Kite and dart",
+          "image": "/genchase/previews/tilings/kitedart-5048028ab9fe.jpg"
+        },
+        {
+          "preset": "ammann",
+          "label": "Ammann–Beenker",
+          "image": "/genchase/previews/tilings/ammann-357f546a31ee.jpg"
+        },
+        {
+          "preset": "inflation",
+          "label": "Inflation levels",
+          "image": "/genchase/previews/tilings/inflation-446b32fa5646.jpg"
+        },
+        {
+          "preset": "linedrawing",
+          "label": "Line drawing",
+          "image": "/genchase/previews/tilings/linedrawing-cf6d9cac0bfc.jpg"
+        },
+        {
+          "preset": "dodeca",
+          "label": "Dodecagonal",
+          "image": "/genchase/previews/tilings/dodeca-e699c72e35dd.jpg"
+        },
+        {
+          "preset": "hat",
+          "label": "Hat (2023)",
+          "image": "/genchase/previews/tilings/hat-5c0aaa6c3ba0.jpg"
+        },
+        {
+          "preset": "spectre",
+          "label": "Spectre (2023)",
+          "image": "/genchase/previews/tilings/spectre-6ab68c17b51b.jpg"
+        },
+        {
+          "preset": "hatline",
+          "label": "Hat linework",
+          "image": "/genchase/previews/tilings/hatline-c570e69c962b.jpg"
+        },
+        {
+          "preset": "kilnfloor",
+          "label": "Kiln floor",
+          "image": "/genchase/previews/tilings/kilnfloor-917b06f974c4.jpg"
         }
       ],
       "presetLabels": {
-        "rhombs": "Penrose rhombs"
+        "rhombs": "Penrose rhombs",
+        "arcs": "Penrose arcs",
+        "kitedart": "Kite and dart",
+        "ammann": "Ammann–Beenker",
+        "inflation": "Inflation levels",
+        "linedrawing": "Line drawing",
+        "dodeca": "Dodecagonal",
+        "hat": "Hat (2023)",
+        "spectre": "Spectre (2023)",
+        "hatline": "Hat linework",
+        "kilnfloor": "Kiln floor"
       }
     },
     {
@@ -3153,10 +6252,46 @@
           "preset": "critical",
           "label": "Site at p_c",
           "image": "/genchase/previews/percolation/critical-193e13c2b93f.jpg"
+        },
+        {
+          "preset": "sub",
+          "label": "Below threshold",
+          "image": "/genchase/previews/percolation/sub-2110c2d8c5b2.jpg"
+        },
+        {
+          "preset": "sup",
+          "label": "Spanning",
+          "image": "/genchase/previews/percolation/sup-5f35a88071ba.jpg"
+        },
+        {
+          "preset": "bondc",
+          "label": "Bond at 1/2",
+          "image": "/genchase/previews/percolation/bondc-177859254981.jpg"
+        },
+        {
+          "preset": "bondsub",
+          "label": "Bond below",
+          "image": "/genchase/previews/percolation/bondsub-be9aaa32f4b2.jpg"
+        },
+        {
+          "preset": "ink",
+          "label": "Occupied ink",
+          "image": "/genchase/previews/percolation/ink-a46a643587ec.jpg"
+        },
+        {
+          "preset": "fine",
+          "label": "Fine critical",
+          "image": "/genchase/previews/percolation/fine-b820338a6655.jpg"
         }
       ],
       "presetLabels": {
-        "critical": "Site at p_c"
+        "critical": "Site at p_c",
+        "sub": "Below threshold",
+        "sup": "Spanning",
+        "bondc": "Bond at 1/2",
+        "bondsub": "Bond below",
+        "ink": "Occupied ink",
+        "fine": "Fine critical"
       }
     },
     {
@@ -3185,10 +6320,46 @@
           "preset": "sparks",
           "label": "Sparks",
           "image": "/genchase/previews/cattaneo/sparks-af4d89a17c96.jpg"
+        },
+        {
+          "preset": "burst",
+          "label": "All at once",
+          "image": "/genchase/previews/cattaneo/burst-088c1d762322.jpg"
+        },
+        {
+          "preset": "single",
+          "label": "One spark",
+          "image": "/genchase/previews/cattaneo/single-921c473256e4.jpg"
+        },
+        {
+          "preset": "crossover",
+          "label": "Rings and glow",
+          "image": "/genchase/previews/cattaneo/crossover-21815996f8f7.jpg"
+        },
+        {
+          "preset": "fourier",
+          "label": "Fourier limit τ = 0",
+          "image": "/genchase/previews/cattaneo/fourier-ebde885e4543.jpg"
+        },
+        {
+          "preset": "torch",
+          "label": "Moving torch",
+          "image": "/genchase/previews/cattaneo/torch-a8e050275fa5.jpg"
+        },
+        {
+          "preset": "flux",
+          "label": "Heat flux",
+          "image": "/genchase/previews/cattaneo/flux-2d267d6ce315.jpg"
         }
       ],
       "presetLabels": {
-        "sparks": "Sparks"
+        "sparks": "Sparks",
+        "burst": "All at once",
+        "single": "One spark",
+        "crossover": "Rings and glow",
+        "fourier": "Fourier limit τ = 0",
+        "torch": "Moving torch",
+        "flux": "Heat flux"
       }
     },
     {
@@ -3218,10 +6389,40 @@
           "preset": "drops",
           "label": "Colliding drops",
           "image": "/genchase/previews/shallow/drops-8129573c3cb2.jpg"
+        },
+        {
+          "preset": "pool",
+          "label": "Wall reflections",
+          "image": "/genchase/previews/shallow/pool-071f480d5f02.jpg"
+        },
+        {
+          "preset": "ring",
+          "label": "Expanding ring",
+          "image": "/genchase/previews/shallow/ring-c3218e5f712b.jpg"
+        },
+        {
+          "preset": "dam",
+          "label": "Corrugated dam break",
+          "image": "/genchase/previews/shallow/dam-2179c483f8db.jpg"
+        },
+        {
+          "preset": "wave",
+          "label": "Crossing standing waves",
+          "image": "/genchase/previews/shallow/wave-37dc8528f078.jpg"
+        },
+        {
+          "preset": "drop",
+          "label": "Single ripple",
+          "image": "/genchase/previews/shallow/drop-8daeab0617ba.jpg"
         }
       ],
       "presetLabels": {
-        "drops": "Colliding drops"
+        "drops": "Colliding drops",
+        "pool": "Wall reflections",
+        "ring": "Expanding ring",
+        "dam": "Corrugated dam break",
+        "wave": "Crossing standing waves",
+        "drop": "Single ripple"
       }
     },
     {
@@ -3253,10 +6454,64 @@
           "preset": "clifford",
           "label": "Clifford classic",
           "image": "/genchase/previews/attractors/clifford-99b982bfba5f.jpg"
+        },
+        {
+          "preset": "dejong",
+          "label": "De Jong veil",
+          "image": "/genchase/previews/attractors/dejong-848f7da81cbd.jpg"
+        },
+        {
+          "preset": "svensson",
+          "label": "Svensson silk",
+          "image": "/genchase/previews/attractors/svensson-1ed2514b37e9.jpg"
+        },
+        {
+          "preset": "lorenz",
+          "label": "Lorenz butterfly",
+          "image": "/genchase/previews/attractors/lorenz-38295a2f765d.jpg"
+        },
+        {
+          "preset": "rossler",
+          "label": "Rössler",
+          "image": "/genchase/previews/attractors/rossler-593ebc6431e3.jpg"
+        },
+        {
+          "preset": "aizawa",
+          "label": "Aizawa",
+          "image": "/genchase/previews/attractors/aizawa-e0da3e8e135a.jpg"
+        },
+        {
+          "preset": "thomas",
+          "label": "Thomas",
+          "image": "/genchase/previews/attractors/thomas-771202feaca8.jpg"
+        },
+        {
+          "preset": "harmonograph",
+          "label": "Harmonograph",
+          "image": "/genchase/previews/attractors/harmonograph-f0faad010d11.jpg"
+        },
+        {
+          "preset": "gumowski",
+          "label": "Gumowski-Mira",
+          "image": "/genchase/previews/attractors/gumowski-0b3b2cec8584.jpg"
+        },
+        {
+          "preset": "ikeda",
+          "label": "Ikeda",
+          "image": "/genchase/previews/attractors/ikeda-592b031cb31f.jpg"
         }
       ],
       "presetLabels": {
-        "clifford": "Clifford classic"
+        "clifford": "Clifford classic",
+        "dejong": "De Jong veil",
+        "svensson": "Svensson silk",
+        "lorenz": "Lorenz butterfly",
+        "rossler": "Rössler",
+        "aizawa": "Aizawa",
+        "thomas": "Thomas",
+        "harmonograph": "Harmonograph",
+        "gumowski": "Gumowski-Mira",
+        "ikeda": "Ikeda"
       }
     },
     {
@@ -3284,10 +6539,40 @@
           "preset": "fly",
           "label": "Accelerating",
           "image": "/genchase/previews/airy/fly-8441b0beec12.jpg"
+        },
+        {
+          "preset": "caustic",
+          "label": "Parabola",
+          "image": "/genchase/previews/airy/caustic-8a2e7ec801a6.jpg"
+        },
+        {
+          "preset": "tight",
+          "label": "Tight",
+          "image": "/genchase/previews/airy/tight-ee1c3c85f962.jpg"
+        },
+        {
+          "preset": "wide",
+          "label": "Wide",
+          "image": "/genchase/previews/airy/wide-ae24decb8db3.jpg"
+        },
+        {
+          "preset": "phase",
+          "label": "Phase",
+          "image": "/genchase/previews/airy/phase-33371d7fea19.jpg"
+        },
+        {
+          "preset": "log",
+          "label": "Log |ψ|²",
+          "image": "/genchase/previews/airy/log-46234dc7f481.jpg"
         }
       ],
       "presetLabels": {
-        "fly": "Accelerating"
+        "fly": "Accelerating",
+        "caustic": "Parabola",
+        "tight": "Tight",
+        "wide": "Wide",
+        "phase": "Phase",
+        "log": "Log |ψ|²"
       }
     },
     {
@@ -3316,10 +6601,34 @@
           "preset": "kam",
           "label": "KAM islands",
           "image": "/genchase/previews/chirikov/kam-8c91c5a16143.jpg"
+        },
+        {
+          "preset": "critical",
+          "label": "Last KAM",
+          "image": "/genchase/previews/chirikov/critical-2c4bc1b69cb8.jpg"
+        },
+        {
+          "preset": "mixed",
+          "label": "Mixed sea",
+          "image": "/genchase/previews/chirikov/mixed-bd1e04f27207.jpg"
+        },
+        {
+          "preset": "lyap",
+          "label": "Lyapunov sea",
+          "image": "/genchase/previews/chirikov/lyap-c9852743e77c.jpg"
+        },
+        {
+          "preset": "chaos",
+          "label": "Global chaos",
+          "image": "/genchase/previews/chirikov/chaos-de009f023192.jpg"
         }
       ],
       "presetLabels": {
-        "kam": "KAM islands"
+        "kam": "KAM islands",
+        "critical": "Last KAM",
+        "mixed": "Mixed sea",
+        "lyap": "Lyapunov sea",
+        "chaos": "Global chaos"
       }
     },
     {
@@ -3345,10 +6654,28 @@
           "preset": "classic",
           "label": "Classic",
           "image": "/genchase/previews/hofstadter/classic-98923616b0b7.jpg"
+        },
+        {
+          "preset": "chern",
+          "label": "Chern color",
+          "image": "/genchase/previews/hofstadter/chern-11de7f50ed7e.jpg"
+        },
+        {
+          "preset": "fine",
+          "label": "Fine q=44",
+          "image": "/genchase/previews/hofstadter/fine-024e5b84d523.jpg"
+        },
+        {
+          "preset": "ink",
+          "label": "Ink",
+          "image": "/genchase/previews/hofstadter/ink-84e76898a086.jpg"
         }
       ],
       "presetLabels": {
-        "classic": "Classic"
+        "classic": "Classic",
+        "chern": "Chern color",
+        "fine": "Fine q=44",
+        "ink": "Ink"
       }
     },
     {
@@ -3376,10 +6703,40 @@
           "preset": "classic",
           "label": "Weierstrass",
           "image": "/genchase/previews/weierstrass/classic-e0a942406c60.jpg"
+        },
+        {
+          "preset": "graph",
+          "label": "Graph",
+          "image": "/genchase/previews/weierstrass/graph-a9d3395598df.jpg"
+        },
+        {
+          "preset": "rough",
+          "label": "All scales",
+          "image": "/genchase/previews/weierstrass/rough-c44b17e915b6.jpg"
+        },
+        {
+          "preset": "mild",
+          "label": "Mild",
+          "image": "/genchase/previews/weierstrass/mild-4ecdd2fcb2d7.jpg"
+        },
+        {
+          "preset": "wild",
+          "label": "Wild",
+          "image": "/genchase/previews/weierstrass/wild-faecd98704f9.jpg"
+        },
+        {
+          "preset": "log",
+          "label": "Log",
+          "image": "/genchase/previews/weierstrass/log-a45b964d86b4.jpg"
         }
       ],
       "presetLabels": {
-        "classic": "Weierstrass"
+        "classic": "Weierstrass",
+        "graph": "Graph",
+        "rough": "All scales",
+        "mild": "Mild",
+        "wild": "Wild",
+        "log": "Log"
       }
     },
     {
@@ -3408,10 +6765,34 @@
           "preset": "stadium",
           "label": "Stadium n=520",
           "image": "/genchase/previews/scars/stadium-c82c49717e92.jpg"
+        },
+        {
+          "preset": "high",
+          "label": "High speckle",
+          "image": "/genchase/previews/scars/high-5fc5b4234b78.jpg"
+        },
+        {
+          "preset": "cardioid",
+          "label": "Cardioid",
+          "image": "/genchase/previews/scars/cardioid-9d4a6638e3ef.jpg"
+        },
+        {
+          "preset": "sinai",
+          "label": "Sinai",
+          "image": "/genchase/previews/scars/sinai-1f2f5a337871.jpg"
+        },
+        {
+          "preset": "bounce",
+          "label": "Bouncing ball",
+          "image": "/genchase/previews/scars/bounce-68cd1c46b468.jpg"
         }
       ],
       "presetLabels": {
-        "stadium": "Stadium n=520"
+        "stadium": "Stadium n=520",
+        "high": "High speckle",
+        "cardioid": "Cardioid",
+        "sinai": "Sinai",
+        "bounce": "Bouncing ball"
       }
     },
     {
@@ -3439,10 +6820,40 @@
           "preset": "majorana",
           "label": "Majorana ends",
           "image": "/genchase/previews/kitaev/majorana-4265270a7c1e.jpg"
+        },
+        {
+          "preset": "triv",
+          "label": "Trivial",
+          "image": "/genchase/previews/kitaev/triv-75ce451e75ca.jpg"
+        },
+        {
+          "preset": "deep",
+          "label": "Deep topo",
+          "image": "/genchase/previews/kitaev/deep-5ae4695708c6.jpg"
+        },
+        {
+          "preset": "crit",
+          "label": "Near critical",
+          "image": "/genchase/previews/kitaev/crit-41650099b758.jpg"
+        },
+        {
+          "preset": "log",
+          "label": "Log |ψ|",
+          "image": "/genchase/previews/kitaev/log-888d2c1431cd.jpg"
+        },
+        {
+          "preset": "weak",
+          "label": "Weak pairing",
+          "image": "/genchase/previews/kitaev/weak-c74b1ad0c0a5.jpg"
         }
       ],
       "presetLabels": {
-        "majorana": "Majorana ends"
+        "majorana": "Majorana ends",
+        "triv": "Trivial",
+        "deep": "Deep topo",
+        "crit": "Near critical",
+        "log": "Log |ψ|",
+        "weak": "Weak pairing"
       }
     },
     {
@@ -3468,10 +6879,28 @@
           "preset": "pool",
           "label": "Pool floor",
           "image": "/genchase/previews/caustics/pool-faf989b6202f.jpg"
+        },
+        {
+          "preset": "silk",
+          "label": "Silk",
+          "image": "/genchase/previews/caustics/silk-e8b8d5b59dba.jpg"
+        },
+        {
+          "preset": "cusp",
+          "label": "Cusps",
+          "image": "/genchase/previews/caustics/cusp-5b15f3f004c1.jpg"
+        },
+        {
+          "preset": "fine",
+          "label": "Fine ripple",
+          "image": "/genchase/previews/caustics/fine-b655d7db7703.jpg"
         }
       ],
       "presetLabels": {
-        "pool": "Pool floor"
+        "pool": "Pool floor",
+        "silk": "Silk",
+        "cusp": "Cusps",
+        "fine": "Fine ripple"
       }
     },
     {
@@ -3499,10 +6928,40 @@
           "preset": "perfect",
           "label": "n = −1 focus",
           "image": "/genchase/previews/veselago/perfect-0283ebce8628.jpg"
+        },
+        {
+          "preset": "shallow",
+          "label": "Thin slab",
+          "image": "/genchase/previews/veselago/shallow-2639b0c9d8ee.jpg"
+        },
+        {
+          "preset": "deep",
+          "label": "Thick",
+          "image": "/genchase/previews/veselago/deep-653958aa34a8.jpg"
+        },
+        {
+          "preset": "n12",
+          "label": "n = −1.2",
+          "image": "/genchase/previews/veselago/n12-bf3635adbf08.jpg"
+        },
+        {
+          "preset": "many",
+          "label": "Many rays",
+          "image": "/genchase/previews/veselago/many-8f659201f41f.jpg"
+        },
+        {
+          "preset": "log",
+          "label": "Log",
+          "image": "/genchase/previews/veselago/log-950b6250925a.jpg"
         }
       ],
       "presetLabels": {
-        "perfect": "n = −1 focus"
+        "perfect": "n = −1 focus",
+        "shallow": "Thin slab",
+        "deep": "Thick",
+        "n12": "n = −1.2",
+        "many": "Many rays",
+        "log": "Log"
       }
     },
     {
@@ -3530,10 +6989,40 @@
           "preset": "tongues",
           "label": "Arnold tongues",
           "image": "/genchase/previews/devil/tongues-d498223f5983.jpg"
+        },
+        {
+          "preset": "stair",
+          "label": "Devil's staircase",
+          "image": "/genchase/previews/devil/stair-ad794d6c2708.jpg"
+        },
+        {
+          "preset": "sub",
+          "label": "Subcritical",
+          "image": "/genchase/previews/devil/sub-34430ca2f35e.jpg"
+        },
+        {
+          "preset": "super",
+          "label": "Supercritical",
+          "image": "/genchase/previews/devil/super-69d076fcdf7b.jpg"
+        },
+        {
+          "preset": "orbit",
+          "label": "Orbit",
+          "image": "/genchase/previews/devil/orbit-ba1ef1f3a4e1.jpg"
+        },
+        {
+          "preset": "golden",
+          "label": "Golden",
+          "image": "/genchase/previews/devil/golden-5450cbcf3e2a.jpg"
         }
       ],
       "presetLabels": {
-        "tongues": "Arnold tongues"
+        "tongues": "Arnold tongues",
+        "stair": "Devil's staircase",
+        "sub": "Subcritical",
+        "super": "Supercritical",
+        "orbit": "Orbit",
+        "golden": "Golden"
       }
     },
     {
@@ -3559,10 +7048,28 @@
           "preset": "classic",
           "label": "Classic carpet",
           "image": "/genchase/previews/talbot/classic-51a233e55ccf.jpg"
+        },
+        {
+          "preset": "dense",
+          "label": "Dense grating",
+          "image": "/genchase/previews/talbot/dense-0c885824cea8.jpg"
+        },
+        {
+          "preset": "binary",
+          "label": "Binary 50%",
+          "image": "/genchase/previews/talbot/binary-39fe67d5bdd8.jpg"
+        },
+        {
+          "preset": "deep",
+          "label": "Two revivals",
+          "image": "/genchase/previews/talbot/deep-aaaff0950f8f.jpg"
         }
       ],
       "presetLabels": {
-        "classic": "Classic carpet"
+        "classic": "Classic carpet",
+        "dense": "Dense grating",
+        "binary": "Binary 50%",
+        "deep": "Two revivals"
       }
     },
     {
@@ -3591,10 +7098,46 @@
           "preset": "dz2",
           "label": "3d z² torus",
           "image": "/genchase/previews/orbitals/dz2-def595cbbfdb.jpg"
+        },
+        {
+          "preset": "pz",
+          "label": "2p z section",
+          "image": "/genchase/previews/orbitals/pz-24c88b66dc09.jpg"
+        },
+        {
+          "preset": "fz3",
+          "label": "4f z³ phase",
+          "image": "/genchase/previews/orbitals/fz3-ea178674c24d.jpg"
+        },
+        {
+          "preset": "dxy",
+          "label": "3d xy section",
+          "image": "/genchase/previews/orbitals/dxy-0df665268b95.jpg"
+        },
+        {
+          "preset": "g",
+          "label": "5g cloud",
+          "image": "/genchase/previews/orbitals/g-c3d5b027ec89.jpg"
+        },
+        {
+          "preset": "s6",
+          "label": "6s shells",
+          "image": "/genchase/previews/orbitals/s6-9b849a9a80e2.jpg"
+        },
+        {
+          "preset": "dxz",
+          "label": "4d xz cloud",
+          "image": "/genchase/previews/orbitals/dxz-a46a639cdcb0.jpg"
         }
       ],
       "presetLabels": {
-        "dz2": "3d z² torus"
+        "dz2": "3d z² torus",
+        "pz": "2p z section",
+        "fz3": "4f z³ phase",
+        "dxy": "3d xy section",
+        "g": "5g cloud",
+        "s6": "6s shells",
+        "dxz": "4d xz cloud"
       }
     },
     {
@@ -3622,10 +7165,40 @@
           "preset": "echo",
           "label": "Loschmidt echo",
           "image": "/genchase/previews/loschmidt/echo-45456aa17d7e.jpg"
+        },
+        {
+          "preset": "late",
+          "label": "Late reverse",
+          "image": "/genchase/previews/loschmidt/late-6a93b625a694.jpg"
+        },
+        {
+          "preset": "early",
+          "label": "Early reverse",
+          "image": "/genchase/previews/loschmidt/early-537055d6ea6b.jpg"
+        },
+        {
+          "preset": "many",
+          "label": "Many",
+          "image": "/genchase/previews/loschmidt/many-30b4bb6d6fd1.jpg"
+        },
+        {
+          "preset": "mix",
+          "label": "No reverse",
+          "image": "/genchase/previews/loschmidt/mix-650edfc3d06b.jpg"
+        },
+        {
+          "preset": "log",
+          "label": "Log",
+          "image": "/genchase/previews/loschmidt/log-20c692ba6cea.jpg"
         }
       ],
       "presetLabels": {
-        "echo": "Loschmidt echo"
+        "echo": "Loschmidt echo",
+        "late": "Late reverse",
+        "early": "Early reverse",
+        "many": "Many",
+        "mix": "No reverse",
+        "log": "Log"
       }
     },
     {
@@ -3654,10 +7227,46 @@
           "preset": "rings",
           "label": "Growth rings",
           "image": "/genchase/previews/fisher-kpp/rings-400cbb431e79.jpg"
+        },
+        {
+          "preset": "territories",
+          "label": "Territories",
+          "image": "/genchase/previews/fisher-kpp/territories-2ef4ce4facba.jpg"
+        },
+        {
+          "preset": "single",
+          "label": "One founder",
+          "image": "/genchase/previews/fisher-kpp/single-04b48a70945d.jpg"
+        },
+        {
+          "preset": "edge",
+          "label": "Straight front",
+          "image": "/genchase/previews/fisher-kpp/edge-09ebe0c13d5d.jpg"
+        },
+        {
+          "preset": "patchy",
+          "label": "Patchy habitat",
+          "image": "/genchase/previews/fisher-kpp/patchy-9dfb59afe3ed.jpg"
+        },
+        {
+          "preset": "islands",
+          "label": "Hostile islands",
+          "image": "/genchase/previews/fisher-kpp/islands-7fa8baa275c1.jpg"
+        },
+        {
+          "preset": "spread",
+          "label": "Mid-invasion density",
+          "image": "/genchase/previews/fisher-kpp/spread-3749b3f81649.jpg"
         }
       ],
       "presetLabels": {
-        "rings": "Growth rings"
+        "rings": "Growth rings",
+        "territories": "Territories",
+        "single": "One founder",
+        "edge": "Straight front",
+        "patchy": "Patchy habitat",
+        "islands": "Hostile islands",
+        "spread": "Mid-invasion density"
       }
     },
     {
@@ -3686,10 +7295,34 @@
           "preset": "crossed",
           "label": "Crossed waves",
           "image": "/genchase/previews/volume-wave/crossed-2482763e9750.jpg"
+        },
+        {
+          "preset": "pulse",
+          "label": "Expanding pulse",
+          "image": "/genchase/previews/volume-wave/pulse-37b1af1d003a.jpg"
+        },
+        {
+          "preset": "standing",
+          "label": "Standing mode",
+          "image": "/genchase/previews/volume-wave/standing-70fccfc2913b.jpg"
+        },
+        {
+          "preset": "transverse",
+          "label": "Transverse interference",
+          "image": "/genchase/previews/volume-wave/transverse-73a168a5b880.jpg"
+        },
+        {
+          "preset": "side",
+          "label": "Side view of a mode",
+          "image": "/genchase/previews/volume-wave/side-a6bb9c63239a.jpg"
         }
       ],
       "presetLabels": {
-        "crossed": "Crossed waves"
+        "crossed": "Crossed waves",
+        "pulse": "Expanding pulse",
+        "standing": "Standing mode",
+        "transverse": "Transverse interference",
+        "side": "Side view of a mode"
       }
     },
     {
@@ -3717,10 +7350,40 @@
           "preset": "boy",
           "label": "Boy",
           "image": "/genchase/previews/boy/boy-12dd67acb29f.jpg"
+        },
+        {
+          "preset": "height",
+          "label": "Height",
+          "image": "/genchase/previews/boy/height-65baa8d796f2.jpg"
+        },
+        {
+          "preset": "dense",
+          "label": "Dense",
+          "image": "/genchase/previews/boy/dense-54adf9bd01a8.jpg"
+        },
+        {
+          "preset": "param",
+          "label": "Parametric",
+          "image": "/genchase/previews/boy/param-25fa2f907e25.jpg"
+        },
+        {
+          "preset": "side",
+          "label": "Side",
+          "image": "/genchase/previews/boy/side-a46ede7ae850.jpg"
+        },
+        {
+          "preset": "log",
+          "label": "Log",
+          "image": "/genchase/previews/boy/log-1257331a5c57.jpg"
         }
       ],
       "presetLabels": {
-        "boy": "Boy"
+        "boy": "Boy",
+        "height": "Height",
+        "dense": "Dense",
+        "param": "Parametric",
+        "side": "Side",
+        "log": "Log"
       }
     },
     {
@@ -3748,10 +7411,28 @@
           "preset": "necklace",
           "label": "Necklace",
           "image": "/genchase/previews/pearls/necklace-7433687b9507.jpg"
+        },
+        {
+          "preset": "kissing",
+          "label": "Kissing",
+          "image": "/genchase/previews/pearls/kissing-904e5cc9ef36.jpg"
+        },
+        {
+          "preset": "dust",
+          "label": "Schottky dust",
+          "image": "/genchase/previews/pearls/dust-06d2e443d7b8.jpg"
+        },
+        {
+          "preset": "six",
+          "label": "Six generators",
+          "image": "/genchase/previews/pearls/six-2d7795845d83.jpg"
         }
       ],
       "presetLabels": {
-        "necklace": "Necklace"
+        "necklace": "Necklace",
+        "kissing": "Kissing",
+        "dust": "Schottky dust",
+        "six": "Six generators"
       }
     },
     {
@@ -3782,10 +7463,46 @@
           "preset": "critical",
           "label": "Critical point",
           "image": "/genchase/previews/ising/critical-040a4306628c.jpg"
+        },
+        {
+          "preset": "quench",
+          "label": "Quench coarsening",
+          "image": "/genchase/previews/ising/quench-449fd4692eb0.jpg"
+        },
+        {
+          "preset": "below",
+          "label": "Just below T_c",
+          "image": "/genchase/previews/ising/below-63518fc1ed6a.jpg"
+        },
+        {
+          "preset": "stripes",
+          "label": "Field stripes",
+          "image": "/genchase/previews/ising/stripes-674cf5b2f8cc.jpg"
+        },
+        {
+          "preset": "walls",
+          "label": "Domain walls",
+          "image": "/genchase/previews/ising/walls-3749fd7cda23.jpg"
+        },
+        {
+          "preset": "gradient",
+          "label": "Field gradient",
+          "image": "/genchase/previews/ising/gradient-6efd36471436.jpg"
+        },
+        {
+          "preset": "energy",
+          "label": "Bond energy",
+          "image": "/genchase/previews/ising/energy-2204f9391c20.jpg"
         }
       ],
       "presetLabels": {
-        "critical": "Critical point"
+        "critical": "Critical point",
+        "quench": "Quench coarsening",
+        "below": "Just below T_c",
+        "stripes": "Field stripes",
+        "walls": "Domain walls",
+        "gradient": "Field gradient",
+        "energy": "Bond energy"
       }
     },
     {
@@ -3813,10 +7530,40 @@
           "preset": "pump",
           "label": "Chern 1",
           "image": "/genchase/previews/thouless/pump-d50b79c37a79.jpg"
+        },
+        {
+          "preset": "triv",
+          "label": "Chern 0",
+          "image": "/genchase/previews/thouless/triv-bf85174eb7df.jpg"
+        },
+        {
+          "preset": "fat",
+          "label": "Fat loop",
+          "image": "/genchase/previews/thouless/fat-ce705ca5a4f4.jpg"
+        },
+        {
+          "preset": "thin",
+          "label": "Thin loop",
+          "image": "/genchase/previews/thouless/thin-2a91b0d49d42.jpg"
+        },
+        {
+          "preset": "log",
+          "label": "Log",
+          "image": "/genchase/previews/thouless/log-c1583c300df5.jpg"
+        },
+        {
+          "preset": "mid",
+          "label": "Mid",
+          "image": "/genchase/previews/thouless/mid-7fa2a5f5070c.jpg"
         }
       ],
       "presetLabels": {
-        "pump": "Chern 1"
+        "pump": "Chern 1",
+        "triv": "Chern 0",
+        "fat": "Fat loop",
+        "thin": "Thin loop",
+        "log": "Log",
+        "mid": "Mid"
       }
     },
     {
@@ -3847,10 +7594,46 @@
           "preset": "plumes",
           "label": "Plumes",
           "image": "/genchase/previews/convection/plumes-b0d37df40846.jpg"
+        },
+        {
+          "preset": "rolls",
+          "label": "Rolls",
+          "image": "/genchase/previews/convection/rolls-9c598eefa867.jpg"
+        },
+        {
+          "preset": "mushroom",
+          "label": "Mushrooms",
+          "image": "/genchase/previews/convection/mushroom-cdb12b0b84b6.jpg"
+        },
+        {
+          "preset": "turbulent",
+          "label": "Turbulent",
+          "image": "/genchase/previews/convection/turbulent-0dc8642aa907.jpg"
+        },
+        {
+          "preset": "schlieren",
+          "label": "Schlieren",
+          "image": "/genchase/previews/convection/schlieren-5ba8841d5a76.jpg"
+        },
+        {
+          "preset": "vorticity",
+          "label": "Vorticity",
+          "image": "/genchase/previews/convection/vorticity-4d87b6f02133.jpg"
+        },
+        {
+          "preset": "oneplume",
+          "label": "One plume",
+          "image": "/genchase/previews/convection/oneplume-521dab7e7fdd.jpg"
         }
       ],
       "presetLabels": {
-        "plumes": "Plumes"
+        "plumes": "Plumes",
+        "rolls": "Rolls",
+        "mushroom": "Mushrooms",
+        "turbulent": "Turbulent",
+        "schlieren": "Schlieren",
+        "vorticity": "Vorticity",
+        "oneplume": "One plume"
       }
     },
     {
@@ -3878,10 +7661,40 @@
           "preset": "roll",
           "label": "Rotated overlays",
           "image": "/genchase/previews/reuleaux/roll-499ad37d182e.jpg"
+        },
+        {
+          "preset": "shape",
+          "label": "Triangle",
+          "image": "/genchase/previews/reuleaux/shape-4b0669225f2e.jpg"
+        },
+        {
+          "preset": "rose",
+          "label": "Width rose",
+          "image": "/genchase/previews/reuleaux/rose-e241bc710ac8.jpg"
+        },
+        {
+          "preset": "fat",
+          "label": "Fat",
+          "image": "/genchase/previews/reuleaux/fat-7fc029bccc23.jpg"
+        },
+        {
+          "preset": "many",
+          "label": "Many frames",
+          "image": "/genchase/previews/reuleaux/many-47a29bc9ea3f.jpg"
+        },
+        {
+          "preset": "log",
+          "label": "Log",
+          "image": "/genchase/previews/reuleaux/log-a832299d4f2d.jpg"
         }
       ],
       "presetLabels": {
-        "roll": "Rotated overlays"
+        "roll": "Rotated overlays",
+        "shape": "Triangle",
+        "rose": "Width rose",
+        "fat": "Fat",
+        "many": "Many frames",
+        "log": "Log"
       }
     },
     {
@@ -3911,10 +7724,40 @@
           "preset": "enneper",
           "label": "Enneper saddle",
           "image": "/genchase/previews/surfaces/enneper-a05f90e16546.jpg"
+        },
+        {
+          "preset": "folded",
+          "label": "Enneper folds",
+          "image": "/genchase/previews/surfaces/folded-1fc54efbec67.jpg"
+        },
+        {
+          "preset": "dini",
+          "label": "Dini trumpet",
+          "image": "/genchase/previews/surfaces/dini-47be859ca526.jpg"
+        },
+        {
+          "preset": "catenoid",
+          "label": "Catenoid neck",
+          "image": "/genchase/previews/surfaces/catenoid-b5cee0b9a0fa.jpg"
+        },
+        {
+          "preset": "helicoid",
+          "label": "Helicoid ribbon",
+          "image": "/genchase/previews/surfaces/helicoid-f7e11b43c779.jpg"
+        },
+        {
+          "preset": "associate",
+          "label": "Between neck and ribbon",
+          "image": "/genchase/previews/surfaces/associate-4fe7b9e2d8be.jpg"
         }
       ],
       "presetLabels": {
-        "enneper": "Enneper saddle"
+        "enneper": "Enneper saddle",
+        "folded": "Enneper folds",
+        "dini": "Dini trumpet",
+        "catenoid": "Catenoid neck",
+        "helicoid": "Helicoid ribbon",
+        "associate": "Between neck and ribbon"
       }
     },
     {
@@ -3942,10 +7785,40 @@
           "preset": "gasket",
           "label": "Gasket",
           "image": "/genchase/previews/apollonian/gasket-716c2b04f07a.jpg"
+        },
+        {
+          "preset": "k",
+          "label": "Curvature",
+          "image": "/genchase/previews/apollonian/k-4197cbfb2c38.jpg"
+        },
+        {
+          "preset": "deep",
+          "label": "Deep",
+          "image": "/genchase/previews/apollonian/deep-669104e2f6d6.jpg"
+        },
+        {
+          "preset": "coarse",
+          "label": "Coarse",
+          "image": "/genchase/previews/apollonian/coarse-7e322c9a500d.jpg"
+        },
+        {
+          "preset": "fill",
+          "label": "Fill",
+          "image": "/genchase/previews/apollonian/fill-10f09cf8f472.jpg"
+        },
+        {
+          "preset": "log",
+          "label": "Log k",
+          "image": "/genchase/previews/apollonian/log-e90042787a43.jpg"
         }
       ],
       "presetLabels": {
-        "gasket": "Gasket"
+        "gasket": "Gasket",
+        "k": "Curvature",
+        "deep": "Deep",
+        "coarse": "Coarse",
+        "fill": "Fill",
+        "log": "Log k"
       }
     },
     {
@@ -3977,10 +7850,52 @@
           "preset": "classic",
           "label": "Classic plate",
           "image": "/genchase/previews/chladni/classic-c693bc3e6d84.jpg"
+        },
+        {
+          "preset": "sand",
+          "label": "Fine sand",
+          "image": "/genchase/previews/chladni/sand-0b91e3f5c85e.jpg"
+        },
+        {
+          "preset": "drum",
+          "label": "Bessel drum",
+          "image": "/genchase/previews/chladni/drum-d0dc0297b345.jpg"
+        },
+        {
+          "preset": "ripple",
+          "label": "Two-source ripple",
+          "image": "/genchase/previews/chladni/ripple-befeb9484465.jpg"
+        },
+        {
+          "preset": "sevenfold",
+          "label": "Sevenfold interference",
+          "image": "/genchase/previews/chladni/sevenfold-e8df730d9465.jpg"
+        },
+        {
+          "preset": "moire",
+          "label": "Moiré",
+          "image": "/genchase/previews/chladni/moire-1e9ee697389f.jpg"
+        },
+        {
+          "preset": "topo",
+          "label": "Topographic",
+          "image": "/genchase/previews/chladni/topo-2307f99151f0.jpg"
+        },
+        {
+          "preset": "ink",
+          "label": "Ink plate",
+          "image": "/genchase/previews/chladni/ink-f801d6c4528e.jpg"
         }
       ],
       "presetLabels": {
-        "classic": "Classic plate"
+        "classic": "Classic plate",
+        "drum": "Bessel drum",
+        "ripple": "Two-source ripple",
+        "sevenfold": "Sevenfold interference",
+        "sand": "Fine sand",
+        "moire": "Moiré",
+        "topo": "Topographic",
+        "ink": "Ink plate"
       }
     },
     {
@@ -4009,10 +7924,46 @@
           "preset": "pave",
           "label": "Spiral",
           "image": "/genchase/previews/track/pave-05a251115cb3.jpg"
+        },
+        {
+          "preset": "braid",
+          "label": "Braid",
+          "image": "/genchase/previews/track/braid-3217ebf2259c.jpg"
+        },
+        {
+          "preset": "open",
+          "label": "Open loop",
+          "image": "/genchase/previews/track/open-680a79effe85.jpg"
+        },
+        {
+          "preset": "road",
+          "label": "Road",
+          "image": "/genchase/previews/track/road-f9ae766f95af.jpg"
+        },
+        {
+          "preset": "strip",
+          "label": "Spacetime",
+          "image": "/genchase/previews/track/strip-3074bcc40a9c.jpg"
+        },
+        {
+          "preset": "rest",
+          "label": "At rest",
+          "image": "/genchase/previews/track/rest-dbbd572c39e2.jpg"
+        },
+        {
+          "preset": "torn",
+          "label": "Torn",
+          "image": "/genchase/previews/track/torn-f8d421ef9e2a.jpg"
         }
       ],
       "presetLabels": {
-        "pave": "Spiral"
+        "pave": "Spiral",
+        "braid": "Braid",
+        "open": "Open loop",
+        "road": "Road",
+        "strip": "Spacetime",
+        "rest": "At rest",
+        "torn": "Torn"
       }
     },
     {
@@ -4040,10 +7991,40 @@
           "preset": "weave",
           "label": "Weave",
           "image": "/genchase/previews/knotlight/weave-75dc3a2f1b24.jpg"
+        },
+        {
+          "preset": "filament",
+          "label": "Filament",
+          "image": "/genchase/previews/knotlight/filament-5fa04d49a340.jpg"
+        },
+        {
+          "preset": "pages",
+          "label": "Open book",
+          "image": "/genchase/previews/knotlight/pages-51f10a36b353.jpg"
+        },
+        {
+          "preset": "phase",
+          "label": "Phase",
+          "image": "/genchase/previews/knotlight/phase-8b1d98081a68.jpg"
+        },
+        {
+          "preset": "tight",
+          "label": "Tight braid",
+          "image": "/genchase/previews/knotlight/tight-9e5881ca013d.jpg"
+        },
+        {
+          "preset": "smooth",
+          "label": "Smooth knot",
+          "image": "/genchase/previews/knotlight/smooth-f7d1bf1b7876.jpg"
         }
       ],
       "presetLabels": {
-        "weave": "Weave"
+        "weave": "Weave",
+        "filament": "Filament",
+        "pages": "Open book",
+        "phase": "Phase",
+        "tight": "Tight braid",
+        "smooth": "Smooth knot"
       }
     },
     {
@@ -4073,10 +8054,40 @@
           "preset": "lock",
           "label": "Fold lock",
           "image": "/genchase/previews/causticsea/lock-a6f40ec8daf0.jpg"
+        },
+        {
+          "preset": "open",
+          "label": "Open loop",
+          "image": "/genchase/previews/causticsea/open-7b7c197e9ff6.jpg"
+        },
+        {
+          "preset": "silk",
+          "label": "Silk",
+          "image": "/genchase/previews/causticsea/silk-e4049fdb9a98.jpg"
+        },
+        {
+          "preset": "rolls",
+          "label": "Locked rolls",
+          "image": "/genchase/previews/causticsea/rolls-791eacb46b9a.jpg"
+        },
+        {
+          "preset": "tight",
+          "label": "Tight cells",
+          "image": "/genchase/previews/causticsea/tight-523bb6ac15c0.jpg"
+        },
+        {
+          "preset": "over",
+          "label": "Overwritten",
+          "image": "/genchase/previews/causticsea/over-15eb8eb6491a.jpg"
         }
       ],
       "presetLabels": {
-        "lock": "Fold lock"
+        "lock": "Fold lock",
+        "open": "Open loop",
+        "silk": "Silk",
+        "rolls": "Locked rolls",
+        "tight": "Tight cells",
+        "over": "Overwritten"
       }
     },
     {
@@ -4107,10 +8118,46 @@
           "preset": "y",
           "label": "Y-junction",
           "image": "/genchase/previews/kp/y-c2f5f28832f0.jpg"
+        },
+        {
+          "preset": "o",
+          "label": "O-type",
+          "image": "/genchase/previews/kp/o-f6d8b3d2b1bc.jpg"
+        },
+        {
+          "preset": "spider",
+          "label": "Spider",
+          "image": "/genchase/previews/kp/spider-9a7900fbbd6b.jpg"
+        },
+        {
+          "preset": "web",
+          "label": "Web",
+          "image": "/genchase/previews/kp/web-afa090d3ffe8.jpg"
+        },
+        {
+          "preset": "late",
+          "label": "Expanded",
+          "image": "/genchase/previews/kp/late-04a14d6dd708.jpg"
+        },
+        {
+          "preset": "line",
+          "label": "One line",
+          "image": "/genchase/previews/kp/line-0b7aa9c23eb2.jpg"
+        },
+        {
+          "preset": "relief",
+          "label": "Relief",
+          "image": "/genchase/previews/kp/relief-7eb5656134dd.jpg"
         }
       ],
       "presetLabels": {
-        "y": "Y-junction"
+        "y": "Y-junction",
+        "o": "O-type",
+        "spider": "Spider",
+        "web": "Web",
+        "late": "Expanded",
+        "line": "One line",
+        "relief": "Relief"
       }
     },
     {
@@ -4142,10 +8189,46 @@
           "preset": "swell",
           "label": "Gentle swell",
           "image": "/genchase/previews/gerstner/swell-9ad9f24c9b67.jpg"
+        },
+        {
+          "preset": "steep",
+          "label": "Near-cusp",
+          "image": "/genchase/previews/gerstner/steep-55f570a2db23.jpg"
+        },
+        {
+          "preset": "cross",
+          "label": "Two trains",
+          "image": "/genchase/previews/gerstner/cross-5ec0c9fac0e7.jpg"
+        },
+        {
+          "preset": "deep",
+          "label": "Deep view",
+          "image": "/genchase/previews/gerstner/deep-f37ff94d463b.jpg"
+        },
+        {
+          "preset": "trails",
+          "label": "Particle trails",
+          "image": "/genchase/previews/gerstner/trails-668a12a01a64.jpg"
+        },
+        {
+          "preset": "cycloid",
+          "label": "Cycloid limit",
+          "image": "/genchase/previews/gerstner/cycloid-58f36769bd38.jpg"
+        },
+        {
+          "preset": "woodcut",
+          "label": "Woodcut",
+          "image": "/genchase/previews/gerstner/woodcut-49619dbbcc6a.jpg"
         }
       ],
       "presetLabels": {
-        "swell": "Gentle swell"
+        "swell": "Gentle swell",
+        "steep": "Near-cusp",
+        "cross": "Two trains",
+        "deep": "Deep view",
+        "trails": "Particle trails",
+        "cycloid": "Cycloid limit",
+        "woodcut": "Woodcut"
       }
     },
     {
@@ -4177,10 +8260,46 @@
           "preset": "eight",
           "label": "Figure eight",
           "image": "/genchase/previews/eight/eight-579864f6bc2b.jpg"
+        },
+        {
+          "preset": "long",
+          "label": "Long trail",
+          "image": "/genchase/previews/eight/long-860f20ad88bd.jpg"
+        },
+        {
+          "preset": "braid",
+          "label": "Braid",
+          "image": "/genchase/previews/eight/braid-96c1cdc90587.jpg"
+        },
+        {
+          "preset": "shape",
+          "label": "Shape space",
+          "image": "/genchase/previews/eight/shape-d33ad5aca116.jpg"
+        },
+        {
+          "preset": "broken",
+          "label": "Broken nearby",
+          "image": "/genchase/previews/eight/broken-0e4abbc64855.jpg"
+        },
+        {
+          "preset": "three",
+          "label": "Three periods",
+          "image": "/genchase/previews/eight/three-fd3c0a47449e.jpg"
+        },
+        {
+          "preset": "tight",
+          "label": "Tight crop",
+          "image": "/genchase/previews/eight/tight-6c0888130511.jpg"
         }
       ],
       "presetLabels": {
-        "eight": "Figure eight"
+        "eight": "Figure eight",
+        "long": "Long trail",
+        "braid": "Braid",
+        "shape": "Shape space",
+        "broken": "Broken nearby",
+        "three": "Three periods",
+        "tight": "Tight crop"
       }
     },
     {
@@ -4211,10 +8330,46 @@
           "preset": "one",
           "label": "One peakon",
           "image": "/genchase/previews/peakon/one-df4b0695d791.jpg"
+        },
+        {
+          "preset": "collide",
+          "label": "Two-peakon collision",
+          "image": "/genchase/previews/peakon/collide-42bdc775ff92.jpg"
+        },
+        {
+          "preset": "three",
+          "label": "Three",
+          "image": "/genchase/previews/peakon/three-99646044b113.jpg"
+        },
+        {
+          "preset": "spacetime",
+          "label": "Spacetime",
+          "image": "/genchase/previews/peakon/spacetime-9fddf825713d.jpg"
+        },
+        {
+          "preset": "rest",
+          "label": "Rest",
+          "image": "/genchase/previews/peakon/rest-f527e9cb977b.jpg"
+        },
+        {
+          "preset": "overtake",
+          "label": "Overtaking",
+          "image": "/genchase/previews/peakon/overtake-f85c1093e7fc.jpg"
+        },
+        {
+          "preset": "train",
+          "label": "Peaked train",
+          "image": "/genchase/previews/peakon/train-0fbcc5c1043d.jpg"
         }
       ],
       "presetLabels": {
-        "one": "One peakon"
+        "one": "One peakon",
+        "collide": "Two-peakon collision",
+        "three": "Three",
+        "spacetime": "Spacetime",
+        "rest": "Rest",
+        "overtake": "Overtaking",
+        "train": "Peaked train"
       }
     },
     {
@@ -4243,10 +8398,46 @@
           "preset": "ring",
           "label": "Photon ring",
           "image": "/genchase/previews/photon/ring-8d6de12f6180.jpg"
+        },
+        {
+          "preset": "spray",
+          "label": "Grazing spray",
+          "image": "/genchase/previews/photon/spray-89ce8a757742.jpg"
+        },
+        {
+          "preset": "einstein",
+          "label": "Einstein ring",
+          "image": "/genchase/previews/photon/einstein-af4e885454ee.jpg"
+        },
+        {
+          "preset": "weak",
+          "label": "Weak field",
+          "image": "/genchase/previews/photon/weak-a53e4b94c335.jpg"
+        },
+        {
+          "preset": "capture",
+          "label": "Capture",
+          "image": "/genchase/previews/photon/capture-44af73f25854.jpg"
+        },
+        {
+          "preset": "polar",
+          "label": "Polar",
+          "image": "/genchase/previews/photon/polar-51436fa88aae.jpg"
+        },
+        {
+          "preset": "impact",
+          "label": "Impact portrait",
+          "image": "/genchase/previews/photon/impact-0b5e7de4a40f.jpg"
         }
       ],
       "presetLabels": {
-        "ring": "Photon ring"
+        "ring": "Photon ring",
+        "spray": "Grazing spray",
+        "einstein": "Einstein ring",
+        "weak": "Weak field",
+        "capture": "Capture",
+        "polar": "Polar",
+        "impact": "Impact portrait"
       }
     },
     {
@@ -4278,10 +8469,46 @@
           "preset": "ripple",
           "label": "Ripple",
           "image": "/genchase/previews/crapper/ripple-99205bb3d42f.jpg"
+        },
+        {
+          "preset": "moderate",
+          "label": "Moderate",
+          "image": "/genchase/previews/crapper/moderate-4717362fa645.jpg"
+        },
+        {
+          "preset": "steep",
+          "label": "Steep",
+          "image": "/genchase/previews/crapper/steep-dc275539e8f1.jpg"
+        },
+        {
+          "preset": "bubble",
+          "label": "Bubble",
+          "image": "/genchase/previews/crapper/bubble-21b645fc29ff.jpg"
+        },
+        {
+          "preset": "dual",
+          "label": "Dual vorticity",
+          "image": "/genchase/previews/crapper/dual-4532aa540fe9.jpg"
+        },
+        {
+          "preset": "deep",
+          "label": "Deep",
+          "image": "/genchase/previews/crapper/deep-eaf716ef36b9.jpg"
+        },
+        {
+          "preset": "woodcut",
+          "label": "Woodcut",
+          "image": "/genchase/previews/crapper/woodcut-7637968bd0c9.jpg"
         }
       ],
       "presetLabels": {
-        "ripple": "Ripple"
+        "ripple": "Ripple",
+        "moderate": "Moderate",
+        "steep": "Steep",
+        "bubble": "Bubble",
+        "dual": "Dual vorticity",
+        "deep": "Deep",
+        "woodcut": "Woodcut"
       }
     },
     {
@@ -4313,10 +8540,46 @@
           "preset": "loop",
           "label": "Loop",
           "image": "/genchase/previews/hasimoto/loop-c0eef816cb0f.jpg"
+        },
+        {
+          "preset": "tight",
+          "label": "Tight",
+          "image": "/genchase/previews/hasimoto/tight-21393184f084.jpg"
+        },
+        {
+          "preset": "helix",
+          "label": "Helix",
+          "image": "/genchase/previews/hasimoto/helix-4c475e8ac6a0.jpg"
+        },
+        {
+          "preset": "planar",
+          "label": "Smoke ring",
+          "image": "/genchase/previews/hasimoto/planar-19c7e53478d2.jpg"
+        },
+        {
+          "preset": "space",
+          "label": "Spacetime",
+          "image": "/genchase/previews/hasimoto/space-306091e3223e.jpg"
+        },
+        {
+          "preset": "overlay",
+          "label": "Two snapshots",
+          "image": "/genchase/previews/hasimoto/overlay-8ac5b87f2007.jpg"
+        },
+        {
+          "preset": "head",
+          "label": "Head-on",
+          "image": "/genchase/previews/hasimoto/head-00197fdc1c33.jpg"
         }
       ],
       "presetLabels": {
-        "loop": "Loop"
+        "loop": "Loop",
+        "tight": "Tight",
+        "helix": "Helix",
+        "planar": "Smoke ring",
+        "space": "Spacetime",
+        "overlay": "Two snapshots",
+        "head": "Head-on"
       }
     },
     {
@@ -4347,10 +8610,46 @@
           "preset": "one",
           "label": "One lump",
           "image": "/genchase/previews/lump/one-b5e333898bf5.jpg"
+        },
+        {
+          "preset": "two",
+          "label": "Two",
+          "image": "/genchase/previews/lump/two-e056ad3cbcec.jpg"
+        },
+        {
+          "preset": "three",
+          "label": "Three",
+          "image": "/genchase/previews/lump/three-e51ed36f240d.jpg"
+        },
+        {
+          "preset": "collide",
+          "label": "Pass through",
+          "image": "/genchase/previews/lump/collide-325f8d6bbab4.jpg"
+        },
+        {
+          "preset": "spacetime",
+          "label": "Late",
+          "image": "/genchase/previews/lump/spacetime-b29f5372dff6.jpg"
+        },
+        {
+          "preset": "oblique",
+          "label": "Oblique",
+          "image": "/genchase/previews/lump/oblique-6ab80119dd7b.jpg"
+        },
+        {
+          "preset": "tight",
+          "label": "Tight",
+          "image": "/genchase/previews/lump/tight-771b09bf94b4.jpg"
         }
       ],
       "presetLabels": {
-        "one": "One lump"
+        "one": "One lump",
+        "two": "Two",
+        "three": "Three",
+        "collide": "Pass through",
+        "spacetime": "Late",
+        "oblique": "Oblique",
+        "tight": "Tight"
       }
     },
     {
@@ -4383,10 +8682,52 @@
           "preset": "octant",
           "label": "Octant lock",
           "image": "/genchase/previews/three-vortex-bound/octant-908aaaf44093.jpg"
+        },
+        {
+          "preset": "threehalves",
+          "label": "Three halves",
+          "image": "/genchase/previews/three-vortex-bound/threehalves-a05d4d52ac39.jpg"
+        },
+        {
+          "preset": "equal",
+          "label": "Equilateral",
+          "image": "/genchase/previews/three-vortex-bound/equal-9b0b40b8c4cd.jpg"
+        },
+        {
+          "preset": "tight",
+          "label": "Tight collapse",
+          "image": "/genchase/previews/three-vortex-bound/tight-6f7fc0120d69.jpg"
+        },
+        {
+          "preset": "overlay",
+          "label": "Similar triangles",
+          "image": "/genchase/previews/three-vortex-bound/overlay-9bc6b961645d.jpg"
+        },
+        {
+          "preset": "polar",
+          "label": "Log spiral",
+          "image": "/genchase/previews/three-vortex-bound/polar-3dab15983eb9.jpg"
+        },
+        {
+          "preset": "custom",
+          "label": "Custom, μ = 1/2",
+          "image": "/genchase/previews/three-vortex-bound/custom-20422e2f32f5.jpg"
+        },
+        {
+          "preset": "broken",
+          "label": "Off the circle",
+          "image": "/genchase/previews/three-vortex-bound/broken-8dbecbe56df9.jpg"
         }
       ],
       "presetLabels": {
-        "octant": "Octant lock"
+        "octant": "Octant lock",
+        "threehalves": "Three halves",
+        "equal": "Equilateral",
+        "tight": "Tight collapse",
+        "overlay": "Similar triangles",
+        "polar": "Log spiral",
+        "custom": "Custom, μ = 1/2",
+        "broken": "Off the circle"
       }
     },
     {
@@ -4418,10 +8759,46 @@
           "preset": "lock",
           "label": "Lock",
           "image": "/genchase/previews/parallelogram-lock/lock-5baf1328ecf8.jpg"
+        },
+        {
+          "preset": "squareish",
+          "label": "Diagonals at 45°",
+          "image": "/genchase/previews/parallelogram-lock/squareish-af6cc6319861.jpg"
+        },
+        {
+          "preset": "thirty",
+          "label": "Thirty",
+          "image": "/genchase/previews/parallelogram-lock/thirty-ba220561846c.jpg"
+        },
+        {
+          "preset": "tight",
+          "label": "Tight collapse",
+          "image": "/genchase/previews/parallelogram-lock/tight-60ba69445623.jpg"
+        },
+        {
+          "preset": "overlay",
+          "label": "Similar parallelograms",
+          "image": "/genchase/previews/parallelogram-lock/overlay-187f4ba9b10b.jpg"
+        },
+        {
+          "preset": "polar",
+          "label": "Log spiral",
+          "image": "/genchase/previews/parallelogram-lock/polar-7d4c4dc6be00.jpg"
+        },
+        {
+          "preset": "broken",
+          "label": "Off the parallelogram",
+          "image": "/genchase/previews/parallelogram-lock/broken-c262891bc2f9.jpg"
         }
       ],
       "presetLabels": {
-        "lock": "Lock"
+        "lock": "Lock",
+        "squareish": "Diagonals at 45°",
+        "thirty": "Thirty",
+        "tight": "Tight collapse",
+        "overlay": "Similar parallelograms",
+        "polar": "Log spiral",
+        "broken": "Off the parallelogram"
       }
     },
     {
@@ -4453,10 +8830,46 @@
           "preset": "lock",
           "label": "Lock",
           "image": "/genchase/previews/quincunx-lock/lock-dee530279ea3.jpg"
+        },
+        {
+          "preset": "squareish",
+          "label": "Diagonals at 45°",
+          "image": "/genchase/previews/quincunx-lock/squareish-4dc42e222f66.jpg"
+        },
+        {
+          "preset": "thirty",
+          "label": "Thirty",
+          "image": "/genchase/previews/quincunx-lock/thirty-0820f78fee31.jpg"
+        },
+        {
+          "preset": "tight",
+          "label": "Tight collapse",
+          "image": "/genchase/previews/quincunx-lock/tight-c3160f8b1963.jpg"
+        },
+        {
+          "preset": "overlay",
+          "label": "Similar quincunxes",
+          "image": "/genchase/previews/quincunx-lock/overlay-946ce1edcf62.jpg"
+        },
+        {
+          "preset": "polar",
+          "label": "Log spiral",
+          "image": "/genchase/previews/quincunx-lock/polar-3dc6bffcbc5e.jpg"
+        },
+        {
+          "preset": "broken",
+          "label": "Off the quincunx",
+          "image": "/genchase/previews/quincunx-lock/broken-7c4f3ae28c71.jpg"
         }
       ],
       "presetLabels": {
-        "lock": "Lock"
+        "lock": "Lock",
+        "squareish": "Diagonals at 45°",
+        "thirty": "Thirty",
+        "tight": "Tight collapse",
+        "overlay": "Similar quincunxes",
+        "polar": "Log spiral",
+        "broken": "Off the quincunx"
       }
     },
     {
@@ -4488,10 +8901,46 @@
           "preset": "minimum",
           "label": "Minimum",
           "image": "/genchase/previews/double-triangle-bound/minimum-dea85f744d6f.jpg"
+        },
+        {
+          "preset": "thirty",
+          "label": "Thirty degrees",
+          "image": "/genchase/previews/double-triangle-bound/thirty-575b9b6fb5bb.jpg"
+        },
+        {
+          "preset": "winding",
+          "label": "More winding",
+          "image": "/genchase/previews/double-triangle-bound/winding-2710fd061bbf.jpg"
+        },
+        {
+          "preset": "triangles",
+          "label": "Nested triangles",
+          "image": "/genchase/previews/double-triangle-bound/triangles-b4eb272bddac.jpg"
+        },
+        {
+          "preset": "bound",
+          "label": "The sharp bound",
+          "image": "/genchase/previews/double-triangle-bound/bound-c0b605205fd2.jpg"
+        },
+        {
+          "preset": "square",
+          "label": "Square minimum",
+          "image": "/genchase/previews/double-triangle-bound/square-25f08e8166d3.jpg"
+        },
+        {
+          "preset": "broken",
+          "label": "Off the family",
+          "image": "/genchase/previews/double-triangle-bound/broken-5a3f8fff1056.jpg"
         }
       ],
       "presetLabels": {
-        "minimum": "Minimum"
+        "minimum": "Minimum",
+        "thirty": "Thirty degrees",
+        "winding": "More winding",
+        "triangles": "Nested triangles",
+        "bound": "The sharp bound",
+        "square": "Square minimum",
+        "broken": "Off the family"
       }
     }
   ]

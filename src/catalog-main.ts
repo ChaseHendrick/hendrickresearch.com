@@ -88,6 +88,9 @@ function applyPreset(entry: Entry, preset: string) {
     preview.dataset.previewAvailable = String(!!media?.image);
     selector.value = preset;
     preview.querySelector('[data-selected-preset]')!.textContent = label || 'None selected';
+    const note = preview.querySelector<HTMLElement>('[data-sample-note]')!;
+    note.textContent = media?.note ?? '';
+    note.hidden = !media?.note;
     image.alt = `Sample render of ${entry.title}, preset ${label}`;
     image.hidden = !media?.image;
     fallback.hidden = !!media?.image;
@@ -187,7 +190,7 @@ viewSelect.addEventListener('change', () => {
   const fragment = document.createDocumentFragment();
   order.forEach(entry => {
     const card = cards.find(item => item.dataset.entryId === entry.id)!;
-    card.querySelector('h3')!.textContent = indexView ? entry.tabName : entry.title;
+    (card.querySelector('h3 a') ?? card.querySelector('h3'))!.textContent = indexView ? entry.tabName : entry.title;
     fragment.append(card);
   });
   grid.append(fragment);

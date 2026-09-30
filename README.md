@@ -44,7 +44,23 @@ Publish only descriptive metadata intended for visitors. Do not copy source path
 
 Preview images are actual locally rendered GENChase plates, captured through its registered presets. Motion previews are recorded clips with optional playback; the public site does not run or include the private scientific implementation. Previews are sample outputs, not numerical validation. Preserve the complete plate, preset identity, seed, source revision, and recipe version when refreshing them.
 
-Put public media in `public/genchase/previews/`, using content-hashed filenames, and connect each file to its matching preset through the entry’s `previews` array. Safe provenance is recorded in `public/genchase-preview-manifest.json`. Images load lazily, and recorded clips start only when played. The complete plate remains visible without cropping.
+Put public media in `public/genchase/previews/`, using content-hashed filenames, and connect each file to its matching preset through the entry’s `previews` array. Safe provenance is recorded in `public/genchase-preview-manifest.json`. The current snapshot includes all 876 preset stills and seven recorded motion samples. Images load lazily, and recorded clips start only when played. The complete plate remains visible without cropping. Three registered presets produced nearly uniform samples at the recorded seed and are labeled accordingly.
+
+## Browser games and the textile atlas
+
+Four games run directly from `/play/fins/`, `/play/tinylaps/`, `/play/haywire/`, and `/play/sirens/`. Their completed browser builds live in `public/games/`, with each project's original license and dependency notices. No desktop installer is required. The wrappers provide controls, full screen, and a separate-tab option. After the Sirens requires a keyboard and mouse. Saved game progress stays in the visitor's browser.
+
+TinyLaps includes 15 distinct circuits, corrected terrain depth rendering, a circuit chooser, compact mobile controls, and complete world restoration on restart. Haywire's island is enlarged to contain the barn and its roof.
+
+`/fibers/` hosts the full Fibers of Earth atlas and its 2,585 static pages. Original sources, evidence limitations, MIT attribution, third-party notices, and safe provenance accompany the atlas. Refresh its complete static build for the `https://www.hendrickresearch.com/fibers/` base URL; keep the atlas's citations and reading pages intact.
+
+## Search discovery
+
+The build produces focused `/simulations/`, `/generative-art/`, and `/research/` pages plus a permanent `/genchase/<technique-id>/` page for each of the 135 techniques. These pages contain the actual text, links, preset galleries, and paper records in their initial HTML. JavaScript enhances preset selection, but reading does not depend on it.
+
+Titles, descriptions, canonical URLs, social previews, and structured data are generated with each page. Actual motion clips include `VideoObject` metadata. The root `/sitemap.xml` is a sitemap index pointing to `/sitemap-site.xml` and `/fibers/sitemap.xml`. The main sitemap lists all main-site pages and all 876 preset images; the atlas supplies its full reading-page inventory. `robots.txt` advertises the root sitemap. Raw embedded game builds use `X-Robots-Tag: noindex` so their presentation pages are the search destinations.
+
+Google Search Console domain ownership was verified through an additional Porkbun TXT record, and the stable root sitemap URL was submitted on September 30, 2026. Submission does not establish indexing or a search ranking. Its initial fetch report was pending with a `Couldn't fetch` result even though the public sitemap returned HTTP 200. Check the console's processing status after publication and allow Google time to crawl the expanded inventory.
 
 ## Vercel and the domain
 

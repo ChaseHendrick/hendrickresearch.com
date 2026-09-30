@@ -13,7 +13,7 @@ export type CatalogEntry = {
   evidenceStatus?: string;
   presets?: string[];
   presetLabels?: Partial<Record<string, string>>;
-  previews?: Array<{ preset: string; image: string; video?: string; label?: string }>;
+  previews?: Array<{ preset: string; image: string; video?: string; label?: string; note?: string }>;
 };
 
 const escapeHTML = (value: string): string => value.replace(/[&<>"']/g, character => ({
@@ -47,7 +47,7 @@ export function catalogPreview(entry: CatalogEntry, selectedPreset = defaultPres
     <figure class="catalog-media"><img class="catalog-preview-image"${hasImage ? ` src="${escapeHTML(preview!.image)}"` : ' hidden'} alt="${escapeHTML(alt)}" width="720" height="480" loading="${context === 'dialog' ? 'eager' : 'lazy'}" decoding="async" /><video class="catalog-preview-video" hidden muted loop playsinline preload="none"${hasImage ? ` poster="${escapeHTML(preview!.image)}"` : ''} data-video-src="${escapeHTML(preview?.video ?? '')}" aria-label="${escapeHTML(`Motion sample of ${entry.title}, preset ${selectedLabel}`)}"></video><div class="catalog-preview-fallback"${hasImage ? ' hidden' : ''}><span>Preview being prepared</span></div></figure>
     <div class="catalog-preview-body"><div class="catalog-preview-caption"><p class="catalog-sample-label">Sample render</p><button type="button" class="catalog-preview-toggle" data-preview-toggle aria-label="${escapeHTML(`Play sample motion for ${entry.title}`)}" aria-pressed="false"${preview?.video && hasImage ? '' : ' hidden'}>Play motion</button></div>
     <label class="catalog-preset-field"><span>Preset</span><select class="catalog-preset-select" data-preset-entry="${escapeHTML(entry.id)}" aria-label="${escapeHTML(`Preset for ${entry.title}`)}"${presets.length ? '' : ' disabled'}>${presets.length ? presets.map(preset => `<option value="${escapeHTML(preset)}"${preset === selectedPreset ? ' selected' : ''}>${escapeHTML(presetLabel(entry, preset))}</option>`).join('') : '<option value="">No presets listed</option>'}</select></label>
-    <p class="catalog-selected-preset">Selected preset: <span data-selected-preset>${escapeHTML(selectedLabel || 'None selected')}</span></p></div>
+    <p class="catalog-selected-preset">Selected preset: <span data-selected-preset>${escapeHTML(selectedLabel || 'None selected')}</span></p><p class="catalog-selected-preset" data-sample-note${preview?.note ? '' : ' hidden'}>${escapeHTML(preview?.note ?? '')}</p></div>
   </div>`;
 }
 
@@ -60,7 +60,7 @@ export function catalogCard(entry: CatalogEntry): string {
   return `<article class="catalog-card" data-entry-kind="${escapeHTML(entry.kind)}" data-entry-id="${escapeHTML(entry.id)}">
     <div class="catalog-card-media">${catalogPreview(entry)}</div>
     <div class="catalog-card-meta"><span class="catalog-card-kind">${kindNames[entry.kind]}</span>${status ? `<span class="catalog-card-status">${escapeHTML(status)}</span>` : ''}</div>
-    <h3>${escapeHTML(entry.title)}</h3>
+    <h3><a href="/genchase/${escapeHTML(entry.id)}/">${escapeHTML(entry.title)}</a></h3>
     ${entry.category ? `<p class="catalog-card-category">${escapeHTML(entry.category)}</p>` : ''}
     <p class="catalog-card-description">${escapeHTML(entry.description)}</p>
     ${entry.family || entry.tabName && entry.tabName !== entry.title || presetCount !== undefined ? `<dl class="catalog-card-facts">${entry.family ? `<div><dt>Family</dt><dd>${escapeHTML(entry.family)}</dd></div>` : ''}${entry.tabName && entry.tabName !== entry.title ? `<div><dt>Studio tab</dt><dd>${escapeHTML(entry.tabName)}</dd></div>` : ''}${presetCount !== undefined ? `<div><dt>Presets</dt><dd>${presetCount}</dd></div>` : ''}</dl>` : ''}
