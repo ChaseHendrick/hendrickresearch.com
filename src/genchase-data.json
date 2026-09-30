@@ -95,7 +95,18 @@
       "evidenceStatus": "unvalidated",
       "tags": [
         "Living simulation"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "orbium",
+          "label": "Gliders",
+          "image": "/genchase/previews/life/orbium-cd8d8c544361.jpg",
+          "video": "/genchase/previews/life/orbium-d2d09f4f9bb7.webm"
+        }
+      ],
+      "presetLabels": {
+        "orbium": "Gliders"
+      }
     },
     {
       "id": "physarum3d",
@@ -116,7 +127,17 @@
       ],
       "status": "Exploratory",
       "evidenceStatus": "unvalidated",
-      "tags": []
+      "tags": [],
+      "previews": [
+        {
+          "preset": "cosmic",
+          "label": "Cosmic web",
+          "image": "/genchase/previews/physarum3d/cosmic-23c640b227b4.jpg"
+        }
+      ],
+      "presetLabels": {
+        "cosmic": "Cosmic web"
+      }
     },
     {
       "id": "cortex",
@@ -140,7 +161,18 @@
       "evidenceStatus": "unvalidated",
       "tags": [
         "Living simulation"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "spiral",
+          "label": "Spiral",
+          "image": "/genchase/previews/cortex/spiral-9867d40580e7.jpg",
+          "video": "/genchase/previews/cortex/spiral-d30b3481300b.webm"
+        }
+      ],
+      "presetLabels": {
+        "spiral": "Spiral"
+      }
     },
     {
       "id": "nonreciprocal",
@@ -163,7 +195,18 @@
       "evidenceStatus": "validated within stated limits",
       "tags": [
         "Living simulation"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "waves",
+          "label": "Constant coupling",
+          "image": "/genchase/previews/nonreciprocal/waves-2e711d22cb17.jpg",
+          "video": "/genchase/previews/nonreciprocal/waves-39de9e348bb5.webm"
+        }
+      ],
+      "presetLabels": {
+        "waves": "Constant coupling"
+      }
     },
     {
       "id": "bec",
@@ -188,7 +231,17 @@
       "tags": [
         "Living simulation",
         "Vector export"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "lattice",
+          "label": "Abrikosov lattice",
+          "image": "/genchase/previews/bec/lattice-7bc7f6ab5c79.jpg"
+        }
+      ],
+      "presetLabels": {
+        "lattice": "Abrikosov lattice"
+      }
     },
     {
       "id": "physarum",
@@ -211,7 +264,17 @@
       ],
       "status": "Exploratory",
       "evidenceStatus": "unvalidated",
-      "tags": []
+      "tags": [],
+      "previews": [
+        {
+          "preset": "veins",
+          "label": "Veins",
+          "image": "/genchase/previews/physarum/veins-2c692b877368.jpg"
+        }
+      ],
+      "presetLabels": {
+        "veins": "Veins"
+      }
     },
     {
       "id": "phyllotaxis",
@@ -233,7 +296,17 @@
       "tags": [
         "Living simulation",
         "Vector export"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "golden",
+          "label": "Golden",
+          "image": "/genchase/previews/phyllotaxis/golden-8961f5c5a270.jpg"
+        }
+      ],
+      "presetLabels": {
+        "golden": "Golden"
+      }
     },
     {
       "id": "hl",
@@ -254,7 +327,17 @@
       "evidenceStatus": "unvalidated",
       "tags": [
         "Vector export"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "lightning",
+          "label": "Lightning α=2",
+          "image": "/genchase/previews/hl/lightning-5e2c4570d0b3.jpg"
+        }
+      ],
+      "presetLabels": {
+        "lightning": "Lightning α=2"
+      }
     },
     {
       "id": "lichtenberg",
@@ -275,7 +358,17 @@
       "evidenceStatus": "unvalidated",
       "tags": [
         "Vector export"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "lightning",
+          "label": "Lightning η=4",
+          "image": "/genchase/previews/lichtenberg/lightning-16d77fd0bb6e.jpg"
+        }
+      ],
+      "presetLabels": {
+        "lightning": "Lightning η=4"
+      }
     },
     {
       "id": "snowflake",
@@ -298,7 +391,17 @@
       "tags": [
         "Living simulation",
         "Vector export"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "dendrite",
+          "label": "Stellar dendrite",
+          "image": "/genchase/previews/snowflake/dendrite-dcba5ab776d2.jpg"
+        }
+      ],
+      "presetLabels": {
+        "dendrite": "Stellar dendrite"
+      }
     },
     {
       "id": "growth",
@@ -323,7 +426,17 @@
       "evidenceStatus": "unvalidated",
       "tags": [
         "Vector export"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "coral",
+          "label": "Coral",
+          "image": "/genchase/previews/growth/coral-b4e4aef498a6.jpg"
+        }
+      ],
+      "presetLabels": {
+        "coral": "Coral"
+      }
     },
     {
       "id": "cyclic",
@@ -346,7 +459,18 @@
       "evidenceStatus": "validated within stated limits",
       "tags": [
         "Living simulation"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "pinwheels",
+          "label": "Pinwheels",
+          "image": "/genchase/previews/cyclic/pinwheels-e6b7432c9773.jpg",
+          "video": "/genchase/previews/cyclic/pinwheels-e3f444f3d470.webm"
+        }
+      ],
+      "presetLabels": {
+        "pinwheels": "Pinwheels"
+      }
     },
     {
       "id": "landscape",
@@ -370,7 +494,17 @@
       "evidenceStatus": "unvalidated",
       "tags": [
         "Vector export"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "island",
+          "label": "An island",
+          "image": "/genchase/previews/landscape/island-5046852d4d01.jpg"
+        }
+      ],
+      "presetLabels": {
+        "island": "An island"
+      }
     },
     {
       "id": "kpz",
@@ -394,7 +528,17 @@
       "evidenceStatus": "partially validated",
       "tags": [
         "Vector export"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "kpz",
+          "label": "Ballistic, KPZ",
+          "image": "/genchase/previews/kpz/kpz-bd03588443ac.jpg"
+        }
+      ],
+      "presetLabels": {
+        "kpz": "Ballistic, KPZ"
+      }
     },
     {
       "id": "potts",
@@ -416,7 +560,17 @@
       ],
       "status": "Exploratory",
       "evidenceStatus": "unvalidated",
-      "tags": []
+      "tags": [],
+      "previews": [
+        {
+          "preset": "coarse",
+          "label": "Coarsened grains",
+          "image": "/genchase/previews/potts/coarse-3c76c97918ad.jpg"
+        }
+      ],
+      "presetLabels": {
+        "coarse": "Coarsened grains"
+      }
     },
     {
       "id": "liesegang",
@@ -440,7 +594,17 @@
       "evidenceStatus": "unvalidated",
       "tags": [
         "Living simulation"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "rings",
+          "label": "Concentric rings",
+          "image": "/genchase/previews/liesegang/rings-0d704e199975.jpg"
+        }
+      ],
+      "presetLabels": {
+        "rings": "Concentric rings"
+      }
     },
     {
       "id": "grains",
@@ -464,7 +628,17 @@
       "evidenceStatus": "partially validated",
       "tags": [
         "Vector export"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "pour",
+          "label": "Poured under gravity",
+          "image": "/genchase/previews/grains/pour-628ec4fbf3d8.jpg"
+        }
+      ],
+      "presetLabels": {
+        "pour": "Poured under gravity"
+      }
     },
     {
       "id": "skyrmion",
@@ -487,7 +661,17 @@
       "evidenceStatus": "unvalidated",
       "tags": [
         "Living simulation"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "neel",
+          "label": "Neel skyrmion",
+          "image": "/genchase/previews/skyrmion/neel-661e6be6050c.jpg"
+        }
+      ],
+      "presetLabels": {
+        "neel": "Neel skyrmion"
+      }
     },
     {
       "id": "neural-mass",
@@ -510,7 +694,17 @@
       "evidenceStatus": "validated within stated limits",
       "tags": [
         "Vector export"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "driven",
+          "label": "Driven population",
+          "image": "/genchase/previews/neural-mass/driven-7f0193f0ad15.jpg"
+        }
+      ],
+      "presetLabels": {
+        "driven": "Driven population"
+      }
     },
     {
       "id": "tonertu",
@@ -534,7 +728,18 @@
       "evidenceStatus": "unvalidated",
       "tags": [
         "Living simulation"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "bands",
+          "label": "Dense clusters",
+          "image": "/genchase/previews/tonertu/bands-3c2e38c7b6f5.jpg",
+          "video": "/genchase/previews/tonertu/bands-d4d2a4b71ba1.webm"
+        }
+      ],
+      "presetLabels": {
+        "bands": "Dense clusters"
+      }
     },
     {
       "id": "hyperbolic",
@@ -559,7 +764,17 @@
       "tags": [
         "Living simulation",
         "Vector export"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "spots",
+          "label": "Spots on {7,3}",
+          "image": "/genchase/previews/hyperbolic/spots-82c40d74f8c8.jpg"
+        }
+      ],
+      "presetLabels": {
+        "spots": "Spots on {7,3}"
+      }
     },
     {
       "id": "sle",
@@ -583,7 +798,17 @@
       "evidenceStatus": "partially validated",
       "tags": [
         "Vector export"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "perc",
+          "label": "Percolation, κ = 6",
+          "image": "/genchase/previews/sle/perc-d9115b708258.jpg"
+        }
+      ],
+      "presetLabels": {
+        "perc": "Percolation, κ = 6"
+      }
     },
     {
       "id": "fractal",
@@ -606,7 +831,17 @@
       ],
       "status": "Exploratory",
       "evidenceStatus": "unvalidated",
-      "tags": []
+      "tags": [],
+      "previews": [
+        {
+          "preset": "bulb",
+          "label": "Mandelbulb",
+          "image": "/genchase/previews/fractal/bulb-3bbfa7ec7087.jpg"
+        }
+      ],
+      "presetLabels": {
+        "bulb": "Mandelbulb"
+      }
     },
     {
       "id": "phase",
@@ -627,7 +862,17 @@
       ],
       "status": "Exploratory",
       "evidenceStatus": "unvalidated",
-      "tags": []
+      "tags": [],
+      "previews": [
+        {
+          "preset": "rational",
+          "label": "Rational function",
+          "image": "/genchase/previews/phase/rational-4dcbbfe1b9ea.jpg"
+        }
+      ],
+      "presetLabels": {
+        "rational": "Rational function"
+      }
     },
     {
       "id": "lens",
@@ -649,7 +894,17 @@
       ],
       "status": "Exploratory",
       "evidenceStatus": "unvalidated",
-      "tags": []
+      "tags": [],
+      "previews": [
+        {
+          "preset": "einstein",
+          "label": "Einstein ring",
+          "image": "/genchase/previews/lens/einstein-b02bc974669b.jpg"
+        }
+      ],
+      "presetLabels": {
+        "einstein": "Einstein ring"
+      }
     },
     {
       "id": "rotor",
@@ -671,7 +926,17 @@
       ],
       "status": "Exploratory",
       "evidenceStatus": "unvalidated",
-      "tags": []
+      "tags": [],
+      "previews": [
+        {
+          "preset": "quilt",
+          "label": "The rotor quilt",
+          "image": "/genchase/previews/rotor/quilt-cf299519450e.jpg"
+        }
+      ],
+      "presetLabels": {
+        "quilt": "The rotor quilt"
+      }
     },
     {
       "id": "web",
@@ -693,7 +958,17 @@
       ],
       "status": "Exploratory",
       "evidenceStatus": "unvalidated",
-      "tags": []
+      "tags": [],
+      "previews": [
+        {
+          "preset": "local",
+          "label": "Local universe",
+          "image": "/genchase/previews/web/local-3c032fb171c6.jpg"
+        }
+      ],
+      "presetLabels": {
+        "local": "Local universe"
+      }
     },
     {
       "id": "faraday",
@@ -717,7 +992,17 @@
       "evidenceStatus": "unvalidated",
       "tags": [
         "Living simulation"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "oscillon",
+          "label": "Oscillon",
+          "image": "/genchase/previews/faraday/oscillon-ac34ef63a40a.jpg"
+        }
+      ],
+      "presetLabels": {
+        "oscillon": "Oscillon"
+      }
     },
     {
       "id": "film",
@@ -741,7 +1026,17 @@
       "evidenceStatus": "unvalidated",
       "tags": [
         "Living simulation"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "drain",
+          "label": "Draining pane",
+          "image": "/genchase/previews/film/drain-dc4f78b10420.jpg"
+        }
+      ],
+      "presetLabels": {
+        "drain": "Draining pane"
+      }
     },
     {
       "id": "timecrystal",
@@ -763,7 +1058,17 @@
       ],
       "status": "Exploratory",
       "evidenceStatus": "unvalidated",
-      "tags": []
+      "tags": [],
+      "previews": [
+        {
+          "preset": "rigid",
+          "label": "Rigid DTC",
+          "image": "/genchase/previews/timecrystal/rigid-7667e84ffd4c.jpg"
+        }
+      ],
+      "presetLabels": {
+        "rigid": "Rigid DTC"
+      }
     },
     {
       "id": "growdomain",
@@ -785,7 +1090,17 @@
       ],
       "status": "Exploratory",
       "evidenceStatus": "unvalidated",
-      "tags": []
+      "tags": [],
+      "previews": [
+        {
+          "preset": "cascade",
+          "label": "Doubling cascade",
+          "image": "/genchase/previews/growdomain/cascade-52100abeae91.jpg"
+        }
+      ],
+      "presetLabels": {
+        "cascade": "Doubling cascade"
+      }
     },
     {
       "id": "neural-field",
@@ -807,7 +1122,17 @@
       ],
       "status": "Partial checks",
       "evidenceStatus": "partially validated",
-      "tags": []
+      "tags": [],
+      "previews": [
+        {
+          "preset": "proved",
+          "label": "The proved pulse",
+          "image": "/genchase/previews/neural-field/proved-9005279a22ec.jpg"
+        }
+      ],
+      "presetLabels": {
+        "proved": "The proved pulse"
+      }
     },
     {
       "id": "spinice",
@@ -831,7 +1156,17 @@
       "evidenceStatus": "partially validated",
       "tags": [
         "Living simulation"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "cold",
+          "label": "Almost ice",
+          "image": "/genchase/previews/spinice/cold-d11f818a888d.jpg"
+        }
+      ],
+      "presetLabels": {
+        "cold": "Almost ice"
+      }
     },
     {
       "id": "vegetation",
@@ -855,7 +1190,17 @@
       "evidenceStatus": "validated within stated limits",
       "tags": [
         "Living simulation"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "tiger",
+          "label": "Tiger bush",
+          "image": "/genchase/previews/vegetation/tiger-cd542a82e1a1.jpg"
+        }
+      ],
+      "presetLabels": {
+        "tiger": "Tiger bush"
+      }
     },
     {
       "id": "aztec",
@@ -878,7 +1223,17 @@
       "evidenceStatus": "validated within stated limits",
       "tags": [
         "Vector export"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "classic",
+          "label": "Four frozen corners",
+          "image": "/genchase/previews/aztec/classic-8514a8d9638e.jpg"
+        }
+      ],
+      "presetLabels": {
+        "classic": "Four frozen corners"
+      }
     },
     {
       "id": "skin",
@@ -900,7 +1255,17 @@
       ],
       "status": "Checks within stated limits",
       "evidenceStatus": "validated within stated limits",
-      "tags": []
+      "tags": [],
+      "previews": [
+        {
+          "preset": "skin",
+          "label": "Skinned",
+          "image": "/genchase/previews/skin/skin-dd4baa4824f6.jpg"
+        }
+      ],
+      "presetLabels": {
+        "skin": "Skinned"
+      }
     },
     {
       "id": "rmt",
@@ -924,7 +1289,17 @@
       "evidenceStatus": "validated within stated limits",
       "tags": [
         "Vector export"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "sweep",
+          "label": "Independence to rigidity",
+          "image": "/genchase/previews/rmt/sweep-c20e73c656c8.jpg"
+        }
+      ],
+      "presetLabels": {
+        "sweep": "Independence to rigidity"
+      }
     },
     {
       "id": "stealth",
@@ -946,7 +1321,17 @@
       ],
       "status": "Exploratory",
       "evidenceStatus": "unvalidated",
-      "tags": []
+      "tags": [],
+      "previews": [
+        {
+          "preset": "stealth",
+          "label": "Stealthy",
+          "image": "/genchase/previews/stealth/stealth-c48747e06104.jpg"
+        }
+      ],
+      "presetLabels": {
+        "stealth": "Stealthy"
+      }
     },
     {
       "id": "lozenge",
@@ -970,7 +1355,17 @@
       "evidenceStatus": "validated within stated limits",
       "tags": [
         "Vector export"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "circle",
+          "label": "Arctic circle, a = b = c = 40",
+          "image": "/genchase/previews/lozenge/circle-65fd4e01ed39.jpg"
+        }
+      ],
+      "presetLabels": {
+        "circle": "Arctic circle, a = b = c = 40"
+      }
     },
     {
       "id": "arago",
@@ -991,7 +1386,17 @@
       ],
       "status": "Partial checks",
       "evidenceStatus": "partially validated",
-      "tags": []
+      "tags": [],
+      "previews": [
+        {
+          "preset": "spot",
+          "label": "Arago spot",
+          "image": "/genchase/previews/arago/spot-ef3b4532237b.jpg"
+        }
+      ],
+      "presetLabels": {
+        "spot": "Arago spot"
+      }
     },
     {
       "id": "ust",
@@ -1015,7 +1420,17 @@
       "evidenceStatus": "validated within stated limits",
       "tags": [
         "Vector export"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "tree",
+          "label": "One uniform spanning tree",
+          "image": "/genchase/previews/ust/tree-4a46ff97592a.jpg"
+        }
+      ],
+      "presetLabels": {
+        "tree": "One uniform spanning tree"
+      }
     },
     {
       "id": "cppn",
@@ -1038,7 +1453,17 @@
       ],
       "status": "Exploratory",
       "evidenceStatus": "unvalidated",
-      "tags": []
+      "tags": [],
+      "previews": [
+        {
+          "preset": "silk",
+          "label": "Silk",
+          "image": "/genchase/previews/cppn/silk-8253712789d5.jpg"
+        }
+      ],
+      "presetLabels": {
+        "silk": "Silk"
+      }
     },
     {
       "id": "rogue",
@@ -1059,7 +1484,17 @@
       ],
       "status": "Checks within stated limits",
       "evidenceStatus": "validated within stated limits",
-      "tags": []
+      "tags": [],
+      "previews": [
+        {
+          "preset": "peregrine",
+          "label": "Peregrine",
+          "image": "/genchase/previews/rogue/peregrine-b4af5a3aa6e5.jpg"
+        }
+      ],
+      "presetLabels": {
+        "peregrine": "Peregrine"
+      }
     },
     {
       "id": "hodgkin-huxley",
@@ -1080,7 +1515,17 @@
       ],
       "status": "Checks within stated limits",
       "evidenceStatus": "validated within stated limits",
-      "tags": []
+      "tags": [],
+      "previews": [
+        {
+          "preset": "repeated",
+          "label": "Repeated responses",
+          "image": "/genchase/previews/hodgkin-huxley/repeated-d0c618f4e478.jpg"
+        }
+      ],
+      "presetLabels": {
+        "repeated": "Repeated responses"
+      }
     },
     {
       "id": "aharonov",
@@ -1101,7 +1546,17 @@
       ],
       "status": "Exploratory",
       "evidenceStatus": "unvalidated",
-      "tags": []
+      "tags": [],
+      "previews": [
+        {
+          "preset": "shift",
+          "label": "Shifted",
+          "image": "/genchase/previews/aharonov/shift-cb08e8da17bc.jpg"
+        }
+      ],
+      "presetLabels": {
+        "shift": "Shifted"
+      }
     },
     {
       "id": "pendulum",
@@ -1122,7 +1577,17 @@
       ],
       "status": "Exploratory",
       "evidenceStatus": "unvalidated",
-      "tags": []
+      "tags": [],
+      "previews": [
+        {
+          "preset": "classic",
+          "label": "Full square",
+          "image": "/genchase/previews/pendulum/classic-eebf78a035ab.jpg"
+        }
+      ],
+      "presetLabels": {
+        "classic": "Full square"
+      }
     },
     {
       "id": "dptangle",
@@ -1145,7 +1610,17 @@
       "evidenceStatus": "unvalidated",
       "tags": [
         "Vector export"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "zero",
+          "label": "E = 0, in the proof",
+          "image": "/genchase/previews/dptangle/zero-35a55ad1c8f6.jpg"
+        }
+      ],
+      "presetLabels": {
+        "zero": "E = 0, in the proof"
+      }
     },
     {
       "id": "anderson",
@@ -1166,7 +1641,17 @@
       ],
       "status": "Exploratory",
       "evidenceStatus": "unvalidated",
-      "tags": []
+      "tags": [],
+      "previews": [
+        {
+          "preset": "loc",
+          "label": "Localised",
+          "image": "/genchase/previews/anderson/loc-b641423834a2.jpg"
+        }
+      ],
+      "presetLabels": {
+        "loc": "Localised"
+      }
     },
     {
       "id": "fput",
@@ -1187,7 +1672,17 @@
       ],
       "status": "Checks within stated limits",
       "evidenceStatus": "validated within stated limits",
-      "tags": []
+      "tags": [],
+      "previews": [
+        {
+          "preset": "recur",
+          "label": "Nonlinear chain",
+          "image": "/genchase/previews/fput/recur-a6617cb75ea4.jpg"
+        }
+      ],
+      "presetLabels": {
+        "recur": "Nonlinear chain"
+      }
     },
     {
       "id": "schrodinger",
@@ -1213,7 +1708,17 @@
       "evidenceStatus": "validated within stated limits",
       "tags": [
         "Living simulation"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "double",
+          "label": "Double slit",
+          "image": "/genchase/previews/schrodinger/double-0f30309e9331.jpg"
+        }
+      ],
+      "presetLabels": {
+        "double": "Double slit"
+      }
     },
     {
       "id": "maxwell",
@@ -1236,7 +1741,17 @@
       "evidenceStatus": "validated within stated limits",
       "tags": [
         "Living simulation"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "disk",
+          "label": "Dielectric disk",
+          "image": "/genchase/previews/maxwell/disk-10cf44836ff7.jpg"
+        }
+      ],
+      "presetLabels": {
+        "disk": "Dielectric disk"
+      }
     },
     {
       "id": "plasma",
@@ -1259,7 +1774,17 @@
       "evidenceStatus": "validated within stated limits",
       "tags": [
         "Living simulation"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "streams",
+          "label": "Two moving populations",
+          "image": "/genchase/previews/plasma/streams-5f0f0d168aff.jpg"
+        }
+      ],
+      "presetLabels": {
+        "streams": "Two moving populations"
+      }
     },
     {
       "id": "excitable",
@@ -1283,7 +1808,17 @@
       "evidenceStatus": "validated within stated limits",
       "tags": [
         "Living simulation"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "spirals",
+          "label": "Spiral pair",
+          "image": "/genchase/previews/excitable/spirals-dd1eaab80164.jpg"
+        }
+      ],
+      "presetLabels": {
+        "spirals": "Spiral pair"
+      }
     },
     {
       "id": "soliton",
@@ -1304,7 +1839,17 @@
       ],
       "status": "Checks within stated limits",
       "evidenceStatus": "validated within stated limits",
-      "tags": []
+      "tags": [],
+      "previews": [
+        {
+          "preset": "collide",
+          "label": "Collision",
+          "image": "/genchase/previews/soliton/collide-3e1d3cee141f.jpg"
+        }
+      ],
+      "presetLabels": {
+        "collide": "Collision"
+      }
     },
     {
       "id": "cyclicca",
@@ -1328,7 +1873,17 @@
       "evidenceStatus": "unvalidated",
       "tags": [
         "Living simulation"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "griffeath",
+          "label": "Griffeath 14",
+          "image": "/genchase/previews/cyclicca/griffeath-addc11c3a47b.jpg"
+        }
+      ],
+      "presetLabels": {
+        "griffeath": "Griffeath 14"
+      }
     },
     {
       "id": "chimera",
@@ -1351,7 +1906,17 @@
       ],
       "status": "Exploratory",
       "evidenceStatus": "unvalidated",
-      "tags": []
+      "tags": [],
+      "previews": [
+        {
+          "preset": "classic",
+          "label": "Classic chimera",
+          "image": "/genchase/previews/chimera/classic-03d40002c5b4.jpg"
+        }
+      ],
+      "presetLabels": {
+        "classic": "Classic chimera"
+      }
     },
     {
       "id": "ssh",
@@ -1372,7 +1937,17 @@
       ],
       "status": "Checks within stated limits",
       "evidenceStatus": "validated within stated limits",
-      "tags": []
+      "tags": [],
+      "previews": [
+        {
+          "preset": "topo",
+          "label": "Topological",
+          "image": "/genchase/previews/ssh/topo-e5c953afa074.jpg"
+        }
+      ],
+      "presetLabels": {
+        "topo": "Topological"
+      }
     },
     {
       "id": "swarm",
@@ -1394,7 +1969,18 @@
       "evidenceStatus": "unvalidated",
       "tags": [
         "Living simulation"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "rainbow",
+          "label": "Rainbow ring",
+          "image": "/genchase/previews/swarm/rainbow-2fa8210a9b54.jpg",
+          "video": "/genchase/previews/swarm/rainbow-66e74b61a6a0.webm"
+        }
+      ],
+      "presetLabels": {
+        "rainbow": "Rainbow ring"
+      }
     },
     {
       "id": "amb",
@@ -1417,7 +2003,17 @@
       "evidenceStatus": "validated within stated limits",
       "tags": [
         "Living simulation"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "bubbly",
+          "label": "Bubbly phase separation",
+          "image": "/genchase/previews/amb/bubbly-96423aebd302.jpg"
+        }
+      ],
+      "presetLabels": {
+        "bubbly": "Bubbly phase separation"
+      }
     },
     {
       "id": "aubry",
@@ -1438,7 +2034,17 @@
       ],
       "status": "Exploratory",
       "evidenceStatus": "unvalidated",
-      "tags": []
+      "tags": [],
+      "previews": [
+        {
+          "preset": "loc",
+          "label": "Localized",
+          "image": "/genchase/previews/aubry/loc-796375021c12.jpg"
+        }
+      ],
+      "presetLabels": {
+        "loc": "Localized"
+      }
     },
     {
       "id": "cahn",
@@ -1460,7 +2066,17 @@
       "evidenceStatus": "validated within stated limits",
       "tags": [
         "Living simulation"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "labyrinth",
+          "label": "Labyrinth",
+          "image": "/genchase/previews/cahn/labyrinth-60f4a6223096.jpg"
+        }
+      ],
+      "presetLabels": {
+        "labyrinth": "Labyrinth"
+      }
     },
     {
       "id": "ohta",
@@ -1482,7 +2098,17 @@
       "evidenceStatus": "validated within stated limits",
       "tags": [
         "Living simulation"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "lamellae",
+          "label": "Lamellae",
+          "image": "/genchase/previews/ohta/lamellae-5e5575fd0ddf.jpg"
+        }
+      ],
+      "presetLabels": {
+        "lamellae": "Lamellae"
+      }
     },
     {
       "id": "hopf",
@@ -1503,7 +2129,17 @@
       ],
       "status": "Checks within stated limits",
       "evidenceStatus": "validated within stated limits",
-      "tags": []
+      "tags": [],
+      "previews": [
+        {
+          "preset": "linked",
+          "label": "Linked circles",
+          "image": "/genchase/previews/hopf/linked-0d1413876cbc.jpg"
+        }
+      ],
+      "presetLabels": {
+        "linked": "Linked circles"
+      }
     },
     {
       "id": "swift",
@@ -1525,7 +2161,17 @@
       "evidenceStatus": "validated within stated limits",
       "tags": [
         "Living simulation"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "rolls",
+          "label": "Rolls",
+          "image": "/genchase/previews/swift/rolls-c478fc040b34.jpg"
+        }
+      ],
+      "presetLabels": {
+        "rolls": "Rolls"
+      }
     },
     {
       "id": "pfc",
@@ -1548,7 +2194,17 @@
       "evidenceStatus": "validated within stated limits",
       "tags": [
         "Living simulation"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "nucleus",
+          "label": "Nucleus",
+          "image": "/genchase/previews/pfc/nucleus-459092bc388a.jpg"
+        }
+      ],
+      "presetLabels": {
+        "nucleus": "Nucleus"
+      }
     },
     {
       "id": "lp",
@@ -1570,7 +2226,17 @@
       "evidenceStatus": "unvalidated",
       "tags": [
         "Living simulation"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "dodec",
+          "label": "Dodecagonal",
+          "image": "/genchase/previews/lp/dodec-ce6cc31d3ec6.jpg"
+        }
+      ],
+      "presetLabels": {
+        "dodec": "Dodecagonal"
+      }
     },
     {
       "id": "cloak",
@@ -1591,7 +2257,17 @@
       ],
       "status": "Exploratory",
       "evidenceStatus": "unvalidated",
-      "tags": []
+      "tags": [],
+      "previews": [
+        {
+          "preset": "cloaked",
+          "label": "Cloaked",
+          "image": "/genchase/previews/cloak/cloaked-9c6cdef8ca5b.jpg"
+        }
+      ],
+      "presetLabels": {
+        "cloaked": "Cloaked"
+      }
     },
     {
       "id": "xy",
@@ -1617,7 +2293,17 @@
       "tags": [
         "Living simulation",
         "Vector export"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "bound",
+          "label": "Bound pairs",
+          "image": "/genchase/previews/xy/bound-a625e83b18a3.jpg"
+        }
+      ],
+      "presetLabels": {
+        "bound": "Bound pairs"
+      }
     },
     {
       "id": "cgl",
@@ -1639,7 +2325,17 @@
       "evidenceStatus": "validated within stated limits",
       "tags": [
         "Living simulation"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "chaos",
+          "label": "Spiral chaos",
+          "image": "/genchase/previews/cgl/chaos-3292901f78d0.jpg"
+        }
+      ],
+      "presetLabels": {
+        "chaos": "Spiral chaos"
+      }
     },
     {
       "id": "vortex",
@@ -1660,7 +2356,17 @@
       ],
       "status": "Checks within stated limits",
       "evidenceStatus": "validated within stated limits",
-      "tags": []
+      "tags": [],
+      "previews": [
+        {
+          "preset": "hex",
+          "label": "Relaxed field",
+          "image": "/genchase/previews/vortex/hex-7a68df5da649.jpg"
+        }
+      ],
+      "presetLabels": {
+        "hex": "Relaxed field"
+      }
     },
     {
       "id": "nematic",
@@ -1685,7 +2391,17 @@
       "evidenceStatus": "unvalidated",
       "tags": [
         "Living simulation"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "extensile",
+          "label": "Extensile turbulence",
+          "image": "/genchase/previews/nematic/extensile-733cfbfb01f3.jpg"
+        }
+      ],
+      "presetLabels": {
+        "extensile": "Extensile turbulence"
+      }
     },
     {
       "id": "darkroom",
@@ -1706,7 +2422,17 @@
       ],
       "status": "Exploratory",
       "evidenceStatus": "unvalidated",
-      "tags": []
+      "tags": [],
+      "previews": [
+        {
+          "preset": "dark",
+          "label": "Dark vertex",
+          "image": "/genchase/previews/darkroom/dark-50480355f27c.jpg"
+        }
+      ],
+      "presetLabels": {
+        "dark": "Dark vertex"
+      }
     },
     {
       "id": "fluid",
@@ -1731,7 +2457,18 @@
       "evidenceStatus": "unvalidated",
       "tags": [
         "Living simulation"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "inkdrop",
+          "label": "Ink drop",
+          "image": "/genchase/previews/fluid/inkdrop-f8c31141c4e0.jpg",
+          "video": "/genchase/previews/fluid/inkdrop-95aff1f759ff.webm"
+        }
+      ],
+      "presetLabels": {
+        "inkdrop": "Ink drop"
+      }
     },
     {
       "id": "sandpile",
@@ -1753,7 +2490,17 @@
       ],
       "status": "Checks within stated limits",
       "evidenceStatus": "validated within stated limits",
-      "tags": []
+      "tags": [],
+      "previews": [
+        {
+          "preset": "medallion",
+          "label": "Medallion 2¹⁶",
+          "image": "/genchase/previews/sandpile/medallion-c7b64a0be81d.jpg"
+        }
+      ],
+      "presetLabels": {
+        "medallion": "Medallion 2¹⁶"
+      }
     },
     {
       "id": "kakeya",
@@ -1774,7 +2521,17 @@
       ],
       "status": "Exploratory",
       "evidenceStatus": "unvalidated",
-      "tags": []
+      "tags": [],
+      "previews": [
+        {
+          "preset": "tree",
+          "label": "Perron tree",
+          "image": "/genchase/previews/kakeya/tree-52854c925533.jpg"
+        }
+      ],
+      "presetLabels": {
+        "tree": "Perron tree"
+      }
     },
     {
       "id": "ks",
@@ -1796,7 +2553,17 @@
       "evidenceStatus": "validated within stated limits",
       "tags": [
         "Living simulation"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "flame",
+          "label": "Flame cells",
+          "image": "/genchase/previews/ks/flame-5543ddef7cb8.jpg"
+        }
+      ],
+      "presetLabels": {
+        "flame": "Flame cells"
+      }
     },
     {
       "id": "breather",
@@ -1817,7 +2584,17 @@
       ],
       "status": "Checks within stated limits",
       "evidenceStatus": "validated within stated limits",
-      "tags": []
+      "tags": [],
+      "previews": [
+        {
+          "preset": "live",
+          "label": "Breather",
+          "image": "/genchase/previews/breather/live-fcad33d7e7d3.jpg"
+        }
+      ],
+      "presetLabels": {
+        "live": "Breather"
+      }
     },
     {
       "id": "turing",
@@ -1841,7 +2618,17 @@
       "evidenceStatus": "validated within stated limits",
       "tags": [
         "Living simulation"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "spots",
+          "label": "Spots",
+          "image": "/genchase/previews/turing/spots-3afa74ac2880.jpg"
+        }
+      ],
+      "presetLabels": {
+        "spots": "Spots"
+      }
     },
     {
       "id": "holomorphic",
@@ -1865,7 +2652,17 @@
       ],
       "status": "Exploratory",
       "evidenceStatus": "unvalidated",
-      "tags": []
+      "tags": [],
+      "previews": [
+        {
+          "preset": "seahorse",
+          "label": "Seahorse valley",
+          "image": "/genchase/previews/holomorphic/seahorse-c8ad52e46f00.jpg"
+        }
+      ],
+      "presetLabels": {
+        "seahorse": "Seahorse valley"
+      }
     },
     {
       "id": "klein",
@@ -1886,7 +2683,17 @@
       ],
       "status": "Exploratory",
       "evidenceStatus": "unvalidated",
-      "tags": []
+      "tags": [],
+      "previews": [
+        {
+          "preset": "normal",
+          "label": "Normal incidence",
+          "image": "/genchase/previews/klein/normal-a012a7111e31.jpg"
+        }
+      ],
+      "presetLabels": {
+        "normal": "Normal incidence"
+      }
     },
     {
       "id": "gyroid",
@@ -1907,7 +2714,17 @@
       ],
       "status": "Checks within stated limits",
       "evidenceStatus": "validated within stated limits",
-      "tags": []
+      "tags": [],
+      "previews": [
+        {
+          "preset": "slice",
+          "label": "Slice",
+          "image": "/genchase/previews/gyroid/slice-b0b0206bc8b4.jpg"
+        }
+      ],
+      "presetLabels": {
+        "slice": "Slice"
+      }
     },
     {
       "id": "dendrite",
@@ -1932,7 +2749,17 @@
       "evidenceStatus": "unvalidated",
       "tags": [
         "Living simulation"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "snowflake",
+          "label": "Snowflake",
+          "image": "/genchase/previews/dendrite/snowflake-1e37d3ae1fb1.jpg"
+        }
+      ],
+      "presetLabels": {
+        "snowflake": "Snowflake"
+      }
     },
     {
       "id": "purcell",
@@ -1953,7 +2780,17 @@
       ],
       "status": "Exploratory",
       "evidenceStatus": "unvalidated",
-      "tags": []
+      "tags": [],
+      "previews": [
+        {
+          "preset": "swim",
+          "label": "Purcell gait",
+          "image": "/genchase/previews/purcell/swim-d7339236a1e9.jpg"
+        }
+      ],
+      "presetLabels": {
+        "swim": "Purcell gait"
+      }
     },
     {
       "id": "exceptional",
@@ -1974,7 +2811,17 @@
       ],
       "status": "Checks within stated limits",
       "evidenceStatus": "validated within stated limits",
-      "tags": []
+      "tags": [],
+      "previews": [
+        {
+          "preset": "ep",
+          "label": "Exceptional point",
+          "image": "/genchase/previews/exceptional/ep-d87914da8b17.jpg"
+        }
+      ],
+      "presetLabels": {
+        "ep": "Exceptional point"
+      }
     },
     {
       "id": "direct-gravity",
@@ -1998,7 +2845,17 @@
       "tags": [
         "Living simulation",
         "Vector export"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "disk",
+          "label": "Rotating disk",
+          "image": "/genchase/previews/direct-gravity/disk-1f346f8808b6.jpg"
+        }
+      ],
+      "presetLabels": {
+        "disk": "Rotating disk"
+      }
     },
     {
       "id": "meissner",
@@ -2019,7 +2876,17 @@
       ],
       "status": "Checks within stated limits",
       "evidenceStatus": "validated within stated limits",
-      "tags": []
+      "tags": [],
+      "previews": [
+        {
+          "preset": "expel",
+          "label": "Expelled",
+          "image": "/genchase/previews/meissner/expel-ae2fe6355990.jpg"
+        }
+      ],
+      "presetLabels": {
+        "expel": "Expelled"
+      }
     },
     {
       "id": "tennis",
@@ -2040,7 +2907,17 @@
       ],
       "status": "Checks within stated limits",
       "evidenceStatus": "validated within stated limits",
-      "tags": []
+      "tags": [],
+      "previews": [
+        {
+          "preset": "flip",
+          "label": "Flip",
+          "image": "/genchase/previews/tennis/flip-09fd3f8bbda9.jpg"
+        }
+      ],
+      "presetLabels": {
+        "flip": "Flip"
+      }
     },
     {
       "id": "flow",
@@ -2066,7 +2943,17 @@
       "evidenceStatus": "unvalidated",
       "tags": [
         "Vector export"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "studio",
+          "label": "Studio default",
+          "image": "/genchase/previews/flow/studio-8a109f1959bf.jpg"
+        }
+      ],
+      "presetLabels": {
+        "studio": "Studio default"
+      }
     },
     {
       "id": "chemotaxis",
@@ -2089,7 +2976,17 @@
       "evidenceStatus": "validated within stated limits",
       "tags": [
         "Living simulation"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "spots",
+          "label": "Spots",
+          "image": "/genchase/previews/chemotaxis/spots-c8e4aeeafeef.jpg"
+        }
+      ],
+      "presetLabels": {
+        "spots": "Spots"
+      }
     },
     {
       "id": "smectic",
@@ -2110,7 +3007,17 @@
       "evidenceStatus": "unvalidated",
       "tags": [
         "Vector export"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "foam",
+          "label": "TFCD foam",
+          "image": "/genchase/previews/smectic/foam-9f2102903481.jpg"
+        }
+      ],
+      "presetLabels": {
+        "foam": "TFCD foam"
+      }
     },
     {
       "id": "reaction",
@@ -2136,7 +3043,17 @@
       "evidenceStatus": "unvalidated",
       "tags": [
         "Living simulation"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "coral",
+          "label": "Coral",
+          "image": "/genchase/previews/reaction/coral-b6dcb71fa328.jpg"
+        }
+      ],
+      "presetLabels": {
+        "coral": "Coral"
+      }
     },
     {
       "id": "molecular",
@@ -2160,7 +3077,17 @@
       "tags": [
         "Living simulation",
         "Vector export"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "warm",
+          "label": "Warm material",
+          "image": "/genchase/previews/molecular/warm-6638e84b187d.jpg"
+        }
+      ],
+      "presetLabels": {
+        "warm": "Warm material"
+      }
     },
     {
       "id": "tilings",
@@ -2188,7 +3115,17 @@
       "evidenceStatus": "partially validated",
       "tags": [
         "Vector export"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "rhombs",
+          "label": "Penrose rhombs",
+          "image": "/genchase/previews/tilings/rhombs-35fc201a09a7.jpg"
+        }
+      ],
+      "presetLabels": {
+        "rhombs": "Penrose rhombs"
+      }
     },
     {
       "id": "percolation",
@@ -2210,7 +3147,17 @@
       ],
       "status": "Checks within stated limits",
       "evidenceStatus": "validated within stated limits",
-      "tags": []
+      "tags": [],
+      "previews": [
+        {
+          "preset": "critical",
+          "label": "Site at p_c",
+          "image": "/genchase/previews/percolation/critical-193e13c2b93f.jpg"
+        }
+      ],
+      "presetLabels": {
+        "critical": "Site at p_c"
+      }
     },
     {
       "id": "cattaneo",
@@ -2232,7 +3179,17 @@
       ],
       "status": "Exploratory",
       "evidenceStatus": "unvalidated",
-      "tags": []
+      "tags": [],
+      "previews": [
+        {
+          "preset": "sparks",
+          "label": "Sparks",
+          "image": "/genchase/previews/cattaneo/sparks-af4d89a17c96.jpg"
+        }
+      ],
+      "presetLabels": {
+        "sparks": "Sparks"
+      }
     },
     {
       "id": "shallow",
@@ -2255,7 +3212,17 @@
       "evidenceStatus": "validated within stated limits",
       "tags": [
         "Living simulation"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "drops",
+          "label": "Colliding drops",
+          "image": "/genchase/previews/shallow/drops-8129573c3cb2.jpg"
+        }
+      ],
+      "presetLabels": {
+        "drops": "Colliding drops"
+      }
     },
     {
       "id": "attractors",
@@ -2280,7 +3247,17 @@
       ],
       "status": "Exploratory",
       "evidenceStatus": "unvalidated",
-      "tags": []
+      "tags": [],
+      "previews": [
+        {
+          "preset": "clifford",
+          "label": "Clifford classic",
+          "image": "/genchase/previews/attractors/clifford-99b982bfba5f.jpg"
+        }
+      ],
+      "presetLabels": {
+        "clifford": "Clifford classic"
+      }
     },
     {
       "id": "airy",
@@ -2301,7 +3278,17 @@
       ],
       "status": "Partial checks",
       "evidenceStatus": "partially validated",
-      "tags": []
+      "tags": [],
+      "previews": [
+        {
+          "preset": "fly",
+          "label": "Accelerating",
+          "image": "/genchase/previews/airy/fly-8441b0beec12.jpg"
+        }
+      ],
+      "presetLabels": {
+        "fly": "Accelerating"
+      }
     },
     {
       "id": "chirikov",
@@ -2323,7 +3310,17 @@
       "evidenceStatus": "unvalidated",
       "tags": [
         "Living simulation"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "kam",
+          "label": "KAM islands",
+          "image": "/genchase/previews/chirikov/kam-8c91c5a16143.jpg"
+        }
+      ],
+      "presetLabels": {
+        "kam": "KAM islands"
+      }
     },
     {
       "id": "hofstadter",
@@ -2342,7 +3339,17 @@
       ],
       "status": "Checks within stated limits",
       "evidenceStatus": "validated within stated limits",
-      "tags": []
+      "tags": [],
+      "previews": [
+        {
+          "preset": "classic",
+          "label": "Classic",
+          "image": "/genchase/previews/hofstadter/classic-98923616b0b7.jpg"
+        }
+      ],
+      "presetLabels": {
+        "classic": "Classic"
+      }
     },
     {
       "id": "weierstrass",
@@ -2363,7 +3370,17 @@
       ],
       "status": "Checks within stated limits",
       "evidenceStatus": "validated within stated limits",
-      "tags": []
+      "tags": [],
+      "previews": [
+        {
+          "preset": "classic",
+          "label": "Weierstrass",
+          "image": "/genchase/previews/weierstrass/classic-e0a942406c60.jpg"
+        }
+      ],
+      "presetLabels": {
+        "classic": "Weierstrass"
+      }
     },
     {
       "id": "scars",
@@ -2385,7 +3402,17 @@
       "evidenceStatus": "unvalidated",
       "tags": [
         "Living simulation"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "stadium",
+          "label": "Stadium n=520",
+          "image": "/genchase/previews/scars/stadium-c82c49717e92.jpg"
+        }
+      ],
+      "presetLabels": {
+        "stadium": "Stadium n=520"
+      }
     },
     {
       "id": "kitaev",
@@ -2406,7 +3433,17 @@
       ],
       "status": "Checks within stated limits",
       "evidenceStatus": "validated within stated limits",
-      "tags": []
+      "tags": [],
+      "previews": [
+        {
+          "preset": "majorana",
+          "label": "Majorana ends",
+          "image": "/genchase/previews/kitaev/majorana-4265270a7c1e.jpg"
+        }
+      ],
+      "presetLabels": {
+        "majorana": "Majorana ends"
+      }
     },
     {
       "id": "caustics",
@@ -2425,7 +3462,17 @@
       ],
       "status": "Exploratory",
       "evidenceStatus": "unvalidated",
-      "tags": []
+      "tags": [],
+      "previews": [
+        {
+          "preset": "pool",
+          "label": "Pool floor",
+          "image": "/genchase/previews/caustics/pool-faf989b6202f.jpg"
+        }
+      ],
+      "presetLabels": {
+        "pool": "Pool floor"
+      }
     },
     {
       "id": "veselago",
@@ -2446,7 +3493,17 @@
       ],
       "status": "Partial checks",
       "evidenceStatus": "partially validated",
-      "tags": []
+      "tags": [],
+      "previews": [
+        {
+          "preset": "perfect",
+          "label": "n = −1 focus",
+          "image": "/genchase/previews/veselago/perfect-0283ebce8628.jpg"
+        }
+      ],
+      "presetLabels": {
+        "perfect": "n = −1 focus"
+      }
     },
     {
       "id": "devil",
@@ -2467,7 +3524,17 @@
       ],
       "status": "Checks within stated limits",
       "evidenceStatus": "validated within stated limits",
-      "tags": []
+      "tags": [],
+      "previews": [
+        {
+          "preset": "tongues",
+          "label": "Arnold tongues",
+          "image": "/genchase/previews/devil/tongues-d498223f5983.jpg"
+        }
+      ],
+      "presetLabels": {
+        "tongues": "Arnold tongues"
+      }
     },
     {
       "id": "talbot",
@@ -2486,7 +3553,17 @@
       ],
       "status": "Checks within stated limits",
       "evidenceStatus": "validated within stated limits",
-      "tags": []
+      "tags": [],
+      "previews": [
+        {
+          "preset": "classic",
+          "label": "Classic carpet",
+          "image": "/genchase/previews/talbot/classic-51a233e55ccf.jpg"
+        }
+      ],
+      "presetLabels": {
+        "classic": "Classic carpet"
+      }
     },
     {
       "id": "orbitals",
@@ -2508,7 +3585,17 @@
       ],
       "status": "Partial checks",
       "evidenceStatus": "partially validated",
-      "tags": []
+      "tags": [],
+      "previews": [
+        {
+          "preset": "dz2",
+          "label": "3d z² torus",
+          "image": "/genchase/previews/orbitals/dz2-def595cbbfdb.jpg"
+        }
+      ],
+      "presetLabels": {
+        "dz2": "3d z² torus"
+      }
     },
     {
       "id": "loschmidt",
@@ -2529,7 +3616,17 @@
       ],
       "status": "Exploratory",
       "evidenceStatus": "unvalidated",
-      "tags": []
+      "tags": [],
+      "previews": [
+        {
+          "preset": "echo",
+          "label": "Loschmidt echo",
+          "image": "/genchase/previews/loschmidt/echo-45456aa17d7e.jpg"
+        }
+      ],
+      "presetLabels": {
+        "echo": "Loschmidt echo"
+      }
     },
     {
       "id": "fisher-kpp",
@@ -2551,7 +3648,17 @@
       ],
       "status": "Exploratory",
       "evidenceStatus": "unvalidated",
-      "tags": []
+      "tags": [],
+      "previews": [
+        {
+          "preset": "rings",
+          "label": "Growth rings",
+          "image": "/genchase/previews/fisher-kpp/rings-400cbb431e79.jpg"
+        }
+      ],
+      "presetLabels": {
+        "rings": "Growth rings"
+      }
     },
     {
       "id": "volume-wave",
@@ -2573,7 +3680,17 @@
       "evidenceStatus": "validated within stated limits",
       "tags": [
         "Living simulation"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "crossed",
+          "label": "Crossed waves",
+          "image": "/genchase/previews/volume-wave/crossed-2482763e9750.jpg"
+        }
+      ],
+      "presetLabels": {
+        "crossed": "Crossed waves"
+      }
     },
     {
       "id": "boy",
@@ -2594,7 +3711,17 @@
       ],
       "status": "Exploratory",
       "evidenceStatus": "unvalidated",
-      "tags": []
+      "tags": [],
+      "previews": [
+        {
+          "preset": "boy",
+          "label": "Boy",
+          "image": "/genchase/previews/boy/boy-12dd67acb29f.jpg"
+        }
+      ],
+      "presetLabels": {
+        "boy": "Boy"
+      }
     },
     {
       "id": "pearls",
@@ -2615,7 +3742,17 @@
       "evidenceStatus": "unvalidated",
       "tags": [
         "Vector export"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "necklace",
+          "label": "Necklace",
+          "image": "/genchase/previews/pearls/necklace-7433687b9507.jpg"
+        }
+      ],
+      "presetLabels": {
+        "necklace": "Necklace"
+      }
     },
     {
       "id": "ising",
@@ -2639,7 +3776,17 @@
       "evidenceStatus": "validated within stated limits",
       "tags": [
         "Living simulation"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "critical",
+          "label": "Critical point",
+          "image": "/genchase/previews/ising/critical-040a4306628c.jpg"
+        }
+      ],
+      "presetLabels": {
+        "critical": "Critical point"
+      }
     },
     {
       "id": "thouless",
@@ -2660,7 +3807,17 @@
       ],
       "status": "Exploratory",
       "evidenceStatus": "unvalidated",
-      "tags": []
+      "tags": [],
+      "previews": [
+        {
+          "preset": "pump",
+          "label": "Chern 1",
+          "image": "/genchase/previews/thouless/pump-d50b79c37a79.jpg"
+        }
+      ],
+      "presetLabels": {
+        "pump": "Chern 1"
+      }
     },
     {
       "id": "convection",
@@ -2684,7 +3841,17 @@
       "evidenceStatus": "validated within stated limits",
       "tags": [
         "Living simulation"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "plumes",
+          "label": "Plumes",
+          "image": "/genchase/previews/convection/plumes-b0d37df40846.jpg"
+        }
+      ],
+      "presetLabels": {
+        "plumes": "Plumes"
+      }
     },
     {
       "id": "reuleaux",
@@ -2705,7 +3872,17 @@
       ],
       "status": "Checks within stated limits",
       "evidenceStatus": "validated within stated limits",
-      "tags": []
+      "tags": [],
+      "previews": [
+        {
+          "preset": "roll",
+          "label": "Rotated overlays",
+          "image": "/genchase/previews/reuleaux/roll-499ad37d182e.jpg"
+        }
+      ],
+      "presetLabels": {
+        "roll": "Rotated overlays"
+      }
     },
     {
       "id": "surfaces",
@@ -2728,7 +3905,17 @@
       "evidenceStatus": "validated within stated limits",
       "tags": [
         "Vector export"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "enneper",
+          "label": "Enneper saddle",
+          "image": "/genchase/previews/surfaces/enneper-a05f90e16546.jpg"
+        }
+      ],
+      "presetLabels": {
+        "enneper": "Enneper saddle"
+      }
     },
     {
       "id": "apollonian",
@@ -2749,7 +3936,17 @@
       ],
       "status": "Checks within stated limits",
       "evidenceStatus": "validated within stated limits",
-      "tags": []
+      "tags": [],
+      "previews": [
+        {
+          "preset": "gasket",
+          "label": "Gasket",
+          "image": "/genchase/previews/apollonian/gasket-716c2b04f07a.jpg"
+        }
+      ],
+      "presetLabels": {
+        "gasket": "Gasket"
+      }
     },
     {
       "id": "chladni",
@@ -2774,7 +3971,17 @@
       "evidenceStatus": "validated within stated limits",
       "tags": [
         "Vector export"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "classic",
+          "label": "Classic plate",
+          "image": "/genchase/previews/chladni/classic-c693bc3e6d84.jpg"
+        }
+      ],
+      "presetLabels": {
+        "classic": "Classic plate"
+      }
     },
     {
       "id": "track",
@@ -2796,7 +4003,17 @@
       ],
       "status": "Exploratory",
       "evidenceStatus": "unvalidated",
-      "tags": []
+      "tags": [],
+      "previews": [
+        {
+          "preset": "pave",
+          "label": "Spiral",
+          "image": "/genchase/previews/track/pave-05a251115cb3.jpg"
+        }
+      ],
+      "presetLabels": {
+        "pave": "Spiral"
+      }
     },
     {
       "id": "knotlight",
@@ -2817,7 +4034,17 @@
       ],
       "status": "Exploratory",
       "evidenceStatus": "unvalidated",
-      "tags": []
+      "tags": [],
+      "previews": [
+        {
+          "preset": "weave",
+          "label": "Weave",
+          "image": "/genchase/previews/knotlight/weave-75dc3a2f1b24.jpg"
+        }
+      ],
+      "presetLabels": {
+        "weave": "Weave"
+      }
     },
     {
       "id": "causticsea",
@@ -2840,7 +4067,17 @@
       "evidenceStatus": "unvalidated",
       "tags": [
         "Living simulation"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "lock",
+          "label": "Fold lock",
+          "image": "/genchase/previews/causticsea/lock-a6f40ec8daf0.jpg"
+        }
+      ],
+      "presetLabels": {
+        "lock": "Fold lock"
+      }
     },
     {
       "id": "kp",
@@ -2864,7 +4101,17 @@
       "evidenceStatus": "unvalidated",
       "tags": [
         "Living simulation"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "y",
+          "label": "Y-junction",
+          "image": "/genchase/previews/kp/y-c2f5f28832f0.jpg"
+        }
+      ],
+      "presetLabels": {
+        "y": "Y-junction"
+      }
     },
     {
       "id": "gerstner",
@@ -2889,7 +4136,17 @@
       "tags": [
         "Living simulation",
         "Vector export"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "swell",
+          "label": "Gentle swell",
+          "image": "/genchase/previews/gerstner/swell-9ad9f24c9b67.jpg"
+        }
+      ],
+      "presetLabels": {
+        "swell": "Gentle swell"
+      }
     },
     {
       "id": "eight",
@@ -2914,7 +4171,17 @@
       "tags": [
         "Living simulation",
         "Vector export"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "eight",
+          "label": "Figure eight",
+          "image": "/genchase/previews/eight/eight-579864f6bc2b.jpg"
+        }
+      ],
+      "presetLabels": {
+        "eight": "Figure eight"
+      }
     },
     {
       "id": "peakon",
@@ -2938,7 +4205,17 @@
       "evidenceStatus": "validated within stated limits",
       "tags": [
         "Living simulation"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "one",
+          "label": "One peakon",
+          "image": "/genchase/previews/peakon/one-df4b0695d791.jpg"
+        }
+      ],
+      "presetLabels": {
+        "one": "One peakon"
+      }
     },
     {
       "id": "photon",
@@ -2960,7 +4237,17 @@
       ],
       "status": "Checks within stated limits",
       "evidenceStatus": "validated within stated limits",
-      "tags": []
+      "tags": [],
+      "previews": [
+        {
+          "preset": "ring",
+          "label": "Photon ring",
+          "image": "/genchase/previews/photon/ring-8d6de12f6180.jpg"
+        }
+      ],
+      "presetLabels": {
+        "ring": "Photon ring"
+      }
     },
     {
       "id": "crapper",
@@ -2985,7 +4272,17 @@
       "tags": [
         "Living simulation",
         "Vector export"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "ripple",
+          "label": "Ripple",
+          "image": "/genchase/previews/crapper/ripple-99205bb3d42f.jpg"
+        }
+      ],
+      "presetLabels": {
+        "ripple": "Ripple"
+      }
     },
     {
       "id": "hasimoto",
@@ -3010,7 +4307,17 @@
       "tags": [
         "Living simulation",
         "Vector export"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "loop",
+          "label": "Loop",
+          "image": "/genchase/previews/hasimoto/loop-c0eef816cb0f.jpg"
+        }
+      ],
+      "presetLabels": {
+        "loop": "Loop"
+      }
     },
     {
       "id": "lump",
@@ -3034,7 +4341,17 @@
       "evidenceStatus": "validated within stated limits",
       "tags": [
         "Living simulation"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "one",
+          "label": "One lump",
+          "image": "/genchase/previews/lump/one-b5e333898bf5.jpg"
+        }
+      ],
+      "presetLabels": {
+        "one": "One lump"
+      }
     },
     {
       "id": "three-vortex-bound",
@@ -3060,7 +4377,17 @@
       "tags": [
         "Living simulation",
         "Vector export"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "octant",
+          "label": "Octant lock",
+          "image": "/genchase/previews/three-vortex-bound/octant-908aaaf44093.jpg"
+        }
+      ],
+      "presetLabels": {
+        "octant": "Octant lock"
+      }
     },
     {
       "id": "parallelogram-lock",
@@ -3085,7 +4412,17 @@
       "tags": [
         "Living simulation",
         "Vector export"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "lock",
+          "label": "Lock",
+          "image": "/genchase/previews/parallelogram-lock/lock-5baf1328ecf8.jpg"
+        }
+      ],
+      "presetLabels": {
+        "lock": "Lock"
+      }
     },
     {
       "id": "quincunx-lock",
@@ -3110,7 +4447,17 @@
       "tags": [
         "Living simulation",
         "Vector export"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "lock",
+          "label": "Lock",
+          "image": "/genchase/previews/quincunx-lock/lock-dee530279ea3.jpg"
+        }
+      ],
+      "presetLabels": {
+        "lock": "Lock"
+      }
     },
     {
       "id": "double-triangle-bound",
@@ -3135,7 +4482,17 @@
       "tags": [
         "Living simulation",
         "Vector export"
-      ]
+      ],
+      "previews": [
+        {
+          "preset": "minimum",
+          "label": "Minimum",
+          "image": "/genchase/previews/double-triangle-bound/minimum-dea85f744d6f.jpg"
+        }
+      ],
+      "presetLabels": {
+        "minimum": "Minimum"
+      }
     }
   ]
 }

@@ -11,6 +11,9 @@ export type CatalogEntry = {
   tabName?: string;
   presetCount?: number;
   evidenceStatus?: string;
+  presets?: string[];
+  presetLabels?: Partial<Record<string, string>>;
+  previews?: Array<{ preset: string; image: string; video?: string; label?: string }>;
 };
 
 const escapeHTML = (value: string): string => value.replace(/[&<>"']/g, character => ({
@@ -25,13 +28,37 @@ const kindNames = { module: 'Module', technique: 'Technique', tab: 'Workspace ta
 const arrow = '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.4"/></svg>';
 const logo = '<picture><source srcset="/logo.webp" type="image/webp" /><img src="/logo.png" width="1536" height="1024" alt="Hendrick Research" decoding="async" /></picture>';
 
+export function defaultPreset(entry: CatalogEntry): string {
+  return entry.previews?.find(preview => preview.image)?.preset ?? entry.presets?.[0] ?? '';
+}
+
+export function presetLabel(entry: CatalogEntry, preset: string): string {
+  return entry.previews?.find(preview => preview.preset === preset)?.label ?? entry.presetLabels?.[preset] ?? preset;
+}
+
+/** Public sample media only; no workspace code is needed to display a render. */
+export function catalogPreview(entry: CatalogEntry, selectedPreset = defaultPreset(entry), context: 'card' | 'dialog' = 'card'): string {
+  const presets = [...new Set([...(entry.presets ?? []), ...(entry.previews?.map(preview => preview.preset) ?? [])])];
+  const preview = entry.previews?.find(candidate => candidate.preset === selectedPreset);
+  const hasImage = !!preview?.image;
+  const selectedLabel = presetLabel(entry, selectedPreset);
+  const alt = `Sample render of ${entry.title}, preset ${selectedLabel}`;
+  return `<div class="catalog-preview" data-preview-entry="${escapeHTML(entry.id)}" data-preview-context="${context}" data-preview-preset="${escapeHTML(selectedPreset)}" data-preview-available="${hasImage}">
+    <figure class="catalog-media"><img class="catalog-preview-image"${hasImage ? ` src="${escapeHTML(preview!.image)}"` : ' hidden'} alt="${escapeHTML(alt)}" width="720" height="480" loading="${context === 'dialog' ? 'eager' : 'lazy'}" decoding="async" /><video class="catalog-preview-video" hidden muted loop playsinline preload="none"${hasImage ? ` poster="${escapeHTML(preview!.image)}"` : ''} data-video-src="${escapeHTML(preview?.video ?? '')}" aria-label="${escapeHTML(`Motion sample of ${entry.title}, preset ${selectedLabel}`)}"></video><div class="catalog-preview-fallback"${hasImage ? ' hidden' : ''}><span>Preview being prepared</span></div></figure>
+    <div class="catalog-preview-body"><div class="catalog-preview-caption"><p class="catalog-sample-label">Sample render</p><button type="button" class="catalog-preview-toggle" data-preview-toggle aria-label="${escapeHTML(`Play sample motion for ${entry.title}`)}" aria-pressed="false"${preview?.video && hasImage ? '' : ' hidden'}>Play motion</button></div>
+    <label class="catalog-preset-field"><span>Preset</span><select class="catalog-preset-select" data-preset-entry="${escapeHTML(entry.id)}" aria-label="${escapeHTML(`Preset for ${entry.title}`)}"${presets.length ? '' : ' disabled'}>${presets.length ? presets.map(preset => `<option value="${escapeHTML(preset)}"${preset === selectedPreset ? ' selected' : ''}>${escapeHTML(presetLabel(entry, preset))}</option>`).join('') : '<option value="">No presets listed</option>'}</select></label>
+    <p class="catalog-selected-preset">Selected preset: <span data-selected-preset>${escapeHTML(selectedLabel || 'None selected')}</span></p></div>
+  </div>`;
+}
+
 export function catalogCard(entry: CatalogEntry): string {
   const topicTags = entry.tags?.filter(Boolean) ?? [];
   const status = entry.status ?? entry.evidenceStatus;
   const presetCount = typeof entry.presetCount === 'number' && Number.isFinite(entry.presetCount)
     ? Math.max(0, Math.floor(entry.presetCount))
     : undefined;
-  return `<article class="catalog-card" data-entry-kind="${escapeHTML(entry.kind)}">
+  return `<article class="catalog-card" data-entry-kind="${escapeHTML(entry.kind)}" data-entry-id="${escapeHTML(entry.id)}">
+    <div class="catalog-card-media">${catalogPreview(entry)}</div>
     <div class="catalog-card-meta"><span class="catalog-card-kind">${kindNames[entry.kind]}</span>${status ? `<span class="catalog-card-status">${escapeHTML(status)}</span>` : ''}</div>
     <h3>${escapeHTML(entry.title)}</h3>
     ${entry.category ? `<p class="catalog-card-category">${escapeHTML(entry.category)}</p>` : ''}
@@ -95,7 +122,7 @@ export function renderCatalog(entries: CatalogEntry[], workspace?: {areas:{title
           <div id="catalog-grid" class="catalog-grid" aria-labelledby="catalog-results-title">${entries.map(catalogCard).join('')}</div>
           <div id="catalog-empty" class="catalog-empty"${entries.length ? ' hidden' : ''}><p class="eyebrow">A DIFFERENT DIRECTION</p><h3>No entries found.</h3><p>Try another search term or choose a broader category.</p></div>
           <div class="catalog-more"><button id="catalog-more" class="button button-outline">Show more techniques +</button></div>
-          <p class="catalog-results-note">A snapshot of the registered workspace. Evidence labels describe recorded internal checks and their stated limits. Techniques without recorded validation are marked exploratory.</p>
+          <p class="catalog-results-note">Images are sample renders, not scientific validation. Evidence labels describe recorded internal checks and their stated limits. Techniques without recorded validation are marked exploratory.</p>
         </div>
       </section>
     </main>
