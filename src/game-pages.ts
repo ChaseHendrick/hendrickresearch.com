@@ -34,9 +34,9 @@ export const gamePages: GamePage[] = [
   },
   {
     id: 'tinylaps', title: 'TinyLaps', eyebrow: 'A MINIATURE RACING WORLD',
-    description: 'Watch autonomous cars race through dense city streets. Explore 18 miniature worlds with local traffic, families, crash physics, and god powers.',
-    controls: ['Racers start on the streets of Foundry City. Choose among three city street races and 15 island circuits.', 'Click a racer, then Follow or Ride. Space pauses; 1–4 change the camera.', 'Choose Grab & throw or press G. Pick Cars, People, or Buildings & trees. Hold to lift, release to drop, or flick to throw.', 'Open God Tools for meteors, shockwaves, and terrain powers. Townspeople react. Restart restores the world.'],
-    input: 'Mouse or touch', route: '/play/tinylaps/', htmlFile: 'play/tinylaps/index.html', assetPath: '/games/tinylaps/index.html',
+    description: 'Drive a racer or watch autonomous cars compete through dense city streets. Explore 18 miniature worlds with local traffic, families, crash physics, and god powers.',
+    controls: ['Racers start on the streets of Foundry City. Choose among three city street races and 15 island circuits.', 'Select a racer and choose Drive this car. WASD or arrows steer, accelerate, and brake into reverse; Shift brakes. Touch buttons work together for steering and a pedal.', 'Stop driving hands the car back to AI. Return to road gets a stranded car moving again without repairing damage. Space pauses; 1–4 change the camera.', 'Choose Grab & throw or press G. Pick Cars, People, or Buildings & trees. Hold to lift, release to drop, or flick to throw.', 'Open God Tools for meteors, shockwaves, and terrain powers. Townspeople react. Restart restores the world.'],
+    input: 'Keyboard, mouse, or touch', route: '/play/tinylaps/', htmlFile: 'play/tinylaps/index.html', assetPath: '/games/tinylaps/index.html',
     source: 'https://github.com/ChaseHendrick/TinyLaps', notices: '/games/tinylaps/LICENSE.txt',
   },
   {
