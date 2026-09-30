@@ -199,9 +199,9 @@
 }
 
 @media (max-width: 650px) {
-  .catalog-header { min-height: 91px; gap: 15px; }
+  .catalog-header { min-height: 91px; gap: 0; flex-wrap: wrap; padding-block: 8px; }
   .catalog-brand { width: 111px; }
-  .catalog-nav { font-size: 11px; gap: 19px; }
+  .catalog-nav { font-size: 11px; gap: 10px; flex-basis: 100%; justify-content: space-between; }
   .catalog-nav a { padding-block: 13px; }
   .catalog-hero { grid-template-columns: 1fr; gap: 31px; padding-block: 36px 33px; }
   .catalog-kicker { font-size: 8px; letter-spacing: 1px; gap: 8px; }
@@ -250,8 +250,7 @@
 
 @media (max-width: 360px) {
   .catalog-brand { width: 95px; }
-  .catalog-nav { font-size: 10px; gap: 15px; }
-  .catalog-header { gap: 12px; }
+  .catalog-nav { font-size: 10px; gap: 10px; }
   .catalog-kind { padding-inline: 10px; }
   .catalog-card { padding-inline: 20px; }
   .catalog-card-media { margin-inline: -20px; }

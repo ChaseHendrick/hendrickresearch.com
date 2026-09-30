@@ -12,11 +12,12 @@ import catalogData from './src/genchase-data.json';
 import { gamePages, renderGamePage } from './src/game-pages';
 import { contentPages, renderContentPage, pageHead, origin } from './src/content-pages';
 import { appearanceBootstrap } from './src/appearance-shared';
+import { musicPage, renderMusic } from './src/music';
 
 const entries = catalogData.entries as CatalogEntry[];
 const editorialPages = contentPages();
 const xml = (value: string) => value.replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&apos;'}[c]!));
-const input = {games:fileURLToPath(new URL('./games/index.html',import.meta.url)),home:fileURLToPath(new URL('./index.html',import.meta.url)),genchase:fileURLToPath(new URL('./genchase/index.html',import.meta.url)),editorial:fileURLToPath(new URL('./editorial/index.html',import.meta.url)),appearance:fileURLToPath(new URL('./appearance/index.html',import.meta.url)),...Object.fromEntries(gamePages.map(g=>[g.id,fileURLToPath(new URL(`./${g.htmlFile}`,import.meta.url))]))};
+const input = {music:fileURLToPath(new URL('./music/index.html',import.meta.url)),games:fileURLToPath(new URL('./games/index.html',import.meta.url)),home:fileURLToPath(new URL('./index.html',import.meta.url)),genchase:fileURLToPath(new URL('./genchase/index.html',import.meta.url)),editorial:fileURLToPath(new URL('./editorial/index.html',import.meta.url)),appearance:fileURLToPath(new URL('./appearance/index.html',import.meta.url)),...Object.fromEntries(gamePages.map(g=>[g.id,fileURLToPath(new URL(`./${g.htmlFile}`,import.meta.url))]))};
 let atlasAppearanceHead = '';
 
 export default defineConfig({
@@ -41,6 +42,7 @@ export default defineConfig({
       order: 'pre',
       handler(html) {
         html = html.replace('<head>', '<head>' + appearanceBootstrap);
+        if (html.includes('<!--music-html-->')) return html.replace('<!--music-head-->',pageHead(musicPage)).replace('<!--music-html-->',renderMusic());
         if (html.includes('<!--games-html-->')) {
           const schema = {'@context':'https://schema.org','@type':'CollectionPage',name:'Playable browser games',url:origin+'/games/',mainEntity:{'@type':'ItemList',numberOfItems:gamePages.length,itemListElement:gamePages.map((g,i)=>({'@type':'ListItem',position:i+1,name:g.title,url:origin+g.route}))}};
           return html.replace('<!--games-html-->',renderGames()).replace('</head>',`<script type="application/ld+json">${JSON.stringify(schema).replace(/</g,'\\u003c')}</script><meta property="og:description" content="Play original browser games, from zombie survival and historical sieges to racing, farming, and an aquarium shop."/><meta name="twitter:card" content="summary_large_image"/></head>`);
@@ -73,8 +75,8 @@ export default defineConfig({
       const source=String(template.source);
       for(const page of editorialPages){this.emitFile({type:'asset',fileName:page.route.slice(1)+'index.html',source:source.replace('<!--editorial-head-->',pageHead(page)).replace('<!--editorial-body-->',renderContentPage(page))});}
       delete bundle['editorial/index.html'];
-      const routes=['/','/games/','/genchase/',...gamePages.map(g=>g.route),...editorialPages.map(p=>p.route)];
-      const sitemap=`<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">${routes.map(route=>{const entry=entries.find(e=>route===`/genchase/${e.id}/`),page=editorialPages.find(p=>p.route===route);return `<url><loc>${origin}${route}</loc>${page?.image?`<image:image><image:loc>${xml(origin+page.image)}</image:loc></image:image>`:''}${entry?.previews?.map(p=>`<image:image><image:loc>${xml(origin+p.image)}</image:loc></image:image>`).join('')??''}</url>`;}).join('')}</urlset>`;
+      const routes=['/','/games/','/music/','/music/studio/','/genchase/',...gamePages.map(g=>g.route),...editorialPages.map(p=>p.route)];
+      const sitemap=`<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">${routes.map(route=>{const entry=entries.find(e=>route===`/genchase/${e.id}/`),page=editorialPages.find(p=>p.route===route)??(route===musicPage.route?musicPage:undefined);return `<url><loc>${origin}${route}</loc>${page?.image?`<image:image><image:loc>${xml(origin+page.image)}</image:loc></image:image>`:''}${entry?.previews?.map(p=>`<image:image><image:loc>${xml(origin+p.image)}</image:loc></image:image>`).join('')??''}</url>`;}).join('')}</urlset>`;
       this.emitFile({type:'asset',fileName:'sitemap-site.xml',source:sitemap});
       const fibersSitemap=existsSync(fileURLToPath(new URL('./public/fibers/sitemap.xml',import.meta.url))) ? `<sitemap><loc>${origin}/fibers/sitemap.xml</loc></sitemap>`:'';
       this.emitFile({type:'asset',fileName:'sitemap.xml',source:`<?xml version="1.0" encoding="UTF-8"?><sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><sitemap><loc>${origin}/sitemap-site.xml</loc></sitemap>${fibersSitemap}</sitemapindex>`});

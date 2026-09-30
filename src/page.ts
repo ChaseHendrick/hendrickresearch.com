@@ -25,10 +25,10 @@ export function renderPage(): string {
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header wrap">
     <a class="brand" href="#" aria-label="Hendrick Research home"><picture><source srcset="/logo.webp" type="image/webp"/><img src="/logo.png" width="1536" height="1024" alt="Hendrick Research" fetchpriority="high" decoding="async" /></picture></a>
-    <nav class="desktop-nav" aria-label="Main navigation"><a href="#projects">Projects</a><a href="/games/">Games</a><a href="/simulations/">Play</a><a href="/play/siegeworks/">Sieges</a><a href="/generative-art/">Art</a><a href="/research/">Research</a><a href="/fibers/">Fibers of Earth</a></nav>
+    <nav class="desktop-nav" aria-label="Main navigation"><a href="#projects">Projects</a><a href="/games/">Games</a><a href="/music/">Music</a><a href="/simulations/">Play</a><a href="/play/siegeworks/">Sieges</a><a href="/generative-art/">Art</a><a href="/research/">Research</a><a href="/fibers/">Fibers of Earth</a></nav>
     ${external(profile.github, 'GitHub', 'header-github')}
     <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span></button>
-    <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation" hidden><a href="#projects">Projects</a><a href="/games/">Games</a><a href="/simulations/">Play</a><a href="/play/siegeworks/">Sieges</a><a href="/generative-art/">Generative art</a><a href="/research/">Research</a><a href="/fibers/">Fibers of Earth</a><a href="/genchase/">GENChase</a><a href="#about">The idea</a>${external(profile.github, 'GitHub')}</nav>
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation" hidden><a href="#projects">Projects</a><a href="/games/">Games</a><a href="/music/">Music</a><a href="/simulations/">Play</a><a href="/play/siegeworks/">Sieges</a><a href="/generative-art/">Generative art</a><a href="/research/">Research</a><a href="/fibers/">Fibers of Earth</a><a href="/genchase/">GENChase</a><a href="#about">The idea</a>${external(profile.github, 'GitHub')}</nav>
   </header>
   <main id="main">
     <section class="hero wrap" aria-labelledby="hero-title">
