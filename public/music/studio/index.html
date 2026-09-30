@@ -3,30 +3,30 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MPC Studio for Windows and Mac | Ambient music over USB MIDI</title>
-  <meta name="description" content="Compose evolving ambient music and play it to an Akai MPC XL over USB MIDI. Free browser studio for Chrome and Edge on Windows and Mac, with local composition, MIDI export and optional AI models.">
+  <title>Browser Studio | Ambient music for MPC on Windows and Mac</title>
+  <meta name="description" content="Compose evolving ambient music and play it to an Akai MPC XL over USB MIDI. Free Browser Studio for Chrome and Edge on Windows and Mac, with local composition, MIDI export and optional AI models.">
   <meta name="theme-color" content="#0d1418">
   <link rel="canonical" href="https://www.hendrickresearch.com/music/studio/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Hendrick Research">
-  <meta property="og:title" content="MPC Studio for Windows and Mac">
-  <meta property="og:description" content="Evolving ambient landscapes, USB MIDI control and optional AI arrangement. Open the browser studio in Chrome or Edge.">
+  <meta property="og:title" content="Browser Studio for Windows and Mac">
+  <meta property="og:description" content="Evolving ambient landscapes, USB MIDI control and optional AI arrangement. Open Browser Studio in Chrome or Edge.">
   <meta property="og:url" content="https://www.hendrickresearch.com/music/studio/">
   <meta property="og:image" content="https://www.hendrickresearch.com/music/mpc-studio.png">
-  <meta property="og:image:alt" content="MPC Studio native Mac app screenshot. Windows users use the browser companion.">
+  <meta property="og:image:alt" content="MPC Studio native Mac app screenshot. Browser Studio runs in Chrome or Edge.">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="MPC Studio for Windows and Mac">
+  <meta name="twitter:title" content="Browser Studio for Windows and Mac">
   <meta name="twitter:description" content="Make ambient music and play it through your Akai MPC XL with USB MIDI.">
   <meta name="twitter:image" content="https://www.hendrickresearch.com/music/mpc-studio.png">
-  <meta name="twitter:image:alt" content="MPC Studio native Mac app screenshot. Windows users use the browser companion.">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"MPC Studio Browser Companion","url":"https://www.hendrickresearch.com/music/studio/","applicationCategory":"MultimediaApplication","operatingSystem":"Windows, macOS","browserRequirements":"Current Google Chrome or Microsoft Edge. HTTPS or localhost and explicit MIDI permission are required for USB MIDI. Keep the tab visible during playback.","description":"Browser ambient composition studio with Web MIDI playback, MIDI export, offline CPU composition and optional user-configured local or cloud arrangement models.","image":"https://www.hendrickresearch.com/music/mpc-studio.png","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"author":{"@type":"Person","name":"Chase Hendrick"}}</script>
+  <meta name="twitter:image:alt" content="MPC Studio native Mac app screenshot. Browser Studio runs in Chrome or Edge.">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Browser Studio","url":"https://www.hendrickresearch.com/music/studio/","applicationCategory":"MultimediaApplication","operatingSystem":"Windows, macOS","browserRequirements":"Current Google Chrome or Microsoft Edge. HTTPS or localhost and explicit MIDI permission are required for USB MIDI. Keep the tab visible during playback.","description":"Browser ambient composition studio with Web MIDI playback, MIDI export, offline CPU composition and optional user-configured local or cloud arrangement models.","image":"https://www.hendrickresearch.com/music/mpc-studio.png","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"author":{"@type":"Person","name":"Chase Hendrick"}}</script>
   <link rel="stylesheet" href="./studio.css?v=0.1.0">
   <script type="module" src="./app.js?v=0.1.0"></script>
 </head>
 <body>
   <div class="shell">
     <aside class="sidebar">
-      <a class="brand" href="/music/" aria-label="Music home"><span class="brand-icon">▥</span><span>MPC STUDIO<small>BROWSER COMPANION</small></span></a>
+      <a class="brand" href="/music/" aria-label="Music home"><span class="brand-icon">▥</span><span>BROWSER STUDIO<small>MPC COMPANION</small></span></a>
       <div class="platform">WINDOWS + MAC</div>
       <nav aria-label="Studio sections"><a class="active" href="#compose">✦ <span>Compose<small>Ideas into landscapes</small></span></a><a href="#connect">↔ <span>Connect<small>USB MIDI and routing</small></span></a><a href="#models">⌘ <span>Models<small>Optional AI arrangement</small></span></a></nav>
       <div class="sidebar-note"><span class="eyebrow">YOUR SOUND SOURCES</span><strong>Akai MPC XL</strong><strong>Jackson Soloist</strong><p>Warm pads. Distant notes.<br>Room for your guitar.</p></div>
@@ -64,7 +64,7 @@
         <div class="setup-grid"><article><span>01</span><h3>Plug in</h3><p>Use a USB-C data cable to the XL’s computer port. Keep it in standalone mode. Open this page in current Chrome or Edge on Windows or Mac.</p></article><article><span>02</span><h3>Load a sound</h3><p>In MPC MIDI/Sync preferences, enable Track on USB MIDI Port 1. Load a polyphonic ambient instrument, set its input to channel 1 and monitoring to In or Merge.</p></article><article><span>03</span><h3>Let it evolve</h3><p>A single recognizable MPC port is selected automatically after permission. Play your arrangement. Turn simple setup off to use bass channel 2, pads 3 and melody 4.</p></article></div>
         <p class="fine">A selected MIDI port confirms browser access, not audible hardware playback. Clock is off by default. When enabled, configure the MPC to receive MIDI Clock; Akai notes that external MIDI Clock disables audio recording. Keep it off when recording your guitar.</p>
         <div class="midi-controls"><button id="test-note" disabled>Audition C4</button><button id="panic">Panic / stop all notes</button><label>Channel <input id="control-channel" type="number" min="1" max="16" value="1"></label><label>CC <input id="control-cc" type="number" min="0" max="119" value="74"></label><label class="macro-label">MIDI Learn value <input id="control-value" type="range" min="0" max="127" value="0"></label></div>
-        <p class="fine">Learn the CC slider on the MPC after enabling Control on its input port. This browser companion does not request system-exclusive permission or send MMC commands. MIDI Clock Start/Stop is available only when you enable clock.</p>
+        <p class="fine">Learn the CC slider on the MPC after enabling Control on its input port. Browser Studio does not request system-exclusive permission or send MMC commands. MIDI Clock Start/Stop is available only when you enable clock.</p>
         <pre id="monitor" class="monitor" aria-label="MIDI input monitor">Incoming MIDI appears here after you select an input.</pre>
       </section>
       <details id="models" class="panel model-panel"><summary><span>Optional local or cloud model</span><span>AI arrangement + local MIDI rendering</span></summary>
