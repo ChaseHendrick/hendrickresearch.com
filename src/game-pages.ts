@@ -34,8 +34,8 @@ export const gamePages: GamePage[] = [
   },
   {
     id: 'tinylaps', title: 'TinyLaps', eyebrow: 'A MINIATURE RACING WORLD',
-    description: 'A living miniature racing world with families, autonomous drivers, physical crashes, and buildings you can pick up and throw.',
-    controls: ['The race starts automatically. Choose a world to explore 15 circuits and three dense cities with local traffic.', 'Click a racer, then Follow or Ride. Space pauses; 1–4 change the camera.', 'Choose Grab & throw or press G. Pick Cars, People, or Buildings & trees. Hold to lift, release to drop, or flick to throw.', 'Open God Tools for meteors, shockwaves, and terrain powers. Townspeople react. Restart restores the world.'],
+    description: 'Watch autonomous cars race through dense city streets. Explore 18 miniature worlds with local traffic, families, crash physics, and god powers.',
+    controls: ['Racers start on the streets of Foundry City. Choose among three city street races and 15 island circuits.', 'Click a racer, then Follow or Ride. Space pauses; 1–4 change the camera.', 'Choose Grab & throw or press G. Pick Cars, People, or Buildings & trees. Hold to lift, release to drop, or flick to throw.', 'Open God Tools for meteors, shockwaves, and terrain powers. Townspeople react. Restart restores the world.'],
     input: 'Mouse or touch', route: '/play/tinylaps/', htmlFile: 'play/tinylaps/index.html', assetPath: '/games/tinylaps/index.html',
     source: 'https://github.com/ChaseHendrick/TinyLaps', notices: '/games/tinylaps/LICENSE.txt',
   },

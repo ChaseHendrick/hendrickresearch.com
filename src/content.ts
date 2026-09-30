@@ -63,7 +63,7 @@ export const projects: Project[] = [
   },
   {
     id: 'tinylaps', name: 'TinyLaps', category: 'Play', eyebrow: 'A miniature racing world',
-    description: 'Dense cities, autonomous drivers, flowing water, crash damage, and god powers.',
+    description: 'Street racing through dense cities, local traffic, flowing water, crash damage, and god powers.',
     detail: 'A miniature racing world with autonomous drivers, crash damage, destructible terrain, and god powers. Open the live game to explore the system in motion.',
     tags: ['Racing', 'Simulation'], source: 'https://github.com/ChaseHendrick/TinyLaps',
     launch: '/play/tinylaps/', launchLabel: 'Play the game',
