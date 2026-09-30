@@ -1,0 +1,277 @@
+[
+  {
+    "id": "masada",
+    "name": "Masada",
+    "date": "73 / 74 CE",
+    "faction": "Roman",
+    "region": "Judaean Desert",
+    "kind": "ramp",
+    "theme": "desert",
+    "work": "Western siege ramp",
+    "focus": "Earth, timber, and a natural spur.",
+    "description": "Watch a supply line build an earthen approach over the western spur. When the surface is ready, a timber tower can climb toward the casemate wall.",
+    "fact": "The western ramp, siege camps, and encircling wall survive. The ramp was built on a natural spur; the Romans did not build the mountain. The siege is commonly dated to 73 or 74 CE.",
+    "limit": "The plateau, camps, and ramp are schematic. Construction speed, worker numbers, tower motion, and the breach sequence are illustrative. Details of the final assault and the historical narrative remain debated.",
+    "sources": [
+      [
+        "Masada, UNESCO",
+        "https://whc.unesco.org/en/list/1040/"
+      ],
+      [
+        "Roman ramp, Israel Nature and Parks Authority",
+        "https://en.parks.org.il/article/the-roman-ramp-trail-at-masada-national-park/"
+      ],
+      [
+        "2024 archaeological analysis",
+        "https://doi.org/10.1017/S1047759424000084"
+      ]
+    ],
+    "start": [
+      -32,
+      0
+    ],
+    "end": [
+      2,
+      0
+    ],
+    "camp": [
+      -45,
+      -21
+    ],
+    "fort": [
+      18,
+      0
+    ],
+    "height": 24,
+    "workers": 48,
+    "soldiers": 24,
+    "defenders": 24,
+    "seed": 1040
+  },
+  {
+    "id": "alesia",
+    "name": "Alesia",
+    "date": "52 BCE",
+    "faction": "Roman",
+    "region": "Gaul",
+    "kind": "rings",
+    "relief": 20,
+    "theme": "green",
+    "work": "Double lines of fortification",
+    "focus": "A siege inside a siege.",
+    "description": "Builders extend two defensive circuits around the hilltop settlement. Roman patrols hold the space between them while a relief force approaches from outside.",
+    "fact": "Caesar enclosed the oppidum with an inner line and protected his troops with an outer line. Archaeological investigations have recovered the defensive lines, camps, and military material.",
+    "limit": "The two circuits are compressed into a small landscape. The model simplifies the valleys, ditch systems, troop numbers, and attacks. It does not reconstruct a particular hour of the battle.",
+    "sources": [
+      [
+        "Alesia, Musée d’Archéologie nationale",
+        "https://musee-archeologienationale.fr/vercingetorix-et-alesia"
+      ],
+      [
+        "Archaeology, Alésia MuséoParc",
+        "https://alesia.com/archeologie/"
+      ]
+    ],
+    "start": [
+      -35,
+      0
+    ],
+    "end": [
+      -10,
+      0
+    ],
+    "camp": [
+      -42,
+      -24
+    ],
+    "fort": [
+      0,
+      0
+    ],
+    "height": 9,
+    "workers": 48,
+    "soldiers": 32,
+    "defenders": 28,
+    "seed": 52
+  },
+  {
+    "id": "jerusalem",
+    "name": "Jerusalem",
+    "date": "70 CE",
+    "faction": "Roman",
+    "region": "Judaea",
+    "kind": "terraces",
+    "theme": "desert",
+    "work": "Assault terraces",
+    "focus": "Ramps against a layered city.",
+    "description": "Work crews build approach terraces beneath the northern defenses. Towers and artillery support an assault against several walls around a dense urban model.",
+    "fact": "Roman forces under Titus besieged Jerusalem in 70 CE. Josephus describes siege banks, engines, successive walls, and assaults during the siege.",
+    "limit": "This is a schematic engineering vignette, not a surveyed reconstruction of Jerusalem or a complete account of the siege. Buildings, banks, and positions are simplified; the destruction of civilians is not simulated.",
+    "sources": [
+      [
+        "Josephus, Jewish War, Book V",
+        "https://penelope.uchicago.edu/josephus/war-5.html"
+      ],
+      [
+        "Josephus, Jewish War, Book VI",
+        "https://penelope.uchicago.edu/josephus/war-6.html"
+      ]
+    ],
+    "start": [
+      -33,
+      0
+    ],
+    "end": [
+      0,
+      0
+    ],
+    "camp": [
+      -44,
+      -24
+    ],
+    "fort": [
+      20,
+      0
+    ],
+    "height": 7,
+    "workers": 52,
+    "soldiers": 28,
+    "defenders": 28,
+    "seed": 70
+  },
+  {
+    "id": "tyre",
+    "name": "Tyre",
+    "date": "332 BCE",
+    "faction": "Macedonian",
+    "region": "Phoenician coast",
+    "kind": "causeway",
+    "theme": "coast",
+    "work": "Stone causeway",
+    "focus": "Make a road across the sea.",
+    "description": "Haulers carry rubble from the shore and extend a causeway toward an island city. Ships circle the works and towers advance as the stone surface emerges from the water.",
+    "fact": "Alexander’s forces besieged the island city in 332 BCE. A causeway linked it to the mainland, permanently changing the coastline.",
+    "limit": "The island, channel, causeway, fleet, and construction rate are stylized. Ships follow simple steering paths; the water surface is a wave model. This is not a sediment transport or naval warfare reconstruction.",
+    "sources": [
+      [
+        "Tyre, UNESCO",
+        "https://whc.unesco.org/en/list/299/"
+      ],
+      [
+        "Tyre archaeological research, American University of Beirut",
+        "https://www.aub.edu.lb/museum_archeo/Documents/Newsletter%20September%202022%2C%20vol.%20XXXV.pdf"
+      ]
+    ],
+    "start": [
+      -32,
+      0
+    ],
+    "end": [
+      7,
+      0
+    ],
+    "camp": [
+      -46,
+      -23
+    ],
+    "fort": [
+      24,
+      0
+    ],
+    "height": 2,
+    "workers": 52,
+    "soldiers": 24,
+    "defenders": 24,
+    "seed": 332
+  },
+  {
+    "id": "constantinople",
+    "name": "Constantinople",
+    "date": "1453 CE",
+    "faction": "Ottoman",
+    "region": "Bosphorus",
+    "kind": "battery",
+    "theme": "coast",
+    "work": "Artillery approach",
+    "focus": "Earthworks before the land walls.",
+    "description": "Crews prepare protected gun positions and bring ammunition forward. Heavy cannon fire physical projectiles toward a miniature section of the layered land walls.",
+    "fact": "The Ottoman siege of 1453 overcame Constantinople’s defenses. The surviving land walls are part of the Historic Areas of Istanbul World Heritage property.",
+    "limit": "This model shows a selected landward sector. The coastline and buildings are schematic; cannon behavior, wall damage, units, and construction rates are illustrative. It does not model the full campaign.",
+    "sources": [
+      [
+        "Historic Areas of Istanbul, UNESCO",
+        "https://whc.unesco.org/en/list/356/"
+      ],
+      [
+        "Panorama 1453 History Museum",
+        "https://www.panoramikmuze.com/"
+      ]
+    ],
+    "start": [
+      -33,
+      0
+    ],
+    "end": [
+      -3,
+      0
+    ],
+    "camp": [
+      -45,
+      -25
+    ],
+    "fort": [
+      21,
+      0
+    ],
+    "height": 2,
+    "workers": 48,
+    "soldiers": 32,
+    "defenders": 28,
+    "seed": 1453
+  },
+  {
+    "id": "candia",
+    "name": "Candia",
+    "date": "1648–1669 CE",
+    "faction": "Ottoman",
+    "region": "Venetian Crete",
+    "kind": "trenches",
+    "theme": "coast",
+    "work": "Trenches and batteries",
+    "focus": "An approach to a bastioned city.",
+    "description": "Digging crews push zigzag trenches toward the Venetian bastions. Supply carriers move between the camp and batteries while cannon exchange fire over the earthworks.",
+    "fact": "Candia, present-day Heraklion, was a Venetian city besieged by Ottoman forces from 1648 to 1669. Contemporary maps show the fortified city and siege operations.",
+    "limit": "The star-shaped walls and trench system are schematic, not a tracing of a historical map. This compressed scenario does not reproduce twenty-one years of fighting or the underground mining campaign.",
+    "sources": [
+      [
+        "Contemporary siege map, Royal Collection Trust",
+        "https://militarymaps.rct.uk/other-17th-century-conflicts/siege-of-candia-1648"
+      ],
+      [
+        "Historic city, Municipality of Heraklion",
+        "https://www.heraklion.gr/en/visitor/history/tour-of-the-city.html"
+      ]
+    ],
+    "start": [
+      -34,
+      0
+    ],
+    "end": [
+      -2,
+      0
+    ],
+    "camp": [
+      -46,
+      -25
+    ],
+    "fort": [
+      20,
+      0
+    ],
+    "height": 2.5,
+    "workers": 52,
+    "soldiers": 32,
+    "defenders": 28,
+    "seed": 1669
+  }
+]

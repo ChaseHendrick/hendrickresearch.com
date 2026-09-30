@@ -48,9 +48,9 @@ Put public media in `public/genchase/previews/`, using content-hashed filenames,
 
 ## Browser games and the textile atlas
 
-Four games run directly from `/play/fins/`, `/play/tinylaps/`, `/play/haywire/`, and `/play/sirens/`. Their completed browser builds live in `public/games/`, with each project's original license and dependency notices. No desktop installer is required. The wrappers provide controls, full screen, and a separate-tab option. After the Sirens requires a keyboard and mouse. Saved game progress stays in the visitor's browser.
+Five games run directly from `/play/fins/`, `/play/tinylaps/`, `/play/haywire/`, `/play/sirens/`, and `/play/siegeworks/`. Their completed browser builds live in `public/games/`, with each project's original license and dependency notices. No desktop installer is required. The wrappers provide controls, full screen, and a separate-tab option. After the Sirens requires a keyboard and mouse. Saved game progress stays in the visitor's browser.
 
-TinyLaps includes 15 distinct circuits, corrected terrain depth rendering, a circuit chooser, compact mobile controls, complete world restoration on restart, 36 residents with family routines and reactions to god powers, and a visible grab control for cars, adult pedestrians, buildings, trees, and landmarks. Throws cause collision and landing damage; adult ragdolls recover. Children remain uninjured town life. Moved scenery and residents are included in persistent browser saves. Haywire's island is enlarged to contain the barn and its roof.
+TinyLaps includes 15 distinct circuits, corrected terrain depth rendering, a circuit chooser, compact mobile controls, complete world restoration on restart, 36 residents in circuit villages and 108 in each city, with family routines and reactions to god powers, and a visible grab control for cars, adult pedestrians, buildings, trees, and landmarks. Throws cause collision and landing damage; adult ragdolls recover. Children remain uninjured town life. Moved scenery and residents are included in persistent browser saves. Haywire's island is enlarged to contain the barn and its roof.
 
 `/fibers/` hosts the full Fibers of Earth atlas and its 2,585 static pages. Original sources, evidence limitations, MIT attribution, third-party notices, and safe provenance accompany the atlas. Refresh its complete static build for the `https://www.hendrickresearch.com/fibers/` base URL; keep the atlas's citations and reading pages intact.
 
@@ -86,8 +86,22 @@ To update the locally hosted game, copy the verified standalone `index.html` fro
 
 The Appearance control offers Light, Dark, and System settings. A saved preference applies across the portfolio, GENChase, every technique page, and the full Fibers of Earth atlas. The early theme bootstrap avoids a flash of the other theme.
 
-All four play pages offer Dim surroundings and Full screen. Dim mode keeps the existing game frame alive, supports background-click, Escape, and explicit button exits, and restores keyboard focus on exit. Entering or leaving either view preserves the running game.
+All five play pages offer Dim surroundings and Full screen. Dim mode keeps the existing game frame alive, supports background-click, Escape, and explicit button exits, and restores keyboard focus on exit. Entering or leaving either view preserves the running game.
 
 Game saves stay on this origin in the same browser. Fin’s offers Continue and multiple save slots; Haywire restores its expedition automatically. TinyLaps saves its current circuit, race, car damage, terrain edits, scenery, barriers, camera, and controls every 2.5 seconds and on page exit. After the Sirens offers Continue saved run; the current game saves every five seconds and on page exit. Its multiplayer world and survivor packs are saved separately on the host computer.
 
 Verified in isolated Chrome: theme persistence and device-theme changes, cross-tab settings, mobile layouts at 320 and 390 pixels, all dim/fullscreen exit paths, zero game-frame reloads during view changes, and close/reopen save restoration in all four games. TinyLaps also checks snapshot round trips, malformed saves, and unavailable storage alongside its physics, models, terrain, and scenery tests.
+
+## Siegeworks
+
+The Sieges navigation tab opens `/play/siegeworks/`, a collection of six original historical miniatures: Masada, Alesia, Jerusalem, Tyre, Constantinople, and Candia. Crews load supplies, haul material, and build the ramp, causeway, defenses, batteries, or trench approach. Articulated figures, wheels, work tools, dust, banners, boats, and projectiles are animated. cannon-es provides gravity, collision bodies, pickup constraints, physical throwing, projectiles, and recovery; engine motion remains controlled. The compact camera toolbar uses one row.
+
+Each siege saves separately in the current browser. Historical notes include primary and institutional sources, and distinguish archaeological remains from the model’s schematic geometry and compressed timing. Canonical source and CI are in the public [Siegeworks repository](https://github.com/ChaseHendrick/Siegeworks). The self-contained hosted file includes its dependency notices. Copy `index.html` and `LICENSE.txt` from a verified canonical build into `public/games/siegeworks/` before building this site.
+
+The search index includes a historical siege collection and six source-backed field guides, each with a unique title, description, canonical URL, structured data, social preview, and sitemap image. TinyLaps also includes three connected city districts and conservative shallow-channel water with currents and buoyancy.
+
+After the Sirens has a static `/after-the-sirens/` game guide, a dedicated browser zombie survival title on its playable wrapper, an indexable original gameplay image, and VideoGame/WebApplication structured data. The guide links to accurate singleplayer, items, and self-hosted multiplayer documentation without modifying the game build.
+
+Every indexable page has a title, description, canonical URL, social preview, and structured data. Atlas exports gain breadcrumb markup and complete social metadata at build time; distinct same-name Wikidata records retain their record IDs in metadata. The offline copy and raw game bundles stay out of search indexing. Sitemap coverage is validated against the full built site.
+
+Each GENChase technique page has an independent public art sketch playground with text seeds, density/scale/complexity sliders, palettes, saved recipes, share links, vector SVG and 3200 × 2240 PNG downloads, and a dedicated print/PDF view. These illustrations are separate from native recorded samples and import no research engine code. Production bundles and embedded game JavaScript are minified without source maps; browser-delivered code remains downloadable, and upstream public source repositories remain public.

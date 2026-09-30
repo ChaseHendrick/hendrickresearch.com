@@ -1,4 +1,6 @@
 import { renderGames } from './src/games';
+import { atlasSEO } from './src/seo';
+import { compactGameHTML, compactBrowserAsset } from './src/production';
 import { defineConfig } from 'vite';
 import { readFileSync, existsSync, readdirSync, writeFileSync } from 'node:fs';
 import { resolve, join } from 'node:path';
@@ -19,7 +21,7 @@ let atlasAppearanceHead = '';
 
 export default defineConfig({
   appType: 'mpa',
-  build: {rollupOptions: {input}},
+  build: {minify:'esbuild',sourcemap:false,cssMinify:true,rollupOptions: {input}},
   plugins: [{
     name: 'prerender-portfolio',
     enforce: 'post',
@@ -39,11 +41,14 @@ export default defineConfig({
       order: 'pre',
       handler(html) {
         html = html.replace('<head>', '<head>' + appearanceBootstrap);
-        if (html.includes('<!--games-html-->')) return html.replace('<!--games-html-->',renderGames());
+        if (html.includes('<!--games-html-->')) {
+          const schema = {'@context':'https://schema.org','@type':'CollectionPage',name:'Playable browser games',url:origin+'/games/',mainEntity:{'@type':'ItemList',numberOfItems:gamePages.length,itemListElement:gamePages.map((g,i)=>({'@type':'ListItem',position:i+1,name:g.title,url:origin+g.route}))}};
+          return html.replace('<!--games-html-->',renderGames()).replace('</head>',`<script type="application/ld+json">${JSON.stringify(schema).replace(/</g,'\\u003c')}</script><meta property="og:description" content="Play original browser games, from zombie survival and historical sieges to racing, farming, and an aquarium shop."/><meta name="twitter:card" content="summary_large_image"/></head>`);
+        }
         if(html.includes('<!--editorial-head-->'))return html;
         const game=gamePages.find(g=>html.includes(`data-game="${g.id}"`));
         if(game){
-          const head=pageHead({route:game.route,title:`Play ${game.title} in Your Browser | Hendrick Research`,description:game.description,schema:{'@type':['VideoGame','WebApplication'],name:game.title,applicationCategory:'GameApplication',operatingSystem:'Web browser',url:origin+game.route,isAccessibleForFree:true}});
+          const head=pageHead({route:game.route,title:game.seoTitle??`Play ${game.title} in Your Browser | Hendrick Research`,description:game.description,image:game.image,schema:{'@type':['VideoGame','WebApplication'],name:game.title,applicationCategory:'GameApplication',operatingSystem:'Web browser',url:origin+game.route,isAccessibleForFree:true}});
           return html.replace(/<title>[^<]*<\/title>/,'').replace(/<meta name="description"[^>]*\/>/,'').replace('</head>',head+'</head>').replace('<div id="app"></div>',`<div id="app">${renderGamePage(game)}</div>`);
         }
         if(html.includes('<!--catalog-html-->')) {
@@ -69,26 +74,52 @@ export default defineConfig({
       for(const page of editorialPages){this.emitFile({type:'asset',fileName:page.route.slice(1)+'index.html',source:source.replace('<!--editorial-head-->',pageHead(page)).replace('<!--editorial-body-->',renderContentPage(page))});}
       delete bundle['editorial/index.html'];
       const routes=['/','/games/','/genchase/',...gamePages.map(g=>g.route),...editorialPages.map(p=>p.route)];
-      const sitemap=`<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">${routes.map(route=>{const entry=entries.find(e=>route===`/genchase/${e.id}/`);return `<url><loc>${origin}${route}</loc>${entry?.previews?.map(p=>`<image:image><image:loc>${xml(origin+p.image)}</image:loc></image:image>`).join('')??''}</url>`;}).join('')}</urlset>`;
+      const sitemap=`<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">${routes.map(route=>{const entry=entries.find(e=>route===`/genchase/${e.id}/`),page=editorialPages.find(p=>p.route===route);return `<url><loc>${origin}${route}</loc>${page?.image?`<image:image><image:loc>${xml(origin+page.image)}</image:loc></image:image>`:''}${entry?.previews?.map(p=>`<image:image><image:loc>${xml(origin+p.image)}</image:loc></image:image>`).join('')??''}</url>`;}).join('')}</urlset>`;
       this.emitFile({type:'asset',fileName:'sitemap-site.xml',source:sitemap});
       const fibersSitemap=existsSync(fileURLToPath(new URL('./public/fibers/sitemap.xml',import.meta.url))) ? `<sitemap><loc>${origin}/fibers/sitemap.xml</loc></sitemap>`:'';
       this.emitFile({type:'asset',fileName:'sitemap.xml',source:`<?xml version="1.0" encoding="UTF-8"?><sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><sitemap><loc>${origin}/sitemap-site.xml</loc></sitemap>${fibersSitemap}</sitemapindex>`});
     },
-    writeBundle(options) {
+    async writeBundle(options) {
+      const gameRoot=resolve(options.dir??'dist','games');
+      const compact=async (directory:string):Promise<void>=>{
+        if(!existsSync(directory))return;
+        for(const entry of readdirSync(directory,{withFileTypes:true})){
+          const path=join(directory,entry.name);
+          if(entry.isDirectory())await compact(path);
+          else if(entry.name.endsWith('.html') && path!==join(gameRoot,'index.html')){
+            writeFileSync(path,await compactGameHTML(readFileSync(path,'utf8'),path));
+          }else if(/\.(js|css)$/.test(entry.name)){
+            writeFileSync(path,await compactBrowserAsset(readFileSync(path,'utf8'),path));
+          }
+        }
+      };
+      await compact(gameRoot);
       // Apply the shared control to every atlas reading page without editing its source export.
       const fibers = resolve(options.dir ?? 'dist', 'fibers');
       if (!existsSync(fibers)) return;
+      const pages: string[] = [];
       const visit = (directory: string) => {
         for (const entry of readdirSync(directory, {withFileTypes:true})) {
           const path = join(directory, entry.name);
           if (entry.isDirectory()) visit(path);
           else if (entry.name.endsWith('.html')) {
-            const html = readFileSync(path, 'utf8');
-            writeFileSync(path, html.replace('<head>', '<head>' + appearanceBootstrap).replace('</head>', atlasAppearanceHead.replace(appearanceBootstrap, '') + '</head>'));
+            pages.push(path);
           }
         }
       };
       visit(fibers);
+      const titles = new Map<string,number>();
+      for (const path of pages) {
+        if(path.endsWith('/offline.html')) continue;
+        const title = readFileSync(path,'utf8').match(/<title>([^<]*)<\/title>/i)?.[1] ?? '';
+        titles.set(title,(titles.get(title)??0)+1);
+      }
+      for (const path of pages) {
+        const html = readFileSync(path,'utf8');
+        const title = html.match(/<title>([^<]*)<\/title>/i)?.[1] ?? '';
+        const enriched = atlasSEO(html,path.slice(fibers.length+1),(titles.get(title)??0)>1);
+        writeFileSync(path,enriched.replace('<head>', '<head>' + appearanceBootstrap).replace('</head>', atlasAppearanceHead.replace(appearanceBootstrap, '') + '</head>'));
+      }
     },
   }],
 });

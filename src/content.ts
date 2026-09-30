@@ -13,6 +13,14 @@ export const profile = {
 
 export const projects: Project[] = [
   {
+    id: 'siegeworks', name: 'Siegeworks', category: 'Play', eyebrow: 'History in miniature',
+    description: 'Six living siege worlds, from Roman ramps and defenses to causeways and cannon.',
+    detail: 'Watch workers haul supplies, build siege works, and prepare an approach in Masada, Alesia, Jerusalem, Tyre, Constantinople, and Candia. Pick up and toss workers and soldiers, inspect their jobs, or follow the engines. These original procedural miniatures include historical sources and clearly stated reconstruction limits.',
+    tags: ['History', 'Physics', 'Simulation'], source: 'https://github.com/ChaseHendrick/Siegeworks',
+    launch: '/play/siegeworks/', launchLabel: 'Explore the sieges',
+  },
+
+  {
     id: 'genchase', name: 'GENChase', category: 'Research', eyebrow: 'A studio for scientific exploration',
     description: 'A private research workspace. A public guide to its methods and experiments.',
     detail: 'GENChase is my private research and development workspace. Its public catalog maps the techniques, studio tabs, and implementation families without publishing the research code. Explore the collection by topic and see how the different studies connect.',
@@ -55,7 +63,7 @@ export const projects: Project[] = [
   },
   {
     id: 'tinylaps', name: 'TinyLaps', category: 'Play', eyebrow: 'A miniature racing world',
-    description: 'Autonomous drivers, crash damage, destructible terrain, and god powers.',
+    description: 'Dense cities, autonomous drivers, flowing water, crash damage, and god powers.',
     detail: 'A miniature racing world with autonomous drivers, crash damage, destructible terrain, and god powers. Open the live game to explore the system in motion.',
     tags: ['Racing', 'Simulation'], source: 'https://github.com/ChaseHendrick/TinyLaps',
     launch: '/play/tinylaps/', launchLabel: 'Play the game',

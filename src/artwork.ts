@@ -2,6 +2,11 @@ const shell = (body: string, bg: string) => `<svg viewBox="0 0 640 390" role="im
 let artworkSequence = 0;
 
 export function artwork(kind: string): string {
+  if (kind === 'siegeworks') {
+    const houses = Array.from({length:20},(_,i)=>`<g transform="translate(${330+i%5*29} ${100+Math.floor(i/5)*23})"><path d="M0 9 16 0l15 7v14l-16 10L0 24Z" fill="#e4d8ba" stroke="#b6a482" stroke-width=".7"/><path d="M16 0v14l15-7M0 9l16 5" fill="none" stroke="#c0ad88" stroke-width=".7"/></g>`).join('');
+    const crew=Array.from({length:13},(_,i)=>`<circle cx="${156+i*12}" cy="${293-i*6}" r="2.5" fill="${i%3?'#826e50':'#aa674c'}"/><path d="M${155+i*12} ${296-i*6}v6" stroke="#826e50" stroke-width="2"/>`).join('');
+    return shell(`<path d="M55 281 355 164l241 108-300 110Z" fill="#c5b695"/><path d="M57 271 355 154l241 108-300 110Z" fill="#e3d5b5"/><path d="M285 160 426 91l127 66-141 73v90l-127-56Z" fill="#bda782"/><path d="M285 155 426 86l127 66-141 73Z" fill="#efe5ca"/>${houses}<path d="M285 155v-12l141-69 127 66v12l-141 73Z" fill="none" stroke="#b5a181" stroke-width="5"/><path d="M146 300 289 190l18 9-142 112Z" fill="#b79c72"/><path d="M164 300 298 199" stroke="#d7bf94" stroke-width="6"/>${crew}<g fill="#f3ead3"><path d="M98 258l12-13 15 8Z"/><path d="M118 270l12-13 15 8Z"/><path d="M90 282l12-13 15 8Z"/></g><g font-family="monospace" font-size="9" fill="#8a795c" letter-spacing="1.4"><text x="32" y="32">SIX HISTORICAL MINIATURES</text><text x="32" y="361">LANDSCAPE / LOGISTICS / SIEGEWORKS</text></g>`, '#ece7d7');
+  }
   if (kind === 'genchase') {
     const rings = Array.from({ length: 36 }, (_, i) => {
       const size = 42 + i * 5.3;

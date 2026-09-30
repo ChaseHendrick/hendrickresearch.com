@@ -65,7 +65,7 @@ export function catalogCard(entry: CatalogEntry): string {
     <p class="catalog-card-description">${escapeHTML(entry.description)}</p>
     ${entry.family || entry.tabName && entry.tabName !== entry.title || presetCount !== undefined ? `<dl class="catalog-card-facts">${entry.family ? `<div><dt>Family</dt><dd>${escapeHTML(entry.family)}</dd></div>` : ''}${entry.tabName && entry.tabName !== entry.title ? `<div><dt>Studio tab</dt><dd>${escapeHTML(entry.tabName)}</dd></div>` : ''}${presetCount !== undefined ? `<div><dt>Presets</dt><dd>${presetCount}</dd></div>` : ''}</dl>` : ''}
     ${topicTags.length ? `<div class="catalog-card-tags" aria-label="Topics">${topicTags.map(tag => `<span>${escapeHTML(tag)}</span>`).join('')}</div>` : ''}
-    <button type="button" class="catalog-card-open" data-id="${escapeHTML(entry.id)}" aria-label="Read about ${escapeHTML(entry.title)}">Read details ${arrow}</button>
+    <button type="button" class="catalog-card-open" data-id="${escapeHTML(entry.id)}" aria-label="Read about ${escapeHTML(entry.title)}">Read details ${arrow}</button><a class="art-card-link" href="/genchase/${escapeHTML(entry.id)}/#art-playground">Create art <span aria-hidden="true">↗</span></a>
   </article>`;
 }
 

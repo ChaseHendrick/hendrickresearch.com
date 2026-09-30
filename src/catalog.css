@@ -273,3 +273,5 @@
   .catalog-index .catalog-card-open svg { width: 17px; height: 17px; }
   .catalog-detail-facts > div { font-size: 10px; gap: 16px; }
 }
+
+.art-card-link{display:inline-flex;gap:10px;font-size:12px;border-bottom:1px solid var(--line-strong);padding:10px 0;margin-top:10px;color:var(--copper)}

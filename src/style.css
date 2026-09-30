@@ -44,3 +44,6 @@ dialog{border:1px solid var(--line);padding:0;width:min(670px,calc(100% - 36px))
 @media(max-width:650px){:root{scroll-padding-top:112px}.research-toolbar{margin-top:18px}.paper-filters{margin-inline:-2px}.paper-filter{font-size:9px;padding:8px 11px}.search-field{max-width:none;padding:11px 12px}.search-field input{font-size:12px}.search-field kbd{display:none}.paper-results{font-size:8px;margin-top:14px}.empty-state{padding:36px 12px}.empty-state p{font-size:25px}}
 
 .desktop-nav{gap:clamp(18px,2.5vw,34px);margin-left:10px}
+
+@media(min-width:651px) and (max-width:1000px){.desktop-nav{gap:14px;font-size:11px;margin-left:0}.brand{width:118px}.header-github{gap:8px;padding:10px;font-size:11px}}
+@media(min-width:651px) and (max-width:800px){.desktop-nav{gap:11px}.header-github{display:none}}
