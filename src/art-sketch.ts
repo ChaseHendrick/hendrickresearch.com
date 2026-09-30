@@ -52,14 +52,14 @@ export function makeArtSVG(subject: ArtSubject, raw: Partial<ArtRecipe>): string
   }else if(mode==='tiles'){
     const size=(90-p.density*.45)*p.scale,variant=Math.floor(rand()*4);
     for(let y=35;y<685;y+=size)for(let x=35;x<985;x+=size){
-      const a=rand()*Math.PI*2,c=color(),n=3+(p.complexity%6),radius=size*(.25+rand()*.25);
+      const a=rand()*Math.PI*2,c=color(),n=3+p.complexity,radius=size*(.25+rand()*.25);
       if(variant%2===0){let d='';for(let k=0;k<n;k++)d+=`${k?'L':'M'}${number(x+Math.cos(a+k*2*Math.PI/n)*radius)},${number(y+Math.sin(a+k*2*Math.PI/n)*radius)}`;path(d+'Z',c,1,.7,rand()>.65?c:'none');}
-      else{const flip=rand()>.5;path(`M${x},${y}q${size/2},${flip?size:-size} ${size},0`,c,1+rand()*2,.65);}
+      else{const flip=rand()>.5;path(`M${x},${y}q${size/2},${(flip?size:-size)*(.5+p.complexity*.1)} ${size},0`,c,1+rand()*2,.65);}
     }
   }else if(mode==='bloom'||mode==='orbits'){
     const n=count*(mode==='bloom'?5:2),golden=Math.PI*(3-Math.sqrt(5)),rotation=phase;
     for(let i=0;i<n;i++){
-      const angle=i*golden+rotation+(mode==='orbits'?Math.sin(i*.035)*p.complexity*.12:0),r=Math.sqrt(i/n)*290/dotScale;
+      const angle=i*golden+rotation+(mode==='orbits'?Math.sin(i*.035)*p.complexity*.12:0),r=Math.sqrt(i/n)*290/dotScale*(1+.07*Math.sin(angle*p.complexity+phase));
       const x=500+Math.cos(angle)*r*1.35,y=350+Math.sin(angle)*r;
       circle(x,y,(1.2+rand()*3)*dotScale,color(),.4+rand()*.4);
       if(mode==='orbits'&&i%6===0)path(`M${number(x)},${number(y)}q${number(Math.sin(angle)*30)},${number(Math.cos(angle)*30)} ${number(Math.cos(angle)*60)},${number(Math.sin(angle)*60)}`,color(),.6,.45);
@@ -73,7 +73,7 @@ export function makeArtSVG(subject: ArtSubject, raw: Partial<ArtRecipe>): string
     }
   }else if(mode==='branches'){
     const branch=(x:number,y:number,angle:number,length:number,depth:number)=>{
-      const bend=(rand()-.5)*.8,nx=x+Math.cos(angle+bend)*length,ny=y+Math.sin(angle+bend)*length;
+      const bend=(rand()-.5)*(.3+p.complexity*.08),nx=x+Math.cos(angle+bend)*length,ny=y+Math.sin(angle+bend)*length;
       path(`M${number(x)},${number(y)}Q${number(x+Math.cos(angle)*length*.5)},${number(y+Math.sin(angle)*length*.5)} ${number(nx)},${number(ny)}`,color(),.4+depth*.35,.7);
       if(depth>0){branch(nx,ny,angle-.25-rand()*.55,length*(.6+rand()*.15),depth-1);branch(nx,ny,angle+.25+rand()*.55,length*(.6+rand()*.15),depth-1);}
       else circle(nx,ny,1.5*dotScale,color());
