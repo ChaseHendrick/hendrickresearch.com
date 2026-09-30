@@ -93,6 +93,9 @@ export function mountAttractor(canvas: HTMLCanvasElement): AttractorControls {
   function render() {
     if (disposed || width <= 0 || height <= 0) return;
     const ctx = context!;
+    const colors = getComputedStyle(document.documentElement);
+    const ink = colors.getPropertyValue('--attractor-rgb').trim() || '112,75,49';
+    const flow = colors.getPropertyValue('--attractor-flow-rgb').trim() || '106,66,40';
     ctx.setTransform(pixelRatio, 0, 0, pixelRatio, 0, 0);
     ctx.clearRect(0, 0, width, height);
 
@@ -125,7 +128,7 @@ export function mountAttractor(canvas: HTMLCanvasElement): AttractorControls {
     for (let start = 0; start < count - 1; start += chunk) {
       const end = Math.min(start + chunk, count - 1);
       const opacity = 0.13 + (start / count) * 0.1;
-      ctx.strokeStyle = `rgba(112, 75, 49, ${opacity})`;
+      ctx.strokeStyle = `rgba(${ink}, ${opacity})`;
       ctx.beginPath();
       ctx.moveTo(projected[start * 2], projected[start * 2 + 1]);
       for (let i = start + 1; i <= end; i += 1) {
@@ -140,7 +143,7 @@ export function mountAttractor(canvas: HTMLCanvasElement): AttractorControls {
       ctx.lineWidth = 0.9;
       for (let section = 0; section < 4; section += 1) {
         const start = head - 80 + section * 20;
-        ctx.strokeStyle = `rgba(106, 66, 40, ${0.11 + section * 0.13})`;
+        ctx.strokeStyle = `rgba(${flow}, ${0.11 + section * 0.13})`;
         ctx.beginPath();
         ctx.moveTo(projected[start * 2], projected[start * 2 + 1]);
         for (let i = start + 1; i <= start + 20; i += 1) {
@@ -222,6 +225,7 @@ export function mountAttractor(canvas: HTMLCanvasElement): AttractorControls {
   intersectionObserver?.observe(canvas);
   window.addEventListener('resize', resize, { passive: true });
   document.addEventListener('visibilitychange', updateAnimation);
+  window.addEventListener('appearancechange', render);
   motionPreference.addEventListener('change', updateAnimation);
   canvas.addEventListener('pointermove', onPointerMove, { passive: true });
   canvas.addEventListener('pointerleave', onPointerLeave, { passive: true });
@@ -252,6 +256,7 @@ export function mountAttractor(canvas: HTMLCanvasElement): AttractorControls {
       intersectionObserver?.disconnect();
       window.removeEventListener('resize', resize);
       document.removeEventListener('visibilitychange', updateAnimation);
+      window.removeEventListener('appearancechange', render);
       motionPreference.removeEventListener('change', updateAnimation);
       canvas.removeEventListener('pointermove', onPointerMove);
       canvas.removeEventListener('pointerleave', onPointerLeave);

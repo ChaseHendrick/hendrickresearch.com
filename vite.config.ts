@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite';
-import { readFileSync, existsSync } from 'node:fs';
+import { readFileSync, existsSync, readdirSync, writeFileSync } from 'node:fs';
+import { resolve, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { renderPage } from './src/page';
 import { papers, projects, profile } from './src/content';
@@ -7,11 +8,13 @@ import { renderCatalog, type CatalogEntry } from './src/catalog-ui';
 import catalogData from './src/genchase-data.json';
 import { gamePages, renderGamePage } from './src/game-pages';
 import { contentPages, renderContentPage, pageHead, origin } from './src/content-pages';
+import { appearanceBootstrap } from './src/appearance-shared';
 
 const entries = catalogData.entries as CatalogEntry[];
 const editorialPages = contentPages();
 const xml = (value: string) => value.replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&apos;'}[c]!));
-const input = {home:fileURLToPath(new URL('./index.html',import.meta.url)),genchase:fileURLToPath(new URL('./genchase/index.html',import.meta.url)),editorial:fileURLToPath(new URL('./editorial/index.html',import.meta.url)),...Object.fromEntries(gamePages.map(g=>[g.id,fileURLToPath(new URL(`./${g.htmlFile}`,import.meta.url))]))};
+const input = {home:fileURLToPath(new URL('./index.html',import.meta.url)),genchase:fileURLToPath(new URL('./genchase/index.html',import.meta.url)),editorial:fileURLToPath(new URL('./editorial/index.html',import.meta.url)),appearance:fileURLToPath(new URL('./appearance/index.html',import.meta.url)),...Object.fromEntries(gamePages.map(g=>[g.id,fileURLToPath(new URL(`./${g.htmlFile}`,import.meta.url))]))};
+let atlasAppearanceHead = '';
 
 export default defineConfig({
   appType: 'mpa',
@@ -34,6 +37,7 @@ export default defineConfig({
     transformIndexHtml: {
       order: 'pre',
       handler(html) {
+        html = html.replace('<head>', '<head>' + appearanceBootstrap);
         if(html.includes('<!--editorial-head-->'))return html;
         const game=gamePages.find(g=>html.includes(`data-game="${g.id}"`));
         if(game){
@@ -53,6 +57,10 @@ export default defineConfig({
       },
     },
     generateBundle(_,bundle) {
+      const appearance = bundle['appearance/index.html'];
+      if (!appearance || appearance.type !== 'asset') throw new Error('Missing appearance entry');
+      atlasAppearanceHead = String(appearance.source).match(/<head>([\s\S]*?)<\/head>/)![1].replace(/<meta[^>]*>/g, '');
+      delete bundle['appearance/index.html'];
       const template=bundle['editorial/index.html'];
       if(!template || template.type!=='asset')throw new Error('Missing editorial page template');
       const source=String(template.source);
@@ -63,6 +71,22 @@ export default defineConfig({
       this.emitFile({type:'asset',fileName:'sitemap-site.xml',source:sitemap});
       const fibersSitemap=existsSync(fileURLToPath(new URL('./public/fibers/sitemap.xml',import.meta.url))) ? `<sitemap><loc>${origin}/fibers/sitemap.xml</loc></sitemap>`:'';
       this.emitFile({type:'asset',fileName:'sitemap.xml',source:`<?xml version="1.0" encoding="UTF-8"?><sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><sitemap><loc>${origin}/sitemap-site.xml</loc></sitemap>${fibersSitemap}</sitemapindex>`});
+    },
+    writeBundle(options) {
+      // Apply the shared control to every atlas reading page without editing its source export.
+      const fibers = resolve(options.dir ?? 'dist', 'fibers');
+      if (!existsSync(fibers)) return;
+      const visit = (directory: string) => {
+        for (const entry of readdirSync(directory, {withFileTypes:true})) {
+          const path = join(directory, entry.name);
+          if (entry.isDirectory()) visit(path);
+          else if (entry.name.endsWith('.html')) {
+            const html = readFileSync(path, 'utf8');
+            writeFileSync(path, html.replace('<head>', '<head>' + appearanceBootstrap).replace('</head>', atlasAppearanceHead.replace(appearanceBootstrap, '') + '</head>'));
+          }
+        }
+      };
+      visit(fibers);
     },
   }],
 });

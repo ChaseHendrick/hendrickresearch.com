@@ -75,3 +75,13 @@ Official setup references: [Vite on Vercel](https://vercel.com/docs/frameworks/f
 Project destinations, manuscript titles, DOI records, PDFs, and the researcher’s ORCID were checked against the current public `ChaseHendrick` repositories on September 30, 2026. The papers are preprints and are labeled as not yet peer reviewed. No private drafts or personal exports are included.
 
 The verified project records and original logo remain the authority for portfolio content and identity. This repository does not contain a browser-based upload administrator; publish updates through the content files and GitHub.
+
+## Appearance and play
+
+The Appearance control offers Light, Dark, and System settings. A saved preference applies across the portfolio, GENChase, every technique page, and the full Fibers of Earth atlas. The early theme bootstrap avoids a flash of the other theme.
+
+All four play pages offer Dim surroundings and Full screen. Dim mode keeps the existing game frame alive, supports background-click, Escape, and explicit button exits, and restores keyboard focus on exit. Entering or leaving either view preserves the running game.
+
+Game saves stay on this origin in the same browser. Fin’s offers Continue and multiple save slots; Haywire restores its expedition automatically. TinyLaps saves its current circuit, race, car damage, terrain edits, scenery, barriers, camera, and controls every 2.5 seconds and on page exit. After the Sirens offers Continue saved run; its frozen hosted build saves every five seconds and on page exit. Those two hosting save hooks do not change the separate survival-game development checkout.
+
+Verified in isolated Chrome: theme persistence and device-theme changes, cross-tab settings, mobile layouts at 320 and 390 pixels, all dim/fullscreen exit paths, zero game-frame reloads during view changes, and close/reopen save restoration in all four games. TinyLaps also checks snapshot round trips, malformed saves, and unavailable storage alongside its physics, models, terrain, and scenery tests.

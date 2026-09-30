@@ -3,6 +3,7 @@ import '@fontsource/dm-sans/latin-500.css';
 import '@fontsource/instrument-serif/latin-400.css';
 import '@fontsource/instrument-serif/latin-400-italic.css';
 import './style.css';
+import './appearance';
 import './catalog.css';
 import catalogData from './genchase-data.json';
 import { renderCatalog, catalogPreview, defaultPreset, presetLabel, type CatalogEntry } from './catalog-ui';
