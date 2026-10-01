@@ -1,7 +1,7 @@
 {
   "name": "Hendrick Research",
   "short_name": "Hendrick",
-  "description": "Independent research studio for browser simulations, generative art, textile materials, and computer-assisted science.",
+  "description": "Research and software from Hendrick Research, including browser simulations and computer-assisted proofs.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#f7f5ef",
