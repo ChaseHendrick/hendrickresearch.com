@@ -1,0 +1,14 @@
+{
+  "name": "Hendrick Research",
+  "short_name": "Hendrick",
+  "description": "Independent research studio for browser simulations, generative art, textile materials, and computer-assisted science.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f7f5ef",
+  "theme_color": "#f7f5ef",
+  "icons": [
+    {"src": "/android-chrome-192.png", "sizes": "192x192", "type": "image/png"},
+    {"src": "/android-chrome-512.png", "sizes": "512x512", "type": "image/png"},
+    {"src": "/apple-touch-icon.png", "sizes": "180x180", "type": "image/png"}
+  ]
+}
