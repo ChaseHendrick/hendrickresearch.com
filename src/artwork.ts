@@ -1,7 +1,7 @@
 const shell = (body: string, bg: string) => `<svg viewBox="0 0 640 390" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><rect width="640" height="390" fill="${bg}"/>${body}</svg>`;
 let artworkSequence = 0;
 
-const gameCaptures: Record<string,string> = {siegeworks:'Workers and a siege tower approach the walled fortress at Masada',tinylaps:'Dense streets, traffic and miniature buildings in TinyLaps',fins:'An illustrated Fins aquarium with coral, textured aquatic plants, and fish',haywire:'A detailed miniature hay field with a windmill and farm scenery',sirens:'After the Sirens gameplay: a top-down survivor among houses, roads, cars, and undead in Morrow'};
+const gameCaptures: Record<string,string> = {siegeworks:'Workers and a siege tower approach the walled fortress at Masada',tinylaps:'Dense streets, traffic and miniature buildings in TinyLaps',fins:'An illustrated Fins aquarium with coral, textured aquatic plants, and fish',haywire:'A detailed miniature hay field with a windmill and farm scenery',sirens:'Quiet woods and a cabin edge in After the Sirens, with no interface overlay',fibers:'Fibers of Earth atlas: a globe journey map for Merino wool from grower to mill'};
 export function artwork(kind: string): string {
   const captureName = ({tinylaps:'tinylaps-streets',fins:'fins-aquarium-v2'} as Record<string,string>)[kind] ?? kind;
   if (gameCaptures[kind]) return `<img class="game-capture" src="/game-previews/${captureName}-1600.webp" srcset="/game-previews/${captureName}-800.webp 800w, /game-previews/${captureName}-1600.webp 1600w" sizes="(max-width:650px) 92vw, (max-width:950px) 45vw, 520px" width="1600" height="1000" loading="lazy" decoding="async" alt="${gameCaptures[kind]}"/>`;
