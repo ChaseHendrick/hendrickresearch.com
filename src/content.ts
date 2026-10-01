@@ -23,7 +23,7 @@ export const projects: Project[] = [
   {
     id: 'genchase', name: 'GENChase', category: 'Research', eyebrow: 'A studio for scientific exploration',
     description: 'A private research workspace. A public guide to its methods and experiments.',
-    detail: 'GENChase is my private research and development workspace. Its public catalog maps the techniques, studio tabs, and implementation families without publishing the research code. Explore the collection by topic and see how the different studies connect.',
+    detail: 'GENChase is a private research and development workspace. Its public catalog maps the techniques, studio tabs, and implementation families without publishing the research code. Explore the collection by topic and see how the different studies connect.',
     tags: ['Scientific computing', 'Generative art'],
     source: '',
     launch: '/genchase/', launchLabel: 'Explore the techniques', privateWorkspace: true,
@@ -42,7 +42,7 @@ export const projects: Project[] = [
     launch: 'https://chasehendrick.github.io/SaveDesk/', launchLabel: 'Explore the site',
   },
   {
-    id: 'fins', name: 'Fin’s', category: 'Play', eyebrow: 'Small worlds, living systems',
+    id: 'fins', name: 'Fin\u2019s', category: 'Play', eyebrow: 'Small worlds, living systems',
     description: 'An aquarium shop simulation with a neighborhood that keeps changing.',
     detail: 'An aquarium shop simulation whose fish, customers, and neighborhood keep changing while you are away. A playful experiment in building a persistent little world with AI-assisted coding.',
     tags: ['Simulation game', 'Living worlds'], source: 'https://github.com/ChaseHendrick/Fins',
