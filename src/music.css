@@ -98,6 +98,11 @@
 .orograph-downloads{font-size:11px;line-height:1.9;color:var(--muted)}
 .orograph-downloads a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--line-strong,var(--line));text-underline-offset:3px}
 .orograph-downloads a:hover{color:var(--copper)}
-.orograph-section .music-requirements{margin-top:30px}
+.orograph-section .music-requirements{margin-top:30px;max-width:880px}
+.orograph-downloads a{white-space:nowrap}
+.music-new{display:inline-flex;align-items:center;gap:10px;margin-bottom:28px;padding:6px 14px 6px 6px;border:1px solid var(--line-strong,var(--line));border-radius:30px;font-size:11px;line-height:1.4;color:var(--ink);transition:background .2s,border-color .2s}
+.music-new:hover{background:var(--soft,#e9ecdf);color:var(--ink)}
+.music-new>span{font-size:8px;font-weight:500;letter-spacing:1.4px;text-transform:uppercase;color:var(--paper);background:var(--copper);padding:4px 8px;border-radius:20px}
+.music-new svg{width:13px;height:13px;transform:rotate(90deg)}
 @media(max-width:850px){.orograph-intro{grid-template-columns:1fr;gap:22px}.orograph-intro>p:first-child{grid-row:auto}}
-@media(max-width:650px){.orograph-section{padding-block:38px}.orograph-figure{padding:6px 6px 0;margin-top:24px}.orograph-figure figcaption{font-size:7px;padding:11px 3px;flex-direction:column;gap:4px}.orograph-intro>p:first-child{font-size:20px}}
+@media(max-width:650px){.music-new{font-size:10px;margin-bottom:22px;gap:8px}.orograph-hero{aspect-ratio:4/3;object-position:50% 52%}.orograph-section{padding-block:38px}.orograph-figure{padding:6px 6px 0;margin-top:24px}.orograph-figure figcaption{font-size:7px;padding:11px 3px;flex-direction:column;gap:4px}.orograph-intro>p:first-child{font-size:20px}}
