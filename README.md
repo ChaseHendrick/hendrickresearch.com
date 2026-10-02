@@ -2,7 +2,7 @@
 
 A personal home for Chase Hendrick’s research and AI-assisted software, built for [www.hendrickresearch.com](https://www.hendrickresearch.com).
 
-Warm ivory, copper, editorial typography, the original HR logo, and a numerically integrated Lorenz attractor. The portfolio presents nine projects and eight publicly archived research preprints. GENChase has a public descriptive catalog for its private research workspace; other projects link to available source code and live experiences. Papers link to PDFs and DOI records.
+Warm ivory, copper, editorial typography, the original HR logo, and a numerically integrated Lorenz attractor. The portfolio presents ten projects and eight publicly archived research preprints. GENChase has a public descriptive catalog for its private research workspace; other projects link to available source code and live experiences. Papers link to PDFs and DOI records.
 
 ## Run locally
 
@@ -58,7 +58,7 @@ To refresh the download, copy a verified `MPC-Studio-macOS.zip` from the [canoni
 
 ## Browser games and the textile atlas
 
-Five games run directly from `/play/fins/`, `/play/tinylaps/`, `/play/haywire/`, `/play/sirens/`, and `/play/siegeworks/`. Their completed browser builds live in `public/games/`, with each project's original license and dependency notices. No desktop installer is required. The wrappers provide controls, full screen, and a separate-tab option. After the Sirens requires a keyboard and mouse. Saved game progress stays in the visitor's browser.
+Six games and simulations run directly from `/play/cross-sections/`, `/play/fins/`, `/play/tinylaps/`, `/play/haywire/`, `/play/sirens/`, and `/play/siegeworks/`. Their completed browser builds live in `public/games/`, with each project's original license and dependency notices. No desktop installer is required. The wrappers provide controls, full screen, and a separate-tab option. After the Sirens requires a keyboard and mouse. Saved game progress stays in the visitor's browser. Cross-Sections keeps no saved state; its view lives in the address hash.
 
 TinyLaps includes 15 distinct circuits, corrected terrain depth rendering, a circuit chooser, compact mobile controls, complete world restoration on restart, 36 residents in circuit villages and 108 in each city, with family routines and reactions to god powers, and a visible grab control for cars, adult pedestrians, buildings, trees, and landmarks. Throws cause collision and landing damage; adult ragdolls recover. Children remain uninjured town life. Moved scenery and residents are included in persistent browser saves. Haywire's island is enlarged to contain the barn and its roof.
 

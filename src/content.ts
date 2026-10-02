@@ -22,6 +22,14 @@ export const projects: Project[] = [
   },
 
   {
+    id: 'cross-sections', name: 'Cross-Sections', category: 'Play', eyebrow: 'Living cutaways',
+    description: 'Twelve great buildings and machines sliced open, with everyone inside going about their day.',
+    detail: 'An ocean liner, a castle, a man-of-war, a steam express, a coal mine, a cathedral, a rock lighthouse, a jumbo jet, a space station, a submarine, a car factory, and an opera house, drawn in ink and watercolor in true 3D. Slice them wherever you like, follow anyone through their routine, and watch the lamps come on at night. Each subject is built from a research dossier, and fact cards cite their sources.',
+    tags: ['History', 'Engineering', 'Simulation'], source: 'https://github.com/ChaseHendrick/cross-section',
+    launch: '/play/cross-sections/', launchLabel: 'Explore the cutaways',
+  },
+
+  {
     id: 'siegeworks', name: 'Siegeworks', category: 'Play', eyebrow: 'History in miniature',
     description: 'Six living siege worlds, from Roman ramps and defenses to causeways and cannon.',
     detail: 'Watch workers haul supplies, build siege works, and prepare an approach in Masada, Alesia, Jerusalem, Tyre, Constantinople, and Candia. Pick up and toss workers and soldiers, inspect their jobs, or follow the engines. These original procedural miniatures include historical sources and clearly stated reconstruction limits.',

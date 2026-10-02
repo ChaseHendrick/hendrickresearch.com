@@ -1,4 +1,4 @@
-export type GameId = 'fins' | 'tinylaps' | 'sirens' | 'haywire' | 'siegeworks';
+export type GameId = 'fins' | 'tinylaps' | 'sirens' | 'haywire' | 'siegeworks' | 'cross-sections';
 export type GamePage = {
   id: GameId;
   title: string;
@@ -14,9 +14,19 @@ export type GamePage = {
   notices: string;
   seoTitle?: string;
   image?: string;
+  /** Replaces the default note about saved progress, for games that keep none. */
+  browserNote?: string;
 };
 
 export const gamePages: GamePage[] = [
+  {
+    id: 'cross-sections', title: 'Cross-Sections', seoTitle: 'Cross-Sections: Living 3D Cutaways of Ships, Castles & Machines', image: '/game-previews/cross-sections-1600.webp', eyebrow: 'LIVING CUTAWAYS / HOW THINGS WORKED',
+    description: 'Twelve great buildings and machines sliced open, from an ocean liner and a castle to a coal mine, a cathedral, a jumbo jet, and a space station. Everyone inside keeps working through the day and night.',
+    controls: ['Choose a subject from the contents page. Drag to look around, scroll or pinch to zoom, and right-drag or Shift-drag to turn the view.', 'Press S for the slice tool. Click anywhere along the subject to cut it, drag a cut to move it, and press O to pull the slices apart.', 'Click a person to follow them through their day, or press W for the People list. Esc lets them go.', 'Drag the clock, or press N for night and D for day. R steps through rain, storm, fog, and snow. M turns on the synthesized soundscape.', 'Click a framed caption for its fact card and source. T starts a guided tour. A drifts through every subject on its own.'],
+    input: 'Mouse, touch, or keyboard', route: '/play/cross-sections/', htmlFile: 'play/cross-sections/index.html', assetPath: '/games/cross-sections/index.html',
+    source: 'https://github.com/ChaseHendrick/cross-section', notices: '/games/cross-sections/LICENSE.txt',
+    browserNote: 'Nothing to install. Runs offline once loaded.',
+  },
   {
     id: 'siegeworks', title: 'Siegeworks', seoTitle: 'Historical Siege Simulator: Roman Sieges & More | Siegeworks', image: '/sieges/previews/masada.png', eyebrow: 'HISTORICAL SIEGES / LIVING MINIATURES',
     description: 'Explore six playable historical sieges: Masada, Alesia, Jerusalem, Tyre, Constantinople, and Candia. Watch workers build, soldiers patrol, and physical siege engines fire.',
@@ -63,10 +73,11 @@ const expand = '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d=
 export function renderGamePage(game: GamePage): string {
   return `<a class="skip-link" href="#play-main">Skip to game</a>
     <header class="play-header wrap"><a class="play-brand" href="/" aria-label="Hendrick Research home"><picture><source srcset="/logo.webp" type="image/webp" /><img src="/logo.png" width="1536" height="1024" alt="Hendrick Research" decoding="async" /></picture></a><nav class="play-nav" aria-label="Main navigation"><a href="/">Home</a><a href="/games/" aria-current="page">Games</a><a href="/music/">Music</a><a href="/genchase/">GENChase</a></nav></header>
-    <main id="play-main" class="wrap"><section class="play-intro" aria-labelledby="play-title"><div><p class="eyebrow">${escapeHTML(game.eyebrow)}</p><h1 id="play-title">${escapeHTML(game.title)}</h1><p class="play-description">${escapeHTML(game.description)}</p><a class="play-jump" href="#game-stage">Play now <span aria-hidden="true">↓</span></a></div><div class="play-intro-note"><span>PLAY IN YOUR BROWSER</span><p>${escapeHTML(game.input)}<br />Progress stays in this browser.</p></div></section>
+    <main id="play-main" class="wrap"><section class="play-intro" aria-labelledby="play-title"><div><p class="eyebrow">${escapeHTML(game.eyebrow)}</p><h1 id="play-title">${escapeHTML(game.title)}</h1><p class="play-description">${escapeHTML(game.description)}</p><a class="play-jump" href="#game-stage">Play now <span aria-hidden="true">↓</span></a></div><div class="play-intro-note"><span>PLAY IN YOUR BROWSER</span><p>${escapeHTML(game.input)}<br />${escapeHTML(game.browserNote ?? 'Progress stays in this browser.')}</p></div></section>
       <section class="play-stage-section" aria-label="${escapeHTML(`${game.title} playable game`)}"><div class="play-toolbar"><p id="game-load-status" role="status" aria-live="polite">Loading ${escapeHTML(game.title)}…</p><div><button type="button" id="game-dim" aria-pressed="false">Dim surroundings</button><button type="button" id="game-fullscreen">Full screen ${expand}</button><a href="${escapeHTML(game.assetPath)}" target="_blank" rel="noopener">Open in a new tab ${diagonal}</a></div></div><div class="play-stage" id="game-stage"><div class="play-view-bar" id="game-view-bar" hidden><span id="game-dim-hint">Click outside or press Esc to return</span><div><button type="button" id="game-view-fullscreen">Full screen</button><button type="button" id="game-exit-fullscreen" hidden>Exit full screen</button><button type="button" id="game-exit-dim" hidden>Exit dim mode <span aria-hidden="true">×</span></button></div></div><iframe id="game-frame" src="${escapeHTML(game.assetPath)}" title="${escapeHTML(`${game.title}, playable browser game`)}" allow="fullscreen; autoplay; gamepad${game.id === 'sirens' ? '; microphone' : ''}" allowfullscreen></iframe></div><p id="game-load-help" class="play-load-help" hidden>The game is taking a little longer to load. You can open it in a new tab above or <button type="button" id="game-reload">reload the game</button>.</p>${game.keyboardRequired ? '<p class="play-device-note">Designed for keyboard and mouse. Touch play is not supported in this game.</p>' : ''}</section>
       <section class="play-guide" aria-labelledby="play-guide-title"><h2 id="play-guide-title">A few starting points.</h2><ol>${game.controls.map(control => `<li>${escapeHTML(control)}</li>`).join('')}</ol><p>Click inside the game to give it keyboard focus. Choose Dim surroundings to focus on the game. Click outside or press Escape to return. Full screen gives the world more room.</p></section>
 ${game.id==='sirens' ? '<section class="play-guide"><h2>Surviving after the sirens.</h2><p>Explore the world, learn the controls, and read about crafting, persistent saves, and hosting a multiplayer world.</p><a class="play-jump" href="/after-the-sirens/">Read the After the Sirens game guide ↗</a></section>' : ''}
+${game.id==='cross-sections' ? '<section class="play-guide"><h2>Inspired by the cutaway books.</h2><p>Cross-Sections is an original tribute to the cross-section picture books of the 1990s. Each subject is drawn from museum, archive, and reference research. The scenes simplify: rooms are fewer, crowds are smaller, and machines are schematic. Named characters are fictional. Fact cards cite the sources they were checked against.</p><a class="play-jump" href="https://github.com/ChaseHendrick/cross-section/tree/main/docs/research" target="_blank" rel="noopener noreferrer">Read the research dossiers ↗</a></section>' : ''}
 ${game.id==='siegeworks' ? '<section class="play-guide"><h2>The stories behind the works.</h2><p>Read the historical context, engineering focus, sources, and model assumptions for each of the six playable scenes.</p><a class="play-jump" href="/sieges/">Explore the historical siege field guides ↗</a></section>' : ''}
     </main><footer class="play-footer wrap"><a href="/#projects">Explore the other projects</a><div><a href="${escapeHTML(game.source)}" target="_blank" rel="noopener noreferrer">Game source ${diagonal}</a><a href="${escapeHTML(game.notices)}" target="_blank" rel="noopener">License and notices ${diagonal}</a></div></footer>`;
 }
