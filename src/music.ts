@@ -13,7 +13,7 @@ export const musicPage = {
     name: 'Orograph',
     applicationCategory: 'MultimediaApplication',
     operatingSystem: 'Web browser, macOS, Windows, Linux',
-    softwareVersion: '1.1.2',
+    softwareVersion: '1.2.0',
     url: 'https://www.hendrickresearch.com/music/orograph/',
     downloadUrl: 'https://github.com/ChaseHendrick/synth/releases/latest',
     codeRepository: 'https://github.com/ChaseHendrick/synth',
@@ -120,7 +120,7 @@ export function renderMusic(): string {
           <div class="music-features">
             <article><span class="music-feature-number">01</span><h3>Place the dot anywhere.</h3><p>Click or drag on the map to move the orbit's centre. Pin it, roll it like a marble under real physics, let it drift, send it exploring, or lock a position to each sequencer step so the sound travels with the song.</p></article>
             <article><span class="music-feature-number">02</span><h3>Twist the land and the path.</h3><p>Thirteen terrains and twelve orbit shapes, with morph, warp, fold, hard sync and phase distortion. The main sound knobs each have their own LFO and envelope depth. Import an image or a wavetable to play your own ground.</p></article>
-            <article><span class="music-feature-number">03</span><h3>Make music with it.</h3><p>Four parts, a step sequencer, arpeggiator, effects, recording and more than fifty presets and seven demo songs. Connect an Akai MPC XL over USB-C in Settings to play it from the pads, map the Q-Links and share a tempo. Version 1.1 adds guitar pedals: send a part through your pedalboard and back, play it from your guitar, or capture a held note as a new terrain.</p></article>
+            <article><span class="music-feature-number">03</span><h3>Make music with it.</h3><p>Four parts, a step sequencer, arpeggiator, effects, recording and more than fifty presets and seven demo songs. Connect an Akai MPC XL over USB-C in Settings to play it from the pads, map the Q-Links and share a tempo. Version 1.1 adds guitar pedals: send a part through your pedalboard and back, play it from your guitar, or capture a held note as a new terrain. Version 1.2 adds a looper with overdub, and Resample, which turns a loop into a new terrain to play again.</p></article>
           </div>
           <p class="music-requirements">Browser: current Chrome or Edge for MIDI; sound works in any modern browser. Desktop: macOS, Windows 10 or 11, Linux. Early release without a paid Apple or Microsoft signing certificate, so your computer asks you to confirm the first launch. On a Mac, use System Settings → Privacy &amp; Security → Open Anyway.<br />An independent, clean-room project. Not affiliated with Conductive Labs; Terrain Synth is their trademark. MIT licensed.</p>
         </div>
