@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Orograph: a 3D wave terrain synthesizer in your browser</title>
+  <meta name="description" content="Place a glowing dot on a 3D landscape and play the shape of the land under its orbit. Free in your browser, with desktop apps for Mac, Windows and Linux.">
+  <meta name="theme-color" content="#070a12" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f4eee2" media="(prefers-color-scheme: light)">
+  <meta name="color-scheme" content="dark light">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="apple-touch-icon" href="./apple-touch-icon.png">
+  <script>
+    // Resolve the theme before first paint so the page never flashes the wrong colours.
+    (function () {
+      var pref = 'system';
+      // Follows the hosting site's Appearance setting until the player picks a theme in Orograph.
+      try { pref = localStorage.getItem('orograph.theme') || localStorage.getItem('hendrick-appearance') || 'system'; } catch (e) { /* storage blocked */ }
+      if (pref !== 'dark' && pref !== 'light') pref = 'system';
+      var dark = true;
+      try { dark = window.matchMedia('(prefers-color-scheme: dark)').matches; } catch (e) { /* old browser */ }
+      var theme = pref === 'system' ? (dark ? 'dark' : 'light') : pref;
+      var root = document.documentElement;
+      root.dataset.theme = theme;
+      root.dataset.themePref = pref;
+      root.style.colorScheme = theme;
+      root.style.background = theme === 'light' ? '#efe7d8' : '#070a12';
+    })();
+  </script>
+  <script type="module" crossorigin src="./assets/index-C-5ZbKa0.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-dVGIxHv3.css">
+  <!-- Added by hendrickresearch.com scripts/sync-orograph.mjs from Orograph 0.1.0, ChaseHendrick/synth 8407235 with uncommitted changes -->
+  <link rel="canonical" href="https://www.hendrickresearch.com/music/orograph/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Hendrick Research">
+  <meta property="og:title" content="Orograph: a 3D wave terrain synthesizer in your browser">
+  <meta property="og:description" content="Place a glowing dot on a 3D landscape and play the shape of the land under its orbit. Free in your browser, with desktop apps for Mac, Windows and Linux.">
+  <meta property="og:url" content="https://www.hendrickresearch.com/music/orograph/">
+  <meta property="og:image" content="https://www.hendrickresearch.com/music/orograph-social.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Orograph, a synthesizer you can walk across: a rendered ivory landscape with copper contour lines and an orbit looping past a glowing dot">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Orograph: a 3D wave terrain synthesizer in your browser">
+  <meta name="twitter:description" content="Place a glowing dot on a 3D landscape and play the shape of the land under its orbit. Free in your browser, with desktop apps for Mac, Windows and Linux.">
+  <meta name="twitter:image" content="https://www.hendrickresearch.com/music/orograph-social.jpg">
+  <meta name="twitter:image:alt" content="Orograph, a synthesizer you can walk across: a rendered ivory landscape with copper contour lines and an orbit looping past a glowing dot">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Orograph","url":"https://www.hendrickresearch.com/music/orograph/","description":"Place a glowing dot on a 3D landscape and play the shape of the land under its orbit. Free in your browser, with desktop apps for Mac, Windows and Linux.","applicationCategory":"MultimediaApplication","operatingSystem":"Web browser","browserRequirements":"A modern browser with Web Audio and WebGL. Current Chrome or Edge for MIDI devices.","image":"https://www.hendrickresearch.com/music/orograph-social.jpg","codeRepository":"https://github.com/ChaseHendrick/synth","license":"https://opensource.org/licenses/MIT","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"author":{"@type":"Person","name":"Chase Hendrick"}}</script>
+</head>
+<body>
+  <div id="app" class="app">
+    <header class="topbar" data-region="topbar"></header>
+    <main class="stage" data-region="stage" aria-label="3D map">
+      <div class="viewport" data-viewport></div>
+    </main>
+    <nav class="mobile-tabs" data-region="mtabs"></nav>
+    <aside class="mappanel" data-region="map"></aside>
+    <section class="dock" data-region="dock"></section>
+    <section class="keys" data-region="keys"></section>
+  </div>
+  <noscript>
+    <div class="noscript" style="position:fixed;inset:0;display:grid;place-items:center;padding:24px;text-align:center;font:16px/1.5 system-ui,sans-serif">
+      Orograph is an instrument that runs in your browser, so it needs JavaScript. Please turn JavaScript on and reload the page.
+    </div>
+  </noscript>
+</body>
+</html>

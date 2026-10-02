@@ -3,11 +3,25 @@ import { profile } from './content';
 
 export const musicPage = {
   route: '/music/',
-  title: 'MPC Studio: Ambient Music for Mac & Windows | Hendrick Research',
-  description: 'Make ambient soundscapes for Akai MPC XL with a native Mac app or Windows browser studio. Offline MIDI creation, optional AI models and USB-C MIDI playback.',
-  image: '/music/mpc-studio.png',
-  imageAlt: 'MPC Studio native Mac app with an ambient arrangement and USB MIDI controls',
+  title: 'Orograph & MPC Studio: Music Software | Hendrick Research',
+  description: 'Play Orograph, a 3D wave terrain synthesizer, in your browser or on the desktop, and make ambient soundscapes for Akai MPC XL with MPC Studio.',
+  image: '/music/orograph-social.jpg',
+  imageAlt: 'Orograph, a synthesizer you can walk across: a rendered ivory landscape with copper contour lines and an orbit looping past a glowing dot',
+  sitemapImages: ['/music/orograph-hero-light.jpg', '/music/orograph-hero-dark.jpg', '/music/mpc-studio.png'],
   schema: { '@graph': [{
+    '@type': ['SoftwareApplication', 'WebApplication'],
+    name: 'Orograph',
+    applicationCategory: 'MultimediaApplication',
+    operatingSystem: 'Web browser, macOS, Windows, Linux',
+    softwareVersion: '0.1.0',
+    url: 'https://www.hendrickresearch.com/music/orograph/',
+    downloadUrl: 'https://github.com/ChaseHendrick/synth/releases/latest',
+    codeRepository: 'https://github.com/ChaseHendrick/synth',
+    image: 'https://www.hendrickresearch.com/music/orograph-social.jpg',
+    license: 'https://opensource.org/licenses/MIT',
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+    author: { '@type': 'Person', name: 'Chase Hendrick' },
+  }, {
     '@type': 'SoftwareApplication',
     name: 'MPC Studio',
     applicationCategory: 'MultimediaApplication',
@@ -32,6 +46,18 @@ export const musicPage = {
 };
 
 const source = 'https://github.com/ChaseHendrick/music-field-manual/tree/main/native/MPCStudio';
+const orographSource = 'https://github.com/ChaseHendrick/synth';
+const orographRelease = 'https://github.com/ChaseHendrick/synth/releases/latest';
+const orographDownload = (file: string) => `${orographRelease}/download/${file}`;
+// Release asset names come from the synth repository's package.json (build.*.artifactName) and its release workflow.
+export const orographFiles = [
+  ['Orograph-mac-arm64.dmg', 'Mac (Apple Silicon)'],
+  ['Orograph-mac-x64.dmg', 'Mac (Intel)'],
+  ['Orograph-windows-setup.exe', 'Windows installer'],
+  ['Orograph-windows-portable.exe', 'Windows portable'],
+  ['Orograph-linux-x86_64.AppImage', 'Linux AppImage'],
+  ['Orograph.html', 'Offline, one file'],
+] as const;
 export const promptIdeas = [
   { label: 'After midnight', text: 'A slow, hazy soundscape in D minor. Warm chords, glassy notes, a quiet pulse, and lots of air.' },
   { label: 'Space for guitar', text: 'Evolving ambient chords with a gentle melody. Keep it spacious and leave room for my Jackson Soloist.' },
@@ -50,6 +76,7 @@ export function renderMusic(): string {
     <main id="main" class="music-main">
       <section class="music-hero wrap" aria-labelledby="music-title">
         <div class="music-hero-copy">
+          <a class="music-new" href="#orograph"><span>New</span>Orograph, a synthesizer you can walk across ${next}</a>
           <p class="eyebrow"><span class="tiny-line"></span> HENDRICK RESEARCH / MUSIC</p>
           <h1 id="music-title">Room for<br /><em>something new.</em></h1>
           <p class="music-lead">A thought. A few notes. A soundscape that keeps unfolding.</p>
@@ -77,9 +104,31 @@ export function renderMusic(): string {
         </figure>
       </section>
 
+      <section class="orograph-section" id="orograph" aria-labelledby="orograph-title">
+        <div class="wrap">
+          <div class="music-section-heading"><div><p class="eyebrow">NEW / OROGRAPH</p><h2 id="orograph-title">A synthesizer<br /><em>you can walk across.</em></h2></div><p>Place the dot. Shape the land. <br />Listen to the ground.</p></div>
+          <figure class="orograph-figure">
+            <img class="orograph-hero orograph-hero-light" src="/music/orograph-hero-light.jpg" alt="A rendered Orograph landscape in warm ivory tones, with copper contour lines and an orbit looping past a glowing dot" width="1920" height="1080" loading="lazy" decoding="async" />
+            <img class="orograph-hero orograph-hero-dark" src="/music/orograph-hero-dark.jpg" alt="A rendered Orograph landscape at night: deep blue hills, pale contour lines and a glowing orange orbit looping past the dot" width="1920" height="1080" loading="lazy" decoding="async" />
+            <figcaption><span>Orograph / wave terrain synthesizer</span><span>Swell and Massif terrains, rose orbit · Rendered from Orograph's own terrain data</span></figcaption>
+          </figure>
+          <div class="orograph-intro">
+            <p>Orograph turns landscapes into sound. A closed path circles the dot you place on a 3D map, and the height of the ground under that path becomes the waveform. Move the dot and the tone changes. Grow the orbit and it gets brighter. Blend two terrains, fold the peaks, or let a marble roll downhill and play the valleys it finds.</p>
+            <div class="music-actions"><a class="button button-dark" href="/music/orograph/">Play in your browser ${next}</a><a class="button music-browser-button" href="${orographRelease}">Download the desktop app ${next}</a>${external(orographSource, 'Explore the source')}</div>
+            <p class="orograph-downloads">Direct downloads: ${orographFiles.map(([file, label]) => `<a href="${orographDownload(file)}">${label}</a>`).join(' · ')}</p>
+          </div>
+          <div class="music-features">
+            <article><span class="music-feature-number">01</span><h3>Place the dot anywhere.</h3><p>Click or drag on the map to move the orbit's centre. Pin it, roll it like a marble under real physics, let it drift, send it exploring, or lock a position to each sequencer step so the sound travels with the song.</p></article>
+            <article><span class="music-feature-number">02</span><h3>Twist the land and the path.</h3><p>Thirteen terrains and twelve orbit shapes, with morph, warp, fold, hard sync and phase distortion. The main sound knobs each have their own LFO and envelope depth. Import an image or a wavetable to play your own ground.</p></article>
+            <article><span class="music-feature-number">03</span><h3>Make music with it.</h3><p>Four parts, a step sequencer, arpeggiator, effects, recording and more than fifty presets and seven demo songs. Connect an Akai MPC XL over USB-C in Settings to play it from the pads, map the Q-Links and share a tempo.</p></article>
+          </div>
+          <p class="music-requirements">Browser: current Chrome or Edge for MIDI; sound works in any modern browser. Desktop: macOS, Windows 10 or 11, Linux. Early release without a paid Apple or Microsoft signing certificate, so your computer asks you to confirm the first launch. On a Mac, use System Settings → Privacy &amp; Security → Open Anyway.<br />An independent, clean-room project. Not affiliated with Conductive Labs; Terrain Synth is their trademark. MIT licensed.</p>
+        </div>
+      </section>
+
       <section class="music-studio-section" aria-labelledby="studio-title">
         <div class="wrap">
-          <div class="music-section-heading"><div><p class="eyebrow">01 / MPC STUDIO</p><h2 id="studio-title">An idea becomes a place<br /><em>you can play in.</em></h2></div><p>Start ambient. Follow the feeling.<br />Bring your guitar if you like.</p></div>
+          <div class="music-section-heading"><div><p class="eyebrow">01 / MPC STUDIO</p><h2 id="studio-title">An idea becomes a place<br /><em>you can play in.</em></h2></div><p>Start ambient. Follow the feeling. <br />Bring your guitar if you like.</p></div>
           <figure class="music-window"><img src="/music/mpc-studio.png" alt="MPC Studio running on macOS, with an ambient composition and USB MIDI controls" width="2480" height="1880" loading="lazy" decoding="async" /><figcaption><span>MPC Studio / native macOS app</span><span>Drums · Bass · Chords · Melody</span></figcaption></figure>
           <div class="music-features">
             <article><span class="music-feature-number">01</span><h3>Start with a single sound.</h3><p>Load a pad or instrument on your MPC. The default ambient setup sends the musical parts to one MIDI channel, so you can explore before building a full project.</p></article>
@@ -95,7 +144,7 @@ export function renderMusic(): string {
       </section>
 
       <section class="music-engines wrap" aria-labelledby="engines-title">
-        <div class="music-section-heading"><div><p class="eyebrow">03 / YOUR CHOICE OF ENGINE</p><h2 id="engines-title">Your Mac.<br /><em>Your musical direction.</em></h2></div><p>Start with the built-in engines.<br />Connect another model when you want to.</p></div>
+        <div class="music-section-heading"><div><p class="eyebrow">03 / YOUR CHOICE OF ENGINE</p><h2 id="engines-title">Your Mac.<br /><em>Your musical direction.</em></h2></div><p>Start with the built-in engines. <br />Connect another model when you want to.</p></div>
         <div class="music-engine-grid">
           <article><span class="music-engine-tag">NATIVE MAC APP</span><h3>Apple Intelligence.</h3><p>Use the language model already on your Mac to turn a feeling into a constrained musical plan. No API key is needed. Apple manages the model's compute.</p></article>
           <article><span class="music-engine-tag">MAC & WINDOWS</span><h3>A musical rule engine.</h3><p>Generate on the CPU without a model or generation service. Seeded phrases and chord movement respond to your controls. The native app also recognizes simple directions such as “sparse” or “no drums.”</p></article>
@@ -105,7 +154,7 @@ export function renderMusic(): string {
       </section>
 
       <section class="music-setup wrap" id="setup" aria-labelledby="setup-title">
-        <div class="music-section-heading"><div><p class="eyebrow">04 / YOUR FIRST SOUNDS</p><h2 id="setup-title">Mac. USB-C. MPC.</h2></div><p>A short setup on the hardware.<br />Then a little room to experiment.</p></div>
+        <div class="music-section-heading"><div><p class="eyebrow">04 / YOUR FIRST SOUNDS</p><h2 id="setup-title">Mac. USB-C. MPC.</h2></div><p>A short setup on the hardware. <br />Then a little room to experiment.</p></div>
         <ol class="music-steps">
           <li><span>01</span><div><h3>Open the app.</h3><p>Download and unzip MPC Studio on an Apple Silicon Mac with macOS 26 or later. It selects on-device AI when Apple's model is ready, or the offline engine otherwise. Check the composer picker before generating.</p><p class="music-first-launch">For AI, enable Apple Intelligence and allow its model to download. This build is locally signed and not notarized. If macOS blocks the first launch, review the app and use System Settings → Privacy & Security → Open Anyway.</p></div></li>
           <li><span>02</span><div><h3>Connect and load a sound.</h3><p>Connect the MPC XL's USB-C computer port with a data cable. Keep it in Standalone mode and load a plugin, keygroup, or drum kit. The app looks for MPC MIDI destinations automatically.</p></div></li>
