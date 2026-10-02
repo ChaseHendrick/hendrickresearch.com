@@ -75,7 +75,7 @@ export default defineConfig({
       const source=String(template.source);
       for(const page of editorialPages){this.emitFile({type:'asset',fileName:page.route.slice(1)+'index.html',source:source.replace('<!--editorial-head-->',pageHead(page)).replace('<!--editorial-body-->',renderContentPage(page))});}
       delete bundle['editorial/index.html'];
-      const routes=['/','/games/','/music/','/music/studio/','/genchase/',...gamePages.map(g=>g.route),...editorialPages.map(p=>p.route)];
+      const routes=['/','/games/','/music/','/music/studio/','/music/orograph/','/genchase/',...gamePages.map(g=>g.route),...editorialPages.map(p=>p.route)];
       const sitemap=`<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">${routes.map(route=>{const entry=entries.find(e=>route===`/genchase/${e.id}/`),page=editorialPages.find(p=>p.route===route)??(route===musicPage.route?musicPage:undefined);return `<url><loc>${origin}${route}</loc>${page?.image?`<image:image><image:loc>${xml(origin+page.image)}</image:loc></image:image>`:''}${entry?.previews?.map(p=>`<image:image><image:loc>${xml(origin+p.image)}</image:loc></image:image>`).join('')??''}</url>`;}).join('')}</urlset>`;
       this.emitFile({type:'asset',fileName:'sitemap-site.xml',source:sitemap});
       const fibersSitemap=existsSync(fileURLToPath(new URL('./public/fibers/sitemap.xml',import.meta.url))) ? `<sitemap><loc>${origin}/fibers/sitemap.xml</loc></sitemap>`:'';

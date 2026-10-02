@@ -83,3 +83,21 @@
 @media(max-width:650px){.music-engines{padding-block:38px}.music-engine-grid{grid-template-columns:1fr;gap:15px;margin-top:24px}.music-engine-grid article{padding:23px}.music-engine-grid h3{font-size:27px;margin-block:12px}.music-compute-note{grid-template-columns:1fr;gap:15px;margin-top:24px;padding-top:20px}.music-compute-note p{font-size:11px}}
 @media(max-width:850px){.music-windows-setup{flex-direction:column;align-items:start;gap:22px}.music-download-actions{align-items:start}}
 @media(max-width:650px){.music-windows-setup{margin-top:26px;padding:23px}.music-windows-setup h3{font-size:27px}.music-windows-setup p:not(.eyebrow){font-size:11px}.music-download-actions .text-link{font-size:11px}}
+
+.orograph-section{padding-block:58px 56px;border-top:1px solid var(--line)}
+.orograph-section .music-section-heading .eyebrow{color:var(--copper)}
+.orograph-figure{margin-top:31px;border:1px solid var(--line-strong,var(--line));background:var(--surface,#eeeee5);padding:14px 14px 0;box-shadow:0 20px 60px #20201a0a}
+.orograph-hero{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;display:block}
+.orograph-hero-dark{display:none}
+:root[data-theme=dark] .orograph-hero-light{display:none}
+:root[data-theme=dark] .orograph-hero-dark{display:block}
+.orograph-figure figcaption{padding:14px 4px;display:flex;justify-content:space-between;gap:20px;font-size:9px;letter-spacing:.4px;color:var(--muted)}
+.orograph-intro{display:grid;grid-template-columns:1.2fr 1fr;gap:20px 48px;align-items:start;margin-top:34px}
+.orograph-intro>p:first-child{font-family:var(--serif);font-size:23px;line-height:1.5;grid-row:span 2}
+.orograph-intro .music-actions{margin-top:0}
+.orograph-downloads{font-size:11px;line-height:1.9;color:var(--muted)}
+.orograph-downloads a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--line-strong,var(--line));text-underline-offset:3px}
+.orograph-downloads a:hover{color:var(--copper)}
+.orograph-section .music-requirements{margin-top:30px}
+@media(max-width:850px){.orograph-intro{grid-template-columns:1fr;gap:22px}.orograph-intro>p:first-child{grid-row:auto}}
+@media(max-width:650px){.orograph-section{padding-block:38px}.orograph-figure{padding:6px 6px 0;margin-top:24px}.orograph-figure figcaption{font-size:7px;padding:11px 3px;flex-direction:column;gap:4px}.orograph-intro>p:first-child{font-size:20px}}

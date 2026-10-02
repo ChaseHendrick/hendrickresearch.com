@@ -3,11 +3,24 @@ import { profile } from './content';
 
 export const musicPage = {
   route: '/music/',
-  title: 'MPC Studio: Ambient Music for Mac & Windows | Hendrick Research',
-  description: 'Make ambient soundscapes for Akai MPC XL with a native Mac app or Windows browser studio. Offline MIDI creation, optional AI models and USB-C MIDI playback.',
+  title: 'Orograph & MPC Studio: Music Software | Hendrick Research',
+  description: 'Play Orograph, a 3D wave terrain synthesizer, in your browser or on the desktop, and make ambient soundscapes for Akai MPC XL with MPC Studio.',
   image: '/music/mpc-studio.png',
   imageAlt: 'MPC Studio native Mac app with an ambient arrangement and USB MIDI controls',
   schema: { '@graph': [{
+    '@type': ['SoftwareApplication', 'WebApplication'],
+    name: 'Orograph',
+    applicationCategory: 'MultimediaApplication',
+    operatingSystem: 'Web browser, macOS, Windows, Linux',
+    softwareVersion: '0.1.0',
+    url: 'https://www.hendrickresearch.com/music/orograph/',
+    downloadUrl: 'https://github.com/ChaseHendrick/synth/releases/latest',
+    codeRepository: 'https://github.com/ChaseHendrick/synth',
+    screenshot: 'https://www.hendrickresearch.com/music/orograph-hero-light.jpg',
+    license: 'https://opensource.org/licenses/MIT',
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+    author: { '@type': 'Person', name: 'Chase Hendrick' },
+  }, {
     '@type': 'SoftwareApplication',
     name: 'MPC Studio',
     applicationCategory: 'MultimediaApplication',
@@ -32,6 +45,9 @@ export const musicPage = {
 };
 
 const source = 'https://github.com/ChaseHendrick/music-field-manual/tree/main/native/MPCStudio';
+const orographSource = 'https://github.com/ChaseHendrick/synth';
+const orographRelease = 'https://github.com/ChaseHendrick/synth/releases/latest';
+const orographDownload = (file: string) => `${orographRelease}/download/${file}`;
 export const promptIdeas = [
   { label: 'After midnight', text: 'A slow, hazy soundscape in D minor. Warm chords, glassy notes, a quiet pulse, and lots of air.' },
   { label: 'Space for guitar', text: 'Evolving ambient chords with a gentle melody. Keep it spacious and leave room for my Jackson Soloist.' },
@@ -54,7 +70,7 @@ export function renderMusic(): string {
           <h1 id="music-title">Room for<br /><em>something new.</em></h1>
           <p class="music-lead">A thought. A few notes. A soundscape that keeps unfolding.</p>
           <p class="music-description">Describe the feeling, shape a spacious ambient loop, and let your Akai MPC XL bring it to life. A native app for Mac, with a browser studio for Windows.</p>
-          <div class="music-actions"><a class="button button-dark" href="/downloads/MPC-Studio-macOS.zip" download>Download for Mac ${next}</a><a class="button music-browser-button" href="/music/studio/">Open Browser Studio ${next}</a>${external(source, 'Explore the source')}</div>
+          <div class="music-actions"><a class="button music-browser-button" href="#orograph">Meet Orograph ${next}</a><a class="button button-dark" href="/downloads/MPC-Studio-macOS.zip" download>Download for Mac ${next}</a><a class="button music-browser-button" href="/music/studio/">Open Browser Studio ${next}</a>${external(source, 'Explore the source')}</div>
           <p class="music-requirements">Mac app: version 0.1.0 · macOS 26+ · Apple Silicon<br />Windows studio: current Chrome or Edge · HTTPS · MIDI permission</p>
         </div>
         <figure class="music-atmosphere" aria-label="Abstract waves suggesting an evolving ambient soundscape">
@@ -75,6 +91,28 @@ export function renderMusic(): string {
           </svg>
           <figcaption><span>Sound, with a little space.</span><span>Made on your Mac. Played by your MPC.</span></figcaption>
         </figure>
+      </section>
+
+      <section class="orograph-section" id="orograph" aria-labelledby="orograph-title">
+        <div class="wrap">
+          <div class="music-section-heading"><div><p class="eyebrow">NEW / OROGRAPH</p><h2 id="orograph-title">A synthesizer<br /><em>you can walk across.</em></h2></div><p>Place the dot. Shape the land.<br />Listen to the ground.</p></div>
+          <figure class="orograph-figure">
+            <img class="orograph-hero orograph-hero-light" src="/music/orograph-hero-light.jpg" alt="A rendered Orograph landscape in warm ivory tones, with a copper orbit traced around a glowing dot" width="1920" height="1080" loading="lazy" decoding="async" />
+            <img class="orograph-hero orograph-hero-dark" src="/music/orograph-hero-dark.jpg" alt="A rendered Orograph landscape at night, with a glowing orange orbit traced around the dot" width="1920" height="1080" loading="lazy" decoding="async" />
+            <figcaption><span>Orograph / wave terrain synthesizer</span><span>Rendered from the synthesizer's own terrain and orbit data</span></figcaption>
+          </figure>
+          <div class="orograph-intro">
+            <p>Orograph turns landscapes into sound. A closed path circles the dot you place on a 3D map, and the height of the ground under that path becomes the waveform. Move the dot and the tone changes. Grow the orbit and it gets brighter. Blend two terrains, fold the peaks, or let a marble roll downhill and play the valleys it finds.</p>
+            <div class="music-actions"><a class="button button-dark" href="/music/orograph/">Play in your browser ${next}</a><a class="button music-browser-button" href="${orographRelease}">Download the desktop app ${next}</a>${external(orographSource, 'Explore the source')}</div>
+            <p class="orograph-downloads">Direct downloads: <a href="${orographDownload('Orograph-mac-arm64.dmg')}">Mac (Apple Silicon)</a> · <a href="${orographDownload('Orograph-mac-x64.dmg')}">Mac (Intel)</a> · <a href="${orographDownload('Orograph-windows-setup.exe')}">Windows</a> · <a href="${orographDownload('Orograph-linux-x86_64.AppImage')}">Linux</a></p>
+          </div>
+          <div class="music-features">
+            <article><span class="music-feature-number">01</span><h3>Place the dot anywhere.</h3><p>Click or drag on the map to move the orbit's centre. Pin it, roll it like a marble under real physics, let it drift, send it exploring, or lock a position to each sequencer step so the sound travels with the song.</p></article>
+            <article><span class="music-feature-number">02</span><h3>Twist the land and the path.</h3><p>Thirteen terrains and twelve orbit shapes, with morph, warp, fold, hard sync and phase distortion. Every knob has its own LFO and envelope. Import an image or a wavetable to play your own ground.</p></article>
+            <article><span class="music-feature-number">03</span><h3>Make music with it.</h3><p>Four parts, a step sequencer, arpeggiator, effects, recording and more than fifty presets and seven demo songs. Connect an Akai MPC XL over USB-C in Settings to play it from the pads, map the Q-Links and share a tempo.</p></article>
+          </div>
+          <p class="music-requirements">Browser: current Chrome or Edge for MIDI; sound works in any modern browser. Desktop: macOS, Windows 10 or 11, Linux. Early release, not code signed: macOS asks you to approve the first launch in System Settings → Privacy &amp; Security.<br />An independent, clean-room project. Not affiliated with Conductive Labs; Terrain Synth is their trademark. MIT licensed.</p>
+        </div>
       </section>
 
       <section class="music-studio-section" aria-labelledby="studio-title">
