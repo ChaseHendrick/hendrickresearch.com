@@ -13,7 +13,7 @@ export const musicPage = {
     name: 'Orograph',
     applicationCategory: 'MultimediaApplication',
     operatingSystem: 'Web browser, macOS, Windows, Linux',
-    softwareVersion: '1.1.1',
+    softwareVersion: '1.1.2',
     url: 'https://www.hendrickresearch.com/music/orograph/',
     downloadUrl: 'https://github.com/ChaseHendrick/synth/releases/latest',
     codeRepository: 'https://github.com/ChaseHendrick/synth',
