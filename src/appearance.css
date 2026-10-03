@@ -1,21 +1,21 @@
 :root{--surface:#f0f0e7;--field:#faf9f3;--soft:#e9ecdf;--line-strong:#bbc2af;--ink-hover:#434a3c;--attractor-rgb:112,75,49;--attractor-flow-rgb:106,66,40}
 html{color:var(--ink);background:var(--paper)}
-html[data-theme="dark"]{--paper:#191e19;--ink:#ecece0;--muted:#b4bfaa;--copper:#d99b74;--line:#3d493b;--surface:#252d24;--field:#202720;--soft:#303d2e;--line-strong:#67795e;--ink-hover:#d1dcc7;--white:#222a22;--green:#a8c3a7;--ochre:#d7ac72;--attractor-rgb:216,161,122;--attractor-flow-rgb:230,180,139;color-scheme:dark}
+html[data-theme="dark"]{--paper:#161514;--ink:#ecebe6;--muted:#b6b2aa;--copper:#dca07a;--line:#34322f;--surface:#1f1e1c;--field:#1b1a19;--soft:#2b2927;--line-strong:#55514b;--ink-hover:#d9d6cf;--white:#1f1e1c;--green:#b9c4b4;--ochre:#d7ac72;--attractor-rgb:216,161,122;--attractor-flow-rgb:230,180,139;color-scheme:dark}
 html[data-theme="dark"] :is(.brand,.footer-brand,.catalog-brand,.editorial-brand,.play-brand) img{filter:brightness(0) invert(.9)}
-html[data-theme="dark"] .canvas-frame{background:radial-gradient(ellipse,#9d795419,transparent 67%)}
-html[data-theme="dark"] .about-card{background:#253325;border:1px solid var(--line)}
+html[data-theme="dark"] .canvas-frame{background:radial-gradient(ellipse,#9d795414,transparent 67%)}
+html[data-theme="dark"] .about-card{background:#211f1d;border:1px solid var(--line)}
 html[data-theme="dark"] .method-feature{background:var(--surface)}
 html[data-theme="dark"] .method-feature img{background:#eeeee5}
 html[data-theme="dark"] .hendrick-return{color:var(--ink);background:var(--surface);border-color:var(--line)}
 html[data-theme="dark"] :is(.notice,.fiber-option.active,.fiber-option:hover,.legend,.node-detail,.globe-controls,.map-tools,.tag.amber,mark){background:var(--soft);color:var(--ink)}
 html[data-theme="dark"] :is(.button.primary,.skip,.chip.active){color:var(--paper)}
-html[data-theme="dark"] :is(.button.primary:hover,.chip.active:hover){background:#bfd3b8;color:var(--paper)}
+html[data-theme="dark"] :is(.button.primary:hover,.chip.active:hover){background:#d9d6cf;color:var(--paper)}
 html[data-theme="dark"] :is(.term-link:hover,a:hover){color:var(--copper)}
 /* Cartographic and scientific imagery retain their original colors. */
 html[data-theme="dark"] .map-panel{--ink:#203f32;--muted:#536252;--paper:#f7f6ef;--white:#fdfcf7;--green:#294e3c;--line:#dcded2;--soft:#e9ede2;--copper:#9a5e3c;background:#eef1e7;color:#203f32}
 html[data-theme="dark"] .map-panel :is(.map-tools,.legend,.node-detail){background:#fdfcf7;color:#203f32}
 html[data-theme="dark"] .map-panel .muted{color:#536252}
-html[data-theme="dark"].a11y-contrast{--ink:#fffef0;--muted:#dae4cf;--line:#92a387;--soft:#303d2e}
+html[data-theme="dark"].a11y-contrast{--ink:#ffffff;--muted:#dedad2;--line:#8a857c;--soft:#2b2927}
 html[data-theme="dark"].a11y-contrast body{background:var(--paper)}
 html[data-theme="dark"].a11y-contrast :is(p,small,.muted){color:var(--muted)}
 .appearance{position:fixed;right:max(20px,env(safe-area-inset-right));bottom:max(20px,env(safe-area-inset-bottom));z-index:40;font:400 12px/1.5 'DM Sans',system-ui,sans-serif;color:var(--ink);text-align:left}
