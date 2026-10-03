@@ -1,0 +1,39 @@
+name: Upstream freshness check
+
+# Daily: reports any part of the site that has fallen behind the repository it is copied from
+# (paper list and PDF links, the GENChase catalog, the Cipher Lab engine). Keeps one issue open
+# while something is stale and closes it when everything is current again.
+on:
+  schedule:
+    - cron: '41 7 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Compare with upstream repositories
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/check-upstream.mjs --out report.md | tee check.log
+      - name: Open, update or close the tracking issue
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          title="Site sources out of date"
+          number=$(gh issue list --state open --search "\"$title\" in:title" --json number --jq '.[0].number // empty')
+          if grep -q '^STALE=1' check.log; then
+            if [ -n "$number" ]; then gh issue edit "$number" --body-file report.md
+            else gh issue create --title "$title" --body-file report.md; fi
+          elif [ -n "$number" ]; then
+            gh issue close "$number" --comment "All site sources are current again."
+          fi

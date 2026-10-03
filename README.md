@@ -26,6 +26,8 @@ Edit [`src/content.ts`](src/content.ts) for projects: each has its title, catego
 
 Papers are not edited by hand. `scripts/sync-papers.mjs` reads GENChase's registry (`papers/papers.json`) before every build and daily through `.github/workflows/sync-papers.yml`, which commits `src/papers-data.json` when it changes so Vercel redeploys. A paper appears once its status is ready or later and its first archive DOI is recorded; a new release's DOI replaces the old one the same way. Site-specific topic labels and summaries live in the script's `OVERRIDES`. The visible counts update automatically.
 
+A daily check (`scripts/check-upstream.mjs`, `.github/workflows/upstream-check.yml`) compares the paper list and its PDF links, the GENChase technique catalog and the Cipher Lab engine with their source repositories, and keeps one issue titled "Site sources out of date" open while anything is behind, with the command that refreshes it.
+
 To host a new paper directly on this site:
 
 1. Put the PDF in `public/papers/your-paper.pdf`.
