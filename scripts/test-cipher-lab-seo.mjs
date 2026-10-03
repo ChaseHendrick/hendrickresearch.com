@@ -56,6 +56,9 @@ assert(tags(research, 'time').some(tag => tag.datetime === '2026-10-03') && /Oct
 assert(/A-Z|Latin|glyph/i.test(researchText), 'Explain the script support boundary alongside the notes');
 const researchReferences = tags(research, 'a').filter(tag => tag.href?.startsWith('https://'));
 assert(researchReferences.length >= 6, 'Keep primary source references crawlable with ordinary HTTPS links');
+assert(researchReferences.some(tag => tag.href === 'https://www.paradigm.xyz/writing/kryptos')
+  && /Paradigm/.test(researchText) && /June 2026/.test(researchText),
+  'The dated K4 review must include the current custodian\'s first-party 2026 update');
 const titles = [...html.matchAll(/<title>([\s\S]*?)<\/title>/gi)];
 assert.equal(titles.length, 1, 'Use one initial HTML title');
 const title = text(titles[0][1]);

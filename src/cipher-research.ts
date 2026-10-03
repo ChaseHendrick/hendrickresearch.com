@@ -19,12 +19,14 @@ const cases: readonly ResearchCase[] = [
   {
     id: 'kryptos-k4', title: 'Kryptos K4', category: 'Historical cipher',
     status: 'Archival recovery documented; public method not established here.',
-    context: 'RR Auction distinguishes the 2025 recovery of archival text from cryptanalysis. Its later sale record includes private K4 plaintext and the coding system. The primary pages checked here do not supply an independently reproducible public full solution.',
+    context: 'Archival text recovery and the 2025 sale are documented. Paradigm identified itself as custodian in June 2026 and offers a reference-answer verifier while still calling K4 unsolved. The checked sources do not publish a reproducible full method. RR Auction attributed the archive contents to Sanborn without examining them independently.',
     experiment: 'Reserve one published clue while fitting another, then test every predicted letter and the complete forward transform. A failed bounded search rules out only its stated models.',
     note: 'kryptos-k4-2026-10-03.md',
     sources: [
       { title: 'RR Auction: archive discovery, 23 October 2025', url: 'https://content.rrauction.com/kryptos-k4-discovered-not-solved-heres-what-actually-happened/' },
       { title: 'RR Auction: private archive sale, 21 November 2025', url: 'https://content.rrauction.com/jim-sanborns-complete-kryptos-archive-sells-for-962500-at-auction/' },
+      { title: 'Paradigm: current custodian update, 12 June 2026', url: 'https://www.paradigm.xyz/writing/kryptos' },
+      { title: 'RR Auction: archive lot and verification limits', url: 'https://www.rrauction.com/auctions/lot-detail/350761607302001-the-complete-secrets-of-kryptos-jim-sanborns-private-archive/' },
     ],
   },
   {
