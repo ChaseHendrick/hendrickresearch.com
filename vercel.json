@@ -69,5 +69,17 @@
         }
       ]
     }
+  ],
+  "redirects": [
+    {
+      "source": "/music/orograph",
+      "destination": "/music/oro/",
+      "permanent": true
+    },
+    {
+      "source": "/music/orograph/:path*",
+      "destination": "/music/oro/:path*",
+      "permanent": true
+    }
   ]
 }

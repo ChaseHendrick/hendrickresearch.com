@@ -60,7 +60,7 @@ for (const [name, check] of [['papers', papers], ['catalog', catalog], ['cipher 
 const report = [
   findings.length ? '## Site sources behind their upstream repositories\n\n' + findings.map(f => `- ${f}`).join('\n') : 'All site sources are current.',
   errors.length ? '\n\n## Checks that could not run\n\n' + errors.map(e => `- ${e}`).join('\n') : '',
-  '\n\nThe Orograph web app (public/music/orograph/) carries no source version, so it is not checked; refresh it with `node scripts/sync-orograph.mjs` after a synth release.',
+  '\n\nThe Oro web app (public/music/oro/) carries no source version, so it is not checked; refresh it with `node scripts/sync-orograph.mjs` after a synth release.',
 ].join('');
 const out = process.argv.indexOf('--out');
 if (out > 0) writeFileSync(process.argv[out + 1], report + '\n');

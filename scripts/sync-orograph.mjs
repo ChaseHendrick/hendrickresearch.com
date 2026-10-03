@@ -1,12 +1,12 @@
 #!/usr/bin/env node
-// Refreshes public/music/orograph/ with the Orograph web app.
+// Refreshes public/music/oro/ with the Oro web app.
 //
 //   node scripts/sync-orograph.mjs [path/to/synth]   build a synth checkout (default ../synth), then copy it
 //   node scripts/sync-orograph.mjs --dist <folder>   copy a finished web build, such as an unzipped
-//                                                    Orograph-web.zip from a synth release
+//                                                    Oro-web.zip from a synth release
 //
 // The synth checkout needs its own `npm ci` first. Nothing in the checkout is changed: the build goes to
-// a temporary folder. The copy replaces public/music/orograph/ completely, then this site's canonical,
+// a temporary folder. The copy replaces public/music/oro/ completely, then this site's canonical,
 // social and WebApplication metadata is added to its index.html.
 import { execFileSync } from 'node:child_process';
 import { cpSync, existsSync, mkdtempSync, readFileSync, readdirSync, rmSync, statSync, writeFileSync } from 'node:fs';
@@ -15,16 +15,16 @@ import { dirname, join, relative, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const site = resolve(dirname(fileURLToPath(import.meta.url)), '..');
-const target = join(site, 'public', 'music', 'orograph');
+const target = join(site, 'public', 'music', 'oro');
 const origin = 'https://www.hendrickresearch.com';
-const url = `${origin}/music/orograph/`;
+const url = `${origin}/music/oro/`;
 
 const args = process.argv.slice(2);
 const fail = message => { console.error(`sync-orograph: ${message}`); process.exit(1); };
 const run = (command, commandArgs, cwd) => execFileSync(command, commandArgs, { cwd, encoding: 'utf8', stdio: ['ignore', 'pipe', 'inherit'], shell: process.platform === 'win32' });
 
 let build;
-let provenance = 'a prebuilt Orograph web build';
+let provenance = 'a prebuilt Oro web build';
 let temporary;
 if (args[0] === '--dist') {
   if (!args[1]) fail('pass the folder that holds the built index.html after --dist');
@@ -38,7 +38,7 @@ if (args[0] === '--dist') {
     commit = run('git', ['rev-parse', '--short', 'HEAD'], synth).trim();
     if (run('git', ['status', '--porcelain', '--untracked-files=no'], synth).trim()) commit += ' with uncommitted changes';
   } catch { /* not a git checkout */ }
-  provenance = `Orograph ${version}, ChaseHendrick/synth ${commit}`;
+  provenance = `Oro ${version}, ChaseHendrick/synth ${commit}`;
   temporary = mkdtempSync(join(tmpdir(), 'orograph-web-'));
   build = temporary;
   console.log(`Building ${provenance} into ${build}`);
@@ -54,7 +54,7 @@ const walk = folder => {
     else files.push(path);
   }
 };
-if (!existsSync(join(build, 'index.html')) || !existsSync(join(build, 'assets'))) fail(`${build} does not look like an Orograph web build (index.html and assets/ are missing)`);
+if (!existsSync(join(build, 'index.html')) || !existsSync(join(build, 'assets'))) fail(`${build} does not look like an Oro web build (index.html and assets/ are missing)`);
 walk(build);
 const problems = [];
 const html = readFileSync(join(build, 'index.html'), 'utf8');
@@ -67,21 +67,21 @@ for (const path of files) {
   if (name.endsWith('.css')) for (const [found] of readFileSync(path, 'utf8').matchAll(/url\(\s*['"]?\/[^)]*\)/g)) problems.push(`${name}: ${found}`);
   if (name.endsWith('.js')) for (const [found] of readFileSync(path, 'utf8').matchAll(/["'`]\/(assets|icon|favicon|manifest)[^"'`]*["'`]/g)) problems.push(`${name}: ${found}`);
 }
-if (problems.length) fail(`the build has root-absolute paths that would break under /music/orograph/:\n  ${problems.join('\n  ')}`);
+if (problems.length) fail(`the build has root-absolute paths that would break under /music/oro/:\n  ${problems.join('\n  ')}`);
 
 rmSync(target, { recursive: true, force: true });
 cpSync(build, target, { recursive: true });
 if (temporary) rmSync(temporary, { recursive: true, force: true });
 
-const title = 'Orograph: a 3D wave terrain synthesizer in your browser';
+const title = 'Oro: a 3D wave terrain synthesizer in your browser';
 const description = 'Place a glowing dot on a 3D landscape and play the shape of the land under its orbit. Free in your browser, with desktop apps for Mac, Windows and Linux.';
-const image = `${origin}/music/orograph-social.jpg`;
-const imageAlt = 'Orograph, a synthesizer you can walk across: a rendered ivory landscape with copper contour lines and an orbit looping past a glowing dot';
+const image = `${origin}/music/oro-social.jpg`;
+const imageAlt = 'Oro, a synthesizer you can walk across: a rendered ivory landscape with copper contour lines and an orbit looping past a glowing dot';
 const escape = value => value.replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'WebApplication',
-  name: 'Orograph',
+  name: 'Oro',
   url,
   description,
   applicationCategory: 'MultimediaApplication',

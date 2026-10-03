@@ -3,21 +3,21 @@ import { profile } from './content';
 
 export const musicPage = {
   route: '/music/',
-  title: 'Orograph & MPC Studio: Music Software | Hendrick Research',
-  description: 'Play Orograph, a 3D wave terrain synthesizer, in your browser or on the desktop, and make ambient soundscapes for Akai MPC XL with MPC Studio.',
-  image: '/music/orograph-social.jpg',
-  imageAlt: 'Orograph, a synthesizer you can walk across: a rendered ivory landscape with copper contour lines and an orbit looping past a glowing dot',
-  sitemapImages: ['/music/orograph-hero-light.jpg', '/music/orograph-hero-dark.jpg', '/music/mpc-studio.png'],
+  title: 'Oro & MPC Studio: Music Software | Hendrick Research',
+  description: 'Play Oro, a 3D wave terrain synthesizer, in your browser or on the desktop, and make ambient soundscapes for Akai MPC XL with MPC Studio.',
+  image: '/music/oro-social.jpg',
+  imageAlt: 'Oro, a synthesizer you can walk across: a rendered ivory landscape with copper contour lines and an orbit looping past a glowing dot',
+  sitemapImages: ['/music/oro-hero-light.jpg', '/music/oro-hero-dark.jpg', '/music/mpc-studio.png'],
   schema: { '@graph': [{
     '@type': ['SoftwareApplication', 'WebApplication'],
-    name: 'Orograph',
+    name: 'Oro',
     applicationCategory: 'MultimediaApplication',
     operatingSystem: 'Web browser, macOS, Windows, Linux',
-    softwareVersion: '2.1.0',
-    url: 'https://www.hendrickresearch.com/music/orograph/',
+    softwareVersion: '2.3.0',
+    url: 'https://www.hendrickresearch.com/music/oro/',
     downloadUrl: 'https://github.com/ChaseHendrick/synth/releases/latest',
     codeRepository: 'https://github.com/ChaseHendrick/synth',
-    image: 'https://www.hendrickresearch.com/music/orograph-social.jpg',
+    image: 'https://www.hendrickresearch.com/music/oro-social.jpg',
     license: 'https://opensource.org/licenses/MIT',
     offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
     author: { '@type': 'Person', name: 'Chase Hendrick' },
@@ -51,12 +51,12 @@ const orographRelease = 'https://github.com/ChaseHendrick/synth/releases/latest'
 const orographDownload = (file: string) => `${orographRelease}/download/${file}`;
 // Release asset names come from the synth repository's package.json (build.*.artifactName) and its release workflow.
 export const orographFiles = [
-  ['Orograph-mac-arm64.dmg', 'Mac (Apple Silicon)'],
-  ['Orograph-mac-x64.dmg', 'Mac (Intel)'],
-  ['Orograph-windows-setup.exe', 'Windows installer'],
-  ['Orograph-windows-portable.exe', 'Windows portable'],
-  ['Orograph-linux-x86_64.AppImage', 'Linux AppImage'],
-  ['Orograph.html', 'Offline, one file'],
+  ['Oro-mac-arm64.dmg', 'Mac (Apple Silicon)'],
+  ['Oro-mac-x64.dmg', 'Mac (Intel)'],
+  ['Oro-windows-setup.exe', 'Windows installer'],
+  ['Oro-windows-portable.exe', 'Windows portable'],
+  ['Oro-linux-x86_64.AppImage', 'Linux AppImage'],
+  ['Oro.html', 'Offline, one file'],
 ] as const;
 export const promptIdeas = [
   { label: 'After midnight', text: 'A slow, hazy soundscape in D minor. Warm chords, glassy notes, a quiet pulse, and lots of air.' },
@@ -76,7 +76,7 @@ export function renderMusic(): string {
     <main id="main" class="music-main">
       <section class="music-hero wrap" aria-labelledby="music-title">
         <div class="music-hero-copy">
-          <a class="music-new" href="#orograph"><span>New</span>Orograph, a synthesizer you can walk across ${next}</a>
+          <a class="music-new" href="#orograph"><span>New</span>Oro, a synthesizer you can walk across ${next}</a>
           <p class="eyebrow"><span class="tiny-line"></span> HENDRICK RESEARCH / MUSIC</p>
           <h1 id="music-title">Room for<br /><em>something new.</em></h1>
           <p class="music-lead">A thought. A few notes. A soundscape that keeps unfolding.</p>
@@ -106,15 +106,15 @@ export function renderMusic(): string {
 
       <section class="orograph-section" id="orograph" aria-labelledby="orograph-title">
         <div class="wrap">
-          <div class="music-section-heading"><div><p class="eyebrow">NEW / OROGRAPH</p><h2 id="orograph-title">A synthesizer<br /><em>you can walk across.</em></h2></div><p>Place the dot. Shape the land. <br />Listen to the ground.</p></div>
+          <div class="music-section-heading"><div><p class="eyebrow">NEW / ORO</p><h2 id="orograph-title">A synthesizer<br /><em>you can walk across.</em></h2></div><p>Place the dot. Shape the land. <br />Listen to the ground.</p></div>
           <figure class="orograph-figure">
-            <img class="orograph-hero orograph-hero-light" src="/music/orograph-hero-light.jpg" alt="A rendered Orograph landscape in warm ivory tones, with copper contour lines and an orbit looping past a glowing dot" width="1920" height="1080" loading="lazy" decoding="async" />
-            <img class="orograph-hero orograph-hero-dark" src="/music/orograph-hero-dark.jpg" alt="A rendered Orograph landscape at night: deep blue hills, pale contour lines and a glowing orange orbit looping past the dot" width="1920" height="1080" loading="lazy" decoding="async" />
-            <figcaption><span>Orograph / wave terrain synthesizer</span><span>Swell and Massif terrains, rose orbit · Rendered from Orograph's own terrain data</span></figcaption>
+            <img class="orograph-hero orograph-hero-light" src="/music/oro-hero-light.jpg" alt="A rendered Oro landscape in warm ivory tones, with copper contour lines and an orbit looping past a glowing dot" width="1920" height="1080" loading="lazy" decoding="async" />
+            <img class="orograph-hero orograph-hero-dark" src="/music/oro-hero-dark.jpg" alt="A rendered Oro landscape at night: deep blue hills, pale contour lines and a glowing orange orbit looping past the dot" width="1920" height="1080" loading="lazy" decoding="async" />
+            <figcaption><span>Oro / wave terrain synthesizer</span><span>Swell and Massif terrains, rose orbit · Rendered from Oro's own terrain data</span></figcaption>
           </figure>
           <div class="orograph-intro">
-            <p>Orograph turns landscapes into sound. A closed path circles the dot you place on a 3D map, and the height of the ground under that path becomes the waveform. Move the dot and the tone changes. Grow the orbit and it gets brighter. Blend two terrains, fold the peaks, or let a marble roll downhill and play the valleys it finds.</p>
-            <div class="music-actions"><a class="button button-dark" href="/music/orograph/">Play in your browser ${next}</a><a class="button music-browser-button" href="${orographRelease}">Download the desktop app ${next}</a>${external(orographSource, 'Explore the source')}</div>
+            <p>Oro turns landscapes into sound. A closed path circles the dot you place on a 3D map, and the height of the ground under that path becomes the waveform. Move the dot and the tone changes. Grow the orbit and it gets brighter. Blend two terrains, fold the peaks, or let a marble roll downhill and play the valleys it finds.</p>
+            <div class="music-actions"><a class="button button-dark" href="/music/oro/">Play in your browser ${next}</a><a class="button music-browser-button" href="${orographRelease}">Download the desktop app ${next}</a>${external(orographSource, 'Explore the source')}</div>
             <p class="orograph-downloads">Direct downloads: ${orographFiles.map(([file, label]) => `<a href="${orographDownload(file)}">${label}</a>`).join(' · ')}</p>
           </div>
           <div class="music-features">
