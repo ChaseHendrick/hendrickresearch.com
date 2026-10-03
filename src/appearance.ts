@@ -48,12 +48,6 @@ settings.addEventListener('change', event => {
   preference = input.value;
   try { localStorage.setItem(appearanceKey, preference); } catch { /* Use this preference for the current visit. */ }
   apply();
-let language: Lang = preferredLanguage();
-const languageSelect = settings.querySelector<HTMLSelectElement>('[name="site-language"]')!;
-languageSelect.value = language;
-languageSelect.addEventListener('change', () => { language = languageSelect.value as Lang; try { localStorage.setItem(languageKey, language); } catch { /* this visit only */ } applyLanguage(language); window.dispatchEvent(new Event('languagechange-site')); });
-const applyNow = () => applyLanguage(language);
-if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', applyNow); else applyNow();
 });
 document.addEventListener('pointerdown', event => { if (!settings.contains(event.target as Node)) close(); });
 document.addEventListener('keydown', event => { if (event.key === 'Escape' && !panel.hidden) { event.preventDefault(); close(true); } });
