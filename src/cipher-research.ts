@@ -19,7 +19,7 @@ const cases: readonly ResearchCase[] = [
   {
     id: 'kryptos-k4', title: 'Kryptos K4', category: 'Historical cipher',
     status: 'Archival recovery documented; public method not established here.',
-    context: 'Archival text recovery and the 2025 sale are documented. Paradigm identified itself as custodian in June 2026 and offers a reference-answer verifier while still calling K4 unsolved. The checked sources do not publish a reproducible full method. RR Auction attributed the archive contents to Sanborn without examining them independently.',
+    context: 'Archival text recovery and the 2025 sale are documented. Paradigm identified itself as custodian in June 2026 and offers a reference-answer verifier while still calling K4 unsolved. The checked sources do not publish a reproducible full method. RR Auction listed private K4 plaintext and coding material, attributed to Sanborn without examining the contents independently.',
     experiment: 'Reserve one published clue while fitting another, then test every predicted letter and the complete forward transform. A failed bounded search rules out only its stated models.',
     note: 'kryptos-k4-2026-10-03.md',
     sources: [
