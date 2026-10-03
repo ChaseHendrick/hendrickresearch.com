@@ -1,3 +1,4 @@
+import papersData from './papers-data.json';
 // Edit this file to add projects, papers, and links. Everything here is public.
 export type Project = {
   id: string; name: string; category: 'Research' | 'Tools' | 'Play';
@@ -97,20 +98,5 @@ export type Paper = {
   id: string; title: string; category: string; summary: string;
   doi: string; source: string; pdf: string;
 };
-const paper = (id: string, title: string, category: string, summary: string, doi: string, filename = id): Paper => ({
-  id, title, category, summary,
-  doi: `https://doi.org/10.5281/zenodo.${doi}`,
-  source: `https://github.com/ChaseHendrick/${id}`,
-  pdf: `https://raw.githubusercontent.com/ChaseHendrick/${id}/main/paper/${filename}.pdf`,
-});
-
-export const papers: Paper[] = [
-  paper('minimal-winding', 'Minimal Winding in the Self-Similar Collapse of Point Vortices', 'Fluid dynamics', 'Sharp winding bounds and computer-assisted results for collapsing vortex configurations.', '23050561'),
-  paper('collapse-without-rotation', 'Point-Vortex Collapse Without Rotation: A Cluster Mechanism, a Phase Diagram and a Continuum Limit', 'Fluid dynamics', 'Cluster mechanisms and numerical phase diagrams for vortex collapse without rotation.', '23050575'),
-  paper('stable-expansion', 'Stable Self-Similar Expansion of Four and Five Point Vortices and Confinement of Vortex Patches', 'Fluid dynamics', 'Computer-assisted configurations, nonlinear stability, and confinement estimates.', '23050580'),
-  paper('rank-window', 'A Finite Rank Window Cannot Show That a Neural Population Code Satisfies the Eigenspectrum Smoothness Bound', 'Neuroscience', 'The limits of inferring asymptotic smoothness from finite neural eigenspectra.', '23050586', 'note'),
-  paper('hh-dynamics', 'Hopf Bifurcations and Bistability in the Hodgkin-Huxley Equations at the 1952 Parameters: Computer-Assisted Proofs', 'Neuroscience', 'Computer-assisted analysis of equilibrium stability and bistability in the classical model.', '23050587'),
-  paper('double-pendulum', 'Chaos and Analytic Non-Integrability of the Classical Double Pendulum: A Computer-Assisted Proof', 'Dynamical systems', 'Interval arithmetic proofs for chaotic dynamics at specified energies.', '23050590'),
-  paper('nf-pulse', 'Traveling Pulses in a Neural Field with a Smooth Firing Rate: Computer-Assisted Existence and Spectral Stability', 'Neuroscience', 'Computer-assisted pulse existence and spectral stability in neural field models.', '23050600'),
-  paper('hh-pulse', 'The Propagated Action Potential of Hodgkin and Huxley at Their 1952 Constants: A Computer-Assisted Existence Proof', 'Neuroscience', 'A computer-assisted existence proof for the propagated action potential at two temperatures.', '23050604'),
-];
+// Generated from GENChase's papers/papers.json by scripts/sync-papers.mjs (run before every build).
+export const papers: Paper[] = papersData;

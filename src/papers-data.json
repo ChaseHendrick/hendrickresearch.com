@@ -1,0 +1,83 @@
+[
+  {
+    "id": "minimal-winding",
+    "title": "Minimal Winding in the Self-Similar Collapse of Point Vortices",
+    "category": "Fluid dynamics",
+    "summary": "Sharp winding bounds and computer-assisted results for collapsing vortex configurations.",
+    "doi": "https://doi.org/10.5281/zenodo.23096146",
+    "source": "https://github.com/ChaseHendrick/minimal-winding",
+    "pdf": "https://raw.githubusercontent.com/ChaseHendrick/minimal-winding/main/paper/minimal-winding.pdf"
+  },
+  {
+    "id": "collapse-without-rotation",
+    "title": "Point-Vortex Collapse Without Rotation: A Cluster Mechanism, a Phase Diagram and a Continuum Limit",
+    "category": "Fluid dynamics",
+    "summary": "Cluster mechanisms and numerical phase diagrams for vortex collapse without rotation.",
+    "doi": "https://doi.org/10.5281/zenodo.23096161",
+    "source": "https://github.com/ChaseHendrick/collapse-without-rotation",
+    "pdf": "https://raw.githubusercontent.com/ChaseHendrick/collapse-without-rotation/main/paper/collapse-without-rotation.pdf"
+  },
+  {
+    "id": "stable-expansion",
+    "title": "Stable Self-Similar Expansion of Four and Five Point Vortices and Confinement of Vortex Patches",
+    "category": "Fluid dynamics",
+    "summary": "Computer-assisted configurations, nonlinear stability, and confinement estimates.",
+    "doi": "https://doi.org/10.5281/zenodo.23096191",
+    "source": "https://github.com/ChaseHendrick/stable-expansion",
+    "pdf": "https://raw.githubusercontent.com/ChaseHendrick/stable-expansion/main/paper/stable-expansion.pdf"
+  },
+  {
+    "id": "rank-window",
+    "title": "A Finite Rank Window Cannot Show That a Neural Population Code Satisfies the Eigenspectrum Smoothness Bound",
+    "category": "Neuroscience",
+    "summary": "The limits of inferring asymptotic smoothness from finite neural eigenspectra.",
+    "doi": "https://doi.org/10.5281/zenodo.23096200",
+    "source": "https://github.com/ChaseHendrick/rank-window",
+    "pdf": "https://raw.githubusercontent.com/ChaseHendrick/rank-window/main/paper/note.pdf"
+  },
+  {
+    "id": "hh-dynamics",
+    "title": "Hopf Bifurcations and Bistability in the Hodgkin-Huxley Equations at the 1952 Parameters: Computer-Assisted Proofs",
+    "category": "Neuroscience",
+    "summary": "Computer-assisted analysis of equilibrium stability and bistability in the classical model.",
+    "doi": "https://doi.org/10.5281/zenodo.23096223",
+    "source": "https://github.com/ChaseHendrick/hh-dynamics",
+    "pdf": "https://raw.githubusercontent.com/ChaseHendrick/hh-dynamics/main/paper/hh-dynamics.pdf"
+  },
+  {
+    "id": "double-pendulum",
+    "title": "Chaos and Analytic Non-Integrability of the Classical Double Pendulum: A Computer-Assisted Proof",
+    "category": "Dynamical systems",
+    "summary": "Interval arithmetic proofs for chaotic dynamics at specified energies.",
+    "doi": "https://doi.org/10.5281/zenodo.23096228",
+    "source": "https://github.com/ChaseHendrick/double-pendulum",
+    "pdf": "https://raw.githubusercontent.com/ChaseHendrick/double-pendulum/main/paper/double-pendulum.pdf"
+  },
+  {
+    "id": "nf-pulse",
+    "title": "Traveling Pulses in a Neural Field with a Smooth Firing Rate: Computer-Assisted Existence and Spectral Stability",
+    "category": "Neuroscience",
+    "summary": "Computer-assisted pulse existence and spectral stability in neural field models.",
+    "doi": "https://doi.org/10.5281/zenodo.23096242",
+    "source": "https://github.com/ChaseHendrick/nf-pulse",
+    "pdf": "https://raw.githubusercontent.com/ChaseHendrick/nf-pulse/main/paper/nf-pulse.pdf"
+  },
+  {
+    "id": "hh-pulse",
+    "title": "The Propagated Action Potential of Hodgkin and Huxley at Their 1952 Constants: A Computer-Assisted Existence Proof",
+    "category": "Neuroscience",
+    "summary": "A computer-assisted existence proof for the propagated action potential at two temperatures.",
+    "doi": "https://doi.org/10.5281/zenodo.23096253",
+    "source": "https://github.com/ChaseHendrick/hh-pulse",
+    "pdf": "https://raw.githubusercontent.com/ChaseHendrick/hh-pulse/main/paper/hh-pulse.pdf"
+  },
+  {
+    "id": "cardiac-rings",
+    "title": "Stable Rotating Waves in Rings of a Modified Ventricular Cell Model: Computer-Assisted Proofs",
+    "category": "Cardiac electrophysiology",
+    "summary": "Computer-assisted proofs of stable rotating waves in rings of a ventricular cell model.",
+    "doi": "https://doi.org/10.5281/zenodo.23114240",
+    "source": "https://github.com/ChaseHendrick/cardiac-rings",
+    "pdf": "https://raw.githubusercontent.com/ChaseHendrick/cardiac-rings/main/paper/cardiac-rings.pdf"
+  }
+]

@@ -2,7 +2,7 @@
 
 A personal home for Chase Hendrick’s research and AI-assisted software, built for [www.hendrickresearch.com](https://www.hendrickresearch.com).
 
-Warm ivory, copper, editorial typography, the original HR logo, and a numerically integrated Lorenz attractor. The portfolio presents nine projects and eight publicly archived research preprints. GENChase has a public descriptive catalog for its private research workspace; other projects link to available source code and live experiences. Papers link to PDFs and DOI records.
+Warm ivory, copper, editorial typography, the original HR logo, and a numerically integrated Lorenz attractor. The portfolio presents its projects and every publicly archived research preprint. GENChase has a public descriptive catalog for its private research workspace; other projects link to available source code and live experiences. Papers link to PDFs and DOI records.
 
 ## Run locally
 
@@ -22,7 +22,11 @@ The production site is generated in `dist/`. It is static: no database, API keys
 
 ## Add your work
 
-Edit [`src/content.ts`](src/content.ts). Each project has its title, category, description, source, optional live link, and tags. Each paper has its exact title, short summary, DOI, PDF URL, and companion repository. The visible counts update automatically.
+Edit [`src/content.ts`](src/content.ts) for projects: each has its title, category, description, source, optional live link, and tags.
+
+Papers are not edited by hand. `scripts/sync-papers.mjs` reads GENChase's registry (`papers/papers.json`) before every build and daily through `.github/workflows/sync-papers.yml`, which commits `src/papers-data.json` when it changes so Vercel redeploys. A paper appears once its status is ready or later and its first archive DOI is recorded; a new release's DOI replaces the old one the same way. Site-specific topic labels and summaries live in the script's `OVERRIDES`. The visible counts update automatically.
+
+A daily check (`scripts/check-upstream.mjs`, `.github/workflows/upstream-check.yml`) compares the paper list and its PDF links, the GENChase technique catalog and the Cipher Lab engine with their source repositories, and keeps one issue titled "Site sources out of date" open while anything is behind, with the command that refreshes it.
 
 To host a new paper directly on this site:
 

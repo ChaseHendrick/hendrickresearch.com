@@ -4,7 +4,7 @@ import { appearanceKey } from './appearance-shared';
 type Preference = 'light' | 'dark' | 'system';
 const valid = (value: string | null): value is Preference => value === 'light' || value === 'dark' || value === 'system';
 const system = matchMedia('(prefers-color-scheme: dark)');
-let preference: Preference = 'system';
+let preference: Preference = 'dark';
 try { const saved = localStorage.getItem(appearanceKey); if (valid(saved)) preference = saved; } catch { /* Settings still work when storage is unavailable. */ }
 
 const settings = document.createElement('div');
@@ -18,7 +18,7 @@ function apply() {
   const theme = preference === 'system' ? (system.matches ? 'dark' : 'light') : preference;
   document.documentElement.dataset.theme = theme;
   document.documentElement.style.colorScheme = theme;
-  document.querySelector<HTMLMetaElement>('meta[name="theme-color"]')?.setAttribute('content', theme === 'dark' ? '#191e19' : '#f7f5ef');
+  document.querySelector<HTMLMetaElement>('meta[name="theme-color"]')?.setAttribute('content', theme === 'dark' ? '#161514' : '#f7f5ef');
   settings.querySelectorAll<HTMLInputElement>('input').forEach(input => { input.checked = input.value === preference; });
   toggle.title = `Appearance: ${preference[0].toUpperCase() + preference.slice(1)}`;
   window.dispatchEvent(new Event('appearancechange'));
@@ -45,5 +45,5 @@ document.addEventListener('pointerdown', event => { if (!settings.contains(event
 document.addEventListener('keydown', event => { if (event.key === 'Escape' && !panel.hidden) { event.preventDefault(); close(true); } });
 settings.addEventListener('focusout', event => { if (event.relatedTarget && !settings.contains(event.relatedTarget as Node)) close(); });
 system.addEventListener('change', () => { if (preference === 'system') apply(); });
-window.addEventListener('storage', event => { if (event.key === appearanceKey || event.key === null) { preference = valid(event.newValue) ? event.newValue : 'system'; apply(); } });
+window.addEventListener('storage', event => { if (event.key === appearanceKey || event.key === null) { preference = valid(event.newValue) ? event.newValue : 'dark'; apply(); } });
 apply();
