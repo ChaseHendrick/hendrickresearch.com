@@ -1,3 +1,24 @@
+export type AttractorSystem = {
+  id: string; name: string; label: string; caption: string;
+  step: number; burnIn: number; start: [number, number, number];
+  f: (x: number, y: number, z: number) => [number, number, number];
+};
+
+/** Classical chaotic systems at their standard parameter values. Illustrations, not research results. */
+export const systems: AttractorSystem[] = [
+  { id: 'lorenz', name: 'The Lorenz attractor', label: 'LORENZ SYSTEM', caption: 'Nearby starting points drift apart; the shape stays the same.',
+    step: 0.008, burnIn: 1400, start: [1, 1, 1], f: (x, y, z) => [10 * (y - x), x * (28 - z) - y, x * y - (8 / 3) * z] },
+  { id: 'rossler', name: 'The Rössler attractor', label: 'RÖSSLER SYSTEM', caption: 'One stretch and one fold, repeated forever.',
+    step: 0.03, burnIn: 2000, start: [1, 1, 0], f: (x, y, z) => [-y - z, x + 0.2 * y, 0.2 + z * (x - 5.7)] },
+  { id: 'aizawa', name: 'The Aizawa attractor', label: 'AIZAWA SYSTEM', caption: 'A sphere with a tube through its axis.',
+    step: 0.01, burnIn: 3000, start: [0.1, 0, 0], f: (x, y, z) => [(z - 0.7) * x - 3.5 * y, 3.5 * x + (z - 0.7) * y, 0.6 + 0.95 * z - z ** 3 / 3 - (x * x + y * y) * (1 + 0.25 * z) + 0.1 * z * x ** 3] },
+  { id: 'thomas', name: 'Thomas’ cyclically symmetric attractor', label: 'THOMAS SYSTEM', caption: 'The same rule in every direction.',
+    step: 0.08, burnIn: 3000, start: [0.1, 0, 0], f: (x, y, z) => [Math.sin(y) - 0.208186 * x, Math.sin(z) - 0.208186 * y, Math.sin(x) - 0.208186 * z] },
+  { id: 'halvorsen', name: 'The Halvorsen attractor', label: 'HALVORSEN SYSTEM', caption: 'Three linked lobes with threefold symmetry.',
+    step: 0.008, burnIn: 4000, start: [-1.48, -1.51, 2.04], f: (x, y, z) => [-1.4 * x - 4 * y - 4 * z - y * y, -1.4 * y - 4 * z - 4 * x - z * z, -1.4 * z - 4 * x - 4 * y - x * x] },
+];
+const period = 16, fade = 0.9;
+
 type AttractorControls = {
   setPaused(value: boolean): void;
   reset(): void;
@@ -9,7 +30,7 @@ type AttractorControls = {
  * Trajectories use fourth-order Runge-Kutta integration with the standard
  * parameters sigma = 10, rho = 28, and beta = 8/3.
  */
-export function mountAttractor(canvas: HTMLCanvasElement): AttractorControls {
+export function mountAttractor(canvas: HTMLCanvasElement, onSystem: (system: AttractorSystem) => void = () => {}): AttractorControls {
   const context = canvas.getContext('2d', { alpha: true });
   if (!context) {
     return { setPaused() {}, reset() {}, dispose() {} };
@@ -35,51 +56,41 @@ export function mountAttractor(canvas: HTMLCanvasElement): AttractorControls {
   let pointerY = 0;
   let easedPointerX = 0;
   let easedPointerY = 0;
+  let systemIndex = 0;
+  let systemTime = 0;
+  let center = [0, 0, 0];
+  let radius = 1;
 
   function createTrajectory() {
+    const system = systems[systemIndex];
     const variation = Math.random();
     cameraSeed = 0.24 + variation * 0.23;
-    let x = 1 + variation * 0.17;
-    let y = 1 - variation * 0.12;
-    let z = 1 + variation * 0.08;
-
-    // Burn-in removes the initial approach to the attractor before sampling.
-    for (let i = -1400; i < count; i += 1) {
-      const aX = 10 * (y - x);
-      const aY = x * (28 - z) - y;
-      const aZ = x * y - (8 / 3) * z;
-
-      const bX0 = x + aX * step * 0.5;
-      const bY0 = y + aY * step * 0.5;
-      const bZ0 = z + aZ * step * 0.5;
-      const bX = 10 * (bY0 - bX0);
-      const bY = bX0 * (28 - bZ0) - bY0;
-      const bZ = bX0 * bY0 - (8 / 3) * bZ0;
-
-      const cX0 = x + bX * step * 0.5;
-      const cY0 = y + bY * step * 0.5;
-      const cZ0 = z + bZ * step * 0.5;
-      const cX = 10 * (cY0 - cX0);
-      const cY = cX0 * (28 - cZ0) - cY0;
-      const cZ = cX0 * cY0 - (8 / 3) * cZ0;
-
-      const dX0 = x + cX * step;
-      const dY0 = y + cY * step;
-      const dZ0 = z + cZ * step;
-      const dX = 10 * (dY0 - dX0);
-      const dY = dX0 * (28 - dZ0) - dY0;
-      const dZ = dX0 * dY0 - (8 / 3) * dZ0;
-
-      x += (step / 6) * (aX + 2 * bX + 2 * cX + dX);
-      y += (step / 6) * (aY + 2 * bY + 2 * cY + dY);
-      z += (step / 6) * (aZ + 2 * bZ + 2 * cZ + dZ);
-
+    let [x, y, z] = system.start;
+    x += variation * 0.017; y -= variation * 0.012; z += variation * 0.008;
+    const h = system.step;
+    const lo = [Infinity, Infinity, Infinity], hi = [-Infinity, -Infinity, -Infinity];
+    // Fourth-order Runge-Kutta; burn-in removes the initial approach to the attractor before sampling.
+    for (let i = -system.burnIn; i < count; i += 1) {
+      const [aX, aY, aZ] = system.f(x, y, z);
+      const [bX, bY, bZ] = system.f(x + aX * h / 2, y + aY * h / 2, z + aZ * h / 2);
+      const [cX, cY, cZ] = system.f(x + bX * h / 2, y + bY * h / 2, z + bZ * h / 2);
+      const [dX, dY, dZ] = system.f(x + cX * h, y + cY * h, z + cZ * h);
+      x += (h / 6) * (aX + 2 * bX + 2 * cX + dX);
+      y += (h / 6) * (aY + 2 * bY + 2 * cY + dY);
+      z += (h / 6) * (aZ + 2 * bZ + 2 * cZ + dZ);
       if (i >= 0) {
-        trajectory[i * 3] = x;
-        trajectory[i * 3 + 1] = y;
-        trajectory[i * 3 + 2] = z;
+        trajectory[i * 3] = x; trajectory[i * 3 + 1] = y; trajectory[i * 3 + 2] = z;
+        lo[0] = Math.min(lo[0], x); lo[1] = Math.min(lo[1], y); lo[2] = Math.min(lo[2], z);
+        hi[0] = Math.max(hi[0], x); hi[1] = Math.max(hi[1], y); hi[2] = Math.max(hi[2], z);
       }
     }
+    center = [0, 1, 2].map(k => (lo[k] + hi[k]) / 2);
+    radius = 0;
+    for (let i = 0; i < count; i += 1) {
+      const dx = trajectory[i * 3] - center[0], dy = trajectory[i * 3 + 1] - center[1], dz = trajectory[i * 3 + 2] - center[2];
+      radius = Math.max(radius, Math.hypot(dx, dy, dz));
+    }
+    onSystem(system);
   }
 
   function paused() {
@@ -94,8 +105,8 @@ export function mountAttractor(canvas: HTMLCanvasElement): AttractorControls {
     if (disposed || width <= 0 || height <= 0) return;
     const ctx = context!;
     const colors = getComputedStyle(document.documentElement);
-    const ink = colors.getPropertyValue('--attractor-rgb').trim() || '112,75,49';
-    const flow = colors.getPropertyValue('--attractor-flow-rgb').trim() || '106,66,40';
+    const ink = colors.getPropertyValue('--attractor-rgb').trim() || '52,74,98';
+    const flow = colors.getPropertyValue('--attractor-flow-rgb').trim() || '40,62,88';
     ctx.setTransform(pixelRatio, 0, 0, pixelRatio, 0, 0);
     ctx.clearRect(0, 0, width, height);
 
@@ -105,14 +116,16 @@ export function mountAttractor(canvas: HTMLCanvasElement): AttractorControls {
     const sinYaw = Math.sin(yaw);
     const cosPitch = Math.cos(pitch);
     const sinPitch = Math.sin(pitch);
-    const scale = Math.min(width / 66, height / 54) * 0.92;
+    const scale = Math.min(width, height) * 0.5 / radius;
+    const alpha = Math.max(0, Math.min(1, systemTime / fade, (period - systemTime) / fade));
+    ctx.globalAlpha = paused() ? 1 : alpha;
     const centerX = width * 0.5;
     const centerY = height * 0.51;
 
     for (let i = 0; i < count; i += 1) {
-      const x = trajectory[i * 3];
-      const y = trajectory[i * 3 + 1];
-      const z = trajectory[i * 3 + 2] - 25;
+      const x = trajectory[i * 3] - center[0];
+      const y = trajectory[i * 3 + 1] - center[1];
+      const z = trajectory[i * 3 + 2] - center[2];
       const horizontal = x * cosYaw + y * sinYaw;
       const depth = -x * sinYaw + y * cosYaw;
       projected[i * 2] = centerX + horizontal * scale;
@@ -157,7 +170,8 @@ export function mountAttractor(canvas: HTMLCanvasElement): AttractorControls {
   function tick(timestamp: number) {
     frame = 0;
     if (!canAnimate()) return;
-    if (lastTick) elapsed += Math.min((timestamp - lastTick) / 1000, 0.1);
+    if (lastTick) { const dt = Math.min((timestamp - lastTick) / 1000, 0.1); elapsed += dt; systemTime += dt; }
+    if (systemTime >= period) { systemTime = 0; systemIndex = (systemIndex + 1) % systems.length; createTrajectory(); }
     lastTick = timestamp;
 
     if (!lastFrameTime || timestamp - lastFrameTime >= 1000 / 30) {
@@ -239,6 +253,7 @@ export function mountAttractor(canvas: HTMLCanvasElement): AttractorControls {
     reset() {
       if (disposed) return;
       elapsed = 0;
+      systemTime = fade;
       lastTick = 0;
       pointerX = 0;
       pointerY = 0;

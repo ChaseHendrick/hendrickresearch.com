@@ -27,7 +27,7 @@ function renderProjects() {
   more.hidden = selectedFilter !== 'All work';
   more.innerHTML = showAllProjects ? 'Show selected work <span>−</span>' : 'Explore the full collection <span>+</span>';
   more.setAttribute('aria-expanded', String(showAllProjects));
-  document.querySelector('#shown-projects')!.textContent = selectedFilter !== 'All work' ? `Showing all ${matching.length} ${selectedFilter.toLowerCase()} projects.` : showAllProjects ? 'The collection keeps growing.' : 'A few starting points. There’s more inside.';
+  document.querySelector('#shown-projects')!.textContent = selectedFilter !== 'All work' ? `Showing all ${matching.length} ${selectedFilter.toLowerCase()} projects.` : showAllProjects ? `All ${matching.length} projects.` : 'Showing a selection.';
 }
 renderProjects();
 document.querySelectorAll<HTMLButtonElement>('.filter').forEach(button => button.addEventListener('click', () => {
@@ -99,7 +99,11 @@ let navigationFrame = 0;
 window.addEventListener('scroll', () => {if (!navigationFrame) navigationFrame = requestAnimationFrame(() => {updateNavigation(); navigationFrame = 0;});}, {passive:true});
 updateNavigation();
 
-const attractor = mountAttractor(document.querySelector<HTMLCanvasElement>('#attractor')!);
+const attractor = mountAttractor(document.querySelector<HTMLCanvasElement>('#attractor')!, system => {
+  document.querySelector('#attractor-label')!.textContent = system.label;
+  document.querySelector('#attractor-name')!.textContent = system.name;
+  document.querySelector('#attractor-caption')!.textContent = system.caption;
+});
 const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
 let paused = motionPreference.matches;
 const pauseButton = document.querySelector<HTMLButtonElement>('#pause-flow')!;
