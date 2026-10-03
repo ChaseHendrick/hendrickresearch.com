@@ -1,4 +1,4 @@
-export type ArtRecipe = {seed: string; density: number; scale: number; complexity: number; palette: string};
+export type ArtRecipe = {seed: string; density: number; scale: number; complexity: number; palette: string; colors: string[]};
 export type ArtSubject = {id: string; title: string; category: string};
 export const palettes: Record<string, string[]> = {
   forest: ['#f7f4e9','#284b41','#8b9a72','#bd7957','#d4bc86'],
@@ -6,10 +6,30 @@ export const palettes: Record<string, string[]> = {
   terracotta: ['#f9eee0','#793c34','#c66e4a','#d5a772','#425f52'],
   ocean: ['#edf3f0','#174f62','#3b8b8d','#95bdab','#c29262'],
   graphite: ['#f5f3eb','#252b2a','#65716b','#9ba19a','#bbbdb3'],
+  sunset: ['#fff4e6','#e4572e','#f3a712','#a8336a','#29335c'],
+  aurora: ['#0b1320','#4ef2c2','#8a7dff','#f2e863','#ff6fb5'],
+  ink: ['#ffffff','#111111','#3a3a3a','#7a7a7a','#c02c2c'],
+  rose: ['#fdf1f3','#7a2048','#d35d8b','#f2a7bf','#3f5d7d'],
+  desert: ['#f4e9d8','#8c4a2f','#d08c4f','#e8c07d','#5c7a6b'],
+  neon: ['#0d0221','#ff2a6d','#05d9e8','#d1f7ff','#f9c80e'],
 };
+/** The five colors of a recipe: background first, then four inks. */
+export const colorRoles = ['Background', 'Ink 1', 'Ink 2', 'Ink 3', 'Ink 4'];
+const isHex = (c: unknown): c is string => typeof c === 'string' && /^#[0-9a-f]{6}$/i.test(c);
 export function cleanRecipe(value: Partial<ArtRecipe>): ArtRecipe {
   const bound = (n: unknown, fallback: number, lo: number, hi: number) => typeof n === 'number' && Number.isFinite(n) ? Math.max(lo,Math.min(hi,n)) : fallback;
-  return {seed:String(value.seed??'hendrick').slice(0,100),density:Math.round(bound(value.density,55,10,100)),scale:bound(value.scale,1,.5,2),complexity:Math.round(bound(value.complexity,5,1,10)),palette:value.palette && Object.hasOwn(palettes,value.palette) ? value.palette : 'forest'};
+  const named = value.palette && Object.hasOwn(palettes,value.palette) ? value.palette : undefined;
+  const custom = Array.isArray(value.colors) && value.colors.length === 5 && value.colors.every(isHex) ? value.colors.map(c => c.toLowerCase()) : undefined;
+  const palette = value.palette === 'custom' && custom ? 'custom' : named ?? (custom ? 'custom' : 'forest');
+  return {seed:String(value.seed??'hendrick').slice(0,100),density:Math.round(bound(value.density,55,10,100)),scale:bound(value.scale,1,.5,2),complexity:Math.round(bound(value.complexity,5,1,10)),palette,colors:palette === 'custom' ? custom! : [...palettes[palette]]};
+}
+/** A random but legible palette: a light or dark background and four inks spread around the hue circle. */
+export function randomPalette(): string[] {
+  const r = crypto.getRandomValues(new Uint32Array(6)), u = (i: number) => r[i] / 4294967296;
+  const hsl = (h: number, sat: number, l: number) => { const a = sat * Math.min(l, 1 - l), f = (n: number) => { const k = (n + h / 30) % 12; return Math.round(255 * (l - a * Math.max(-1, Math.min(k - 3, 9 - k, 1)))).toString(16).padStart(2, '0'); }; return `#${f(0)}${f(8)}${f(4)}`; };
+  const base = u(0) * 360, dark = u(1) < .5;
+  const bg = hsl(base, .25, dark ? .08 : .95);
+  return [bg, ...[0, 1, 2, 3].map(i => hsl((base + 40 + i * (60 + u(2 + i) * 40)) % 360, .55 + u(5) * .3, dark ? .62 : .42))];
 }
 const esc = (value: string) => value.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]!));
 function random(seed: string) {
@@ -19,7 +39,7 @@ function random(seed: string) {
 }
 /** Original public illustrations. No research solver, source, or parameters are imported. */
 export function makeArtSVG(subject: ArtSubject, raw: Partial<ArtRecipe>): string {
-  const p=cleanRecipe(raw),rand=random(subject.id+'|'+p.seed),colors=palettes[p.palette],paths:string[]=[];
+  const p=cleanRecipe(raw),rand=random(subject.id+'|'+p.seed),colors=p.colors,paths:string[]=[];
   const count=Math.round(30+p.density*3),phase=rand()*Math.PI*2,frequency=1+rand()*3,step=4/p.scale;
   const color=()=>colors[1+Math.floor(rand()*(colors.length-1))];
   const number=(n:number)=>n.toFixed(2);
@@ -92,5 +112,5 @@ export function makeArtSVG(subject: ArtSubject, raw: Partial<ArtRecipe>): string
       path(d+'Z',c,.7,.3+rand()*.4,i%5===0?c:'none');
     }
   }
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="700" viewBox="0 0 1000 700" role="img" aria-label="${esc(subject.title)} public art sketch"><title>${esc(subject.title)}: art sketch</title><desc>Independent seeded illustration. Seed: ${esc(p.seed)}. Density: ${p.density}; scale: ${p.scale}; complexity: ${p.complexity}; palette: ${esc(p.palette)}. This does not run the GENChase research engine.</desc><rect width="1000" height="700" fill="${colors[0]}"/>${paths.join('')}</svg>`;
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="700" viewBox="0 0 1000 700" role="img" aria-label="${esc(subject.title)} public art sketch"><title>${esc(subject.title)}: art sketch</title><desc>Independent seeded illustration. Seed: ${esc(p.seed)}. Density: ${p.density}; scale: ${p.scale}; complexity: ${p.complexity}; palette: ${esc(p.palette)} (${p.colors.join(', ')}). This does not run the GENChase research engine.</desc><rect width="1000" height="700" fill="${colors[0]}"/>${paths.join('')}</svg>`;
 }
