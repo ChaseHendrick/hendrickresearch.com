@@ -1,0 +1,22 @@
+/* TEAM */
+Owner: Chase Hendrick
+Site: https://www.hendrickresearch.com/
+GitHub: https://github.com/ChaseHendrick
+ORCID: https://orcid.org/0009-0002-9754-6087
+
+/* PROJECTS */
+GENChase, Siegeworks, After the Sirens, Fibers of Earth, PageArm,
+SaveDesk, Fin's, ThermalPilot, TinyLaps, Haywire
+Also on the site: Cipher Lab, Music and MPC Studio, Oro,
+browser games, generative art and research papers.
+
+/* SITE */
+Last update: 2026/10/03
+Language: English
+Interface languages: English, Spanish, French, German, Portuguese, Japanese, Chinese
+Standards: HTML5, CSS3, TypeScript
+Components: Vite, TypeScript, Fontsource (DM Sans, Instrument Serif), Vercel Web Analytics, Vercel Speed Insights
+Hosting: Vercel
+
+/* P.S. */
+Some pages are filed at the very back.
