@@ -69,9 +69,9 @@ export function renderMusic(): string {
   return `<a class="skip-link" href="#main">Skip to music</a>
     <header class="site-header wrap">
       <a class="brand" href="/" aria-label="Hendrick Research home"><picture><source srcset="/logo.webp" type="image/webp"/><img src="/logo.png" width="1536" height="1024" alt="Hendrick Research" decoding="async" /></picture></a>
-      <nav class="desktop-nav" aria-label="Main navigation">${nav}</nav>
+      <nav class="desktop-nav" aria-label="Main navigation"><a href="/">Home</a>${nav}</nav>
       <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span></button>
-      <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation" hidden>${nav}</nav>
+      <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation" hidden><a href="/">Home</a>${nav}</nav>
     </header>
     <main id="main" class="music-main">
       <section class="music-hero wrap" aria-labelledby="music-title">
