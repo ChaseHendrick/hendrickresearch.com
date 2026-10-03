@@ -82,6 +82,85 @@ TinyLaps includes 15 distinct circuits, corrected terrain depth rendering, a cir
 
 `/fibers/` hosts the full Fibers of Earth atlas and its 2,585 static pages. Original sources, evidence limitations, MIT attribution, third-party notices, and safe provenance accompany the atlas. Refresh its complete static build for the `https://www.hendrickresearch.com/fibers/` base URL; keep the atlas's citations and reading pages intact.
 
+## Cipher Lab
+
+`/cipher-lab/` runs a pinned public snapshot of the [Undeciphered Texts Python
+engine](https://github.com/ChaseHendrick/Undeciphered-Texts). Its 13 exposed tool
+entries cover ten persona search/review strategies, their shared council,
+aligned-crib Hill inference and a bounded transposition portfolio. Bob the
+Neural Net separately ranks 20 known cipher families. Candidate rankings,
+forward checks and agreement with supplied clues do not verify a historical
+plaintext. Personality labels never change arithmetic or answer vocabulary.
+
+The same route includes a dated, source-linked research guide for Kryptos K4,
+Voynich, Linear A, Indus signs, Rongorongo, the Phaistos disc, Zodiac's short
+ciphers and Dorabella. Its notes distinguish the source record from proposed
+experiments and explain evidence limits. These are static research notes;
+the A-Z workbench does not decipher unknown glyph scripts. The
+[research register](https://github.com/ChaseHendrick/Undeciphered-Texts/tree/main/docs/research-notes)
+tracks those notes separately from the pinned executable snapshot.
+
+Python and NumPy load lazily through pinned Pyodide 314.0.7 from jsDelivr after
+the visitor starts a search or asks Bob. The engine archive is served from this
+site. Ciphertext and clues are processed in a dedicated browser worker; the
+workbench does not send them to a solver service. Initial startup needs network
+access to the runtime CDN. Cancellation terminates the worker, startup has a
+180-second deadline, and a running computation has a 30-second deadline. Tool
+inputs accept 4 through 512 normalized A-Z letters, at most 10,000 checks and
+ten retained candidates. These are application bounds, not a hard security
+sandbox or a universal device-performance guarantee.
+
+The initial published snapshot comes from clean engine commit
+`7587352b31d65578a71a2fbef6c1b035073e318a`. Its [manifest](public/cipher-lab/manifest.json)
+records exact source, archive and model hashes, per-file bytes and hashes,
+source revision and dirty status, tool names, runtime version and bounds.
+The worker checks those hashes before importing the packaged engine. The
+archive includes the original MIT `LICENSE` and the actual model metrics and
+artifact-specific audit. The shipped model is format 5, SHA-256
+`d8c985dfdaf2d1dd0e17cfdb8412d0f947221b3f9e30318169d9183145c5c825`:
+428/480 top one, 477/480 top three on reused development cases, and 193/204 on
+the earlier comparison. Source code supports format 8; its later warm trials
+were rejected. The earlier Wells audit belongs to that exact format 5 artifact,
+not every later training experiment. Full limitations and trial results remain
+in the canonical engine's [neural notes](https://github.com/ChaseHendrick/Undeciphered-Texts/blob/7587352b31d65578a71a2fbef6c1b035073e318a/docs/neural-upgrades.md).
+
+Refresh the snapshot from the canonical source, then inspect its revision,
+dirty flag and hashes before publishing. Do not hand-edit the generated ZIP
+or manifest. The sync copies the required public modules, data and license;
+local cases, scratch directories and tests remain outside the archive.
+
+```sh
+python3 scripts/sync-cipher-lab.py --source /path/to/undeciphered-texts
+npm ci
+npm run build
+node scripts/test-cipher-lab-seo.mjs
+python3 scripts/test-cipher-lab-bridge.py --source /path/to/undeciphered-texts -v
+```
+
+The bridge checks require Python 3.12 with NumPy and the installed Node
+dependencies. They exercise the actual packaged Python tools/model, compare
+source behavior, reject a tampered snapshot, and check worker request guards,
+cancellation and deadlines. CI validates hashes and safe ZIP paths, extracts
+the committed archive under `RUNNER_TEMP`, and runs these five checks against
+that extracted source without cloning another repository.
+
+Real browser checks additionally require Playwright and Chromium, a local
+preview server, and access to the pinned external Pyodide CDN. They are an
+optional separate run, not part of the offline CI bridge. Set
+`PLAYWRIGHT_MODULE` to an existing Playwright module when it is not installed
+in this project's Node dependencies.
+
+```sh
+npm run preview
+node scripts/test-cipher-lab-seo.mjs --base-url http://127.0.0.1:4173
+node scripts/test-cipher-lab-browser.mjs --base-url http://127.0.0.1:4173
+```
+
+Static SEO checks cover initial HTML, canonical/social/schema metadata,
+navigation, built assets, sitemaps and robots. The optional preview check also
+requires an honest HTTP 404 for missing routes. Passing these checks does not
+establish Google indexing or a search ranking.
+
 ## Search discovery
 
 The build produces focused `/simulations/`, `/generative-art/`, and `/research/` pages plus a permanent `/genchase/<technique-id>/` page for each of the 135 techniques. These pages contain the actual text, links, preset galleries, and paper records in their initial HTML. JavaScript enhances preset selection, but reading does not depend on it.

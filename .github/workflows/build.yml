@@ -8,6 +8,7 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -16,3 +17,86 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run build
+      - name: Check built Cipher Lab metadata and routes
+        run: node scripts/test-cipher-lab-seo.mjs
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - name: Install offline Python bridge dependency
+        run: python -m pip install numpy
+      - name: Validate and extract the committed engine snapshot
+        run: |
+          python - <<'PY'
+          import hashlib
+          import json
+          import os
+          from pathlib import Path, PurePosixPath
+          import re
+          import stat
+          import zipfile
+
+          folder = Path("public/cipher-lab")
+          metadata = json.loads((folder / "manifest.json").read_text())
+          revision = metadata.get("source_git_commit")
+          if not isinstance(revision, str) or not re.fullmatch(r"[0-9a-f]{40}", revision) or metadata.get("source_dirty") is not False:
+              raise ValueError("published snapshot must identify a clean source commit")
+          archive_path = folder / "engine.zip"
+          if not 0 < archive_path.stat().st_size <= 8 * 1024 * 1024:
+              raise ValueError("archive size exceeds the snapshot bound")
+          raw = archive_path.read_bytes()
+          if len(raw) != metadata["archive_bytes"] or hashlib.sha256(raw).hexdigest() != metadata["archive_sha256"]:
+              raise ValueError("committed archive hash or size mismatch")
+          records = metadata["files"]
+          if not isinstance(records, list) or not 1 <= len(records) <= 256:
+              raise ValueError("invalid source file count")
+          expected = {record["path"]: record for record in records}
+          if len(expected) != len(records) or "LICENSE" not in expected:
+              raise ValueError("duplicate paths or missing source license")
+          digest = hashlib.sha256(json.dumps(records, sort_keys=True, separators=(",", ":")).encode()).hexdigest()
+          if digest != metadata["source_sha256"]:
+              raise ValueError("source manifest digest mismatch")
+          total, payloads = 0, {}
+          with zipfile.ZipFile(archive_path) as archive:
+              entries = archive.infolist()
+              if len(entries) != len(expected) or set(archive.namelist()) != set(expected):
+                  raise ValueError("archive entries differ from the source manifest")
+              for item in entries:
+                  name = item.filename
+                  path = PurePosixPath(name)
+                  allowed = name == "LICENSE" or re.fullmatch(r"engine/(?:[a-z_][a-z_0-9]*/)*[a-z_][a-z_0-9]*\.(?:py|json|txt)", name)
+                  mode = stat.S_IFMT(item.external_attr >> 16)
+                  if not allowed or path.is_absolute() or ".." in path.parts or path.as_posix() != name:
+                      raise ValueError("unsafe source archive path")
+                  if item.is_dir() or mode not in (0, stat.S_IFREG):
+                      raise ValueError("source archive entry must be a regular file")
+                  record = expected[name]
+                  size = record["bytes"]
+                  if type(size) is not int or not 0 <= size <= 4 * 1024 * 1024 or item.file_size != size:
+                      raise ValueError("source file size mismatch")
+                  total += size
+                  if total > 16 * 1024 * 1024:
+                      raise ValueError("uncompressed snapshot exceeds its bound")
+                  data = archive.read(item)
+                  if len(data) != size or hashlib.sha256(data).hexdigest() != record["sha256"]:
+                      raise ValueError("source file hash mismatch")
+                  payloads[name] = data
+          if total != metadata["uncompressed_bytes"]:
+              raise ValueError("uncompressed byte count mismatch")
+          model = payloads["engine/data/neural_router_v2_weights.json"]
+          if hashlib.sha256(model).hexdigest() != metadata["model_sha256"]:
+              raise ValueError("model hash mismatch")
+          destination = Path(os.environ["RUNNER_TEMP"]) / "cipher-lab-source"
+          destination.mkdir(exist_ok=False)
+          for name, data in payloads.items():
+              target = destination.joinpath(*PurePosixPath(name).parts)
+              if not target.resolve().is_relative_to(destination.resolve()):
+                  raise ValueError("source destination escaped its root")
+              target.parent.mkdir(parents=True, exist_ok=True)
+              target.write_bytes(data)
+          print(f"Validated {len(payloads)} source files and extracted the committed snapshot.")
+          PY
+      - name: Check actual Python tools and worker bridge
+        env:
+          OPENBLAS_NUM_THREADS: '1'
+          OMP_NUM_THREADS: '1'
+        run: python scripts/test-cipher-lab-bridge.py --source "$RUNNER_TEMP/cipher-lab-source" -v
