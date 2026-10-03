@@ -13,7 +13,7 @@ export const musicPage = {
     name: 'Oro',
     applicationCategory: 'MultimediaApplication',
     operatingSystem: 'Web browser, macOS, Windows, Linux',
-    softwareVersion: '2.3.0',
+    softwareVersion: '2.10.0',
     url: 'https://www.hendrickresearch.com/music/oro/',
     downloadUrl: 'https://github.com/ChaseHendrick/synth/releases/latest',
     codeRepository: 'https://github.com/ChaseHendrick/synth',

@@ -14,11 +14,12 @@ import { contentPages, renderContentPage, pageHead, origin } from './src/content
 import { appearanceBootstrap } from './src/appearance-shared';
 import { musicPage, renderMusic } from './src/music';
 import { cipherLabPage, renderCipherLab } from './src/cipher-lab';
+import { appendixPage } from './src/appendix';
 
 const entries = catalogData.entries as CatalogEntry[];
 const editorialPages = contentPages();
 const xml = (value: string) => value.replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&apos;'}[c]!));
-const input = {cipherLab:fileURLToPath(new URL('./cipher-lab/index.html',import.meta.url)),music:fileURLToPath(new URL('./music/index.html',import.meta.url)),games:fileURLToPath(new URL('./games/index.html',import.meta.url)),home:fileURLToPath(new URL('./index.html',import.meta.url)),genchase:fileURLToPath(new URL('./genchase/index.html',import.meta.url)),editorial:fileURLToPath(new URL('./editorial/index.html',import.meta.url)),appearance:fileURLToPath(new URL('./appearance/index.html',import.meta.url)),...Object.fromEntries(gamePages.map(g=>[g.id,fileURLToPath(new URL(`./${g.htmlFile}`,import.meta.url))]))};
+const input = {appendix:fileURLToPath(new URL('./appendix-z/index.html',import.meta.url)),cipherLab:fileURLToPath(new URL('./cipher-lab/index.html',import.meta.url)),music:fileURLToPath(new URL('./music/index.html',import.meta.url)),games:fileURLToPath(new URL('./games/index.html',import.meta.url)),home:fileURLToPath(new URL('./index.html',import.meta.url)),genchase:fileURLToPath(new URL('./genchase/index.html',import.meta.url)),editorial:fileURLToPath(new URL('./editorial/index.html',import.meta.url)),appearance:fileURLToPath(new URL('./appearance/index.html',import.meta.url)),...Object.fromEntries(gamePages.map(g=>[g.id,fileURLToPath(new URL(`./${g.htmlFile}`,import.meta.url))]))};
 let atlasAppearanceHead = '';
 
 export default defineConfig({
@@ -42,7 +43,8 @@ export default defineConfig({
     transformIndexHtml: {
       order: 'pre',
       handler(html) {
-        html = html.replace('<head>', '<head>' + appearanceBootstrap);
+        html = html.replace('<head>', '<head>' + appearanceBootstrap + '<link rel="author" href="/humans.txt"/>');
+        if (html.includes('<!--appendix-html-->')) return html.replace('<!--appendix-html-->',renderContentPage(appendixPage));
         if (html.includes('<!--cipher-lab-html-->')) return html.replace('<!--cipher-lab-head-->',pageHead(cipherLabPage)).replace('<!--cipher-lab-html-->',renderCipherLab());
         if (html.includes('<!--music-html-->')) return html.replace('<!--music-head-->',pageHead(musicPage)).replace('<!--music-html-->',renderMusic());
         if (html.includes('<!--games-html-->')) {

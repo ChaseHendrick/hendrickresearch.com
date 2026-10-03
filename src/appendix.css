@@ -1,0 +1,11 @@
+.secret-list{list-style:none;padding:0;margin:0 0 10px;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.secret{border:1px dashed var(--line);border-radius:10px;padding:18px 18px 16px;color:var(--muted)}
+.secret.found{border-style:solid;color:var(--ink);background:var(--surface)}
+.secret h3{font-family:var(--serif);font-size:24px;font-weight:400;line-height:1.2;margin:4px 0 8px;color:var(--ink)}
+.secret p{font-size:14px;line-height:1.7;margin:0}
+.secret .secret-state{font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--muted)}
+.secret.found .secret-state{color:var(--copper)}
+.secret-reset{font:inherit;font-size:13px;color:var(--muted);background:none;border:1px solid var(--line);border-radius:999px;padding:8px 16px;cursor:pointer}
+.secret-reset:hover{color:var(--ink);border-color:var(--line-strong)}
+.secret-reset:focus-visible{outline:2px solid var(--copper);outline-offset:2px}
+.secret-note a{text-decoration:underline;text-underline-offset:3px}.secret-note a:hover{color:var(--copper)}
