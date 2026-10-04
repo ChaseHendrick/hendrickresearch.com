@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 // Refreshes public/music/oro/ with the Oro web app.
 //
-//   node scripts/sync-orograph.mjs [path/to/synth]   build a synth checkout (default ../synth), then copy it
+//   node scripts/sync-orograph.mjs [path/to/Oro]   build an Oro checkout (default ../Oro), then copy it
 //   node scripts/sync-orograph.mjs --dist <folder>   copy a finished web build, such as an unzipped
-//                                                    Oro-web.zip from a synth release
+//                                                    Oro-web.zip from an Oro release
 //
-// The synth checkout needs its own `npm ci` first. Nothing in the checkout is changed: the build goes to
+// The Oro checkout needs its own `npm ci` first. Nothing in the checkout is changed: the build goes to
 // a temporary folder. The copy replaces public/music/oro/ completely, then this site's canonical,
 // social and WebApplication metadata is added to its index.html.
 import { execFileSync } from 'node:child_process';
@@ -30,19 +30,19 @@ if (args[0] === '--dist') {
   if (!args[1]) fail('pass the folder that holds the built index.html after --dist');
   build = resolve(args[1]);
 } else {
-  const synth = resolve(args[0] ?? join(site, '..', 'synth'));
-  if (!existsSync(join(synth, 'package.json'))) fail(`no synth checkout at ${synth}`);
-  const version = JSON.parse(readFileSync(join(synth, 'package.json'), 'utf8')).version;
+  const checkout = resolve(args[0] ?? join(site, '..', 'Oro'));
+  if (!existsSync(join(checkout, 'package.json'))) fail(`no Oro checkout at ${checkout}`);
+  const version = JSON.parse(readFileSync(join(checkout, 'package.json'), 'utf8')).version;
   let commit = 'unknown commit';
   try {
-    commit = run('git', ['rev-parse', '--short', 'HEAD'], synth).trim();
-    if (run('git', ['status', '--porcelain', '--untracked-files=no'], synth).trim()) commit += ' with uncommitted changes';
+    commit = run('git', ['rev-parse', '--short', 'HEAD'], checkout).trim();
+    if (run('git', ['status', '--porcelain', '--untracked-files=no'], checkout).trim()) commit += ' with uncommitted changes';
   } catch { /* not a git checkout */ }
-  provenance = `Oro ${version}, ChaseHendrick/synth ${commit}`;
+  provenance = `Oro ${version}, ChaseHendrick/Oro ${commit}`;
   temporary = mkdtempSync(join(tmpdir(), 'orograph-web-'));
   build = temporary;
   console.log(`Building ${provenance} into ${build}`);
-  execFileSync('npx', ['vite', 'build', '--outDir', build, '--emptyOutDir'], { cwd: synth, stdio: 'inherit', shell: process.platform === 'win32' });
+  execFileSync('npx', ['vite', 'build', '--outDir', build, '--emptyOutDir'], { cwd: checkout, stdio: 'inherit', shell: process.platform === 'win32' });
 }
 
 // The app must load from a sub-path, so every reference has to be relative.
@@ -88,7 +88,7 @@ const schema = {
   operatingSystem: 'Web browser',
   browserRequirements: 'A modern browser with Web Audio and WebGL. Current Chrome or Edge for MIDI devices.',
   image,
-  codeRepository: 'https://github.com/ChaseHendrick/synth',
+  codeRepository: 'https://github.com/ChaseHendrick/Oro',
   license: 'https://opensource.org/licenses/MIT',
   isAccessibleForFree: true,
   offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },

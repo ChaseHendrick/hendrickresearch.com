@@ -15,8 +15,8 @@ export const musicPage = {
     operatingSystem: 'Web browser, macOS, Windows, Linux',
     softwareVersion: '2.15.1',
     url: 'https://www.hendrickresearch.com/music/oro/',
-    downloadUrl: 'https://github.com/ChaseHendrick/synth/releases/latest',
-    codeRepository: 'https://github.com/ChaseHendrick/synth',
+    downloadUrl: 'https://github.com/ChaseHendrick/Oro/releases/latest',
+    codeRepository: 'https://github.com/ChaseHendrick/Oro',
     image: 'https://www.hendrickresearch.com/music/oro-social.jpg',
     license: 'https://opensource.org/licenses/MIT',
     offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
@@ -46,10 +46,10 @@ export const musicPage = {
 };
 
 const source = 'https://github.com/ChaseHendrick/music-field-manual/tree/main/native/MPCStudio';
-const orographSource = 'https://github.com/ChaseHendrick/synth';
-const orographRelease = 'https://github.com/ChaseHendrick/synth/releases/latest';
+const orographSource = 'https://github.com/ChaseHendrick/Oro';
+const orographRelease = 'https://github.com/ChaseHendrick/Oro/releases/latest';
 const orographDownload = (file: string) => `${orographRelease}/download/${file}`;
-// Release asset names come from the synth repository's package.json (build.*.artifactName) and its release workflow.
+// Release asset names come from the Oro repository's package.json (build.*.artifactName) and its release workflow.
 export const orographFiles = [
   ['Oro-mac-arm64.dmg', 'Mac (Apple Silicon)'],
   ['Oro-mac-x64.dmg', 'Mac (Intel)'],
