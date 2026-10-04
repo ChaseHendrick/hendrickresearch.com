@@ -2,6 +2,7 @@
   "framework": "vite",
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
+  "ignoreCommand": "[ \"$VERCEL_ENV\" != \"production\" ]",
   "headers": [
     {
       "source": "/games/after-the-sirens/servers.json",
