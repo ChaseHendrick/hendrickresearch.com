@@ -25,12 +25,25 @@
       root.dataset.theme = theme;
       root.dataset.themePref = pref;
       root.style.colorScheme = theme;
-      root.style.background = theme === 'light' ? '#efe7d8' : '#070a12';
+      // The hidden Phosphor theme (src/ui/eggs.js applySkin), also before first paint.
+      var skin = false;
+      try { var fun = JSON.parse(localStorage.getItem('oro.fun.v1') || 'null'); skin = !!(fun && fun.data && fun.data.skin === 'phosphor' && fun.secret && fun.secret['logo-seven']); } catch (e) { /* storage blocked or unreadable */ }
+      if (skin) root.dataset.skin = 'phosphor';
+      root.style.background = skin ? (theme === 'light' ? '#f1eedf' : '#040805') : (theme === 'light' ? '#efe7d8' : '#070a12');
     })();
   </script>
-  <script type="module" crossorigin src="./assets/index-CSmt30fc.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-YB_q0FZ9.css">
-  <!-- Added by hendrickresearch.com scripts/sync-orograph.mjs from Oro 2.10.0, ChaseHendrick/synth 42d1505 -->
+  <script type="module" crossorigin src="./assets/index-hzELqD6E.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/drum-kit-HezwdCRh.js">
+  <link rel="modulepreload" crossorigin href="./assets/params-Cg9dp1Zi.js">
+  <link rel="modulepreload" crossorigin href="./assets/tracks-C_FqqZqR.js">
+  <link rel="modulepreload" crossorigin href="./assets/durable-storage-C__X9vU7.js">
+  <link rel="modulepreload" crossorigin href="./assets/terrain-math-CnB0mMtz.js">
+  <link rel="modulepreload" crossorigin href="./assets/terrains-C92_Y91U.js">
+  <link rel="modulepreload" crossorigin href="./assets/user-terrain-DdxeHHAW.js">
+  <link rel="modulepreload" crossorigin href="./assets/damage-W2EtVzmf.js">
+  <link rel="modulepreload" crossorigin href="./assets/migrate-jIzf8K8s.js">
+  <link rel="stylesheet" crossorigin href="./assets/index-BarBOpvv.css">
+  <!-- Added by hendrickresearch.com scripts/sync-orograph.mjs from Oro 2.11.0, ChaseHendrick/synth bfe82e3 -->
   <link rel="canonical" href="https://www.hendrickresearch.com/music/oro/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Hendrick Research">
