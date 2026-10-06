@@ -7,9 +7,11 @@ import './appearance';
 import './content-pages.css';
 import './research.css';
 import { mountResearch } from './research-main';
+import { mountPaperModules } from './paper-modules';
 import { mountArtPlayground } from './art-playground';
 document.querySelectorAll<HTMLElement>('[data-art-id]').forEach(mountArtPlayground);
 mountResearch();
+mountPaperModules();
 
 const data = document.querySelector('#method-samples');
 if (data?.textContent) {

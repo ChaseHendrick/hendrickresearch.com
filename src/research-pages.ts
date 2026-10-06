@@ -8,8 +8,8 @@ import { escapeHTML, origin, type ContentPage } from './content-pages';
 
 type Status = { status: string; label: string; definition: string; count: number; percent: number };
 type Family = { family: string; status: string; status_label: string; evidence: string; next: string | null; priority: number | null; logs: string[] };
-type Row = { label: string; value: number; median?: number; within_8?: number | null };
-type Chart = { id: string; kind: string; title: string; caption: string; unit: string; log?: string; rows: Row[] };
+export type Row = { label: string; value: number; median?: number; within_8?: number | null };
+export type Chart = { id: string; kind: string; title: string; caption: string; unit: string; log?: string; rows: Row[] };
 type Faq = { q: string; a: string };
 type Case = {
   id: string; title: string; kind: string; stage: string; unit: string; reviewed_through: string;
@@ -47,7 +47,7 @@ function statusBar(c: Case, compact = false): string {
 }
 
 /** Horizontal bars for one series. The table view carries every number. */
-function barChart(chart: Chart): string {
+export function barChart(chart: Chart): string {
   const max = Math.max(...chart.rows.map(r => r.value), 1);
   const hasMedian = chart.rows.some(r => r.median !== undefined);
   const limit = 12;
@@ -87,7 +87,7 @@ function modules(c: Case): string {
     const top = Math.max(...counts.values());
     const grid = cells.map((cell, i) => `<button class="rs-cell" data-cell="${cell}" data-i="${i}" data-heat="${Math.ceil((6 * (counts.get(cell) ?? 0)) / top)}" aria-label="${escapeHTML(`Row ${Math.floor(i / width) + 1}, column ${(i % width) + 1}: ${cell}, appears ${counts.get(cell)} times`)}">${cell}</button>`).join('');
     out.push(`<section class="editorial-section rs-module" aria-labelledby="grid-title"><h2 id="grid-title">Explore the 196 cells.</h2><p class="section-intro">Each pair of digits names a cell of a 5 by 5 letter square: the first digit picks the row (6, 7, 8, 9 or 0) and the second the column (1 to 5). Select a cell to see every place it appears. Shading shows how common a cell is. Type a 25-letter square to see what the cells would say under it; whatever you type, the result will look like random letters unless the cells were also rearranged.</p><div class="rs-grid-tools"><div class="rs-chip-row" role="group" aria-label="Show cells as"><button class="rs-chip" aria-pressed="true" data-show="pairs">Digit pairs</button><button class="rs-chip" aria-pressed="false" data-show="letters">Letters under a square</button><button class="rs-chip" aria-pressed="true" data-heat-toggle>Shading</button></div><label class="rs-square">Your square, 25 letters, row by row (J is folded into I)<input id="rs-square" value="ABCDEFGHIKLMNOPQRSTUVWXYZ" maxlength="40" spellcheck="false" autocomplete="off"/></label></div><div class="rs-grid" style="--w:${width}" data-width="${width}" data-heat-on>${grid}</div><p class="rs-readout" id="rs-grid-readout" role="status">Select a cell.</p><script type="application/json" id="rs-cells">${json(cells)}</script></section>`);
-    out.push(`<section class="editorial-section rs-module" aria-labelledby="fit-title"><h2 id="fit-title">Test a text of your own.</h2><p class="section-intro">If a message were enciphered with a one-to-one letter key and then shuffled in any order, its letter counts would survive. Paste at least 196 letters of any language, and this counts how many of the cells would have to be wrong for the best 196-letter stretch of your text to fit. Ordinary English needs at least 8; the best Latin found so far needs 4. Nothing you paste leaves your browser.</p><label class="rs-fit-label" for="rs-fit-text">Your text</label><textarea id="rs-fit-text" rows="6" placeholder="Paste a paragraph or a whole chapter..."></textarea><div class="editorial-actions"><button class="rs-button" id="rs-fit-run" type="button">Count the fit</button></div><p class="rs-readout" id="rs-fit-readout" role="status"></p></section>`);
+    out.push(`<section class="editorial-section rs-module" aria-labelledby="fit-title"><h2 id="fit-title">Test a text of your own.</h2><p class="section-intro">If a message were enciphered with a one-to-one letter key and then shuffled in any order, its letter counts would survive. Paste at least 196 letters of any language, and this counts how many of the cells would have to be wrong for the best 196-letter stretch of your text to fit. Ordinary English needs at least 8; the best Latin found so far, in 59.8 million letters, needs 3. Nothing you paste leaves your browser.</p><label class="rs-fit-label" for="rs-fit-text">Your text</label><textarea id="rs-fit-text" rows="6" placeholder="Paste a paragraph or a whole chapter..."></textarea><div class="editorial-actions"><button class="rs-button" id="rs-fit-run" type="button">Count the fit</button></div><p class="rs-readout" id="rs-fit-readout" role="status"></p></section>`);
   }
   const ciphertext = c.data.ciphertext as string | undefined;
   const clues = c.data.clues as { offset: number; text: string }[] | undefined;

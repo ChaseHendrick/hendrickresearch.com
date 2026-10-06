@@ -173,7 +173,7 @@ function grid(): void {
       counts[symbols[start]] -= 1;
       counts[symbols[start + n]] += 1;
     }
-    const verdict = best === 0 ? 'That stretch has exactly the cells\' letter counts, which nothing in 8.9 million letters of Latin did.' : best < 4 ? 'Closer than anything found in 8.9 million letters of Latin.' : best === 4 ? 'As close as the best Latin found so far.' : best <= 8 ? 'About as close as the best English.' : 'Further away than ordinary English or Latin.';
+    const verdict = best === 0 ? 'That stretch has exactly the cells\' letter counts, which nothing in 59.8 million letters of Latin did.' : best < 3 ? 'Closer than anything found in 59.8 million letters of Latin.' : best === 3 ? 'As close as the best Latin found so far.' : best <= 8 ? 'About as close as ordinary English or Latin gets.' : 'Further away than ordinary English or Latin.';
     out.textContent = `${letters.length.toLocaleString('en-US')} letters, ${windows.toLocaleString('en-US')} windows. The closest window starts at letter ${bestAt + 1} and needs ${best} wrong cell${best === 1 ? '' : 's'}; the average window needs ${(sum / windows).toFixed(1)}. ${verdict} A close fit is a reason to search, not a reading.`;
   });
 }
@@ -191,7 +191,7 @@ function k4(): void {
 }
 
 export function mountResearch(): void {
-  if (!document.querySelector('.rs-views, .rs-overview, .rs-cards')) return;
+  if (!document.querySelector('.rs-views, .rs-overview, .rs-case-list')) return;
   document.documentElement.classList.add('js-research');
   views();
   tooltips();
