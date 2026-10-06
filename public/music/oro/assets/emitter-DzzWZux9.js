@@ -1,0 +1,1 @@
+function e(){let e=new Map;return{on(t,n){return typeof n==`function`?(e.has(t)||e.set(t,new Set),e.get(t).add(n),()=>this.off(t,n)):()=>{}},off(t,n){let r=e.get(t);r&&r.delete(n)},emit(t,n){let r=e.get(t);if(r&&r.size!==0)for(let e of[...r])try{e(n)}catch(e){console.error(`[orograph] ${t} listener failed`,e)}},has(t){let n=e.get(t);return!!(n&&n.size)}}}export{e as t};
