@@ -118,3 +118,11 @@ html[data-theme="dark"] .rs-grid[data-heat-on] .rs-cell:is([data-heat="5"],[data
 .rs-legend-line{display:inline-block;width:14px;height:0;border-top:2px dashed var(--ink)}
 .rs-legend-dot{display:inline-block;width:9px;height:9px;border-radius:50%;border:2px solid var(--ink)}
 @media(max-width:650px){.pm-pair,.pm-figures{grid-template-columns:1fr}}
+
+/* Research hero shader: a quiet layer on the right, fading out under the text. */
+.rs-hero{position:relative;isolation:isolate}
+.rs-hero>*:not(.hero-shader){position:relative}
+.hero-shader{position:absolute;inset:0 calc(50% - 50vw) 0 auto;width:min(1100px,100vw);height:100%;z-index:-1;opacity:0;transition:opacity 1.2s;pointer-events:none;-webkit-mask-image:linear-gradient(to right,transparent 0,#000 55%);mask-image:linear-gradient(to right,transparent 0,#000 55%)}
+.hero-shader-on{opacity:.42}
+html[data-theme="dark"] .hero-shader-on{opacity:.5}
+@media(max-width:650px){.hero-shader{-webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 70%);mask-image:linear-gradient(to bottom,transparent 0,#000 70%)}.hero-shader-on{opacity:.28}}
