@@ -1,0 +1,1315 @@
+{
+ "minimal-winding": {
+  "source": {
+   "repository": "https://github.com/ChaseHendrick/minimal-winding",
+   "commit": "52a939178bebd64cff080c4df07a1b2f6457961d",
+   "path": "data/"
+  },
+  "winding": [
+   {
+    "N": 3,
+    "P": 0.8660254037844386,
+    "kind": "proved lower bound, approached but never reached"
+   },
+   {
+    "N": 4,
+    "P": 0.7978967838798635,
+    "kind": "computer-assisted proof"
+   },
+   {
+    "N": 5,
+    "P": 0.7448144569624925,
+    "kind": "computer-assisted proof"
+   },
+   {
+    "N": 6,
+    "P": 0.7136801485293924,
+    "kind": "computer-assisted proof"
+   },
+   {
+    "N": 7,
+    "P": 0.6936617908325858,
+    "kind": "numerical"
+   },
+   {
+    "N": 8,
+    "P": 0.6797704207872098,
+    "kind": "numerical"
+   },
+   {
+    "N": 9,
+    "P": 0.6592598629827399,
+    "kind": "numerical"
+   },
+   {
+    "N": 10,
+    "P": 0.6377055919488706,
+    "kind": "numerical"
+   },
+   {
+    "N": 11,
+    "P": 0.6179510626852395,
+    "kind": "numerical"
+   },
+   {
+    "N": 12,
+    "P": 0.6044746933096479,
+    "kind": "numerical"
+   },
+   {
+    "N": 33,
+    "P": 0.517229132219544,
+    "kind": "numerical"
+   },
+   {
+    "N": 61,
+    "P": 0.4981844391597139,
+    "kind": "numerical"
+   },
+   {
+    "N": 603,
+    "P": 0.4793959201448831,
+    "kind": "numerical"
+   }
+  ],
+  "continuum": 0.47736353369161205,
+  "configs": {
+   "n4": {
+    "N": 4,
+    "alpha": 0,
+    "z": [
+     [
+      -2.541236694227,
+      0.0
+     ],
+     [
+      0.062455553544,
+      -0.113249622108
+     ],
+     [
+      -3.060272371211,
+      0.256070066914
+     ],
+     [
+      -3.143809948969,
+      -0.309726223056
+     ]
+    ],
+    "G": [
+     1.0,
+     9.603086382531,
+     1.607474379788,
+     -2.18231386812
+    ],
+    "P": 0.7978967838798635
+   },
+   "n5": {
+    "N": 5,
+    "alpha": 0,
+    "z": [
+     [
+      2.585365227683,
+      0.0
+     ],
+     [
+      3.024595479413,
+      0.528338080257
+     ],
+     [
+      -0.104387543718,
+      0.16738059643
+     ],
+     [
+      3.080864663339,
+      -0.120435328129
+     ],
+     [
+      2.16206357919,
+      0.235485161281
+     ]
+    ],
+    "G": [
+     1.0,
+     -2.511975958356,
+     7.968706240576,
+     1.410467517024,
+     0.693189623957
+    ],
+    "P": 0.7448144569624925
+   },
+   "n6": {
+    "N": 6,
+    "alpha": 0,
+    "z": [
+     [
+      2.814239418713,
+      0.0
+     ],
+     [
+      -0.138234599168,
+      0.241881039877
+     ],
+     [
+      2.386553427198,
+      0.261484410376
+     ],
+     [
+      3.620951696696,
+      0.508916560129
+     ],
+     [
+      3.230843188307,
+      -0.203850045515
+     ],
+     [
+      3.761171141566,
+      -0.296075972452
+     ]
+    ],
+    "G": [
+     1.0,
+     10.415231432141,
+     0.766299097094,
+     -3.826609265804,
+     1.314808678709,
+     1.702852275563
+    ],
+    "P": 0.7136801485293924
+   },
+   "n12": {
+    "N": 12,
+    "alpha": 0,
+    "z": [
+     [
+      -0.072277759335,
+      0.0
+     ],
+     [
+      -1.509057324244,
+      -0.180197917736
+     ],
+     [
+      1.706981542915,
+      0.801749725863
+     ],
+     [
+      -0.763518651295,
+      -0.202290689088
+     ],
+     [
+      1.969861071946,
+      0.277388731985
+     ],
+     [
+      1.611168875281,
+      0.217199688354
+     ],
+     [
+      0.995858950231,
+      0.258228728251
+     ],
+     [
+      1.306017966097,
+      0.233367266582
+     ],
+     [
+      -1.690871005213,
+      -0.755129425024
+     ],
+     [
+      -1.162131388862,
+      -0.205741381573
+     ],
+     [
+      -1.902723910306,
+      -0.223590576485
+     ],
+     [
+      0.609336635349,
+      0.230658871978
+     ]
+    ],
+    "G": [
+     1.0,
+     0.467140175595,
+     -1.30449906474,
+     0.391544355626,
+     0.577984739134,
+     0.452136715076,
+     0.319839160439,
+     0.358705991116,
+     -1.206741492639,
+     0.367992642255,
+     0.631735581569,
+     0.390829780003
+    ],
+    "P": 0.6044746933096479
+   },
+   "n61": {
+    "N": 61,
+    "alpha": 0,
+    "z": [
+     [
+      7.081675457708,
+      0.0
+     ],
+     [
+      -0.0,
+      -0.0
+     ],
+     [
+      5.712074314203,
+      1.301080582753
+     ],
+     [
+      4.945215008273,
+      -0.297382649506
+     ],
+     [
+      -4.426229836689,
+      0.178178915983
+     ],
+     [
+      4.76867168357,
+      -0.262186893997
+     ],
+     [
+      -4.257748881622,
+      0.131493706064
+     ],
+     [
+      -5.712074314203,
+      -1.301080582753
+     ],
+     [
+      -7.081675457708,
+      0.0
+     ],
+     [
+      -4.945215008273,
+      0.297382649506
+     ],
+     [
+      4.426229836689,
+      -0.178178915983
+     ],
+     [
+      -4.76867168357,
+      0.262186893997
+     ],
+     [
+      4.257748881622,
+      -0.131493706064
+     ],
+     [
+      -5.127115117369,
+      0.326398984912
+     ],
+     [
+      5.127115117369,
+      -0.326398984912
+     ],
+     [
+      -5.31586581787,
+      0.347743791803
+     ],
+     [
+      5.31586581787,
+      -0.347743791803
+     ],
+     [
+      5.513157988172,
+      -0.35960322547
+     ],
+     [
+      -5.513157988172,
+      0.35960322547
+     ],
+     [
+      -4.59611177773,
+      0.222080681216
+     ],
+     [
+      4.59611177773,
+      -0.222080681216
+     ],
+     [
+      5.721002154535,
+      -0.359691534799
+     ],
+     [
+      -5.721002154535,
+      0.359691534799
+     ],
+     [
+      -5.941945020526,
+      0.345003208619
+     ],
+     [
+      5.941945020526,
+      -0.345003208619
+     ],
+     [
+      6.731011746265,
+      -0.157230309364
+     ],
+     [
+      -6.731011746265,
+      0.157230309364
+     ],
+     [
+      -6.17949847559,
+      0.311358441678
+     ],
+     [
+      6.17949847559,
+      -0.311358441678
+     ],
+     [
+      -6.439122869003,
+      0.25243813748
+     ],
+     [
+      6.439122869003,
+      -0.25243813748
+     ],
+     [
+      4.089387880543,
+      -0.082974518342
+     ],
+     [
+      -4.089387880543,
+      0.082974518342
+     ],
+     [
+      3.919832109071,
+      -0.033541421279
+     ],
+     [
+      -3.919832109071,
+      0.033541421279
+     ],
+     [
+      3.747703208376,
+      0.015885728929
+     ],
+     [
+      -3.747703208376,
+      -0.015885728929
+     ],
+     [
+      3.571525732543,
+      0.064359963567
+     ],
+     [
+      -3.571525732543,
+      -0.064359963567
+     ],
+     [
+      3.389686225651,
+      0.110879748672
+     ],
+     [
+      -3.389686225651,
+      -0.110879748672
+     ],
+     [
+      3.200379213292,
+      0.154359207517
+     ],
+     [
+      -3.200379213292,
+      -0.154359207517
+     ],
+     [
+      -3.001531447717,
+      -0.193593109065
+     ],
+     [
+      3.001531447717,
+      0.193593109065
+     ],
+     [
+      2.790690298797,
+      0.227212236969
+     ],
+     [
+      -2.790690298797,
+      -0.227212236969
+     ],
+     [
+      2.564852333082,
+      0.253621985336
+     ],
+     [
+      -2.564852333082,
+      -0.253621985336
+     ],
+     [
+      2.320189991023,
+      0.270911983147
+     ],
+     [
+      -2.320189991023,
+      -0.270911983147
+     ],
+     [
+      -2.051600934534,
+      -0.276715672281
+     ],
+     [
+      2.051600934534,
+      0.276715672281
+     ],
+     [
+      1.751948520471,
+      0.2679853893
+     ],
+     [
+      -1.751948520471,
+      -0.2679853893
+     ],
+     [
+      1.410814141968,
+      0.240645275915
+     ],
+     [
+      -1.410814141968,
+      -0.240645275915
+     ],
+     [
+      1.012949012457,
+      0.189231583967
+     ],
+     [
+      -1.012949012457,
+      -0.189231583967
+     ],
+     [
+      -0.540507483445,
+      -0.107929546565
+     ],
+     [
+      0.540507483445,
+      0.107929546565
+     ]
+    ],
+    "G": [
+     1.0,
+     1.395489913987,
+     -12.701509851268,
+     0.715181412091,
+     0.633394377026,
+     0.685875695086,
+     0.610660827392,
+     -12.701509851268,
+     1.0,
+     0.715181412091,
+     0.633394377026,
+     0.685875695086,
+     0.610660827392,
+     0.746245089957,
+     0.746245089957,
+     0.778826656104,
+     0.778826656104,
+     0.812628569547,
+     0.812628569547,
+     0.658542471501,
+     0.658542471501,
+     0.847251122858,
+     0.847251122858,
+     0.882128697204,
+     0.882128697204,
+     0.977838444136,
+     0.977838444136,
+     0.916437552618,
+     0.916437552618,
+     0.948957708095,
+     0.948957708095,
+     0.59060432875,
+     0.59060432875,
+     0.573536688146,
+     0.573536688146,
+     0.559837444651,
+     0.559837444651,
+     0.549977361081,
+     0.549977361081,
+     0.544551009976,
+     0.544551009976,
+     0.544324805359,
+     0.544324805359,
+     0.550311198616,
+     0.550311198616,
+     0.563888079916,
+     0.563888079916,
+     0.58699869684,
+     0.58699869684,
+     0.622499939379,
+     0.622499939379,
+     0.674791485861,
+     0.674791485861,
+     0.750970411867,
+     0.750970411867,
+     0.862785202347,
+     0.862785202347,
+     1.027900789969,
+     1.027900789969,
+     1.250753145781,
+     1.250753145781
+    ],
+    "P": 0.4981844391597139
+   }
+  },
+  "figures": [
+   "/papers/figures/minimal-winding/alpha-winding.png",
+   "/papers/figures/minimal-winding/minimal-winding-paths.svg",
+   "/papers/figures/minimal-winding/minimal-winding.svg"
+  ],
+  "abstract": "In a self-similar collapse of point vortices every vortex moves on a logarithmic spiral, and the angle P through which the configuration turns while the square of its size decreases by the factor e measures how tightly the spiral winds; for the Euler equation P = |ω_0| t_c, the initial angular velocity times the collapse time. For three Euler vortices with circulations (1, μ, -μ/(1 + μ)), 0 < μ ≤ 1, the collapsing configurations form two arcs, one for each orientation of the triangle, and P has exactly one critical point, a minimum, on each. The squared minima are roots of an explicit cubic, and the smaller one increases from √3/2, approached as μ → 0, to √2 at μ = 1. Hence P > √3/2 for every self-similar collapse of three point vortices, and the constant is sharp: every vortex travels more than twice its initial distance from the collision point. In the α-models, where a vortex induces the velocity Γ r^-α-1/(2π), every self-similar collapse of three vortices has P > √(3 + α)/(2 + α) for α > -2, again sharply. For two concentric regular n-gons, with or without a vortex at the center, P has a closed form, and its minimum is explicit and exceeds √3/2. A strong vortex with weak, tight opposite-signed pairs has P > √3/2 once the pairs are weak enough. For more vortices the bound fails. Computer-assisted proofs show that four, five and six Euler vortices collapse self-similarly with P < √3/2, that P has strict local minima 0.7978967838…, 0.7448144569… and 0.7136801485… on these collapses, that for α = 1 and α = 2 four vortices go below the three-vortex bounds, and that eleven vortices in the α = 2 model and sixty in the SQG model collapse without rotating. Numerically, sixty-one Euler vortices reach P = 0.498…."
+ },
+ "collapse-without-rotation": {
+  "source": {
+   "repository": "https://github.com/ChaseHendrick/collapse-without-rotation",
+   "commit": "0df6b010ef360886fc5a6503110900a8d3b6ca19",
+   "path": "data/"
+  },
+  "phase": [
+   {
+    "alpha": 6,
+    "N": 5
+   },
+   {
+    "alpha": 4,
+    "N": 6
+   },
+   {
+    "alpha": 3,
+    "N": 8
+   },
+   {
+    "alpha": 2,
+    "N": 11
+   },
+   {
+    "alpha": 1.5,
+    "N": 17
+   },
+   {
+    "alpha": 1.2,
+    "N": 29
+   },
+   {
+    "alpha": 1,
+    "N": 60
+   }
+  ],
+  "limit": [
+   0.66,
+   0.8
+  ],
+  "configs": {
+   "alpha2-n11": {
+    "N": 11,
+    "alpha": 2,
+    "z": [
+     [
+      0.0,
+      0.0
+     ],
+     [
+      1.0,
+      0.0
+     ],
+     [
+      0.754586604858,
+      -2.381979858372
+     ],
+     [
+      -1.80190988489,
+      -0.611106568754
+     ],
+     [
+      -4.071878335848,
+      -1.633344060278
+     ],
+     [
+      -2.763413394008,
+      -1.073007890302
+     ],
+     [
+      -8.67026862007,
+      -2.068989665311
+     ],
+     [
+      -0.939398367498,
+      -0.250825215039
+     ],
+     [
+      1.946276716288,
+      -0.271750896867
+     ],
+     [
+      3.549474596252,
+      -1.502678739161
+     ],
+     [
+      2.660832966029,
+      -0.728774402528
+     ]
+    ],
+    "G": [
+     1.0,
+     0.875851131278,
+     -8.944321379267,
+     0.722840338481,
+     1.303070540289,
+     0.851599932198,
+     27.636367677082,
+     0.703870482026,
+     0.920394570162,
+     2.293345014146,
+     0.379613540868
+    ],
+    "P": 0.0
+   },
+   "sqg-n60": {
+    "N": 60,
+    "alpha": 1,
+    "z": [
+     [
+      0.0,
+      0.0
+     ],
+     [
+      1.0,
+      0.0
+     ],
+     [
+      0.310481561088,
+      -0.030785538475
+     ],
+     [
+      -1.697394022554,
+      -0.731416741389
+     ],
+     [
+      0.15125050743,
+      -0.017884915228
+     ],
+     [
+      0.717627298452,
+      -0.030543636968
+     ],
+     [
+      0.497258755933,
+      -0.037052693666
+     ],
+     [
+      2.35870235061,
+      0.49494332428
+     ],
+     [
+      -0.125751293054,
+      0.018959851934
+     ],
+     [
+      -0.224222195113,
+      0.035489375859
+     ],
+     [
+      -0.399086054116,
+      0.067593323422
+     ],
+     [
+      -0.314537154262,
+      0.051717051367
+     ],
+     [
+      -0.479057403113,
+      0.082990015568
+     ],
+     [
+      -0.555236245598,
+      0.097783566949
+     ],
+     [
+      -0.628204470643,
+      0.111865932871
+     ],
+     [
+      -0.69841913644,
+      0.125144146913
+     ],
+     [
+      -0.766251588406,
+      0.137537813914
+     ],
+     [
+      -0.832010199288,
+      0.148976508291
+     ],
+     [
+      -0.895954964241,
+      0.159397511035
+     ],
+     [
+      -0.958307517868,
+      0.168743933151
+     ],
+     [
+      -1.019258346889,
+      0.176963177744
+     ],
+     [
+      -1.078972168282,
+      0.184005675428
+     ],
+     [
+      -1.137592049905,
+      0.189823833451
+     ],
+     [
+      -1.195242631871,
+      0.194371148053
+     ],
+     [
+      -1.252032685573,
+      0.19760143979
+     ],
+     [
+      -1.308057178218,
+      0.199468179432
+     ],
+     [
+      -1.363398949956,
+      0.199923876759
+     ],
+     [
+      -1.418130082078,
+      0.198919510286
+     ],
+     [
+      -1.472313023217,
+      0.196403978906
+     ],
+     [
+      -1.526001514534,
+      0.192323557548
+     ],
+     [
+      -1.579241341026,
+      0.186621340993
+     ],
+     [
+      -1.632070939983,
+      0.179236659697
+     ],
+     [
+      -1.684521879867,
+      0.170104450695
+     ],
+     [
+      -1.736619217911,
+      0.159154566784
+     ],
+     [
+      -1.788381751358,
+      0.146311002509
+     ],
+     [
+      -1.839822163143,
+      0.13149101278
+     ],
+     [
+      -1.89094705619,
+      0.114604096631
+     ],
+     [
+      -1.941756877315,
+      0.09555080936
+     ],
+     [
+      -1.992245710746,
+      0.074221361388
+     ],
+     [
+      -2.042400947422,
+      0.050493939336
+     ],
+     [
+      -2.092202783984,
+      0.024232679521
+     ],
+     [
+      -2.141623527153,
+      -0.004714804091
+     ],
+     [
+      -2.190626674185,
+      -0.03652048495
+     ],
+     [
+      -2.23916568476,
+      -0.07137975468
+     ],
+     [
+      -2.287182372264,
+      -0.109516288645
+     ],
+     [
+      -2.33460478159,
+      -0.151188312074
+     ],
+     [
+      -2.381344374769,
+      -0.196696807831
+     ],
+     [
+      -2.427292246901,
+      -0.246396462168
+     ],
+     [
+      -2.472313959044,
+      -0.300710570895
+     ],
+     [
+      -2.516242330968,
+      -0.360151825683
+     ],
+     [
+      -2.558867127551,
+      -0.425352108071
+     ],
+     [
+      -2.599919829869,
+      -0.497106602153
+     ],
+     [
+      -2.639050266291,
+      -0.576441677828
+     ],
+     [
+      -2.675789010117,
+      -0.664724394713
+     ],
+     [
+      -2.709483151836,
+      -0.763849844561
+     ],
+     [
+      -2.739177788186,
+      -0.876586909028
+     ],
+     [
+      -2.763373396523,
+      -1.007284903597
+     ],
+     [
+      -2.779449450473,
+      -1.163545845911
+     ],
+     [
+      -2.781927297143,
+      -1.361259615052
+     ],
+     [
+      -2.754889535392,
+      -1.641964528536
+     ]
+    ],
+    "G": [
+     1.0,
+     1.353311093643,
+     0.923680182343,
+     -37.447429807869,
+     0.850488873928,
+     1.068664924613,
+     1.048448506971,
+     41.001987032746,
+     0.628711947387,
+     0.59311410319,
+     0.555461956366,
+     0.571451936011,
+     0.542874780449,
+     0.532688858835,
+     0.524343787435,
+     0.517481056964,
+     0.511852081383,
+     0.507275680794,
+     0.503615376478,
+     0.50076618462,
+     0.498646284114,
+     0.497191500645,
+     0.496351547462,
+     0.49608726459,
+     0.496368692733,
+     0.49717374123,
+     0.498487013284,
+     0.500299057105,
+     0.502605899188,
+     0.505408633213,
+     0.508713139211,
+     0.512530155119,
+     0.516875151852,
+     0.521768541574,
+     0.527236018318,
+     0.533308970427,
+     0.540024966991,
+     0.547428698884,
+     0.555572540022,
+     0.564518681683,
+     0.574339606474,
+     0.585121252387,
+     0.596965129265,
+     0.609992198185,
+     0.624347577808,
+     0.640207014827,
+     0.65778583132,
+     0.677351151505,
+     0.699239860918,
+     0.723884488226,
+     0.751853119264,
+     0.783911855565,
+     0.821128489689,
+     0.865053085332,
+     0.918056645311,
+     0.984025056472,
+     1.069969556117,
+     1.190528628166,
+     1.386262167272,
+     1.717009251724
+    ],
+    "P": 0.0
+   }
+  },
+  "figures": [
+   "/papers/figures/collapse-without-rotation/phase-diagram.svg"
+  ],
+  "abstract": "In a self-similar collapse of point vortices the configuration turns through the angle P while the square of its size decreases by the factor e. A companion paper proved that P > √3/2 for three Euler vortices, that the same constant is the limit for a strong vortex carrying weak tight pairs of opposite sign, and, with computer-assisted proofs, that eleven vortices in the α = 2 model and sixty in the surface quasi-geostrophic (SQG) model can collapse without rotating at all. We first show that the constant √3/2 belongs to a larger class: a strong Euler vortex carrying any number of weak tight clusters, of any sizes and signs, has P ≥ √3/2 - o(1) as the clusters weaken. If P stays bounded, every cluster is close to a translating relative equilibrium whose net circulation is half the sum of the squares of its circulations, measured in units of the strong one; a single isolated weak vortex forces P to grow like the inverse of the weak circulations, with an explicit constant. In particular no such configuration collapses without rotation, whatever the number of vortices. We prove that a weak triple of signs (+,+,-) beside a positive strong vortex gives collapses with P below √3/2 by an amount proportional to the weak circulations, so that √3/2 is a limit and not a bound at a fixed strength, and that the constant cannot be increased for any number of weak vortices from two on; a formal expansion, confirmed by high-precision numerical collapses computed at fifty digits, extends the first-order term to clusters of any size and explains why four vortices are the first to go below √3/2. We then map, numerically, the least α at which N vortices can collapse without rotation along two families: the least N is 5, 6, 8, 11, 17, 29 and 60 for α = 6, 4, 3, 2, 1.5, 1.2 and 1, and fits of the thresholds give a positive limit between 0.66 and 0.80, while fits forced to the Euler value 0 are much worse. No self-similar collapse with nonzero total circulation is mirror symmetric; numerically, the two certified collapses without rotation are linearly unstable, with 8 and 57 unstable modes, and perturbed motions leave them without turning. Finally, numerically, the Euler minimizers of the companion paper approach a continuum of two point vortices and a positive vortex sheet, a kind of collapse that O'Neil found with point vortices approximating the sheet; with a density that vanishes like a square root at the tips of the sheet, the winding has a local minimum along a one-parameter family of such continua, P_∞ = 0.47736353369161202484…, stable to forty digits if the observed exponential convergence persists, which agrees with the extrapolation of the finite family."
+ },
+ "stable-expansion": {
+  "source": {
+   "repository": "https://github.com/ChaseHendrick/stable-expansion",
+   "commit": "e05975e987f3e69f6e87420e19ab527f149a5d38",
+   "path": "data/"
+  },
+  "configs": {
+   "stable4": {
+    "N": 4,
+    "alpha": 0,
+    "z": [
+     [
+      -0.475333596419,
+      0.0
+     ],
+     [
+      0.30171230324,
+      0.317510698403
+     ],
+     [
+      -0.165705125422,
+      -0.573374143937
+     ],
+     [
+      0.324133586764,
+      0.90839105151
+     ]
+    ],
+    "G": [
+     1.0,
+     2.499308345301,
+     0.113659064655,
+     -0.801844060587
+    ],
+    "P": 2.525942427406375
+   },
+   "stable5": {
+    "N": 5,
+    "alpha": 0,
+    "z": [
+     [
+      0.484260736592,
+      0.0
+     ],
+     [
+      0.590214932698,
+      0.457683956712
+     ],
+     [
+      0.178499566496,
+      -1.190534538051
+     ],
+     [
+      0.059934998037,
+      -0.943197072189
+     ],
+     [
+      -0.114970676183,
+      0.277050408446
+     ]
+    ],
+    "G": [
+     1.0,
+     -0.42680459625,
+     -0.875180271559,
+     1.289555747104,
+     1.334466472038
+    ],
+    "P": 2.4512610064607334
+   },
+   "unstable4": {
+    "N": 4,
+    "alpha": 0,
+    "z": [
+     [
+      0.71463608832,
+      0.0
+     ],
+     [
+      1.358384732562,
+      0.184886653098
+     ],
+     [
+      -0.213766058879,
+      0.325909887842
+     ],
+     [
+      1.192368094459,
+      -0.306858299445
+     ]
+    ],
+    "G": [
+     1.0,
+     -1.002918360296,
+     1.299817729583,
+     0.776245035343
+    ],
+    "P": 1.0742533546242068
+   },
+   "unstable5": {
+    "N": 5,
+    "alpha": 0,
+    "z": [
+     [
+      0.031058654813,
+      0.0
+     ],
+     [
+      -0.337223242095,
+      -0.835621083118
+     ],
+     [
+      -0.430302132751,
+      -0.693175000417
+     ],
+     [
+      -0.581053851612,
+      -0.995813342243
+     ],
+     [
+      -0.586132151446,
+      -0.943402945236
+     ]
+    ],
+    "G": [
+     1.0,
+     -0.156656153587,
+     0.178785256649,
+     -0.06963462137,
+     0.080897351246
+    ],
+    "P": 0.9316135251460169
+   }
+  },
+  "survey": [
+   {
+    "N": 4,
+    "stable": 52,
+    "converged": 342
+   },
+   {
+    "N": 5,
+    "stable": 32,
+    "converged": 543
+   }
+  ],
+  "figures": [
+   "/papers/figures/stable-expansion/stable-expansion-convergence.svg"
+  ],
+  "abstract": "Point vortices can move self-similarly, keeping their shape while the configuration grows like √t and turns. For three vortices such expanding configurations are stable, and Zbarsky used this to show that vortex patches placed at the three vortices stay confined for all time; he wrote that the result would most likely carry over to stably growing systems of four or more vortices, given sufficiently good stability. We give such configurations of four and five vortices, with the circulations (-1, -5/2, -1/9, 4/5) and (-1, 3/7, 7/8, -9/7, -47/35). In similarity variables their linearization has, besides the double eigenvalue 0 of the rotation and of the one-parameter family of such configurations, only eigenvalues with real part -1 or -2. The proof is computer-assisted: the configurations are enclosed by the Krawczyk method in ball arithmetic, and the spectrum is controlled through an exact lemma, which shows that six eigenvalues are forced by the rotation, the scaling, the translations and the family and that the others come in pairs k, 2 - k, together with enclosures of traces of powers of the Jacobian. The stability is nonlinear: every motion with the same circulations that starts near one of the two configurations stays within a bounded distance of an exactly self-similar expansion of a nearby member of the family, the member with the same energy, and an a priori estimate of the same kind holds for approximate solutions whose error is small and decays faster than the velocities. With this estimate in place of the one step of Zbarsky's proof that needs three vortices, his confinement theorem holds for the two configurations: vortex patches placed at the vortices stay within distance ε t^(1/4 + ε) of their centres of vorticity for all time, and the centres stay within a bounded distance of an exactly self-similar expansion of a single member of the family. The proof carries his argument over to any number of patches, with every estimate written out. Linear stability is an open condition; in a naive random search, 52 of 342 converged four-vortex collapses and 32 of 543 converged five-vortex collapses, not checked for duplicates, reverse into linearly stable expansions."
+ },
+ "hh-pulse": {
+  "source": {
+   "repository": "https://github.com/ChaseHendrick/hh-pulse",
+   "commit": "ad48f1dfde9e1d8fadb1c97b3053693ebf58840e",
+   "path": "data/"
+  },
+  "pulses": {
+   "18.5": {
+    "K": "10.43805106010112369227648623831857912185866977197832623694577177829239",
+    "lambda_u": 10.892081175221866,
+    "t_end": 10.5
+   },
+   "6.3": {
+    "K": "4.510632438270851083403265145734817151524748679704964534920325310959260",
+    "lambda_u": 4.97403036032072,
+    "t_end": 23.0
+   }
+  },
+  "speeds": {
+   "18.5": "18.73188824788048354046831343329624387695575077",
+   "6.3": "12.31375672016229859330140853674732362368394751453213155988245"
+  },
+  "hh1952": {
+   "18.5": 18.8
+  },
+  "figures": [
+   "/papers/figures/hh-pulse/pulse-profiles.svg"
+  ],
+  "abstract": "In 1952 Hodgkin and Huxley computed their propagated action potential by hand. They shot in the conduction speed on their travelling-wave equation (J. Physiol. 117, eq. (31)), and noted that the solution goes off towards plus or minus infinity on the two sides of the speed. The existence proofs that followed do not treat that equation. Hastings (1976) and Carpenter (1977) slow or speed the gating variables by a small parameter. We prove that the unmodified equation has a pulse, an orbit homoclinic to rest, at 18.5 C and at 6.3 C. The rate functions and constants are those Hodgkin and Huxley printed, including the leak potential 10.613 mV. The proof is computer-assisted, in ball arithmetic. The speed parameter K lies in an interval of width 3e-45 at 18.5 C and of width 2.8e-61 at 6.3 C. For the fibre constants of their p. 528, the conduction speed begins 18.73188824788048354046831343329624387695575077 m/s at 18.5 C, against the 18.8 m/s they computed, and 12.31375672016229859330140853674732362368394751453213155988245 m/s at 6.3 C. Every digit shown is proved. The orbit leaves rest along its one-dimensional unstable manifold. A validated Taylor integrator carries a whole interval of speeds through the spike. An isolating block with a cone condition around rest, and a Wazewski-type shooting argument, closes it."
+ },
+ "hh-dynamics": {
+  "source": {
+   "repository": "https://github.com/ChaseHendrick/hh-dynamics",
+   "commit": "7c19e93d2c24bfd289e62b82dcbe0047a17dfe5e",
+   "path": "README.md"
+  },
+  "hopf": {
+   "J_H1": [
+    9.775437995393,
+    9.775437995394
+   ],
+   "J_H2": [
+    154.522433665808,
+    154.522433665809
+   ]
+  },
+  "bistable": {
+   "J": 8,
+   "period_ms": [
+    16.0058,
+    16.014
+   ]
+  },
+  "figures": [
+   "/papers/figures/hh-dynamics/branch.svg",
+   "/papers/figures/hh-dynamics/orbits.svg",
+   "/papers/figures/hh-dynamics/period.svg"
+  ],
+  "abstract": "The space-clamped Hodgkin-Huxley equations with Hodgkin and Huxley's constants are the standard model of the action potential, and their bifurcations are known from numerical computation. We prove several of them with computer assistance in ball arithmetic, for every leak reversal potential E_l in [10.59, 10.62] mV, an interval that contains the value 10.613 printed by Hodgkin and Huxley and the value 10.5989... that makes the resting current zero, as their Table 3 says it should. For every applied current J in [0, 200] uA/cm2 there is exactly one equilibrium. There are two Hopf points J_H1 < J_H2 in this range: the equilibrium is asymptotically stable for J < J_H1 and for J > J_H2, it has exactly two eigenvalues with positive real part for J_H1 < J < J_H2, and no eigenvalue lies on the imaginary axis at any current of the range other than J_H1 and J_H2. At E_l = 10.613 the Hopf points lie at J_H1 in [9.775437995393, 9.775437995394] and J_H2 in [154.522433665808, 154.522433665809] uA/cm2, and both move by exactly 0.3 (10.613 - E_l) when E_l changes. The eigenvalues cross the imaginary axis transversally, and the first Lyapunov coefficient is positive at J_H1 and negative at J_H2: the lower Hopf bifurcation is subcritical and the upper one supercritical. At J = 8, for every E_l in the interval, a locally asymptotically stable equilibrium coexists with an orbitally asymptotically stable periodic orbit, a train of action potentials with period between 16.0058 and 16.0140 ms: the model is bistable there. At three values of E_l we also enclose a periodic orbit of saddle type. The proofs combine a Routh-Hurwitz analysis along the branch of equilibria with a C^1 Lohner-type Taylor integrator, the Krawczyk test and a contraction argument on Poincare sections. Nothing is claimed about the basins of attraction or about other attractors."
+ },
+ "nf-pulse": {
+  "source": {
+   "repository": "https://github.com/ChaseHendrick/nf-pulse",
+   "commit": "fc3f19c27b2d081dd212979031e6519bcbf890ba",
+   "path": "README.md"
+  },
+  "fast_speed": "1.1027477097341592491478677",
+  "slow_speed": "0.3775319350688905765075606",
+  "eps_range": [
+   0.08,
+   0.13693
+  ],
+  "figures": [
+   "/papers/figures/nf-pulse/pulse-profile.svg"
+  ],
+  "abstract": "Neural field equations describe the activity of a sheet of cortex as a continuum, and their traveling pulses model waves of activity such as those seen in disinhibited cortical slices. Pinto and Ermentrout (2001) analysed their model mainly with a Heaviside firing rate. For a Heaviside rate, Pinto, Jackson and Wayne (2005) prove pulses without assuming slow recovery. For a smooth rate, the existence results we found either require the recovery rate eps to be sufficiently small (Faye and Scheel; Dyson, arXiv:1810.05142; for synaptic depression, Faye 2013 and Hastings 2017) or are conditional: Burlakov, Oleynik and Ponosov (2025) prove traveling waves at a fixed recovery rate for continuous rates close to a Heaviside, provided a Heaviside pulse satisfies conditions verified for no example, and Hastings's Theorem 2 rests on properties of two solutions (one of the fast system, one of the full system) checked only numerically. We give computer-assisted proofs, in ball arithmetic, at explicit parameters, with eps not small for the Pinto-Ermentrout field. For the logistic firing rate with gain 20 and threshold 1/4, no recovery decay and the kernel e^(-|x|)/2 there is a fast pulse at eps = 1/10, with speed in (c_1, c_1 + 10^-25) where c_1 = 1.1027477097341592491478677, and a slow pulse; a fast pulse exists for every eps in [0.08, 0.13693] and at eps = 3/20, where it coexists with a slow pulse. A fast pulse also exists for the sigmoid of Pinto and Ermentrout's Fig. 5 at eps = 3/20 (a saddle-focus at rest) and in Faye's model with synaptic depression at his other parameters for eps = 1/100, 1/50 and 1/20. For the fast pulse at eps = 1/10 we prove spectral stability for every pulse of a nonempty class defined by a speed bracket of width 10^-58 and a condition on the profile. Nonlinear stability is not proved."
+ },
+ "double-pendulum": {
+  "source": {
+   "repository": "https://github.com/ChaseHendrick/double-pendulum",
+   "commit": "058cf715da172ab8beb8e8c4c7c53cafa2b9cef8",
+   "path": "README.md"
+  },
+  "entropy": [
+   {
+    "E": -0.5,
+    "per_return": 0.0906,
+    "per_time": 0.0213
+   },
+   {
+    "E": 0.0,
+    "per_return": 0.1016,
+    "per_time": 0.0138
+   },
+   {
+    "E": 0.5,
+    "per_return": 0.0906,
+    "per_time": 0.0129
+   }
+  ],
+  "figures": [
+   "/papers/figures/double-pendulum/section-enclosures.svg"
+  ],
+  "abstract": "The planar double pendulum with two equal point masses on two equal massless rods is the standard example of chaos in classical mechanics, but, as far as we could find, neither its chaos nor its non-integrability has been proved at these parameters: the known proofs need a small parameter (a weak coupling, a small mass ratio, a special link geometry), and the one variational criterion that needs none has been applied only under a parameter condition that, in the openly searchable text of that paper, the equal case does not satisfy. We give a computer-assisted proof. At each of the energies E = -1/2, 0 and 1/2, in units in which the lower rest state has E = -3 and E = 0 is the energy of releasing both arms from rest in the horizontal position, the flow on the energy level has a hyperbolic periodic orbit with a transversal homoclinic orbit, and the same holds simultaneously for every energy in [-10^-10, 10^-10]. Consequently every real-analytic function on such a level that is invariant under the flow is constant, and the double pendulum has no real-analytic first integral functionally independent of the energy on any connected open set that contains the level E = 0. At each of these three energies, explicit covering relations between h-sets give a topological horseshoe (a compact invariant set semiconjugate to a subshift of finite type) with explicit bounds; at E = 0: the Poincaré return map has a compact invariant set on which its topological entropy exceeds 0.1016, and the topological entropy of the flow on the level exceeds 0.0138 per unit time. The proofs combine interval arithmetic (the CAPD library), the time-reversal symmetry of the pendulum, cone conditions for the local unstable manifold and covering relations; the programs and their output accompany the paper. Meromorphic non-integrability in the sense of Morales-Ruiz and Ramis remains open."
+ },
+ "cardiac-rings": {
+  "source": {
+   "repository": "https://github.com/ChaseHendrick/cardiac-rings",
+   "commit": "02cce5bd80670ed9e60a3321e7e681cc236cf662",
+   "path": "data/"
+  },
+  "rings": [
+   {
+    "N": 8,
+    "T_ms": "53.58797097681944967415082"
+   },
+   {
+    "N": 16,
+    "T_ms": "53.58806910359016923593730"
+   },
+   {
+    "N": 32,
+    "T_ms": "53.58809413031803250655154"
+   },
+   {
+    "N": 64,
+    "T_ms": "53.58810041831757754104213"
+   }
+  ],
+  "multiplier_bound": 0.9997321,
+  "figures": [
+   "/papers/figures/cardiac-rings/alln-pieces.png",
+   "/papers/figures/cardiac-rings/branch-hopf.png",
+   "/papers/figures/cardiac-rings/cell-orbit.svg",
+   "/papers/figures/cardiac-rings/ring-wave.svg"
+  ],
+  "abstract": "We give computer-assisted proofs for Erhardt's 18-state modification of the ten Tusscher-Panfilov 2006 endocardial ventricular cell model at slow delayed rectifier conductance G_Ks = 0.0275 nS/pF, 1.46 per cent below the first supercritical Hopf point he computed numerically. Rings of N identical cells, coupled diffusively through the voltage with strength N^2/64000 per ms, discretize the cable u_t = f(u) + D u_xx, D = 1/64000 per ms, on a ring of length 1. Rotating waves there are expected from equivariant Hopf theory; we prove them at explicit parameters. For one cell, two proofs (CAPD and Arb, sharing only GMP and MPFR) give an orbitally asymptotically stable periodic orbit, with 17 nontrivial Floquet multipliers below 0.998642 and 0.997859 respectively, and an exact rational check shows both enclose the same orbit. For N = 8, 16, 32, 64 a rotating 1-wave exists, is locally unique and not synchronous, has minimal period T = 2 pi/omega enclosed to within 2e-25 ms, and is locally exponentially orbitally stable: the multiplier 1 is algebraically simple and the other 18N - 1 have modulus below e^(-delta T) < 0.9997321, delta = 5e-6 per ms. A locally unique rotating 1-wave also exists for every N >= 8, and a traveling wave for the cable, the limit of the ring waves. Existence is a radii-polynomial argument in a weighted l^1 space, made uniform over epsilon in [0, 1/64] (1/N^2 for the rings, 0 for the cable) in 73 pieces glued by ball inclusion. Stability rests on one Hill operator whose spectrum gives every Floquet multiplier with its algebraic multiplicity; a Riesz-projection homotopy shows it meets Re mu >= -delta only in the eigenvalues i omega N Z, each algebraically simple. Stability is proved only for the cell and these four rings. For the single cell, a connected conductance family reaches a certified supercritical Hopf endpoint. Its 712-piece lower interval has uniform nontrivial multiplier bound 0.998413816, and a 68-piece amplitude family supplies the bridge. Quantitative uniform stability is proved only on the lower interval. Nothing is claimed for tissue."
+ },
+ "rank-window": {
+  "source": {
+   "repository": "https://github.com/ChaseHendrick/rank-window",
+   "commit": "5800d9f67626b181b2c7d0b77ed0da6527fede2f",
+   "path": "README.md"
+  },
+  "sets": [
+   {
+    "d": 8,
+    "bound": 1.25,
+    "reported": 1.49,
+    "border_low": 0.255,
+    "border_high": 1.628
+   },
+   {
+    "d": 4,
+    "bound": 1.5,
+    "reported": 1.65,
+    "border_low": 0.625,
+    "border_high": 1.762
+   },
+   {
+    "d": 1,
+    "bound": 3.0,
+    "reported": 3.43,
+    "border_low": null,
+    "border_high": 3.5012
+   }
+  ],
+  "figures": [
+   "/papers/figures/rank-window/fig1.svg",
+   "/papers/figures/rank-window/fig2.svg",
+   "/papers/figures/rank-window/fig3.svg"
+  ],
+  "abstract": "Stringer, Pachitariu, Steinmetz, Carandini and Harris (Nature 571, 2019) showed that a population code that maps a d-dimensional stimulus space differentiably to noise-free responses has an eigenspectrum decaying asymptotically faster than n^-(1+2/d), reported exponents of 1.49, 1.65 and 3.43 for stimulus sets with d = 8, 4 and 1, fitted over ranks 11-500 (ranks 5-30 for 32 grating directions in their Methods, 11-30 in their deposited code), and concluded that the code is about as high-dimensional as smoothness allows. That a finite window of ranks cannot measure an asymptotic exponent is elementary and partly anticipated; this note makes it quantitative for these stimulus sets. For codes built on bounded eigenfunctions, as on a torus, a bound adapted from known kernel-matrix bounds shows that the head of the spectrum fixes the finite-sample spectrum up to a constant times the variance of the tail, whatever the tail's rate of decay, so no estimator continuous in that spectrum can tell a continuously differentiable code from one with infinite expected squared gradient. We place noise-free codes of fixed smoothness (Matern tuning) on the stimulus coordinates of all ten 8D and 4D stimulus sets. Codes exactly at the differentiability border give ranks 11-500 exponents from 0.255 to 1.628 at d = 8 and from 0.625 to 1.762 at d = 4, below the bound for short and above it for long tuning length scales, with infinitely many or 8,704 neurons and in whitened coordinates. Non-differentiable codes with Matern nu = 0.75 also exceed the bound in the unwhitened coordinates at 2,800 stimuli, but not over ranks 101-500, not in whitened 8D coordinates and not always with fewer stimuli. For 32 directions a non-differentiable code reaches 3.5012 over ranks 5-30 and 3.4306 over ranks 11-30. The tail exponent of the eigenmoment method of Pospisil and Pillow depends on the unresolved tail: spectra that share a broken power law with tail exponent 1.25 up to rank 500 give tail exponents from 1.138 to 1.394, and the eigenmoment misfit flags none of 20 simulated data sets of any variant with diagonal weights (95% upper bound 0.168 on the flag probability) and at most 5 of 20 with full whitening (upper bound 0.491), depending on the reference distribution. The reported exponents are consistent with the bound but cannot show that the code satisfies it or lies close to it."
+ }
+}

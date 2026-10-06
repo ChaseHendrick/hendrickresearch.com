@@ -5,7 +5,8 @@
 //
 // Checked: the paper list (src/papers-data.json) against GENChase's registry, every paper PDF link,
 // the GENChase technique catalog (src/genchase-data.json) against GENChase's techniques.json, and the
-// Cipher Lab engine snapshot (public/cipher-lab/manifest.json) against its source repository.
+// Cipher Lab engine snapshot (public/cipher-lab/manifest.json) against its source repository, and the
+// undeciphered-texts research feed (src/research-data.json) against Undeciphered-Texts.
 // The paper list refreshes itself (sync-papers.yml); the catalog and Cipher Lab snapshots carry preview
 // images and a packaged engine, so they are rebuilt by hand with the steps named in each finding.
 import { readFileSync, writeFileSync } from 'node:fs';
@@ -54,7 +55,12 @@ async function cipherLab() {
   if (touched.length) findings.push(`**Cipher Lab engine:** ${repo} is ${cmp.ahead_by} commit(s) past the shipped snapshot ${m.source_git_commit.slice(0, 7)}, and ${touched.length} shipped file(s) changed (${touched.slice(0, 8).join(', ')}${touched.length > 8 ? ', ...' : ''}). Rebuild with \`python scripts/sync-cipher-lab.py --source <checkout>\`.`);
 }
 
-for (const [name, check] of [['papers', papers], ['catalog', catalog], ['cipher lab', cipherLab]]) {
+async function research() {
+  const upstream = await (await get('https://raw.githubusercontent.com/ChaseHendrick/Undeciphered-Texts/main/docs/research-notes/research-feed.json', false)).text();
+  if (upstream !== readFileSync(new URL('src/research-data.json', root), 'utf8')) findings.push('**Undeciphered-texts research feed:** src/research-data.json differs from Undeciphered-Texts. The Sync research workflow should fix this within six hours; if it does not, run it by hand (Actions > Sync research from Undeciphered-Texts > Run workflow).');
+}
+
+for (const [name, check] of [['papers', papers], ['catalog', catalog], ['cipher lab', cipherLab], ['research feed', research]]) {
   try { await check(); } catch (e) { errors.push(`${name}: ${e.message}`); }
 }
 const report = [

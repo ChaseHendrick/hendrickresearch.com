@@ -20,6 +20,14 @@ npm run preview
 
 The production site is generated in `dist/`. It is static: no database, API keys, or paid services are needed. The build renders the full portfolio and paper metadata into HTML so the content is available before JavaScript and to search engines. With JavaScript disabled, all project and paper links are visible.
 
+## Brand
+
+Colors, type, layout, components, chart palette, voice and the checklist for a new page are in [`docs/BRAND.md`](docs/BRAND.md). Read it before adding a page.
+
+## Undeciphered-texts research
+
+`/research/undeciphered/` and one page per case are rendered by `src/research-pages.ts` from `src/research-data.json`, a copy of the feed that [Undeciphered-Texts](https://github.com/ChaseHendrick/Undeciphered-Texts) writes from its status ledgers (`docs/research-notes/research-feed.json`). `scripts/sync-research.mjs` refreshes it before every build and every six hours (`.github/workflows/sync-research.yml`), refusing a feed whose schema is unknown or that claims a reading. Do not edit the JSON by hand; change the ledgers upstream. Each page has a plain-language view and a researcher view in its initial HTML; `src/research-main.ts` adds the view switch, tooltips, filters and the interactive modules.
+
 ## Add your work
 
 Edit [`src/content.ts`](src/content.ts) for projects: each has its title, category, description, source, optional live link, and tags.

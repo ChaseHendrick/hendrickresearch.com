@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite --host 127.0.0.1",
     "sync-papers": "node scripts/sync-papers.mjs",
-    "prebuild": "node scripts/sync-papers.mjs",
+    "sync-research": "node scripts/sync-research.mjs",
+    "prebuild": "node scripts/sync-papers.mjs && node scripts/sync-research.mjs",
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview --host 127.0.0.1"
   },
@@ -14,7 +15,8 @@
     "@fontsource/dm-sans": "^5.2.0",
     "@fontsource/instrument-serif": "^5.2.0",
     "@vercel/analytics": "^2.0.1",
-    "@vercel/speed-insights": "^2.0.0"
+    "@vercel/speed-insights": "^2.0.0",
+    "shaders": "^4.0.0"
   },
   "devDependencies": {
     "typescript": "^5.9.0",
