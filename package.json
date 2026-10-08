@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite --host 127.0.0.1",
     "sync-papers": "node scripts/sync-papers.mjs",
-    "prebuild": "node scripts/sync-papers.mjs",
+    "sync-research": "node scripts/sync-research.mjs",
+    "prebuild": "node scripts/sync-papers.mjs && node scripts/sync-research.mjs",
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview --host 127.0.0.1"
   },

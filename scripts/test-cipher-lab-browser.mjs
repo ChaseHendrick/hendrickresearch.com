@@ -46,7 +46,7 @@ try {
   assert.match(await page.locator('#cipher-run').textContent(), /Run solver/);
   assert.equal(requests.filter(request => request.url.includes('engine.zip')).length, 0);
   checks.push('correct initial server-rendered letter count and keyboard mode tabs');
-  assert.equal(await page.locator('.cipher-research-entry').count(), 8);
+  assert.equal(await page.locator('.cipher-research-entry').count(), 9);
   assert.match(await page.locator('.cipher-research-intro').textContent(), /does not decipher unknown glyph scripts/);
   const researchSummary = page.locator('#research-kryptos-k4 > summary');
   await researchSummary.focus();
@@ -55,7 +55,11 @@ try {
   assert.match(await page.locator('#research-kryptos-k4 .cipher-research-body').textContent(), /private K4 plaintext/);
   await page.keyboard.press('Enter');
   assert.equal(await page.locator('#research-kryptos-k4').getAttribute('open'), null);
-  checks.push('eight source-linked research disclosures, keyboard access and script limits');
+  await page.locator('#research-dagapeyeff > summary').click();
+  assert.match(await page.locator('#research-dagapeyeff .cipher-ledger').textContent(), /Ledger, reviewed through/);
+  assert.ok(await page.locator('#research-dagapeyeff .cipher-tally').isVisible());
+  await page.locator('#research-dagapeyeff > summary').click();
+  checks.push('nine source-linked research disclosures with synced ledgers, keyboard access and script limits');
 
   // Cancel while startup is pending. Retry must use a new worker and remain usable.
   await page.locator('#cipher-run').click();

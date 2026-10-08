@@ -48,12 +48,15 @@ assert(/independent|verification|unverified/i.test(visible), 'Keep independent v
 assert(/<section\b[^>]*\bid=["']cipher-research["']/i.test(body), 'Research notes must be present in the initial HTML');
 const research = body.match(/<section\b[^>]*\bid=["']cipher-research["'][^>]*>([\s\S]*?)<\/section>/i)?.[1] ?? '';
 const researchText = text(research);
-for (const topic of [/Voynich/i, /Linear A/i, /Indus/i, /Kryptos/i]) {
+for (const topic of [/Voynich/i, /Linear A/i, /Indus/i, /Kryptos/i, /Agapeyeff/i]) {
   assert(topic.test(researchText), `Missing researched topic in crawlable HTML: ${topic}`);
 }
 assert((research.match(/<details\b[^>]*\bclass=["'][^"']*\bcipher-research-entry\b/gi) ?? []).length >= 6, 'Keep at least six substantive research entries');
 assert(tags(research, 'time').some(tag => tag.datetime === '2026-10-03') && /October 2026/.test(researchText), 'Show the actual research review date');
 assert(/A-Z|Latin|glyph/i.test(researchText), 'Explain the script support boundary alongside the notes');
+assert((research.match(/class=["']cipher-tally["']/g) ?? []).length >= 9 && /Ledger, reviewed through/.test(researchText),
+  'Each research entry must carry its synced ledger tally in the initial HTML');
+assert(/no reading|not a reading|No reading/i.test(researchText), 'State that no case is a reading');
 const researchReferences = tags(research, 'a').filter(tag => tag.href?.startsWith('https://'));
 assert(researchReferences.length >= 6, 'Keep primary source references crawlable with ordinary HTTPS links');
 assert(researchReferences.some(tag => tag.href === 'https://www.paradigm.xyz/writing/kryptos')

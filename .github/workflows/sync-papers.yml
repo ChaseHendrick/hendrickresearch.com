@@ -1,7 +1,8 @@
-name: Sync papers from GENChase
+name: Sync papers and research ledgers
 
-# Keeps the paper list current: reads GENChase's papers/papers.json and commits
-# src/papers-data.json when it changed, which makes Vercel redeploy the site.
+# Keeps the paper list and the cipher research ledgers current: reads the paper registries of GENChase and
+# Undeciphered-Texts (papers/papers.json) and Undeciphered-Texts' research feed, and commits
+# src/papers-data.json and src/research-feed.json when they changed, which makes Vercel redeploy the site.
 on:
   schedule:
     - cron: '17 */6 * * *'
@@ -23,13 +24,15 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: Read the GENChase registry
+      - name: Read the paper registries
         run: node scripts/sync-papers.mjs
-      - name: Commit if the list changed
+      - name: Read the research feed
+        run: node scripts/sync-research.mjs
+      - name: Commit if anything changed
         run: |
-          if git diff --quiet -- src/papers-data.json; then echo "No change."; exit 0; fi
+          if git diff --quiet -- src/papers-data.json src/research-feed.json; then echo "No change."; exit 0; fi
           git config user.name "Chase Hendrick"
           git config user.email "326338179+ChaseHendrick@users.noreply.github.com"
-          git add src/papers-data.json
-          git commit -m "Sync the paper list from GENChase"
+          git add src/papers-data.json src/research-feed.json
+          git commit -m "Sync the paper list and research ledgers"
           git push

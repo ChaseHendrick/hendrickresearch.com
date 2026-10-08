@@ -3,12 +3,16 @@
 // Exit code 0 always; the report says "All site sources are current." when nothing is behind.
 // Run daily by .github/workflows/upstream-check.yml, which keeps one issue open while anything is stale.
 //
-// Checked: the paper list (src/papers-data.json) against GENChase's registry, every paper PDF link,
-// the GENChase technique catalog (src/genchase-data.json) against GENChase's techniques.json, and the
-// Cipher Lab engine snapshot (public/cipher-lab/manifest.json) against its source repository.
-// The paper list refreshes itself (sync-papers.yml); the catalog and Cipher Lab snapshots carry preview
-// images and a packaged engine, so they are rebuilt by hand with the steps named in each finding.
+// Checked: the paper list (src/papers-data.json) against the GENChase and Undeciphered-Texts registries,
+// every paper PDF link, the cipher research ledgers (src/research-feed.json) against Undeciphered-Texts'
+// research feed and against the site's editorial entries (src/cipher-research.ts), the GENChase technique
+// catalog (src/genchase-data.json) against GENChase's techniques.json, and the Cipher Lab engine snapshot
+// (public/cipher-lab/manifest.json) against its source repository.
+// The paper list and the ledgers refresh themselves (sync-papers.yml); a research case with no editorial
+// entry, the catalog and the Cipher Lab snapshot are updated by hand with the steps named in each finding.
 import { readFileSync, writeFileSync } from 'node:fs';
+import { REGISTRIES, released } from './sync-papers.mjs';
+import { FEED, slim } from './sync-research.mjs';
 
 const root = new URL('..', import.meta.url);
 const read = p => JSON.parse(readFileSync(new URL(p, root), 'utf8'));
@@ -21,18 +25,31 @@ const get = async (url, json = true) => {
 const findings = [], errors = [];
 
 async function papers() {
-  const registry = await get('https://raw.githubusercontent.com/ChaseHendrick/GENChase/main/papers/papers.json');
-  const live = registry.papers.filter(p => ['ready', 'on-arxiv', 'submitted', 'accepted', 'published'].includes(p.status) && p.companion && p.codeDoi);
+  const live = [];
+  for (const source of REGISTRIES) live.push(...released(await get(source)));
   const site = read('src/papers-data.json');
   const siteDoi = Object.fromEntries(site.map(p => [p.id, p.doi]));
-  const behind = live.filter(p => siteDoi[p.id] !== `https://doi.org/${p.codeDoi}`).map(p => p.id);
-  if (behind.length) findings.push(`**Papers:** ${behind.join(', ')} differ from GENChase's registry. The Sync papers workflow should fix this within six hours; if it does not, run it by hand (Actions > Sync papers from GENChase > Run workflow).`);
+  const behind = live.filter(p => siteDoi[p.id] !== p.doi).map(p => p.id);
+  if (behind.length) findings.push(`**Papers:** ${behind.join(', ')} differ from the paper registries. The sync workflow should fix this within six hours; if it does not, run it by hand (Actions > Sync papers and research ledgers > Run workflow).`);
   const broken = [];
   for (const p of site) {
     try { const r = await fetch(p.pdf, { method: 'HEAD', signal: AbortSignal.timeout(30000) }); if (!r.ok) broken.push(`${p.id} (HTTP ${r.status})`); }
     catch (e) { broken.push(`${p.id} (${e.message})`); }
   }
   if (broken.length) findings.push(`**Paper PDF links:** ${broken.join(', ')} do not resolve. Check the PDF path in GENChase's papers/papers.json and the companion repository.`);
+}
+
+async function research() {
+  const upstream = slim(await get(FEED));
+  const site = read('src/research-feed.json');
+  if (JSON.stringify(site.cases) !== JSON.stringify(upstream.cases)) {
+    const have = Object.fromEntries(site.cases.map(c => [c.id, c]));
+    const moved = upstream.cases.filter(c => JSON.stringify(have[c.id]) !== JSON.stringify(c)).map(c => `${c.id} (reviewed through ${c.reviewed_through})`);
+    findings.push(`**Research ledgers:** ${moved.join(', ')} differ from Undeciphered-Texts' research feed. The sync workflow should fix this within six hours; if it does not, run it by hand.`);
+  }
+  const editorial = readFileSync(new URL('src/cipher-research.ts', root), 'utf8');
+  const missing = upstream.cases.filter(c => !editorial.includes(`id: '${c.id}'`)).map(c => c.id);
+  if (missing.length) findings.push(`**Research notes:** ${missing.join(', ')} ${missing.length > 1 ? 'have' : 'has'} a ledger but no editorial entry in src/cipher-research.ts. Write one from its note in Undeciphered-Texts/docs/research-notes; until then the Cipher Lab page shows only the ledger line.`);
 }
 
 async function catalog() {
@@ -54,7 +71,7 @@ async function cipherLab() {
   if (touched.length) findings.push(`**Cipher Lab engine:** ${repo} is ${cmp.ahead_by} commit(s) past the shipped snapshot ${m.source_git_commit.slice(0, 7)}, and ${touched.length} shipped file(s) changed (${touched.slice(0, 8).join(', ')}${touched.length > 8 ? ', ...' : ''}). Rebuild with \`python scripts/sync-cipher-lab.py --source <checkout>\`.`);
 }
 
-for (const [name, check] of [['papers', papers], ['catalog', catalog], ['cipher lab', cipherLab]]) {
+for (const [name, check] of [['papers', papers], ['research', research], ['catalog', catalog], ['cipher lab', cipherLab]]) {
   try { await check(); } catch (e) { errors.push(`${name}: ${e.message}`); }
 }
 const report = [
