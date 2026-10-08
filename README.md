@@ -24,9 +24,11 @@ The production site is generated in `dist/`. It is static: no database, API keys
 
 Edit [`src/content.ts`](src/content.ts) for projects: each has its title, category, description, source, optional live link, and tags.
 
-Papers are not edited by hand. `scripts/sync-papers.mjs` reads GENChase's registry (`papers/papers.json`) before every build and daily through `.github/workflows/sync-papers.yml`, which commits `src/papers-data.json` when it changes so Vercel redeploys. A paper appears once its status is ready or later and its first archive DOI is recorded; a new release's DOI replaces the old one the same way. Site-specific topic labels and summaries live in the script's `OVERRIDES`. The visible counts update automatically.
+Papers are not edited by hand. `scripts/sync-papers.mjs` reads the paper registries of GENChase and Undeciphered-Texts (`papers/papers.json` in each) before every build and every six hours through `.github/workflows/sync-papers.yml`, which commits `src/papers-data.json` when it changes so Vercel redeploys. If either registry cannot be read, the committed list is kept whole. A paper appears once its status is ready or later and its first archive DOI is recorded; a new release's DOI replaces the old one the same way. Site-specific topic labels and summaries live in the script's `OVERRIDES`. The visible counts update automatically.
 
-A daily check (`scripts/check-upstream.mjs`, `.github/workflows/upstream-check.yml`) compares the paper list and its PDF links, the GENChase technique catalog and the Cipher Lab engine with their source repositories, and keeps one issue titled "Site sources out of date" open while anything is behind, with the command that refreshes it.
+The Cipher Lab's research notes combine editorial entries, written by hand in [`src/cipher-research.ts`](src/cipher-research.ts) from the dated notes in Undeciphered-Texts, with each case's status ledger. `scripts/sync-research.mjs` copies the ledgers from Undeciphered-Texts' `docs/research-notes/research-feed.json` into `src/research-feed.json` in the same workflow, keeping only the fields the page shows and refusing a feed that reports any recovered plaintext. Each entry then shows its stage, review date, summary and a tally of the hypothesis families or questions listed.
+
+A daily check (`scripts/check-upstream.mjs`, `.github/workflows/upstream-check.yml`) compares the paper list and its PDF links, the research ledgers, the GENChase technique catalog and the Cipher Lab engine with their source repositories, reports any research case that has a ledger but no editorial entry, and keeps one issue titled "Site sources out of date" open while anything is behind, with the command that refreshes it.
 
 To host a new paper directly on this site:
 

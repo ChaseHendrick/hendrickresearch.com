@@ -79,5 +79,14 @@
     "doi": "https://doi.org/10.5281/zenodo.23114240",
     "source": "https://github.com/ChaseHendrick/cardiac-rings",
     "pdf": "https://raw.githubusercontent.com/ChaseHendrick/cardiac-rings/main/paper/cardiac-rings.pdf"
+  },
+  {
+    "id": "dagapeyeff-exclusions",
+    "title": "Excluding Classical Cipher Families for the 1939 D'Agapeyeff Challenge: Key-Free Counts and Searches with Demonstrated Power",
+    "category": "Cryptography",
+    "summary": "Which classical cipher families the 1939 D’Agapeyeff challenge excludes, by key-free counts and by searches with demonstrated power. No reading is claimed.",
+    "doi": "https://doi.org/10.5281/zenodo.23241304",
+    "source": "https://github.com/ChaseHendrick/dagapeyeff",
+    "pdf": "https://raw.githubusercontent.com/ChaseHendrick/dagapeyeff/main/paper/dagapeyeff-exclusions.pdf"
   }
 ]

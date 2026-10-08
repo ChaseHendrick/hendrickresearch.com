@@ -24,6 +24,11 @@
 .cipher-research-body{padding:0 0 24px;font-size:12px;line-height:1.9;color:var(--muted);overflow-wrap:anywhere}
 .cipher-research-body p+p{margin-top:12px}.cipher-research-body h3{font:22px/1.4 var(--serif);color:var(--ink);margin:18px 0 7px}
 .cipher-research-body ul{padding-left:18px;margin:10px 0}.cipher-research-body a{text-decoration:underline;text-underline-offset:3px}
-.cipher-research-links{display:flex;flex-wrap:wrap;gap:12px 20px;margin-top:16px}
+.cipher-research-links{display:flex;flex-wrap:wrap;gap:12px 20px;margin-top:16px}.cipher-research-links+p{margin-top:16px}
 .cipher-research-entry>summary:focus-visible{outline:2px solid var(--copper);outline-offset:3px}
+.cipher-ledger{margin-top:16px;padding:14px 0 2px;border-top:1px dashed var(--line)}.cipher-ledger strong{color:var(--ink);font-weight:500}
+.cipher-tally{display:flex;height:9px;margin-top:12px;border:1px solid var(--line);background:var(--paper)}.cipher-tally span{min-width:3px}.cipher-tally span+span{border-left:1px solid var(--paper)}
+.cipher-tally-legend{display:flex;flex-wrap:wrap;gap:4px 16px;list-style:none;padding:0!important;margin:9px 0 0!important;font-size:11px}.cipher-tally-legend li{display:flex;align-items:center;gap:6px}
+.cipher-tally-swatch{display:inline-block;width:9px;height:9px;border:1px solid var(--line)}
+.cipher-tally-closed-with-power{background:var(--copper)}.cipher-tally-excluded-by-count,.cipher-tally-excluded-by-constraint{background:#7f97b0}.cipher-tally-tested-without-power{background:#b9b59a}.cipher-tally-open{background:#e9e8df}
 @media(max-width:750px){.cipher-research{margin-top:30px;padding-top:26px}.cipher-research-grid{grid-template-columns:1fr}.cipher-research-entry>summary{font-size:24px}.cipher-research-intro{font-size:12px}}
