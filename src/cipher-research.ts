@@ -25,8 +25,8 @@ const latestReview = (researchFeed.cases as Ledger[]).map(item => item.reviewed_
 const cases: readonly ResearchCase[] = [
   {
     id: 'kryptos-k4', title: 'Kryptos K4', category: 'Historical cipher', checked: '2026-10-03',
-    status: 'Archival recovery documented; public method not established here.',
-    context: 'RR Auction’s October 2025 account describes recovered archival text, not a published method; in November 2025 it sold Sanborn’s archive, relying on his description that it holds the private K4 plaintext and coding material. Paradigm identified itself as custodian in June 2026 and offers a reference-answer verifier while still calling K4 unsolved. This project fitted one clue and checked the other across 32,512 two-layer cipher models on two fixed alphabets: all 888 complete keys failed, 2,563 stay undetermined, and no planted-text control at these search bounds is recorded.',
+    status: 'Publicly unsolved; plaintext reported in a private archive, no method in the checked sources.',
+    context: 'RR Auction’s October 2025 account describes recovered archival text, not a published method; in November 2025 it sold Sanborn’s archive, relying on his description that it holds the private K4 plaintext and coding material. Paradigm identified itself as custodian in June 2026 and offers a reference-answer verifier while still calling K4 unsolved. This project fitted each clue in turn and checked the other against 32,512 two-layer cipher models on two fixed alphabets (65,024 checks in all): all 888 complete keys contradicted the held-back clue, 2,563 stay undetermined, and no planted-text control at these search bounds is recorded.',
     experiment: 'Rerun the layered search with unknown keyed alphabets in place of the two fixed ones, solved with a constraint solver, with clue positions frozen before fitting and one clue held back. Even then, a failed search speaks only to the fully determined keys of its stated models.',
     note: 'kryptos-k4-2026-10-03.md',
     sources: [
